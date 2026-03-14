@@ -53,6 +53,7 @@ function toSongData(dbSong: DbSong, dbWords: DbWord[]): SongData {
         emoji: w.emoji,
         example: w.example,
         exampleTranslation: w.example_translation,
+        ...(w.timestamp != null && { timestamp: w.timestamp }),
       })),
   };
 }
@@ -90,7 +91,9 @@ export function useSongs() {
           return acc;
         }, {});
 
-        const result = dbSongs.map((s) => toSongData(s, wordsBySong[s.id] || []));
+        const result = dbSongs
+          .map((s) => toSongData(s, wordsBySong[s.id] || []))
+          .filter((s) => s.words.some((w) => w.timestamp != null));
         setSongs(result);
       } catch {
         // Network error → use local fallback

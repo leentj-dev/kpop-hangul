@@ -84,11 +84,11 @@ export default function Home() {
         playerVars: { enablejsapi: 1, rel: 0, fs: 0, modestbranding: 1, disablekb: 0, iv_load_policy: 3 },
         events: {
           onReady: () => {
-            // Disable PiP on the iframe
             const iframe = playerRef.current?.getIframe?.();
             if (iframe) {
               iframe.setAttribute("allow", "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope");
-              iframe.setAttribute("disablepictureinpicture", "");
+              iframe.removeAttribute("allowfullscreen");
+              iframe.setAttribute("disablepictureinpicture", "true");
             }
           },
         },
@@ -109,12 +109,17 @@ export default function Home() {
     };
   }, [currentSong?.youtubeId]);
 
-  const handleSpeak = useCallback((text: string) => {
-    setIsSpeaking(true);
+  const LANG_CODES: Record<string, string> = {
+    korean: "ko-KR", english: "en-US", spanish: "es-ES", portuguese: "pt-BR",
+    indonesian: "id-ID", japanese: "ja-JP", thai: "th-TH", french: "fr-FR",
+  };
+
+  const handleSpeak = useCallback((text: string, isWord = false, speechLang = "ko-KR") => {
+    if (isWord) setIsSpeaking(true);
     if (typeof window !== "undefined" && window.speechSynthesis) {
       window.speechSynthesis.cancel();
       const utterance = new SpeechSynthesisUtterance(text);
-      utterance.lang = "ko-KR";
+      utterance.lang = speechLang;
       utterance.rate = 0.8;
       utterance.onend = () => setIsSpeaking(false);
       utterance.onerror = () => setIsSpeaking(false);
@@ -122,12 +127,38 @@ export default function Home() {
     }
   }, []);
 
+  // Get timestamp: use word's timestamp field if available, otherwise evenly distribute
+  const getTimestamp = useCallback((index: number) => {
+    const word = currentSong?.words[index];
+    if (word?.timestamp != null) return word.timestamp;
+    const duration = playerRef.current?.getDuration?.() || 210;
+    const interval = duration / (currentSong?.words.length || 30);
+    return Math.floor(index * interval);
+  }, [currentSong?.words]);
+
+  const formatTime = (seconds: number) => {
+    const m = Math.floor(seconds / 60);
+    const s = seconds % 60;
+    return `${m}:${s.toString().padStart(2, "0")}`;
+  };
+
+  const seekToWord = useCallback((index: number) => {
+    const time = getTimestamp(index);
+    if (playerRef.current?.seekTo) {
+      playerRef.current.seekTo(time, true);
+      if (playerRef.current.getPlayerState?.() !== 1) {
+        playerRef.current.playVideo?.();
+      }
+    }
+  }, [getTimestamp]);
+
   const selectWord = useCallback(
     (index: number) => {
       lastIndexRef.current = index;
       setSelectedIndex(index);
+      seekToWord(index);
     },
-    []
+    [seekToWord]
   );
 
   const goNext = useCallback(() => {
@@ -166,6 +197,16 @@ export default function Home() {
     }
   }, []);
 
+  // Lock body scroll when popup is open
+  useEffect(() => {
+    if (selectedIndex !== null) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+    return () => { document.body.style.overflow = ""; };
+  }, [selectedIndex]);
+
   // Scroll carousel to selected card + scroll body to show word in grid
   useEffect(() => {
     if (selectedIndex === null) return;
@@ -191,39 +232,37 @@ export default function Home() {
 
   if (!currentSong || !t) {
     return (
-      <div className="flex min-h-screen items-center justify-center bg-black text-white">
-        <p className="animate-pulse text-lg">Loading...</p>
+      <div className="flex min-h-screen items-center justify-center bg-white">
+        <p className="animate-pulse text-lg text-gray-400">Loading...</p>
       </div>
     );
   }
 
   return (
     <div
-      className={`min-h-screen bg-gradient-to-b ${t.from} ${t.via} ${t.to} text-white transition-colors duration-700`}
+      className="min-h-screen bg-white text-gray-900 transition-colors duration-700"
     >
       {/* Sticky Top */}
-      <div
-        className={`sticky top-0 z-40 bg-gradient-to-b ${t.stickyFrom} ${t.stickyVia} to-transparent pb-3 transition-colors duration-700`}
-      >
+      <div className="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-gray-200 pb-3">
         <header className="flex items-center justify-between px-4 py-3">
           <h1 className="text-xl font-bold tracking-tight">
-            <span className="bg-gradient-to-r from-pink-400 to-purple-400 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-amber-500 via-pink-500 to-purple-600 bg-clip-text text-transparent">
               K-pop Hangul
             </span>
           </h1>
           <div className="flex items-center gap-2">
             <button
               onClick={() => { setShowSearch(!showSearch); if (showSearch) setSearchQuery(""); }}
-              className="rounded-lg bg-white/10 p-1.5 text-gray-300 hover:bg-white/20 hover:text-white transition-colors"
+              className="rounded-full p-2 text-gray-600 hover:bg-gray-100 transition-colors"
             >
-              <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
               </svg>
             </button>
             <select
               value={lang}
               onChange={(e) => setLang(e.target.value as Lang)}
-              className="rounded-lg bg-white/10 px-2 py-1 text-xs text-white outline-none"
+              className="rounded-lg border border-gray-200 bg-white px-2 py-1 text-xs text-gray-700 outline-none focus:border-gray-400"
             >
               <option value="english">🇺🇸 English</option>
               <option value="spanish">🇪🇸 Español</option>
@@ -248,13 +287,13 @@ export default function Home() {
                 type="text"
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
-                placeholder="곡, 아티스트, 단어 검색..."
-                className="w-full rounded-xl bg-white/10 py-2 pl-9 pr-8 text-sm text-white placeholder-gray-400 outline-none ring-1 ring-white/20 focus:ring-white/40 transition-all"
+                placeholder="Search songs, artists..."
+                className="w-full rounded-xl bg-gray-100 py-2 pl-9 pr-8 text-sm text-gray-900 placeholder-gray-400 outline-none focus:bg-gray-50 focus:ring-1 focus:ring-gray-300 transition-all"
               />
               {searchQuery && (
                 <button
                   onClick={() => setSearchQuery("")}
-                  className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 hover:text-white"
+                  className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 hover:text-gray-600"
                 >
                   <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
@@ -264,14 +303,14 @@ export default function Home() {
             </div>
             {searchQuery && (
               <p className="mt-1.5 text-xs text-gray-400">
-                {filteredSongs.length}곡 found
+                {filteredSongs.length} results
               </p>
             )}
           </div>
         )}
 
-        {/* Song Selector */}
-        <div className="flex gap-2 overflow-x-auto px-4 pb-3 scrollbar-hide">
+        {/* Song Selector - Instagram Stories style */}
+        <div className="flex gap-3 overflow-x-auto px-4 pt-1 pb-2 scrollbar-hide">
           {filteredSongs.map((song) => (
             <button
               key={song.id}
@@ -282,32 +321,28 @@ export default function Home() {
                 setSelectedSong(song);
                 setSelectedIndex(null);
               }}
-              className={`shrink-0 overflow-hidden rounded-lg transition-all ${
-                currentSong?.id === song.id
-                  ? `ring-2 ${t.accentRing} shadow-lg scale-105`
-                  : "opacity-70 hover:opacity-100"
-              }`}
-              style={{ width: 90 }}
+              className="shrink-0 flex flex-col items-center gap-1"
+              style={{ width: 68 }}
             >
-              <div className="relative">
+              <div className={`rounded-full p-[2px] ${
+                currentSong?.id === song.id
+                  ? "bg-gradient-to-br from-amber-500 via-pink-500 to-purple-600"
+                  : "bg-gray-200"
+              }`}>
                 <img
                   src={`https://img.youtube.com/vi/${song.youtubeId}/mqdefault.jpg`}
                   alt={song.title}
-                  className="h-[50px] w-full object-cover"
+                  className="h-[58px] w-[58px] rounded-full object-cover border-2 border-white"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent" />
-                <div className="absolute bottom-0 left-0 right-0 px-1.5 pb-1">
-                  <p className="text-[9px] text-gray-300 truncate">{song.artist}</p>
-                  <p className="text-[10px] font-bold text-white truncate">{song.title}</p>
-                </div>
               </div>
+              <p className="text-[10px] text-gray-600 truncate w-full text-center leading-tight">{song.title}</p>
             </button>
           ))}
         </div>
 
         {/* YouTube Embed */}
         <div className="px-4">
-          <div className="youtube-no-pip relative mx-auto max-w-2xl overflow-hidden rounded-xl shadow-2xl">
+          <div className="youtube-no-pip relative mx-auto max-w-2xl overflow-hidden rounded-lg border border-gray-200">
             <div className="relative pt-[56.25%]">
               <div ref={playerContainerRef} className="absolute inset-0 h-full w-full" />
             </div>
@@ -318,28 +353,24 @@ export default function Home() {
 
       {/* Words Grid */}
       <div className="mt-4 px-4">
-        <h3
-          className={`mb-3 text-center text-sm font-semibold uppercase tracking-wider ${t.accent}`}
-        >
-          Words from this song
-        </h3>
         <div className="mx-auto grid max-w-2xl grid-cols-2 gap-2 pb-8 sm:grid-cols-3">
           {currentSong.words.map((word, i) => (
             <button
               key={`${word.korean}-${i}`}
               ref={(el) => { wordRefs.current[i] = el; }}
-              onClick={() => { handleSpeak(word.korean); selectWord(i); }}
-              className={`flex items-center gap-3 rounded-xl px-3 py-3 text-left transition-all ${
+              onClick={() => { selectWord(i); }}
+              className={`flex items-center gap-3 rounded-xl border px-3 py-3 text-left transition-all ${
                 selectedIndex === i
-                  ? `${t.accentBg}/30 ring-2 ${t.accentRing}`
-                  : "bg-white/5 hover:bg-white/10"
+                  ? "border-gray-400 bg-gray-50 shadow-sm"
+                  : "border-gray-100 bg-white hover:bg-gray-50"
               }`}
             >
               <span className="text-2xl shrink-0">{word.emoji}</span>
-              <div className="min-w-0">
-                <span className="block text-base font-bold leading-tight">{word.korean}</span>
+              <div className="min-w-0 flex-1">
+                <span className="block text-base font-bold leading-tight text-gray-900">{word.korean}</span>
                 <span className="block text-[11px] text-gray-400 truncate">{word[lang]}</span>
               </div>
+              <span className="shrink-0 text-[10px] text-gray-300">{formatTime(getTimestamp(i))}</span>
             </button>
           ))}
         </div>
@@ -348,9 +379,9 @@ export default function Home() {
       {/* Card Carousel Panel */}
       {selectedIndex !== null && (
         <div className="fixed inset-0 z-50 flex flex-col justify-end">
-          {/* Full-screen backdrop — blocks touch on background, tap to close popup */}
+          {/* Full backdrop — blocks all background interaction */}
           <div
-            className="absolute inset-0"
+            className="absolute inset-0 bg-black/40"
             onClick={() => setSelectedIndex(null)}
           />
 
@@ -389,83 +420,64 @@ export default function Home() {
                 key={`card-${i}`}
                 className="w-[80vw] max-w-[320px] shrink-0 snap-center px-2 first:ml-[10vw] last:mr-[10vw]"
               >
-                <div className={`rounded-2xl border p-5 transition-all ${
+                <div className={`rounded-2xl p-5 shadow-lg transition-all ${
                   i === selectedIndex
-                    ? "border-transparent bg-gray-900 opacity-100"
-                    : "border-white/80 bg-gray-900/70 opacity-60 scale-95"
+                    ? "bg-white opacity-100"
+                    : "bg-white/90 opacity-60 scale-95"
                 }`}>
                   {/* Top row */}
                   <div className="flex items-center justify-between">
                     <span className="text-3xl">{word.emoji}</span>
-                    <span className={`rounded-full ${t.accentBg}/20 px-2 py-0.5 text-[10px] ${t.accent}`}>
+                    <span className="rounded-full bg-gray-100 px-2.5 py-0.5 text-[10px] font-medium text-gray-500">
                       {word.partOfSpeech}
                     </span>
                   </div>
 
-                  {/* Korean */}
-                  <div className="mt-3 flex items-center gap-2">
-                    <span className="text-3xl font-bold cursor-pointer" onClick={(e) => { e.stopPropagation(); handleSpeak(word.korean); }}>{word.korean}</span>
-                    <button
-                      onClick={(e) => {
-                        e.stopPropagation();
-                        handleSpeak(word.korean);
-                      }}
-                      className={`rounded-full p-1.5 transition-colors ${
-                        isSpeaking && i === selectedIndex
-                          ? `${t.accentBg} text-white animate-pulse`
-                          : `${t.accentBg}/20 ${t.accent} hover:${t.accentBg}/40`
-                      }`}
-                    >
-                      <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15.536 8.464a5 5 0 010 7.072M17.95 6.05a8 8 0 010 11.9M6.5 8.788V15.212a.3.3 0 00.173.272l4.5 2.143a.3.3 0 00.427-.272V6.645a.3.3 0 00-.427-.272l-4.5 2.143A.3.3 0 006.5 8.788z" />
-                      </svg>
-                    </button>
+                  {/* Korean + romanization block */}
+                  <div
+                    className={`mt-3 inline-flex flex-col rounded-xl px-4 py-2 cursor-pointer transition-all ${
+                      isSpeaking && i === selectedIndex
+                        ? "bg-gradient-to-r from-amber-50 via-pink-50 to-purple-50 ring-2 ring-pink-300 animate-pulse"
+                        : "bg-gray-50 hover:bg-gray-100 active:bg-pink-50"
+                    }`}
+                    onClick={(e) => { e.stopPropagation(); handleSpeak(word.korean, true); seekToWord(i); }}
+                  >
+                    <span className="text-3xl font-bold text-gray-900">{word.korean}</span>
+                    <span className="text-sm text-pink-500">[ {word.romanization} ]</span>
                   </div>
 
-                  <p className={`mt-1 text-sm ${t.accent}`}>[ {word.romanization} ]</p>
-
                   {/* Hangul decomposition */}
-                  <div className="mt-2 flex items-center gap-1 flex-wrap">
+                  <div className="mt-2 grid grid-cols-6 gap-1">
                     {decomposeHangul(word.korean).flatMap((s, si) =>
                       s.parts.map((p, pi) => (
                         <button
                           key={`${si}-${pi}`}
                           onClick={(e) => { e.stopPropagation(); handleSpeak(p); }}
-                          className={`rounded-lg bg-white/5 px-2.5 py-1.5 text-base font-bold transition-colors hover:bg-white/10 active:bg-white/20 ${pi === 0 ? t.accent : pi === 1 ? "text-green-400" : "text-orange-400"}`}
+                          className={`rounded-lg border border-gray-100 bg-gray-50 px-2.5 py-1.5 text-base font-bold transition-colors hover:bg-gray-100 active:bg-pink-50 ${pi === 0 ? "text-purple-600" : pi === 1 ? "text-green-600" : "text-orange-500"}`}
                         >
                           {p}
                         </button>
                       ))
                     )}
-                    <svg className={`h-4 w-4 shrink-0 ${t.accent}`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15.536 8.464a5 5 0 010 7.072M17.95 6.05a8 8 0 010 11.9M6.5 8.788V15.212a.3.3 0 00.173.272l4.5 2.143a.3.3 0 00.427-.272V6.645a.3.3 0 00-.427-.272l-4.5 2.143A.3.3 0 006.5 8.788z" />
-                    </svg>
                   </div>
 
-                  <p className="mt-2 text-lg text-white">{word[lang]}</p>
-
-                  {/* Example sentence */}
-                  <div className="mt-3 rounded-lg bg-white/5 px-3 py-2">
-                    <div className="flex items-center gap-1.5">
-                      <p className="text-sm font-medium">{word.example}</p>
-                      <button
-                        onClick={(e) => {
-                          e.stopPropagation();
-                          handleSpeak(word.example);
-                        }}
-                        className={`shrink-0 rounded-full p-1 transition-colors ${t.accentBg}/20 ${t.accent} hover:${t.accentBg}/40`}
-                      >
-                        <svg className="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15.536 8.464a5 5 0 010 7.072M17.95 6.05a8 8 0 010 11.9M6.5 8.788V15.212a.3.3 0 00.173.272l4.5 2.143a.3.3 0 00.427-.272V6.645a.3.3 0 00-.427-.272l-4.5 2.143A.3.3 0 006.5 8.788z" />
-                        </svg>
-                      </button>
-                    </div>
-                    <p className="mt-0.5 text-xs text-gray-400">{word.exampleTranslation}</p>
+                  <div
+                    className="mt-3 inline-block rounded-xl bg-gray-50 px-4 py-2 cursor-pointer hover:bg-gray-100 active:bg-pink-50 transition-colors"
+                    onClick={(e) => { e.stopPropagation(); handleSpeak(word[lang], false, LANG_CODES[lang]); }}
+                  >
+                    <p className="text-lg text-gray-700">{word[lang]}</p>
                   </div>
 
-                  <p className="mt-2 text-center text-xs text-gray-500">
-                    {i + 1} / {currentSong.words.length}
-                  </p>
+                  <div className="mt-2 flex items-center justify-between text-xs text-gray-300">
+                    <button
+                      onClick={(e) => { e.stopPropagation(); seekToWord(i); }}
+                      className="flex items-center gap-1 rounded-full bg-gray-50 px-2 py-0.5 text-pink-400 hover:bg-pink-50 transition-colors"
+                    >
+                      <svg className="h-3 w-3" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                      {formatTime(getTimestamp(i))}
+                    </button>
+                    <span>{i + 1} / {currentSong.words.length}</span>
+                  </div>
                 </div>
               </div>
             ))}

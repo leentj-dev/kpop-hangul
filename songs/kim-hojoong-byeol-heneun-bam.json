@@ -438,6 +438,21 @@
       "emoji": "🙏",
       "example": "별을 보며 기도했어요.",
       "exampleTranslation": "I prayed while looking at the stars."
+    },
+    {
+      "korean": "새벽",
+      "romanization": "saebyeok",
+      "english": "dawn",
+      "spanish": "amanecer",
+      "portuguese": "amanhecer",
+      "indonesian": "fajar",
+      "japanese": "夜明け",
+      "thai": "รุ่งอรุณ",
+      "french": "aube",
+      "partOfSpeech": "noun",
+      "emoji": "🌅",
+      "example": "새벽이 올 때까지 별을 봤어요.",
+      "exampleTranslation": "I watched the stars until dawn came."
     }
   ]
 }

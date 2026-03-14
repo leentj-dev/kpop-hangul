@@ -13,6 +13,7 @@ export interface WordEntry {
   example: string; // Korean example sentence
   exampleTranslation: string; // English translation of example
   lyric?: string;
+  timestamp?: number; // YouTube timestamp in seconds
 }
 
 export interface SongTheme {

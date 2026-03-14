@@ -15,6 +15,12 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "K-pop Hangul - Learn Korean through K-pop",
   description: "Learn Korean words and expressions through your favorite K-pop songs",
+  manifest: "/manifest.json",
+  icons: {
+    icon: "/icon-192.png",
+    apple: "/apple-touch-icon.png",
+  },
+  themeColor: "#7c3aed",
 };
 
 export default function RootLayout({

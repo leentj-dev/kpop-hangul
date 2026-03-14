@@ -438,6 +438,21 @@
       "emoji": "☀️",
       "example": "태양처럼 빛나자.",
       "exampleTranslation": "Let's shine like the sun."
+    },
+    {
+      "korean": "궤도",
+      "romanization": "gwe-do",
+      "english": "orbit / trajectory",
+      "spanish": "órbita",
+      "portuguese": "órbita",
+      "indonesian": "orbit",
+      "japanese": "軌道",
+      "thai": "วงโคจร",
+      "french": "orbite",
+      "partOfSpeech": "noun",
+      "emoji": "🪐",
+      "example": "자기만의 궤도를 만들어.",
+      "exampleTranslation": "Create your own orbit."
     }
   ]
 }

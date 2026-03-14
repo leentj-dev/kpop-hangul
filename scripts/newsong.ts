@@ -175,6 +175,7 @@ async function addSong(jsonPath: string) {
     emoji: w.emoji || "",
     example: w.example || "",
     example_translation: w.exampleTranslation || w.example_translation || "",
+    timestamp: w.timestamp ?? null,
     sort_order: i,
   }));
 

@@ -48,6 +48,17 @@ body {
   animation: slide-in 0.25s ease-out;
 }
 
+/* Hide browser video overlay buttons (Samsung Internet, etc.) */
+video::-webkit-media-controls-pip-button,
+video::-webkit-media-controls-fullscreen-button,
+video::-webkit-media-controls-toggle-closed-captions-button {
+  display: none !important;
+  -webkit-appearance: none !important;
+}
+iframe[disablepictureinpicture] {
+  picture-in-picture: none;
+}
+
 .scrollbar-hide {
   -ms-overflow-style: none;
   scrollbar-width: none;
