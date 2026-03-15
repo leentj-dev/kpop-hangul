@@ -22,10 +22,18 @@ K-pop Hangul 앱에 새 곡을 추가하는 커맨드입니다.
 ### `$ARGUMENTS`가 곡 이름/아티스트인 경우:
 1. `https://lrclib.net/api/search?q={곡 이름}` 에서 syncedLyrics 존재 여부를 확인합니다
 2. **syncedLyrics가 없으면**: "이 곡은 LRC 싱크 가사가 없어서 추가할 수 없습니다" 안내 후 중단
-3. **syncedLyrics가 있으면**: `/syncsong {곡 이름}`을 실행합니다
+3. **syncedLyrics가 있으면**: 아래 일괄 추가 스크립트 방식으로 바로 추가합니다
 
 ### `$ARGUMENTS`가 "all"인 경우:
-- 차트에서 LRC가 있는 새 곡을 모두 찾아서 하나씩 `/syncsong`으로 추가합니다
+- 차트에서 LRC가 있는 새 곡을 모두 찾아서 일괄 추가합니다
+
+## 일괄 추가 방식 (사용자 확인 없이 바로 실행)
+LRC가 확인된 곡은 아래 node 스크립트로 한번에 처리합니다:
+1. lrclib.net에서 LRC 파싱 → 한국어 단어 20개 추출 (곡 전체에 고르게 분포)
+2. YouTube MV ID를 WebSearch로 검색
+3. 영어 번역 + romanization + emoji + example 생성
+4. JSON 파일 저장 + DB 삽입
+5. 사용자 확인 없이 자동으로 모두 추가 (MV 오프셋은 0으로, 나중에 조정)
 
 ## LRC 확인 방법
 ```bash

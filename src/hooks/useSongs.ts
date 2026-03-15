@@ -59,7 +59,7 @@ function toSongData(dbSong: DbSong, dbWords: DbWord[]): SongData {
 }
 
 export function useSongs() {
-  const [songs, setSongs] = useState<SongData[]>(localSongs);
+  const [songs, setSongs] = useState<SongData[]>([]);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -71,7 +71,6 @@ export function useSongs() {
           .order("sort_order");
 
         if (songsErr || !dbSongs || dbSongs.length === 0) {
-          // Fallback to local data
           setLoading(false);
           return;
         }
@@ -96,7 +95,7 @@ export function useSongs() {
           .filter((s) => s.words.some((w) => w.timestamp != null));
         setSongs(result);
       } catch {
-        // Network error → use local fallback
+        // Network error
       } finally {
         setLoading(false);
       }
