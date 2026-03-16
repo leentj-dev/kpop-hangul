@@ -28,6 +28,7 @@ interface DbWord {
   example: string;
   example_translation: string;
   sort_order: number;
+  timestamp: number | null;
 }
 
 function toSongData(dbSong: DbSong, dbWords: DbWord[]): SongData {
