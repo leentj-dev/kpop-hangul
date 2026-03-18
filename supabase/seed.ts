@@ -19,7 +19,7 @@ if (!url || !key) {
   process.exit(1);
 }
 
-const supabase = createClient(url, key);
+const supabase = createClient(url, key, { db: { schema: "kh" } });
 
 async function seed() {
   console.log(`Seeding ${songs.length} songs...`);

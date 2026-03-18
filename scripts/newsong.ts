@@ -24,7 +24,7 @@ if (!SUPABASE_URL || !SUPABASE_KEY) {
   process.exit(1);
 }
 
-const supabase = createClient(SUPABASE_URL, SUPABASE_KEY);
+const supabase = createClient(SUPABASE_URL, SUPABASE_KEY, { db: { schema: "kh" } });
 
 // ─── Theme color palette pool ───
 const THEME_POOL = [
