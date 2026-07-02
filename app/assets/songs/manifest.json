@@ -76,8 +76,8 @@
     "title": "Time of Our Life (한 페이지가 될 수 있게)",
     "artist": "DAY6",
     "youtubeId": "vnS_jn2uibs",
-    "synced": false,
-    "wordCount": 15
+    "synced": true,
+    "wordCount": 16
   },
   {
     "id": "gidle-queencard",
@@ -412,8 +412,8 @@
     "title": "신호등 (Traffic Light)",
     "artist": "이무진",
     "youtubeId": "SK6Sm2Ki9tI",
-    "synced": false,
-    "wordCount": 15
+    "synced": true,
+    "wordCount": 16
   },
   {
     "id": "leechanhyuk-endangered-love",

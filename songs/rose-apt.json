@@ -5,22 +5,6 @@
   "youtubeId": "ekr2nIex040",
   "words": [
     {
-      "korean": "아파트",
-      "romanization": "apateu",
-      "english": "apartment",
-      "spanish": "apartamento",
-      "portuguese": "apartamento",
-      "indonesian": "apartemen",
-      "japanese": "アパート",
-      "thai": "อพาร์ตเมนต์",
-      "french": "appartement",
-      "partOfSpeech": "noun",
-      "emoji": "🏢",
-      "example": "우리 아파트는 5층이에요.",
-      "exampleTranslation": "My apartment is on the 5th floor.",
-      "timestamp": null
-    },
-    {
       "korean": "게임",
       "romanization": "geim",
       "english": "game",
@@ -34,23 +18,7 @@
       "emoji": "🎮",
       "example": "게임 한 판 할까요?",
       "exampleTranslation": "Shall we play a round of the game?",
-      "timestamp": null
-    },
-    {
-      "korean": "시작",
-      "romanization": "sijak",
-      "english": "start, beginning",
-      "spanish": "comienzo",
-      "portuguese": "começo",
-      "indonesian": "mulai",
-      "japanese": "始まり",
-      "thai": "การเริ่มต้น",
-      "french": "début",
-      "partOfSpeech": "noun",
-      "emoji": "🚀",
-      "example": "게임을 시작해요!",
-      "exampleTranslation": "Let's start the game!",
-      "timestamp": null
+      "timestamp": 0.1
     },
     {
       "korean": "좋아하다",
@@ -66,7 +34,7 @@
       "emoji": "❤️",
       "example": "나는 이 노래를 좋아해요.",
       "exampleTranslation": "I like this song.",
-      "timestamp": null
+      "timestamp": 0.1
     },
     {
       "korean": "랜덤",
@@ -82,6 +50,54 @@
       "emoji": "🎲",
       "example": "랜덤으로 하나 골라요.",
       "exampleTranslation": "Pick one at random.",
+      "timestamp": 0.1
+    },
+    {
+      "korean": "아파트",
+      "romanization": "apateu",
+      "english": "apartment",
+      "spanish": "apartamento",
+      "portuguese": "apartamento",
+      "indonesian": "apartemen",
+      "japanese": "アパート",
+      "thai": "อพาร์ตเมนต์",
+      "french": "appartement",
+      "partOfSpeech": "noun",
+      "emoji": "🏢",
+      "example": "우리 아파트는 5층이에요.",
+      "exampleTranslation": "My apartment is on the 5th floor.",
+      "timestamp": 6.6
+    },
+    {
+      "korean": "건배",
+      "romanization": "geonbae",
+      "english": "cheers, toast",
+      "spanish": "brindis",
+      "portuguese": "brinde",
+      "indonesian": "bersulang",
+      "japanese": "乾杯",
+      "thai": "ชนแก้ว",
+      "french": "santé",
+      "partOfSpeech": "noun",
+      "emoji": "🥂",
+      "example": "다 같이 건배해요!",
+      "exampleTranslation": "Let's all make a toast!",
+      "timestamp": 68.2
+    },
+    {
+      "korean": "시작",
+      "romanization": "sijak",
+      "english": "start, beginning",
+      "spanish": "comienzo",
+      "portuguese": "começo",
+      "indonesian": "mulai",
+      "japanese": "始まり",
+      "thai": "การเริ่มต้น",
+      "french": "début",
+      "partOfSpeech": "noun",
+      "emoji": "🚀",
+      "example": "게임을 시작해요!",
+      "exampleTranslation": "Let's start the game!",
       "timestamp": null
     },
     {
@@ -130,22 +146,6 @@
       "emoji": "🤝",
       "example": "함께 노래해요.",
       "exampleTranslation": "Let's sing together.",
-      "timestamp": null
-    },
-    {
-      "korean": "건배",
-      "romanization": "geonbae",
-      "english": "cheers, toast",
-      "spanish": "brindis",
-      "portuguese": "brinde",
-      "indonesian": "bersulang",
-      "japanese": "乾杯",
-      "thai": "ชนแก้ว",
-      "french": "santé",
-      "partOfSpeech": "noun",
-      "emoji": "🥂",
-      "example": "다 같이 건배해요!",
-      "exampleTranslation": "Let's all make a toast!",
       "timestamp": null
     },
     {

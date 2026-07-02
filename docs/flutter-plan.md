@@ -15,6 +15,7 @@
 - `scripts/consolidate_songs.py`: `songs/` 74개 파일 → 중복 제거·깨진 파일 제외 → `app/assets/songs/` 56곡 + `manifest.json`
 - 곡 선택 규칙: 같은 (artist,title) 그룹에서 타임스탬프 10개 이상인 sync 버전 우선, 없으면 단어 수 최다 버전
 - 스킵된 곡(rose-apt 등 4개)은 파이프라인으로 재생성 예정
+- **타임스탬프 싱크**: `scripts/sync_timestamps.py` — lrclib.net 공개 싱크 가사 DB에서 타이밍만 추출(가사 텍스트 미저장). lrclib에 있는 곡만 싱크, 없으면 싱크 없이 유지. 단어는 반드시 실제 가사에 등장하는 표면형으로 선정해야 매칭됨. MV 인트로 오프셋은 `--offset 초` 옵션으로 보정.
 - 참고: 트로트 이미 9곡 (임영웅 2, 김호중 7) — 시니어·트로트 방향과 접점
 
 ## v1 (Phase 1: 이식)
