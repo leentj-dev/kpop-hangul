@@ -72,6 +72,14 @@
     "wordCount": 20
   },
   {
+    "id": "day6-time-of-our-life",
+    "title": "Time of Our Life (한 페이지가 될 수 있게)",
+    "artist": "DAY6",
+    "youtubeId": "vnS_jn2uibs",
+    "synced": false,
+    "wordCount": 15
+  },
+  {
     "id": "gidle-queencard",
     "title": "Queencard",
     "artist": "(G)I-DLE",
@@ -288,6 +296,14 @@
     "wordCount": 30
   },
   {
+    "id": "rose-apt",
+    "title": "APT.",
+    "artist": "ROSÉ & Bruno Mars",
+    "youtubeId": "ekr2nIex040",
+    "synced": false,
+    "wordCount": 15
+  },
+  {
     "id": "seventeen-super",
     "title": "Super",
     "artist": "SEVENTEEN",
@@ -390,6 +406,14 @@
     "youtubeId": "qE35JN1ogeI",
     "synced": false,
     "wordCount": 30
+  },
+  {
+    "id": "leemujin-traffic-light",
+    "title": "신호등 (Traffic Light)",
+    "artist": "이무진",
+    "youtubeId": "SK6Sm2Ki9tI",
+    "synced": false,
+    "wordCount": 15
   },
   {
     "id": "leechanhyuk-endangered-love",
