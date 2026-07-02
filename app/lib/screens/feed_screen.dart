@@ -16,15 +16,37 @@ class FeedScreen extends StatefulWidget {
 
 class _FeedScreenState extends State<FeedScreen> {
   final _repo = SongRepository();
+  final _scrollController = ScrollController();
   List<SongSummary> _songs = [];
   String _query = '';
   String _lang = 'english';
   bool _loading = true;
+  bool _showScrollTop = false;
 
   @override
   void initState() {
     super.initState();
+    _scrollController.addListener(_onScroll);
     _load();
+  }
+
+  @override
+  void dispose() {
+    _scrollController.dispose();
+    super.dispose();
+  }
+
+  void _onScroll() {
+    final show = _scrollController.offset > 600;
+    if (show != _showScrollTop) setState(() => _showScrollTop = show);
+  }
+
+  void _scrollToTop() {
+    _scrollController.animateTo(
+      0,
+      duration: const Duration(milliseconds: 400),
+      curve: Curves.easeOutCubic,
+    );
   }
 
   Future<void> _load() async {
@@ -82,6 +104,15 @@ class _FeedScreenState extends State<FeedScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.black,
+      floatingActionButton: _showScrollTop
+          ? FloatingActionButton.small(
+              onPressed: _scrollToTop,
+              backgroundColor: Colors.white24,
+              foregroundColor: Colors.white,
+              tooltip: 'Scroll to top',
+              child: const Icon(Icons.keyboard_arrow_up_rounded),
+            )
+          : null,
       appBar: AppBar(
         backgroundColor: Colors.black,
         title: const Text(
@@ -125,6 +156,7 @@ class _FeedScreenState extends State<FeedScreen> {
       body: _loading
           ? const Center(child: CircularProgressIndicator())
           : ListView.builder(
+              controller: _scrollController,
               padding: const EdgeInsets.fromLTRB(12, 4, 12, 24),
               itemCount: _filtered.length,
               itemBuilder: (context, i) {
