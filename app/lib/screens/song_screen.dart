@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_tts/flutter_tts.dart';
 import 'package:youtube_player_iframe/youtube_player_iframe.dart';
 
+import '../data/song_repository.dart';
 import '../models/song.dart';
 import '../utils/ads.dart';
 import '../utils/themes.dart';
@@ -13,8 +14,18 @@ import '../widgets/word_card.dart';
 class SongScreen extends StatefulWidget {
   final Song song;
   final String lang;
+  final List<SongSummary> playlist;
+  final int index;
+  final SongRepository repo;
 
-  const SongScreen({super.key, required this.song, required this.lang});
+  const SongScreen({
+    super.key,
+    required this.song,
+    required this.lang,
+    required this.playlist,
+    required this.index,
+    required this.repo,
+  });
 
   @override
   State<SongScreen> createState() => _SongScreenState();
@@ -28,14 +39,20 @@ class _SongScreenState extends State<SongScreen> {
   int _activeIndex = 0;
   bool _userScrolling = false;
 
+  late Song _song;
+  late int _index;
+  bool _advancing = false;
+
   /// Page layout: each entry is a word index, or null for an ad page.
   final List<int?> _pages = [];
   final Map<int, int> _wordToPage = {};
 
-  List<WordEntry> get _words => widget.song.words;
-  bool get _synced => widget.song.isSynced;
+  List<WordEntry> get _words => _song.words;
+  bool get _synced => _song.isSynced;
 
   void _buildPages() {
+    _pages.clear();
+    _wordToPage.clear();
     for (var i = 0; i < _words.length; i++) {
       _wordToPage[i] = _pages.length;
       _pages.add(i);
@@ -47,9 +64,11 @@ class _SongScreenState extends State<SongScreen> {
   @override
   void initState() {
     super.initState();
+    _song = widget.song;
+    _index = widget.index;
     _buildPages();
     _player = YoutubePlayerController.fromVideoId(
-      videoId: widget.song.youtubeId,
+      videoId: _song.youtubeId,
       autoPlay: true,
       params: const YoutubePlayerParams(
         showControls: true,
@@ -57,6 +76,10 @@ class _SongScreenState extends State<SongScreen> {
         strictRelatedVideos: true,
       ),
     );
+    _player.setFullScreenListener((_) {});
+    _player.listen((value) {
+      if (value.playerState == PlayerState.ended) _playNext();
+    });
     _pageController = PageController(viewportFraction: 0.86);
     _tts.setLanguage('ko-KR');
     if (_synced) {
@@ -83,6 +106,32 @@ class _SongScreenState extends State<SongScreen> {
     }
   }
 
+  Future<void> _playNext() async {
+    if (_advancing) return;
+    if (_index + 1 >= widget.playlist.length) return;
+    _advancing = true;
+    final next = widget.playlist[_index + 1];
+    try {
+      final song = await widget.repo.loadSong(next.id);
+      if (!mounted) return;
+      setState(() {
+        _index += 1;
+        _song = song;
+        _activeIndex = 0;
+        _buildPages();
+      });
+      _syncTimer?.cancel();
+      if (_synced) {
+        _syncTimer = Timer.periodic(
+            const Duration(milliseconds: 500), (_) => _syncToPlayback());
+      }
+      if (_pageController.hasClients) _pageController.jumpToPage(0);
+      await _player.loadVideoById(videoId: song.youtubeId);
+    } finally {
+      _advancing = false;
+    }
+  }
+
   Future<void> _seekToWord(int index) async {
     final ts = _words[index].timestamp;
     if (ts != null) {
@@ -102,7 +151,7 @@ class _SongScreenState extends State<SongScreen> {
 
   @override
   Widget build(BuildContext context) {
-    final theme = songThemeFor(widget.song.id);
+    final theme = songThemeFor(_song.id);
     return Scaffold(
       body: Container(
         decoration: BoxDecoration(gradient: theme.gradient),
@@ -123,7 +172,7 @@ class _SongScreenState extends State<SongScreen> {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text(
-                            widget.song.title,
+                            _song.title,
                             style: const TextStyle(
                               color: Colors.white,
                               fontSize: 17,
@@ -132,7 +181,7 @@ class _SongScreenState extends State<SongScreen> {
                             overflow: TextOverflow.ellipsis,
                           ),
                           Text(
-                            widget.song.artist,
+                            _song.artist,
                             style: TextStyle(color: theme.accent, fontSize: 13),
                           ),
                         ],

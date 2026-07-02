@@ -96,9 +96,18 @@ class _FeedScreenState extends State<FeedScreen> {
   Future<void> _openSong(SongSummary summary) async {
     final song = await _repo.loadSong(summary.id);
     if (!mounted) return;
+    // Playlist = songs only (ads excluded), starting at the tapped song.
+    final playlist = _filtered;
+    final index = playlist.indexWhere((s) => s.id == summary.id);
     Navigator.of(context).push(
       MaterialPageRoute(
-        builder: (_) => SongScreen(song: song, lang: _lang),
+        builder: (_) => SongScreen(
+          song: song,
+          lang: _lang,
+          playlist: playlist,
+          index: index < 0 ? 0 : index,
+          repo: _repo,
+        ),
       ),
     );
   }
