@@ -127,19 +127,83 @@ class _FeedScreenState extends State<FeedScreen> {
           : null,
       appBar: AppBar(
         backgroundColor: Colors.black,
-        title: const Text(
-          'K-pop 한글',
-          style: TextStyle(fontWeight: FontWeight.w800),
+        titleSpacing: 12,
+        title: Row(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            ClipRRect(
+              borderRadius: BorderRadius.circular(8),
+              child: Image.asset('assets/icon/icon.png',
+                  width: 30, height: 30, fit: BoxFit.cover),
+            ),
+            const SizedBox(width: 8),
+            const Text(
+              'K-pop Hangul',
+              style: TextStyle(fontWeight: FontWeight.w800, fontSize: 18),
+            ),
+          ],
         ),
         actions: [
-          PopupMenuButton<String>(
-            icon: const Icon(Icons.translate_rounded),
-            initialValue: _lang,
-            onSelected: _setLang,
-            itemBuilder: (context) => [
-              for (final e in supportedLanguages.entries)
-                PopupMenuItem(value: e.key, child: Text(e.value)),
-            ],
+          Padding(
+            padding: const EdgeInsets.only(right: 12),
+            child: PopupMenuButton<String>(
+              initialValue: _lang,
+              onSelected: _setLang,
+              color: const Color(0xFF1C1C1E),
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(14),
+              ),
+              offset: const Offset(0, 44),
+              itemBuilder: (context) => [
+                for (final e in supportedLanguages.entries)
+                  PopupMenuItem(
+                    value: e.key,
+                    child: Row(
+                      children: [
+                        Icon(
+                          e.key == _lang
+                              ? Icons.check_circle_rounded
+                              : Icons.circle_outlined,
+                          size: 18,
+                          color: e.key == _lang
+                              ? const Color(0xFFF0ABFC)
+                              : Colors.white30,
+                        ),
+                        const SizedBox(width: 10),
+                        Text(e.value,
+                            style: const TextStyle(color: Colors.white)),
+                      ],
+                    ),
+                  ),
+              ],
+              child: Container(
+                padding:
+                    const EdgeInsets.symmetric(horizontal: 12, vertical: 7),
+                decoration: BoxDecoration(
+                  color: Colors.white.withValues(alpha: 0.08),
+                  borderRadius: BorderRadius.circular(999),
+                  border: Border.all(color: Colors.white24),
+                ),
+                child: Row(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    const Icon(Icons.language_rounded,
+                        size: 16, color: Colors.white70),
+                    const SizedBox(width: 6),
+                    Text(
+                      supportedLanguages[_lang] ?? 'English',
+                      style: const TextStyle(
+                        color: Colors.white,
+                        fontSize: 13,
+                        fontWeight: FontWeight.w600,
+                      ),
+                    ),
+                    const Icon(Icons.keyboard_arrow_down_rounded,
+                        size: 18, color: Colors.white54),
+                  ],
+                ),
+              ),
+            ),
           ),
         ],
         bottom: PreferredSize(

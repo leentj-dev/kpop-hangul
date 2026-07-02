@@ -42,6 +42,7 @@ class _SongScreenState extends State<SongScreen> {
   late Song _song;
   late int _index;
   bool _advancing = false;
+  bool _adHolding = false;
 
   /// Page layout: each entry is a word index, or null for an ad page.
   final List<int?> _pages = [];
@@ -96,14 +97,44 @@ class _SongScreenState extends State<SongScreen> {
       final ts = _words[i].timestamp;
       if (ts != null && ts <= t) index = i;
     }
-    if (index >= 0 && index != _activeIndex && mounted) {
+    if (index >= 0 && index != _activeIndex && mounted && !_adHolding) {
       setState(() => _activeIndex = index);
-      _pageController.animateToPage(
-        _wordToPage[index] ?? index,
-        duration: const Duration(milliseconds: 350),
-        curve: Curves.easeOutCubic,
-      );
+      _animateToWord(index);
     }
+  }
+
+  /// Moves to a word's card. If an ad page sits between the current page and
+  /// the target, pause on the ad first so it gets exposed, then continue.
+  Future<void> _animateToWord(int wordIndex) async {
+    if (!_pageController.hasClients) return;
+    final target = _wordToPage[wordIndex] ?? wordIndex;
+    final current = _pageController.page?.round() ?? 0;
+    int? adPage;
+    if (target > current) {
+      for (var p = current + 1; p < target; p++) {
+        if (_pages[p] == null) {
+          adPage = p;
+          break;
+        }
+      }
+    }
+    const dur = Duration(milliseconds: 350);
+    const curve = Curves.easeOutCubic;
+    if (adPage == null) {
+      _pageController.animateToPage(target, duration: dur, curve: curve);
+      return;
+    }
+    _adHolding = true;
+    await _pageController.animateToPage(adPage, duration: dur, curve: curve);
+    await Future.delayed(const Duration(seconds: 3));
+    if (!mounted) {
+      _adHolding = false;
+      return;
+    }
+    // Re-resolve target in case the active word advanced while the ad showed.
+    final dest = _wordToPage[_activeIndex] ?? target;
+    await _pageController.animateToPage(dest, duration: dur, curve: curve);
+    _adHolding = false;
   }
 
   Future<void> _playNext() async {
