@@ -166,7 +166,7 @@ class _FeedScreenState extends State<FeedScreen> {
                 itemCount: items.length,
                 itemBuilder: (context, i) {
                   final s = items[i];
-                  if (s == null) return const AdBanner(size: AdSize.banner);
+                  if (s == null) return const _FeedAdCard();
                   final theme = songThemeFor(s.id);
                   return InkWell(
                   borderRadius: BorderRadius.circular(14),
@@ -279,5 +279,43 @@ class _FeedScreenState extends State<FeedScreen> {
       if (!isLast && (i + 1) % Ads.feedInterval == 0) out.add(null);
     }
     return out;
+  }
+}
+
+/// Banner ad wrapped to match the feed's card styling.
+class _FeedAdCard extends StatelessWidget {
+  const _FeedAdCard();
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 6),
+      child: Container(
+        decoration: BoxDecoration(
+          color: Colors.white.withValues(alpha: 0.05),
+          borderRadius: BorderRadius.circular(14),
+          border: Border.all(color: Colors.white12),
+        ),
+        clipBehavior: Clip.antiAlias,
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Padding(
+              padding: const EdgeInsets.fromLTRB(12, 8, 12, 0),
+              child: Text(
+                'AD',
+                style: TextStyle(
+                  fontSize: 10,
+                  fontWeight: FontWeight.w700,
+                  letterSpacing: 1,
+                  color: Colors.white.withValues(alpha: 0.35),
+                ),
+              ),
+            ),
+            const Center(child: AdBanner(size: AdSize.banner)),
+          ],
+        ),
+      ),
+    );
   }
 }

@@ -177,12 +177,7 @@ class _SongScreenState extends State<SongScreen> {
                     },
                     itemBuilder: (context, p) {
                       final i = _pages[p];
-                      if (i == null) {
-                        return const Padding(
-                          padding: EdgeInsets.all(8),
-                          child: AdBanner(),
-                        );
-                      }
+                      if (i == null) return _AdCard(theme: theme);
                       return WordCard(
                         word: _words[i],
                         lang: widget.lang,
@@ -205,6 +200,42 @@ class _SongScreenState extends State<SongScreen> {
             ],
           ),
         ),
+      ),
+    );
+  }
+}
+
+/// Ad shaped like a word card so it doesn't break the swipe deck.
+class _AdCard extends StatelessWidget {
+  final SongTheme theme;
+  const _AdCard({required this.theme});
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      margin: const EdgeInsets.symmetric(horizontal: 8, vertical: 12),
+      padding: const EdgeInsets.all(20),
+      decoration: BoxDecoration(
+        color: Colors.white.withValues(alpha: 0.06),
+        borderRadius: BorderRadius.circular(24),
+        border: Border.all(color: Colors.white24),
+      ),
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Text(
+            'AD',
+            style: TextStyle(
+              fontSize: 11,
+              fontWeight: FontWeight.w700,
+              letterSpacing: 1.5,
+              color: theme.accent.withValues(alpha: 0.7),
+            ),
+          ),
+          const Spacer(),
+          const AdBanner(),
+          const Spacer(),
+        ],
       ),
     );
   }
