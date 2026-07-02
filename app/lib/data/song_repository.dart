@@ -42,11 +42,8 @@ class SongRepository {
     if (cached.existsSync()) {
       try {
         final remote = _parseManifest(cached.readAsStringSync());
-        final bundledIds = _bundled.map((s) => s.id).toSet();
         _downloaded = remote
-            .where((s) =>
-                !bundledIds.contains(s.id) &&
-                File('${dir.path}/${s.id}.json').existsSync())
+            .where((s) => File('${dir.path}/${s.id}.json').existsSync())
             .toList();
       } on FormatException {
         _downloaded = [];
@@ -55,8 +52,13 @@ class SongRepository {
     return _merged();
   }
 
+  /// Downloaded entries override bundled ones with the same id.
   List<SongSummary> _merged() {
-    final list = [..._bundled, ..._downloaded];
+    final map = {for (final s in _bundled) s.id: s};
+    for (final s in _downloaded) {
+      map[s.id] = s;
+    }
+    final list = map.values.toList();
     list.sort((a, b) {
       if (a.synced != b.synced) return a.synced ? -1 : 1;
       return a.artist.compareTo(b.artist);
@@ -64,8 +66,13 @@ class SongRepository {
     return list;
   }
 
-  /// Checks GitHub for new songs and downloads the missing ones.
-  /// Returns the updated list if anything new arrived, null otherwise.
+  bool _changed(SongSummary local, SongSummary remote) =>
+      local.wordCount != remote.wordCount ||
+      local.synced != remote.synced ||
+      local.youtubeId != remote.youtubeId;
+
+  /// Checks GitHub for new or updated songs and downloads them.
+  /// Returns the updated list if anything changed, null otherwise.
   Future<List<SongSummary>?> syncRemote() async {
     try {
       final res = await http
@@ -75,12 +82,14 @@ class SongRepository {
       final remote = _parseManifest(utf8.decode(res.bodyBytes));
 
       final dir = await _songsDir();
-      final knownIds = {
-        ..._bundled.map((s) => s.id),
-        ..._downloaded.map((s) => s.id),
+      final local = {
+        for (final s in _bundled) s.id: s,
+        for (final s in _downloaded) s.id: s,
       };
-      final fresh = <SongSummary>[];
-      for (final summary in remote.where((s) => !knownIds.contains(s.id))) {
+      var fetched = 0;
+      for (final summary in remote) {
+        final known = local[summary.id];
+        if (known != null && !_changed(known, summary)) continue;
         final song = await http
             .get(Uri.parse('$_remoteBase/${summary.id}.json'))
             .timeout(const Duration(seconds: 10));
@@ -88,13 +97,16 @@ class SongRepository {
         final body = utf8.decode(song.bodyBytes);
         jsonDecode(body); // validate before persisting
         File('${dir.path}/${summary.id}.json').writeAsStringSync(body);
-        fresh.add(summary);
+        _cache.remove(summary.id);
+        fetched++;
       }
-      if (fresh.isEmpty) return null;
+      if (fetched == 0) return null;
 
       File('${dir.path}/manifest.json')
           .writeAsStringSync(utf8.decode(res.bodyBytes));
-      _downloaded = [..._downloaded, ...fresh];
+      _downloaded = remote
+          .where((s) => File('${dir.path}/${s.id}.json').existsSync())
+          .toList();
       return _merged();
     } on Exception {
       return null; // offline or GitHub unreachable — bundled songs still work
