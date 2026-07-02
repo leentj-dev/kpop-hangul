@@ -36,6 +36,20 @@ class _FeedScreenState extends State<FeedScreen> {
       _songs = songs;
       _loading = false;
     });
+    _syncRemote();
+  }
+
+  Future<void> _syncRemote() async {
+    final before = _songs.length;
+    final updated = await _repo.syncRemote();
+    if (updated == null || !mounted) return;
+    setState(() => _songs = updated);
+    final added = updated.length - before;
+    if (added > 0) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(content: Text('New songs added: $added 🎵')),
+      );
+    }
   }
 
   Future<void> _setLang(String lang) async {
