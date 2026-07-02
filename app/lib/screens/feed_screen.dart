@@ -111,59 +111,103 @@ class _FeedScreenState extends State<FeedScreen> {
       body: _loading
           ? const Center(child: CircularProgressIndicator())
           : ListView.builder(
-              padding: const EdgeInsets.all(16),
+              padding: const EdgeInsets.fromLTRB(12, 4, 12, 24),
               itemCount: _filtered.length,
               itemBuilder: (context, i) {
                 final s = _filtered[i];
                 final theme = songThemeFor(s.id);
-                return Padding(
-                  padding: const EdgeInsets.only(bottom: 12),
-                  child: InkWell(
-                    borderRadius: BorderRadius.circular(20),
-                    onTap: () => _openSong(s),
-                    child: Container(
-                      padding: const EdgeInsets.all(16),
-                      decoration: BoxDecoration(
-                        gradient: theme.gradient,
-                        borderRadius: BorderRadius.circular(20),
-                      ),
-                      child: Row(
-                        children: [
-                          Expanded(
-                            child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
+                return InkWell(
+                  borderRadius: BorderRadius.circular(14),
+                  onTap: () => _openSong(s),
+                  child: Padding(
+                    padding: const EdgeInsets.symmetric(
+                        horizontal: 4, vertical: 6),
+                    child: Row(
+                      children: [
+                        ClipRRect(
+                          borderRadius: BorderRadius.circular(10),
+                          child: SizedBox(
+                            width: 136,
+                            height: 76,
+                            child: Stack(
+                              fit: StackFit.expand,
                               children: [
-                                Text(
-                                  s.title,
-                                  style: const TextStyle(
-                                    color: Colors.white,
-                                    fontSize: 17,
-                                    fontWeight: FontWeight.w700,
+                                Container(
+                                  decoration: BoxDecoration(
+                                      gradient: theme.gradient),
+                                ),
+                                Image.network(
+                                  'https://img.youtube.com/vi/${s.youtubeId}/mqdefault.jpg',
+                                  fit: BoxFit.cover,
+                                  errorBuilder: (_, _, _) => Center(
+                                    child: Icon(Icons.music_note_rounded,
+                                        color: theme.accent, size: 32),
                                   ),
                                 ),
-                                const SizedBox(height: 2),
-                                Text(
-                                  s.artist,
-                                  style: TextStyle(
-                                      color: theme.accent, fontSize: 13),
+                                const Center(
+                                  child: Icon(
+                                    Icons.play_circle_fill_rounded,
+                                    color: Colors.white70,
+                                    size: 30,
+                                  ),
                                 ),
-                                const SizedBox(height: 6),
-                                Row(
-                                  children: [
-                                    _chip('${s.wordCount} words'),
-                                    if (s.synced) ...[
-                                      const SizedBox(width: 6),
-                                      _chip('sync', color: theme.accent),
-                                    ],
-                                  ],
-                                ),
+                                if (s.synced)
+                                  Positioned(
+                                    right: 4,
+                                    bottom: 4,
+                                    child: Container(
+                                      padding: const EdgeInsets.symmetric(
+                                          horizontal: 5, vertical: 2),
+                                      decoration: BoxDecoration(
+                                        color: Colors.black54,
+                                        borderRadius:
+                                            BorderRadius.circular(6),
+                                      ),
+                                      child: Text(
+                                        'SYNC',
+                                        style: TextStyle(
+                                          fontSize: 9,
+                                          fontWeight: FontWeight.w700,
+                                          color: theme.accent,
+                                        ),
+                                      ),
+                                    ),
+                                  ),
                               ],
                             ),
                           ),
-                          const Icon(Icons.play_circle_fill_rounded,
-                              color: Colors.white70, size: 36),
-                        ],
-                      ),
+                        ),
+                        const SizedBox(width: 12),
+                        Expanded(
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                s.title,
+                                maxLines: 2,
+                                overflow: TextOverflow.ellipsis,
+                                style: const TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 15,
+                                  fontWeight: FontWeight.w700,
+                                ),
+                              ),
+                              const SizedBox(height: 3),
+                              Text(
+                                s.artist,
+                                style: TextStyle(
+                                    color: theme.accent, fontSize: 12.5),
+                              ),
+                              const SizedBox(height: 3),
+                              Text(
+                                '${s.wordCount} words',
+                                style: const TextStyle(
+                                    color: Colors.white38, fontSize: 11.5),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ],
                     ),
                   ),
                 );
@@ -172,17 +216,4 @@ class _FeedScreenState extends State<FeedScreen> {
     );
   }
 
-  Widget _chip(String label, {Color? color}) {
-    return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 3),
-      decoration: BoxDecoration(
-        color: Colors.white12,
-        borderRadius: BorderRadius.circular(999),
-      ),
-      child: Text(
-        label,
-        style: TextStyle(fontSize: 11, color: color ?? Colors.white60),
-      ),
-    );
-  }
 }
