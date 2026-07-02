@@ -1,6 +1,7 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_tts/flutter_tts.dart';
 import 'package:youtube_player_iframe/youtube_player_iframe.dart';
 
@@ -77,6 +78,14 @@ class _SongScreenState extends State<SongScreen> {
         strictRelatedVideos: true,
       ),
     );
+    // Plugin renders fullscreen internally (no tree swap); we only rotate.
+    _player.setFullScreenListener((isFullScreen) {
+      SystemChrome.setPreferredOrientations(
+        isFullScreen
+            ? [DeviceOrientation.landscapeLeft, DeviceOrientation.landscapeRight]
+            : [DeviceOrientation.portraitUp, DeviceOrientation.portraitDown],
+      );
+    });
     _player.listen((value) {
       if (value.playerState == PlayerState.ended) _playNext();
     });
@@ -176,6 +185,10 @@ class _SongScreenState extends State<SongScreen> {
     _player.close();
     _pageController.dispose();
     _tts.stop();
+    SystemChrome.setPreferredOrientations([
+      DeviceOrientation.portraitUp,
+      DeviceOrientation.portraitDown,
+    ]);
     super.dispose();
   }
 
