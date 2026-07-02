@@ -1,6 +1,7 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_tts/flutter_tts.dart';
 import 'package:youtube_player_iframe/youtube_player_iframe.dart';
 
@@ -43,6 +44,7 @@ class _SongScreenState extends State<SongScreen> {
   late int _index;
   bool _advancing = false;
   bool _adHolding = false;
+  bool _fullscreen = false;
 
   /// Page layout: each entry is a word index, or null for an ad page.
   final List<int?> _pages = [];
@@ -73,11 +75,11 @@ class _SongScreenState extends State<SongScreen> {
       autoPlay: true,
       params: const YoutubePlayerParams(
         showControls: true,
-        showFullscreenButton: false,
+        showFullscreenButton: true,
         strictRelatedVideos: true,
       ),
     );
-    _player.setFullScreenListener((_) {});
+    _player.setFullScreenListener(_onFullScreenChanged);
     _player.listen((value) {
       if (value.playerState == PlayerState.ended) _playNext();
     });
@@ -137,6 +139,23 @@ class _SongScreenState extends State<SongScreen> {
     _adHolding = false;
   }
 
+  void _onFullScreenChanged(bool fullscreen) {
+    if (mounted) setState(() => _fullscreen = fullscreen);
+    if (fullscreen) {
+      SystemChrome.setEnabledSystemUIMode(SystemUiMode.immersiveSticky);
+      SystemChrome.setPreferredOrientations([
+        DeviceOrientation.landscapeLeft,
+        DeviceOrientation.landscapeRight,
+      ]);
+    } else {
+      SystemChrome.setEnabledSystemUIMode(SystemUiMode.edgeToEdge);
+      SystemChrome.setPreferredOrientations([
+        DeviceOrientation.portraitUp,
+        DeviceOrientation.portraitDown,
+      ]);
+    }
+  }
+
   Future<void> _playNext() async {
     if (_advancing) return;
     if (_index + 1 >= widget.playlist.length) return;
@@ -177,12 +196,25 @@ class _SongScreenState extends State<SongScreen> {
     _player.close();
     _pageController.dispose();
     _tts.stop();
+    SystemChrome.setEnabledSystemUIMode(SystemUiMode.edgeToEdge);
+    SystemChrome.setPreferredOrientations([
+      DeviceOrientation.portraitUp,
+      DeviceOrientation.portraitDown,
+    ]);
     super.dispose();
   }
 
   @override
   Widget build(BuildContext context) {
     final theme = songThemeFor(_song.id);
+    if (_fullscreen) {
+      return Scaffold(
+        backgroundColor: Colors.black,
+        body: Center(
+          child: YoutubePlayer(controller: _player, aspectRatio: 16 / 9),
+        ),
+      );
+    }
     return Scaffold(
       body: Container(
         decoration: BoxDecoration(gradient: theme.gradient),
