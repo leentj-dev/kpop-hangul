@@ -1,11 +1,27 @@
 [
   {
+    "id": "10cm-to-reach-you",
+    "title": "너에게 닿기를 (To Reach You)",
+    "artist": "10CM",
+    "youtubeId": "Ry1RrIVyl1M",
+    "synced": true,
+    "wordCount": 18
+  },
+  {
     "id": "2ne1-lonely",
     "title": "Lonely",
     "artist": "2NE1",
     "youtubeId": "5n4V3lGEyG4",
     "synced": true,
     "wordCount": 18
+  },
+  {
+    "id": "aespa-lemonade",
+    "title": "LEMONADE",
+    "artist": "aespa",
+    "youtubeId": "83C3TZ4Zm_o",
+    "synced": true,
+    "wordCount": 20
   },
   {
     "id": "aespa-supernova",
@@ -16,12 +32,44 @@
     "wordCount": 19
   },
   {
+    "id": "aespa-wda",
+    "title": "WDA",
+    "artist": "aespa",
+    "youtubeId": "iTJSbJtS8MU",
+    "synced": true,
+    "wordCount": 16
+  },
+  {
+    "id": "akmu-somune-nagwon",
+    "title": "소문의 낙원",
+    "artist": "AKMU (악뮤)",
+    "youtubeId": "D54StAZFUrc",
+    "synced": true,
+    "wordCount": 20
+  },
+  {
     "id": "akmu-how-can-i-love-the-heartbreak",
     "title": "어떻게 이별까지 사랑하겠어, 널 사랑하는 거지",
     "artist": "AKMU (악뮤)",
     "youtubeId": "m3DZsBw5bnE",
     "synced": true,
     "wordCount": 20
+  },
+  {
+    "id": "allday-famous",
+    "title": "FAMOUS",
+    "artist": "ALLDAY PROJECT",
+    "youtubeId": "VjvzYjU1mY0",
+    "synced": true,
+    "wordCount": 17
+  },
+  {
+    "id": "allday-one-more-time",
+    "title": "ONE MORE TIME",
+    "artist": "ALLDAY PROJECT",
+    "youtubeId": "OgEwJ8a1OoY",
+    "synced": true,
+    "wordCount": 17
   },
   {
     "id": "ateez-answer",
@@ -80,6 +128,54 @@
     "wordCount": 20
   },
   {
+    "id": "boynextdoor-viral",
+    "title": "VIRAL",
+    "artist": "BOYNEXTDOOR",
+    "youtubeId": "zGsj0fDHB_s",
+    "synced": true,
+    "wordCount": 20
+  },
+  {
+    "id": "boynextdoor-ddok-ddok-ddok",
+    "title": "똑똑똑 (Knock Knock Knock)",
+    "artist": "BOYNEXTDOOR",
+    "youtubeId": "WxGWMI2B7r8",
+    "synced": true,
+    "wordCount": 20
+  },
+  {
+    "id": "boynextdoor-if-i-say-i-love-you",
+    "title": "오늘만 I LOVE YOU (If I Say, I Love You)",
+    "artist": "BOYNEXTDOOR",
+    "youtubeId": "B4mLKcVIERs",
+    "synced": true,
+    "wordCount": 20
+  },
+  {
+    "id": "bts-2.0",
+    "title": "2.0",
+    "artist": "BTS",
+    "youtubeId": "_gyultVTesk",
+    "synced": true,
+    "wordCount": 15
+  },
+  {
+    "id": "bts-aliens",
+    "title": "Aliens",
+    "artist": "BTS",
+    "youtubeId": "EC9_h_elSAY",
+    "synced": true,
+    "wordCount": 17
+  },
+  {
+    "id": "bts-body-to-body",
+    "title": "Body to Body",
+    "artist": "BTS",
+    "youtubeId": "RBaSiVjtKR4",
+    "synced": true,
+    "wordCount": 17
+  },
+  {
     "id": "bts-dna",
     "title": "DNA",
     "artist": "BTS",
@@ -94,6 +190,30 @@
     "youtubeId": "7C2z4GqqS5E",
     "synced": true,
     "wordCount": 19
+  },
+  {
+    "id": "bts-fya",
+    "title": "FYA",
+    "artist": "BTS",
+    "youtubeId": "QWDayFgPDjQ",
+    "synced": true,
+    "wordCount": 15
+  },
+  {
+    "id": "bts-hooligan",
+    "title": "Hooligan",
+    "artist": "BTS",
+    "youtubeId": "diBO0gMuTXo",
+    "synced": true,
+    "wordCount": 17
+  },
+  {
+    "id": "bts-merry-go-round",
+    "title": "Merry Go Round",
+    "artist": "BTS",
+    "youtubeId": "Iy0SpSLW8wo",
+    "synced": true,
+    "wordCount": 17
   },
   {
     "id": "bts-spring-day",
@@ -112,6 +232,14 @@
     "wordCount": 20
   },
   {
+    "id": "cortis-redred",
+    "title": "REDRED",
+    "artist": "CORTIS",
+    "youtubeId": "U6BDbXIah-Y",
+    "synced": true,
+    "wordCount": 20
+  },
+  {
     "id": "day6-time-of-our-life",
     "title": "Time of Our Life (한 페이지가 될 수 있게)",
     "artist": "DAY6",
@@ -120,12 +248,44 @@
     "wordCount": 16
   },
   {
+    "id": "day6-happy",
+    "title": "HAPPY",
+    "artist": "DAY6 (데이식스)",
+    "youtubeId": "2o1zdX72400",
+    "synced": true,
+    "wordCount": 17
+  },
+  {
+    "id": "day6-welcome-to-the-show",
+    "title": "Welcome to the Show",
+    "artist": "DAY6 (데이식스)",
+    "youtubeId": "RowlrvmyFEk",
+    "synced": true,
+    "wordCount": 17
+  },
+  {
+    "id": "day6-you-were-beautiful",
+    "title": "You Were Beautiful (예뻤어)",
+    "artist": "DAY6 (데이식스)",
+    "youtubeId": "BS7tz2rAOSA",
+    "synced": true,
+    "wordCount": 17
+  },
+  {
     "id": "enhypen-fever",
     "title": "FEVER",
     "artist": "ENHYPEN",
     "youtubeId": "X7d6Dt17yHk",
     "synced": true,
     "wordCount": 19
+  },
+  {
+    "id": "gdragon-home-sweet-home",
+    "title": "HOME SWEET HOME",
+    "artist": "G-DRAGON",
+    "youtubeId": "fLi0EJfi_vg",
+    "synced": true,
+    "wordCount": 20
   },
   {
     "id": "gidle-queencard",
@@ -152,6 +312,14 @@
     "wordCount": 20
   },
   {
+    "id": "hearts2hearts-style",
+    "title": "STYLE",
+    "artist": "Hearts2Hearts",
+    "youtubeId": "n7kFRxFIPrI",
+    "synced": true,
+    "wordCount": 20
+  },
+  {
     "id": "huntrx-golden",
     "title": "Golden",
     "artist": "HUNTR/X: EJAE, Audrey Nuna, REI AMI",
@@ -160,12 +328,36 @@
     "wordCount": 30
   },
   {
+    "id": "illit-its-me",
+    "title": "It's Me",
+    "artist": "ILLIT",
+    "youtubeId": "bMhDJ0S0OBA",
+    "synced": true,
+    "wordCount": 20
+  },
+  {
+    "id": "illit-magnetic",
+    "title": "Magnetic",
+    "artist": "ILLIT",
+    "youtubeId": "Vk5-c_v4gMU",
+    "synced": true,
+    "wordCount": 20
+  },
+  {
     "id": "illit-not-cute",
     "title": "NOT CUTE ANYMORE",
     "artist": "ILLIT",
     "youtubeId": "x_RYZsOfpKY",
     "synced": true,
     "wordCount": 12
+  },
+  {
+    "id": "ioi-gapjagi",
+    "title": "갑자기",
+    "artist": "I.O.I",
+    "youtubeId": "Jxgbfc89hNI",
+    "synced": true,
+    "wordCount": 20
   },
   {
     "id": "iu-blueming",
@@ -206,6 +398,22 @@
     "youtubeId": "Y8JFxS1HlDo",
     "synced": true,
     "wordCount": 19
+  },
+  {
+    "id": "ive-rebel-heart",
+    "title": "REBEL HEART",
+    "artist": "IVE",
+    "youtubeId": "g36q0ZLvygQ",
+    "synced": true,
+    "wordCount": 20
+  },
+  {
+    "id": "jennie-like-jennie",
+    "title": "like JENNIE",
+    "artist": "JENNIE",
+    "youtubeId": "JSFG-IE8n_c",
+    "synced": true,
+    "wordCount": 20
   },
   {
     "id": "jimin-like-crazy",
@@ -256,6 +464,14 @@
     "wordCount": 20
   },
   {
+    "id": "newjeans-hype-boy",
+    "title": "Hype Boy",
+    "artist": "NewJeans",
+    "youtubeId": "11cta61wi0g",
+    "synced": true,
+    "wordCount": 20
+  },
+  {
     "id": "nmixx-blue-valentine",
     "title": "Blue Valentine",
     "artist": "NMIXX",
@@ -268,6 +484,14 @@
     "title": "DASH",
     "artist": "NMIXX",
     "youtubeId": "7UecFm_bSTU",
+    "synced": true,
+    "wordCount": 20
+  },
+  {
+    "id": "nmixx-heavy-serenade",
+    "title": "Heavy Serenade",
+    "artist": "NMIXX",
+    "youtubeId": "6Ycn9qZK09I",
     "synced": true,
     "wordCount": 20
   },
@@ -360,10 +584,42 @@
     "wordCount": 17
   },
   {
+    "id": "rescene-love-attack",
+    "title": "LOVE ATTACK",
+    "artist": "RESCENE",
+    "youtubeId": "9XttLI0oH0I",
+    "synced": true,
+    "wordCount": 20
+  },
+  {
+    "id": "riize-d-d-done",
+    "title": "D-D-Done",
+    "artist": "RIIZE",
+    "youtubeId": "lzONqPuwicI",
+    "synced": true,
+    "wordCount": 20
+  },
+  {
+    "id": "riize-do-your-dance",
+    "title": "Do your dance",
+    "artist": "RIIZE",
+    "youtubeId": "HDGCTtuW-Yo",
+    "synced": true,
+    "wordCount": 20
+  },
+  {
     "id": "riize-love-119",
     "title": "Love 119",
     "artist": "RIIZE",
     "youtubeId": "0TAAUWHo4Ec",
+    "synced": true,
+    "wordCount": 20
+  },
+  {
+    "id": "riize-soar",
+    "title": "SOAR",
+    "artist": "RIIZE",
+    "youtubeId": "-jBJWQYog5I",
     "synced": true,
     "wordCount": 20
   },
@@ -424,6 +680,22 @@
     "wordCount": 20
   },
   {
+    "id": "tws-overdrive",
+    "title": "OVERDRIVE",
+    "artist": "TWS (투어스)",
+    "youtubeId": "TzbGBkEh9ms",
+    "synced": true,
+    "wordCount": 16
+  },
+  {
+    "id": "tws-plot-twist",
+    "title": "plot twist (첫 만남은 계획대로 되지 않아)",
+    "artist": "TWS (투어스)",
+    "youtubeId": "hVAc1Vf2ITU",
+    "synced": true,
+    "wordCount": 18
+  },
+  {
     "id": "txt-lovesong",
     "title": "0X1=LOVESONG (I Know I Love You)",
     "artist": "TXT",
@@ -438,6 +710,14 @@
     "youtubeId": "tiKFuzpX-NA",
     "synced": true,
     "wordCount": 15
+  },
+  {
+    "id": "yena-catch-catch",
+    "title": "캐치 캐치 (Catch Catch)",
+    "artist": "YENA",
+    "youtubeId": "ItSKahBISg0",
+    "synced": true,
+    "wordCount": 20
   },
   {
     "id": "zerobaseone-in-bloom",
@@ -462,6 +742,14 @@
     "youtubeId": "NuTNPV72rFo",
     "synced": true,
     "wordCount": 16
+  },
+  {
+    "id": "gyeongseoyeji-call-my-name",
+    "title": "다정히 내 이름을 부르면",
+    "artist": "경서예지",
+    "youtubeId": "YPvrhziJAno",
+    "synced": true,
+    "wordCount": 18
   },
   {
     "id": "kim-nayoung-to-be-honest",
@@ -536,6 +824,14 @@
     "wordCount": 30
   },
   {
+    "id": "nerd-connection-if-i-have-you-only",
+    "title": "그대만 있다면 (If I Have You Only)",
+    "artist": "너드커넥션 (Nerd Connection)",
+    "youtubeId": "IMWT6937uUs",
+    "synced": true,
+    "wordCount": 18
+  },
+  {
     "id": "davichi-timecapsule",
     "title": "타임캡슐",
     "artist": "다비치",
@@ -544,12 +840,44 @@
     "wordCount": 30
   },
   {
+    "id": "do-popcorn",
+    "title": "Popcorn",
+    "artist": "도경수 (D.O.)",
+    "youtubeId": "3AoruwUKQ3I",
+    "synced": true,
+    "wordCount": 17
+  },
+  {
     "id": "dean-instagram",
     "title": "instagram",
     "artist": "딘 (DEAN)",
     "youtubeId": "wKyMIrBClYw",
     "synced": true,
     "wordCount": 20
+  },
+  {
+    "id": "roykim-what-love-is",
+    "title": "내게 사랑이 뭐냐고 물어본다면",
+    "artist": "로이킴",
+    "youtubeId": "5ly8tAU-n_w",
+    "synced": true,
+    "wordCount": 17
+  },
+  {
+    "id": "roykim-no-words-can-say",
+    "title": "달리 표현할 수 없어요",
+    "artist": "로이킴",
+    "youtubeId": "dWIECnaJ00U",
+    "synced": true,
+    "wordCount": 18
+  },
+  {
+    "id": "melomance-love-maybe",
+    "title": "사랑인가 봐 (Love, Maybe)",
+    "artist": "멜로망스 (MeloMance)",
+    "youtubeId": "UoBsiQW23IY",
+    "synced": true,
+    "wordCount": 18
   },
   {
     "id": "melomance-gift",
@@ -566,6 +894,22 @@
     "youtubeId": "8TeeJvcBdLA",
     "synced": true,
     "wordCount": 19
+  },
+  {
+    "id": "parkdahye-child-of-beginning",
+    "title": "시작의 아이 (Starting With You)",
+    "artist": "박다혜 (Park Dahye), 마크툽 (MAKTUB)",
+    "youtubeId": "aA9D4tJcAm4",
+    "synced": true,
+    "wordCount": 18
+  },
+  {
+    "id": "parc-jaejung-lets-say-goodbye",
+    "title": "헤어지자 말해요",
+    "artist": "박재정",
+    "youtubeId": "YdulKHZBNuY",
+    "synced": true,
+    "wordCount": 18
   },
   {
     "id": "park-hyoshin-wild-flower",
@@ -664,12 +1008,44 @@
     "wordCount": 20
   },
   {
+    "id": "iu-love-wins-all",
+    "title": "Love wins all",
+    "artist": "아이유 (IU)",
+    "youtubeId": "JleoAppaxi0",
+    "synced": true,
+    "wordCount": 17
+  },
+  {
     "id": "apink-nonono",
     "title": "NoNoNo",
     "artist": "에이핑크 (Apink)",
     "youtubeId": "hspqQuuuGIw",
     "synced": true,
     "wordCount": 20
+  },
+  {
+    "id": "epik-high-love-love-love",
+    "title": "Love Love Love",
+    "artist": "에픽하이 (Epik High)",
+    "youtubeId": "obpCDNNXrA8",
+    "synced": true,
+    "wordCount": 17
+  },
+  {
+    "id": "ovan-flower",
+    "title": "Flower",
+    "artist": "오반 (OVAN)",
+    "youtubeId": "pqUqaBC_2lk",
+    "synced": true,
+    "wordCount": 16
+  },
+  {
+    "id": "woody-sadder-than-yesterday",
+    "title": "어제보다 슬픈 오늘 (Sadder Than Yesterday)",
+    "artist": "우디 (Woody)",
+    "youtubeId": "1mZ-hoIvEx8",
+    "synced": true,
+    "wordCount": 18
   },
   {
     "id": "wondergirls-nobody",
@@ -696,6 +1072,22 @@
     "wordCount": 29
   },
   {
+    "id": "leechangsub-heavenly-fate",
+    "title": "천상연 (Heavenly Fate)",
+    "artist": "이창섭",
+    "youtubeId": "BXzoYQ-3ETs",
+    "synced": true,
+    "wordCount": 18
+  },
+  {
+    "id": "eclipse-sudden-shower",
+    "title": "소나기",
+    "artist": "이클립스 (ECLIPSE)",
+    "youtubeId": "fBB4MaBybyg",
+    "synced": true,
+    "wordCount": 16
+  },
+  {
     "id": "leehi-breathe",
     "title": "한숨 (Breathe)",
     "artist": "이하이 (LeeHi)",
@@ -720,12 +1112,36 @@
     "wordCount": 30
   },
   {
+    "id": "lim-youngwoong-blues",
+    "title": "우리들의 블루스",
+    "artist": "임영웅",
+    "youtubeId": "SHj0-HBuceE",
+    "synced": true,
+    "wordCount": 17
+  },
+  {
+    "id": "lim-hyunjung-spring-rain",
+    "title": "사랑은 봄비처럼 이별은 겨울비처럼",
+    "artist": "임현정",
+    "youtubeId": "tpQsYHVUxdA",
+    "synced": true,
+    "wordCount": 18
+  },
+  {
     "id": "jannabi-for-lovers-who-hesitate",
     "title": "주저하는 연인들을 위해 (For Lovers Who Hesitate)",
     "artist": "잔나비 (JANNABI)",
     "youtubeId": "GpQ222I1ULc",
     "synced": true,
     "wordCount": 18
+  },
+  {
+    "id": "zozazz-dont-you-know",
+    "title": "모르시나요",
+    "artist": "조째즈",
+    "youtubeId": "tfmwbxBKPh0",
+    "synced": true,
+    "wordCount": 15
   },
   {
     "id": "zico-any-song",
@@ -798,6 +1214,14 @@
     "youtubeId": "h0KIWaUEIgQ",
     "synced": true,
     "wordCount": 14
+  },
+  {
+    "id": "hanroro-ipchun",
+    "title": "입춘 (Let Me Love My Youth)",
+    "artist": "한로로 (HANRORO)",
+    "youtubeId": "kIiW3XRP7bU",
+    "synced": true,
+    "wordCount": 18
   },
   {
     "id": "heize-you-clouds-rain",
