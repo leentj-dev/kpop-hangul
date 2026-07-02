@@ -304,6 +304,14 @@
     "wordCount": 30
   },
   {
+    "id": "hearts2hearts-lemon-tang",
+    "title": "Lemon Tang",
+    "artist": "Hearts2Hearts",
+    "youtubeId": "1VqxWNwgf5Q",
+    "synced": true,
+    "wordCount": 20
+  },
+  {
     "id": "hearts2hearts-rude",
     "title": "RUDE!",
     "artist": "Hearts2Hearts",
@@ -582,6 +590,14 @@
     "youtubeId": "9bZkp7q19f0",
     "synced": true,
     "wordCount": 17
+  },
+  {
+    "id": "rescene-deja-vu",
+    "title": "Deja Vu",
+    "artist": "RESCENE",
+    "youtubeId": "ZbO9PBdFRdc",
+    "synced": true,
+    "wordCount": 20
   },
   {
     "id": "rescene-love-attack",
