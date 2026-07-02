@@ -15,7 +15,18 @@
 - `scripts/consolidate_songs.py`: `songs/` 74개 파일 → 중복 제거·깨진 파일 제외 → `app/assets/songs/` 56곡 + `manifest.json`
 - 곡 선택 규칙: 같은 (artist,title) 그룹에서 타임스탬프 10개 이상인 sync 버전 우선, 없으면 단어 수 최다 버전
 - 스킵된 곡(rose-apt 등 4개)은 파이프라인으로 재생성 예정
-- **타임스탬프 싱크**: `scripts/sync_timestamps.py` — lrclib.net 공개 싱크 가사 DB에서 타이밍만 추출(가사 텍스트 미저장). lrclib에 있는 곡만 싱크, 없으면 싱크 없이 유지. 단어는 반드시 실제 가사에 등장하는 표면형으로 선정해야 매칭됨. MV 인트로 오프셋은 `--offset 초` 옵션으로 보정.
+- **타임스탬프 싱크**: `scripts/sync_timestamps.py` — lrclib.net 공개 싱크 가사 DB에서 타이밍만 추출(가사 텍스트 미저장). 단어는 반드시 실제 가사에 등장하는 표면형으로 선정해야 매칭됨. MV 인트로 오프셋은 `--offset 초` 옵션으로 보정.
+
+## 신곡 추가 원칙 (확정 2026-07-02)
+**lrclib에 싱크 가사가 있는 곡만 추가한다.** 싱크는 이 앱의 핵심 경험이므로, 싱크 불가능한 곡은 애초에 넣지 않는다 (예외적으로 이미 들어간 무싱크 곡은 유지).
+
+절차:
+1. `python3 scripts/sync_timestamps.py search "<artist> <track>"` — 싱크(synced: True) 있는지 확인. 없으면 **추가하지 않음**
+2. 해당 트랙의 가사를 확인해 실제 등장하는 표면형 단어 15~20개 선정 (주제어 아님!)
+3. `songs/<id>.json` 생성 (단어·로마자·7개 언어 번역·품사·이모지·예문, 유튜브 공식 MV ID는 웹 검색으로 검증)
+4. `python3 scripts/sync_timestamps.py apply songs/<id>.json <lrclib-id>` — 매칭 10개 미만이면 단어 재선정
+5. `python3 scripts/consolidate_songs.py`
+6. git push → 앱이 자동 다운로드 (재빌드·재배포 불필요)
 - 참고: 트로트 이미 9곡 (임영웅 2, 김호중 7) — 시니어·트로트 방향과 접점
 
 ## v1 (Phase 1: 이식)
