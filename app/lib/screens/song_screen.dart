@@ -5,7 +5,9 @@ import 'package:flutter_tts/flutter_tts.dart';
 import 'package:youtube_player_iframe/youtube_player_iframe.dart';
 
 import '../models/song.dart';
+import '../utils/ads.dart';
 import '../utils/themes.dart';
+import '../widgets/ad_banner.dart';
 import '../widgets/word_card.dart';
 
 class SongScreen extends StatefulWidget {
@@ -26,12 +28,26 @@ class _SongScreenState extends State<SongScreen> {
   int _activeIndex = 0;
   bool _userScrolling = false;
 
+  /// Page layout: each entry is a word index, or null for an ad page.
+  final List<int?> _pages = [];
+  final Map<int, int> _wordToPage = {};
+
   List<WordEntry> get _words => widget.song.words;
   bool get _synced => widget.song.isSynced;
+
+  void _buildPages() {
+    for (var i = 0; i < _words.length; i++) {
+      _wordToPage[i] = _pages.length;
+      _pages.add(i);
+      final isLast = i == _words.length - 1;
+      if (!isLast && (i + 1) % Ads.cardInterval == 0) _pages.add(null);
+    }
+  }
 
   @override
   void initState() {
     super.initState();
+    _buildPages();
     _player = YoutubePlayerController.fromVideoId(
       videoId: widget.song.youtubeId,
       autoPlay: true,
@@ -60,7 +76,7 @@ class _SongScreenState extends State<SongScreen> {
     if (index >= 0 && index != _activeIndex && mounted) {
       setState(() => _activeIndex = index);
       _pageController.animateToPage(
-        index,
+        _wordToPage[index] ?? index,
         duration: const Duration(milliseconds: 350),
         curve: Curves.easeOutCubic,
       );
@@ -152,18 +168,30 @@ class _SongScreenState extends State<SongScreen> {
                   },
                   child: PageView.builder(
                     controller: _pageController,
-                    itemCount: _words.length,
-                    onPageChanged: (i) {
-                      if (_userScrolling) setState(() => _activeIndex = i);
+                    itemCount: _pages.length,
+                    onPageChanged: (p) {
+                      final w = _pages[p];
+                      if (w != null && _userScrolling) {
+                        setState(() => _activeIndex = w);
+                      }
                     },
-                    itemBuilder: (context, i) => WordCard(
-                      word: _words[i],
-                      lang: widget.lang,
-                      theme: theme,
-                      active: i == _activeIndex,
-                      onSpeak: () => _tts.speak(_words[i].korean),
-                      onTap: _synced ? () => _seekToWord(i) : null,
-                    ),
+                    itemBuilder: (context, p) {
+                      final i = _pages[p];
+                      if (i == null) {
+                        return const Padding(
+                          padding: EdgeInsets.all(8),
+                          child: AdBanner(),
+                        );
+                      }
+                      return WordCard(
+                        word: _words[i],
+                        lang: widget.lang,
+                        theme: theme,
+                        active: i == _activeIndex,
+                        onSpeak: () => _tts.speak(_words[i].korean),
+                        onTap: _synced ? () => _seekToWord(i) : null,
+                      );
+                    },
                   ),
                 ),
               ),

@@ -1,10 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 import '../data/song_repository.dart';
 import '../models/song.dart';
+import '../utils/ads.dart';
 import '../utils/languages.dart';
 import '../utils/themes.dart';
+import '../widgets/ad_banner.dart';
 import 'song_screen.dart';
 
 class FeedScreen extends StatefulWidget {
@@ -155,14 +158,17 @@ class _FeedScreenState extends State<FeedScreen> {
       ),
       body: _loading
           ? const Center(child: CircularProgressIndicator())
-          : ListView.builder(
-              controller: _scrollController,
-              padding: const EdgeInsets.fromLTRB(12, 4, 12, 24),
-              itemCount: _filtered.length,
-              itemBuilder: (context, i) {
-                final s = _filtered[i];
-                final theme = songThemeFor(s.id);
-                return InkWell(
+          : Builder(builder: (context) {
+              final items = _withAds(_filtered);
+              return ListView.builder(
+                controller: _scrollController,
+                padding: const EdgeInsets.fromLTRB(12, 4, 12, 24),
+                itemCount: items.length,
+                itemBuilder: (context, i) {
+                  final s = items[i];
+                  if (s == null) return const AdBanner(size: AdSize.banner);
+                  final theme = songThemeFor(s.id);
+                  return InkWell(
                   borderRadius: BorderRadius.circular(14),
                   onTap: () => _openSong(s),
                   child: Padding(
@@ -257,9 +263,21 @@ class _FeedScreenState extends State<FeedScreen> {
                     ),
                   ),
                 );
-              },
-            ),
+                },
+              );
+            }),
     );
   }
 
+  /// Interleaves null ad-slots after every [Ads.feedInterval] songs
+  /// (no trailing ad).
+  List<SongSummary?> _withAds(List<SongSummary> songs) {
+    final out = <SongSummary?>[];
+    for (var i = 0; i < songs.length; i++) {
+      out.add(songs[i]);
+      final isLast = i == songs.length - 1;
+      if (!isLast && (i + 1) % Ads.feedInterval == 0) out.add(null);
+    }
+    return out;
+  }
 }
