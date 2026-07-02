@@ -1,0 +1,450 @@
+[
+  {
+    "id": "aespa-supernova",
+    "title": "Supernova",
+    "artist": "aespa",
+    "youtubeId": "phuiiNCxRMg",
+    "synced": true,
+    "wordCount": 19
+  },
+  {
+    "id": "blackpink-ddu-du",
+    "title": "DDU-DU DDU-DU",
+    "artist": "BLACKPINK",
+    "youtubeId": "IHNzOHi8sJs",
+    "synced": true,
+    "wordCount": 20
+  },
+  {
+    "id": "blackpink-go",
+    "title": "GO",
+    "artist": "BLACKPINK",
+    "youtubeId": "2gjfwmycwy0",
+    "synced": false,
+    "wordCount": 30
+  },
+  {
+    "id": "blackpink-hylt",
+    "title": "How You Like That",
+    "artist": "BLACKPINK",
+    "youtubeId": "ioNng23DkIM",
+    "synced": true,
+    "wordCount": 17
+  },
+  {
+    "id": "blackpink-ktl",
+    "title": "Kill This Love",
+    "artist": "BLACKPINK",
+    "youtubeId": "2S24-y0Ij3Y",
+    "synced": true,
+    "wordCount": 19
+  },
+  {
+    "id": "blackpink-jump",
+    "title": "뛰어(JUMP)",
+    "artist": "BLACKPINK",
+    "youtubeId": "CgCVZdcKcqY",
+    "synced": false,
+    "wordCount": 30
+  },
+  {
+    "id": "bts-dna",
+    "title": "DNA",
+    "artist": "BTS",
+    "youtubeId": "MBdVXkSdhwU",
+    "synced": true,
+    "wordCount": 20
+  },
+  {
+    "id": "bts-fake-love",
+    "title": "FAKE LOVE",
+    "artist": "BTS",
+    "youtubeId": "7C2z4GqqS5E",
+    "synced": true,
+    "wordCount": 19
+  },
+  {
+    "id": "bts-spring-day",
+    "title": "봄날",
+    "artist": "BTS",
+    "youtubeId": "xEeFrLSkMm8",
+    "synced": true,
+    "wordCount": 20
+  },
+  {
+    "id": "gidle-queencard",
+    "title": "Queencard",
+    "artist": "(G)I-DLE",
+    "youtubeId": "7HDeem-JaSY",
+    "synced": true,
+    "wordCount": 18
+  },
+  {
+    "id": "hearts2hearts-focus",
+    "title": "FOCUS",
+    "artist": "Hearts2Hearts",
+    "youtubeId": "Ur7aK4FvK-U",
+    "synced": false,
+    "wordCount": 30
+  },
+  {
+    "id": "hearts2hearts-rude",
+    "title": "RUDE!",
+    "artist": "Hearts2Hearts",
+    "youtubeId": "F7sGJVUrkjQ",
+    "synced": true,
+    "wordCount": 20
+  },
+  {
+    "id": "huntrx-golden",
+    "title": "Golden",
+    "artist": "HUNTR/X: EJAE, Audrey Nuna, REI AMI",
+    "youtubeId": "yebNIHKAC4A",
+    "synced": false,
+    "wordCount": 30
+  },
+  {
+    "id": "illit-not-cute",
+    "title": "NOT CUTE ANYMORE",
+    "artist": "ILLIT",
+    "youtubeId": "x_RYZsOfpKY",
+    "synced": true,
+    "wordCount": 12
+  },
+  {
+    "id": "iu-blueming",
+    "title": "Blueming",
+    "artist": "IU",
+    "youtubeId": "D1PvIWdJ8xo",
+    "synced": true,
+    "wordCount": 20
+  },
+  {
+    "id": "ive-after-like",
+    "title": "After LIKE",
+    "artist": "IVE",
+    "youtubeId": "F0B7HDiY-10",
+    "synced": true,
+    "wordCount": 20
+  },
+  {
+    "id": "ive-bang-bang",
+    "title": "BANG BANG",
+    "artist": "IVE",
+    "youtubeId": "9qkpcLK422o",
+    "synced": false,
+    "wordCount": 30
+  },
+  {
+    "id": "ive-blackhole",
+    "title": "BLACKHOLE",
+    "artist": "IVE",
+    "youtubeId": "1Lmy7qwmSMc",
+    "synced": true,
+    "wordCount": 20
+  },
+  {
+    "id": "ive-love-dive",
+    "title": "LOVE DIVE",
+    "artist": "IVE",
+    "youtubeId": "Y8JFxS1HlDo",
+    "synced": true,
+    "wordCount": 19
+  },
+  {
+    "id": "kiiikiii-404-new-era",
+    "title": "404 (New Era)",
+    "artist": "KiiiKiii",
+    "youtubeId": "zhHB4dZTChw",
+    "synced": false,
+    "wordCount": 30
+  },
+  {
+    "id": "lesserafim-spaghetti",
+    "title": "SPAGHETTI",
+    "artist": "LE SSERAFIM",
+    "youtubeId": "TvVtYaqCni8",
+    "synced": true,
+    "wordCount": 20
+  },
+  {
+    "id": "lesserafim-spaghetti",
+    "title": "SPAGHETTI (feat. j-hope of BTS)",
+    "artist": "LE SSERAFIM",
+    "youtubeId": "TvVtYaqCni8",
+    "synced": false,
+    "wordCount": 30
+  },
+  {
+    "id": "nmixx-blue-valentine",
+    "title": "Blue Valentine",
+    "artist": "NMIXX",
+    "youtubeId": "EmeW6li6bbo",
+    "synced": true,
+    "wordCount": 20
+  },
+  {
+    "id": "nmixx-dash",
+    "title": "DASH",
+    "artist": "NMIXX",
+    "youtubeId": "7UecFm_bSTU",
+    "synced": true,
+    "wordCount": 20
+  },
+  {
+    "id": "plave-1232",
+    "title": "12:32(A to T)",
+    "artist": "PLAVE",
+    "youtubeId": "seNgeyf93p4",
+    "synced": true,
+    "wordCount": 20
+  },
+  {
+    "id": "plave-bbuu",
+    "title": "BBUU!",
+    "artist": "PLAVE",
+    "youtubeId": "8L001YT4k6k",
+    "synced": true,
+    "wordCount": 20
+  },
+  {
+    "id": "plave-chroma-drift",
+    "title": "Chroma Drift",
+    "artist": "PLAVE",
+    "youtubeId": "eHCYzIu-ij4",
+    "synced": false,
+    "wordCount": 30
+  },
+  {
+    "id": "plave-dash",
+    "title": "Dash",
+    "artist": "PLAVE",
+    "youtubeId": "b3GoZMfHJT4",
+    "synced": false,
+    "wordCount": 30
+  },
+  {
+    "id": "plave-island",
+    "title": "Island",
+    "artist": "PLAVE",
+    "youtubeId": "4deMcO_LtrQ",
+    "synced": false,
+    "wordCount": 29
+  },
+  {
+    "id": "plave-rizz",
+    "title": "RIZZ",
+    "artist": "PLAVE",
+    "youtubeId": "eJmH4oYmQ0A",
+    "synced": true,
+    "wordCount": 15
+  },
+  {
+    "id": "plave-bongsungah",
+    "title": "봉숭아",
+    "artist": "PLAVE",
+    "youtubeId": "jCvpgLnwVmY",
+    "synced": false,
+    "wordCount": 30
+  },
+  {
+    "id": "plave-hide-seek",
+    "title": "숨바꼭질",
+    "artist": "PLAVE",
+    "youtubeId": "Dss64cWKtqA",
+    "synced": true,
+    "wordCount": 20
+  },
+  {
+    "id": "plave-hide-and-seek",
+    "title": "숨바꼭질(Hide & Seek)",
+    "artist": "PLAVE",
+    "youtubeId": "Dss64cWKtqA",
+    "synced": false,
+    "wordCount": 29
+  },
+  {
+    "id": "plave-ibameul-billyeo-malhaeyo",
+    "title": "이 밤을 빌려 말해요",
+    "artist": "PLAVE",
+    "youtubeId": "tDd_C7rm-6E",
+    "synced": false,
+    "wordCount": 30
+  },
+  {
+    "id": "psy-gangnam-style",
+    "title": "강남스타일",
+    "artist": "PSY",
+    "youtubeId": "9bZkp7q19f0",
+    "synced": true,
+    "wordCount": 17
+  },
+  {
+    "id": "rose-toxic",
+    "title": "toxic till the end",
+    "artist": "ROSÉ",
+    "youtubeId": "eA0lHNZ1KCA",
+    "synced": false,
+    "wordCount": 30
+  },
+  {
+    "id": "seventeen-super",
+    "title": "Super",
+    "artist": "SEVENTEEN",
+    "youtubeId": "-GQg25oP0S4",
+    "synced": true,
+    "wordCount": 20
+  },
+  {
+    "id": "straykids-megaverse",
+    "title": "MEGAVERSE",
+    "artist": "Stray Kids",
+    "youtubeId": "JqwPCzJnYyY",
+    "synced": true,
+    "wordCount": 20
+  },
+  {
+    "id": "twice-feel-special",
+    "title": "Feel Special",
+    "artist": "TWICE",
+    "youtubeId": "3ymwOvzhwHs",
+    "synced": true,
+    "wordCount": 20
+  },
+  {
+    "id": "twice-what-is-love",
+    "title": "What is Love",
+    "artist": "TWICE",
+    "youtubeId": "i0p1bmr0EmE",
+    "synced": true,
+    "wordCount": 20
+  },
+  {
+    "id": "woodz-drowning",
+    "title": "Drowning",
+    "artist": "WOODZ",
+    "youtubeId": "tiKFuzpX-NA",
+    "synced": true,
+    "wordCount": 15
+  },
+  {
+    "id": "kim-hojoong-geudae-tteonado",
+    "title": "그대... 떠나도",
+    "artist": "김호중",
+    "youtubeId": "3iPico0uHHg",
+    "synced": false,
+    "wordCount": 30
+  },
+  {
+    "id": "kim-hojoong-barami-buneun-naren",
+    "title": "바람이 부는 날엔",
+    "artist": "김호중",
+    "youtubeId": "kOZ3WPpRXdQ",
+    "synced": false,
+    "wordCount": 30
+  },
+  {
+    "id": "kim-hojoong-byeol-heneun-bam",
+    "title": "별 헤는 밤",
+    "artist": "김호중",
+    "youtubeId": "SNfErJpDxnk",
+    "synced": false,
+    "wordCount": 30
+  },
+  {
+    "id": "kim-hojoong-bomnare",
+    "title": "봄날에",
+    "artist": "김호중",
+    "youtubeId": "iwwxu1esvuc",
+    "synced": false,
+    "wordCount": 30
+  },
+  {
+    "id": "kim-hojoong-bichi-naneun-saram",
+    "title": "빛이 나는 사람",
+    "artist": "김호중",
+    "youtubeId": "9KpD_5wXyTs",
+    "synced": false,
+    "wordCount": 30
+  },
+  {
+    "id": "kim-hojoong-ssonsal",
+    "title": "쏜살",
+    "artist": "김호중",
+    "youtubeId": "lJEUBqMwxzM",
+    "synced": false,
+    "wordCount": 30
+  },
+  {
+    "id": "kim-hojoong-hamkke-ga-jullae",
+    "title": "함께 가 줄래",
+    "artist": "김호중",
+    "youtubeId": "GfNuK6DgdtE",
+    "synced": false,
+    "wordCount": 30
+  },
+  {
+    "id": "davichi-timecapsule",
+    "title": "타임캡슐",
+    "artist": "다비치",
+    "youtubeId": "qE35JN1ogeI",
+    "synced": false,
+    "wordCount": 30
+  },
+  {
+    "id": "leechanhyuk-endangered-love",
+    "title": "멸종위기사랑",
+    "artist": "이찬혁",
+    "youtubeId": "19oT04OuBhg",
+    "synced": false,
+    "wordCount": 29
+  },
+  {
+    "id": "lim-youngwoong-sarangeun",
+    "title": "사랑은 늘 도망가",
+    "artist": "임영웅",
+    "youtubeId": "Jr_2uyCJVUc",
+    "synced": true,
+    "wordCount": 20
+  },
+  {
+    "id": "lim-youngwoong-sungan",
+    "title": "순간을 영원처럼",
+    "artist": "임영웅",
+    "youtubeId": "sFK89gemgKM",
+    "synced": false,
+    "wordCount": 30
+  },
+  {
+    "id": "carthegarden-my-whole-world",
+    "title": "그대 작은 나의 세상이 되어",
+    "artist": "카더가든",
+    "youtubeId": "ZurHW2kBqrw",
+    "synced": false,
+    "wordCount": 30
+  },
+  {
+    "id": "hanroro-zero-plus-zero",
+    "title": "0+0",
+    "artist": "한로로",
+    "youtubeId": "_Ngk-DCHfD0",
+    "synced": false,
+    "wordCount": 30
+  },
+  {
+    "id": "hanroro-saranghage",
+    "title": "사랑하게 될 거야",
+    "artist": "한로로",
+    "youtubeId": "h0KIWaUEIgQ",
+    "synced": true,
+    "wordCount": 14
+  },
+  {
+    "id": "hwasa-good-goodbye",
+    "title": "Good Goodbye",
+    "artist": "화사",
+    "youtubeId": "Qe8fa4b5xNU",
+    "synced": true,
+    "wordCount": 19
+  }
+]
