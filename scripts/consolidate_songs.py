@@ -11,15 +11,17 @@ Rules:
 import json
 import re
 import shutil
+import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-SRC = ROOT / "songs"
-DST = ROOT / "app" / "assets" / "songs"
+# Default (K-pop) src/dst; override with: consolidate_songs.py <src> <dst>
+SRC = ROOT / (sys.argv[1] if len(sys.argv) > 1 else "songs")
+DST = ROOT / (sys.argv[2] if len(sys.argv) > 2 else "app/assets/songs")
 
 
 def norm(s: str) -> str:
-    return re.sub(r"[^a-z0-9가-힣]", "", s.lower())
+    return re.sub(r"[^a-z0-9가-힣ぁ-んァ-ヶ一-龯]", "", s.lower())
 
 
 def load(path: Path):

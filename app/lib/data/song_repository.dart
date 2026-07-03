@@ -21,7 +21,7 @@ class SongRepository {
   Future<Directory> _songsDir() async {
     if (_dir != null) return _dir!;
     final docs = await getApplicationDocumentsDirectory();
-    final dir = Directory('${docs.path}/songs');
+    final dir = Directory('${docs.path}/${appConfig.localDirName}');
     if (!dir.existsSync()) dir.createSync(recursive: true);
     _dir = dir;
     return dir;
@@ -35,7 +35,7 @@ class SongRepository {
   /// Bundled songs + previously downloaded songs, synced first.
   Future<List<SongSummary>> loadManifest() async {
     _bundled = _parseManifest(
-        await rootBundle.loadString('assets/songs/manifest.json'));
+        await rootBundle.loadString('${appConfig.assetDir}/manifest.json'));
 
     final dir = await _songsDir();
     final cached = File('${dir.path}/manifest.json');
@@ -123,7 +123,7 @@ class SongRepository {
     if (file.existsSync()) {
       raw = file.readAsStringSync();
     } else {
-      raw = await rootBundle.loadString('assets/songs/$id.json');
+      raw = await rootBundle.loadString('${appConfig.assetDir}/$id.json');
     }
     final song = Song.fromJson(jsonDecode(raw) as Map<String, dynamic>);
     _cache[id] = song;

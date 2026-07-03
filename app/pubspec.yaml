@@ -37,4 +37,6 @@ flutter:
 
   assets:
     - assets/songs/
+    - assets/songs_jpop/
     - assets/icon/icon.png
+    - assets/icon_jpop/icon.png
