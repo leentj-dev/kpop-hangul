@@ -6,6 +6,7 @@ class WordEntry {
   final String portuguese;
   final String indonesian;
   final String japanese;
+  final String korean_;
   final String thai;
   final String french;
   final String partOfSpeech;
@@ -22,6 +23,7 @@ class WordEntry {
     this.portuguese = '',
     this.indonesian = '',
     this.japanese = '',
+    this.korean_ = '',
     this.thai = '',
     this.french = '',
     this.partOfSpeech = '',
@@ -39,6 +41,7 @@ class WordEntry {
         portuguese: json['portuguese'] as String? ?? '',
         indonesian: json['indonesian'] as String? ?? '',
         japanese: json['japanese'] as String? ?? '',
+        korean_: json['koreanTranslation'] as String? ?? '',
         thai: json['thai'] as String? ?? '',
         french: json['french'] as String? ?? '',
         partOfSpeech: json['partOfSpeech'] as String? ?? '',
@@ -55,6 +58,7 @@ class WordEntry {
       'portuguese' => portuguese,
       'indonesian' => indonesian,
       'japanese' => japanese,
+      'korean' => korean_,
       'thai' => thai,
       'french' => french,
       _ => english,

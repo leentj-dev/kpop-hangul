@@ -164,22 +164,23 @@ class _FeedScreenState extends State<FeedScreen> {
               ),
               offset: const Offset(0, 44),
               itemBuilder: (context) => [
-                for (final e in supportedLanguages.entries)
+                for (final key in appConfig.target.uiLanguages)
                   PopupMenuItem(
-                    value: e.key,
+                    value: key,
                     child: Row(
                       children: [
                         Icon(
-                          e.key == _lang
+                          key == _lang
                               ? Icons.check_circle_rounded
                               : Icons.circle_outlined,
                           size: 18,
-                          color: e.key == _lang
+                          color: key == _lang
                               ? const Color(0xFFF0ABFC)
                               : onSurface.withValues(alpha: 0.3),
                         ),
                         const SizedBox(width: 10),
-                        Text(e.value, style: TextStyle(color: onSurface)),
+                        Text(supportedLanguages[key] ?? key,
+                            style: TextStyle(color: onSurface)),
                       ],
                     ),
                   ),

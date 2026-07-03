@@ -24,7 +24,7 @@ class WordCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final chips = appConfig.target.breakdown(word.korean);
+    final chips = appConfig.target.breakdown(word);
     return GestureDetector(
       onTap: onTap,
       child: AnimatedContainer(
@@ -65,14 +65,29 @@ class WordCard extends StatelessWidget {
               ],
             ),
             const Spacer(),
-            Text(
-              word.korean,
-              style: const TextStyle(
-                fontSize: 44,
-                fontWeight: FontWeight.w800,
-                color: Colors.white,
-              ),
-              textAlign: TextAlign.center,
+            Row(
+              mainAxisSize: MainAxisSize.min,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                Flexible(
+                  child: Text(
+                    word.korean,
+                    style: const TextStyle(
+                      fontSize: 44,
+                      fontWeight: FontWeight.w800,
+                      color: Colors.white,
+                    ),
+                    textAlign: TextAlign.center,
+                  ),
+                ),
+                const SizedBox(width: 4),
+                IconButton(
+                  onPressed: onSpeak,
+                  visualDensity: VisualDensity.compact,
+                  icon: Icon(Icons.volume_up_rounded, color: theme.accent),
+                  tooltip: 'Listen',
+                ),
+              ],
             ),
             const SizedBox(height: 8),
             Wrap(
@@ -124,12 +139,6 @@ class WordCard extends StatelessWidget {
                 textAlign: TextAlign.center,
               ),
             ],
-            const SizedBox(height: 8),
-            IconButton.filledTonal(
-              onPressed: onSpeak,
-              icon: const Icon(Icons.volume_up_rounded),
-              tooltip: 'Listen',
-            ),
           ],
         ),
       ),

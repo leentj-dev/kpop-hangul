@@ -1,3 +1,4 @@
+import '../models/song.dart';
 import '../utils/hangul.dart';
 
 /// Strategy for the language being *learned* (Korean, Japanese, Spanish…).
@@ -11,10 +12,24 @@ abstract class TargetLanguage {
   /// TTS locale for reading the headword aloud, e.g. 'ko-KR', 'ja-JP'.
   String get ttsLocale;
 
-  /// Sub-unit chips shown under the headword (Korean jamo, Japanese kana…).
-  /// Return an empty list to hide the breakdown row (e.g. romanized langs).
-  List<String> breakdown(String word);
+  /// UI translation language keys valid for this target (see
+  /// utils/languages.dart). Excludes the target's own language — it makes
+  /// no sense to "translate" the headword into the language it already is.
+  List<String> get uiLanguages;
+
+  /// Sub-unit chips shown under the headword (Korean jamo, Japanese
+  /// furigana…). Return an empty list to hide the breakdown row.
+  List<String> breakdown(WordEntry word);
 }
+
+const _defaultUiLanguages = [
+  'english',
+  'spanish',
+  'portuguese',
+  'indonesian',
+  'thai',
+  'french',
+];
 
 /// Korean: decompose each syllable into its jamo (ㅂ + ㅗ + ㄴ).
 class KoreanTarget extends TargetLanguage {
@@ -24,23 +39,40 @@ class KoreanTarget extends TargetLanguage {
   String get ttsLocale => 'ko-KR';
 
   @override
-  List<String> breakdown(String word) {
-    return decomposeHangul(word)
+  List<String> get uiLanguages => const [..._defaultUiLanguages, 'japanese'];
+
+  @override
+  List<String> breakdown(WordEntry word) {
+    return decomposeHangul(word.korean)
         .where((c) => c.parts.length > 1)
         .map((c) => c.parts.join(' + '))
         .toList();
   }
 }
 
-/// Japanese: no automatic breakdown yet (furigana would come from the data).
+/// Japanese: show the kana reading (furigana) when the headword has kanji.
+/// `WordEntry.japanese` is repurposed to hold that reading for this flavor
+/// (it isn't needed as a translation slot — the headword already is
+/// Japanese) — content packs must fill it with the word's kana reading.
 class JapaneseTarget extends TargetLanguage {
   const JapaneseTarget();
+
+  static const _kanjiRange = (0x4E00, 0x9FFF);
 
   @override
   String get ttsLocale => 'ja-JP';
 
   @override
-  List<String> breakdown(String word) => const [];
+  List<String> get uiLanguages => const [..._defaultUiLanguages, 'korean'];
+
+  @override
+  List<String> breakdown(WordEntry word) {
+    final hasKanji = word.korean.runes
+        .any((r) => r >= _kanjiRange.$1 && r <= _kanjiRange.$2);
+    final reading = word.japanese.trim();
+    if (!hasKanji || reading.isEmpty || reading == word.korean) return const [];
+    return [reading];
+  }
 }
 
 /// Spanish and other romanized languages: no sub-unit breakdown needed.
@@ -52,5 +84,8 @@ class RomanTarget extends TargetLanguage {
   String get ttsLocale => locale;
 
   @override
-  List<String> breakdown(String word) => const [];
+  List<String> get uiLanguages => const [..._defaultUiLanguages, 'korean'];
+
+  @override
+  List<String> breakdown(WordEntry word) => const [];
 }
