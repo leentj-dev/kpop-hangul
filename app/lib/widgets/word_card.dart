@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../config/app_config.dart';
 import '../models/song.dart';
-import '../utils/hangul.dart';
 import '../utils/themes.dart';
 
 class WordCard extends StatelessWidget {
@@ -24,7 +24,7 @@ class WordCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final chars = decomposeHangul(word.korean);
+    final chips = appConfig.target.breakdown(word.korean);
     return GestureDetector(
       onTap: onTap,
       child: AnimatedContainer(
@@ -79,20 +79,19 @@ class WordCard extends StatelessWidget {
               spacing: 4,
               alignment: WrapAlignment.center,
               children: [
-                for (final c in chars)
-                  if (c.parts.length > 1)
-                    Container(
-                      padding: const EdgeInsets.symmetric(
-                          horizontal: 8, vertical: 3),
-                      decoration: BoxDecoration(
-                        color: Colors.white10,
-                        borderRadius: BorderRadius.circular(8),
-                      ),
-                      child: Text(
-                        c.parts.join(' + '),
-                        style: TextStyle(fontSize: 13, color: theme.accent),
-                      ),
+                for (final chip in chips)
+                  Container(
+                    padding: const EdgeInsets.symmetric(
+                        horizontal: 8, vertical: 3),
+                    decoration: BoxDecoration(
+                      color: Colors.white10,
+                      borderRadius: BorderRadius.circular(8),
                     ),
+                    child: Text(
+                      chip,
+                      style: TextStyle(fontSize: 13, color: theme.accent),
+                    ),
+                  ),
               ],
             ),
             const SizedBox(height: 10),

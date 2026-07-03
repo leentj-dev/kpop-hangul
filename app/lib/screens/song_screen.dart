@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_tts/flutter_tts.dart';
 import 'package:youtube_player_iframe/youtube_player_iframe.dart';
 
+import '../config/app_config.dart';
 import '../data/song_repository.dart';
 import '../models/song.dart';
 import '../utils/ads.dart';
@@ -81,7 +82,7 @@ class _SongScreenState extends State<SongScreen> {
       if (value.playerState == PlayerState.ended) _playNext();
     });
     _pageController = PageController(viewportFraction: 0.86);
-    _tts.setLanguage('ko-KR');
+    _tts.setLanguage(appConfig.target.ttsLocale);
     if (_synced) {
       _syncTimer = Timer.periodic(
           const Duration(milliseconds: 500), (_) => _syncToPlayback());

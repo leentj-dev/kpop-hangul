@@ -5,13 +5,13 @@ import 'package:flutter/services.dart';
 import 'package:http/http.dart' as http;
 import 'package:path_provider/path_provider.dart';
 
+import '../config/app_config.dart';
 import '../models/song.dart';
 
 /// Loads bundled song data from assets/songs/ and keeps it up to date by
 /// downloading new songs from the GitHub repo (no backend needed).
 class SongRepository {
-  static const _remoteBase =
-      'https://raw.githubusercontent.com/leentj-dev/kpop-hangul/main/app/assets/songs';
+  String get _remoteBase => appConfig.remoteBase;
 
   final Map<String, Song> _cache = {};
   List<SongSummary> _bundled = [];

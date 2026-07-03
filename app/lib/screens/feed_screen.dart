@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
+import '../config/app_config.dart';
 import '../data/song_repository.dart';
 import '../models/song.dart';
 import '../utils/ads.dart';
@@ -133,13 +134,13 @@ class _FeedScreenState extends State<FeedScreen> {
           children: [
             ClipRRect(
               borderRadius: BorderRadius.circular(8),
-              child: Image.asset('assets/icon/icon.png',
+              child: Image.asset(appConfig.logoAsset,
                   width: 30, height: 30, fit: BoxFit.cover),
             ),
             const SizedBox(width: 8),
-            const Text(
-              'K-pop Hangul',
-              style: TextStyle(fontWeight: FontWeight.w800, fontSize: 18),
+            Text(
+              appConfig.appTitle,
+              style: const TextStyle(fontWeight: FontWeight.w800, fontSize: 18),
             ),
           ],
         ),
