@@ -54,3 +54,41 @@ class _AdBannerState extends State<AdBanner> {
     );
   }
 }
+
+/// Ad wrapped in a bordered card with an "AD" label — the shared look used
+/// for both the feed list and the space below the word deck.
+class AdCard extends StatelessWidget {
+  const AdCard({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    final onSurface = Theme.of(context).colorScheme.onSurface;
+    return Container(
+      margin: const EdgeInsets.symmetric(horizontal: 4, vertical: 6),
+      decoration: BoxDecoration(
+        color: onSurface.withValues(alpha: 0.05),
+        borderRadius: BorderRadius.circular(14),
+        border: Border.all(color: onSurface.withValues(alpha: 0.1)),
+      ),
+      clipBehavior: Clip.antiAlias,
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Padding(
+            padding: const EdgeInsets.fromLTRB(12, 8, 12, 0),
+            child: Text(
+              'AD',
+              style: TextStyle(
+                fontSize: 10,
+                fontWeight: FontWeight.w700,
+                letterSpacing: 1,
+                color: onSurface.withValues(alpha: 0.35),
+              ),
+            ),
+          ),
+          const Center(child: AdBanner(size: AdSize.banner)),
+        ],
+      ),
+    );
+  }
+}

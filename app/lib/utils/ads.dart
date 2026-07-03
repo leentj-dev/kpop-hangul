@@ -17,9 +17,6 @@ class Ads {
   /// Insert an ad after every N songs in the feed.
   static const feedInterval = 8;
 
-  /// Insert an ad after every N word cards.
-  static const cardInterval = 6;
-
   static String get bannerUnitId =>
       Platform.isIOS ? _testBannerIos : _testBannerAndroid;
 

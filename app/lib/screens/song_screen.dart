@@ -7,7 +7,6 @@ import 'package:youtube_player_iframe/youtube_player_iframe.dart';
 import '../config/app_config.dart';
 import '../data/song_repository.dart';
 import '../models/song.dart';
-import '../utils/ads.dart';
 import '../utils/themes.dart';
 import '../widgets/ad_banner.dart';
 import '../widgets/word_card.dart';
@@ -44,52 +43,14 @@ class _SongScreenState extends State<SongScreen> {
   late int _index;
   bool _advancing = false;
 
-  /// True while parked on an ad page between the active word and the next
-  /// one (mid-gap), waiting for the next word's timestamp to arrive.
-  bool _onAdPage = false;
-
-  /// Page layout: each entry is a word index, or null for an ad page.
-  final List<int?> _pages = [];
-  final Map<int, int> _wordToPage = {};
-
   List<WordEntry> get _words => _song.words;
   bool get _synced => _song.isSynced;
-
-  /// Minimum gap (seconds) between two words before an ad is allowed to
-  /// interrupt the deck — short gaps would eat the whole viewing window.
-  static const _minGapForAd = 8;
-
-  void _buildPages() {
-    _pages.clear();
-    _wordToPage.clear();
-    for (var i = 0; i < _words.length; i++) {
-      _wordToPage[i] = _pages.length;
-      _pages.add(i);
-      final isLast = i == _words.length - 1;
-      if (isLast) continue;
-
-      if (_synced) {
-        // Place an ad exactly where a real gap exists, not on a fixed word
-        // count — otherwise a long instrumental break between two words
-        // that don't happen to land on the count boundary gets no ad at all.
-        final curTs = _words[i].timestamp;
-        final nextTs = _words[i + 1].timestamp;
-        final hasGap =
-            curTs != null && nextTs != null && nextTs - curTs >= _minGapForAd;
-        if (hasGap) _pages.add(null);
-      } else if ((i + 1) % Ads.cardInterval == 0) {
-        // No timestamps to reason about — fall back to a fixed interval.
-        _pages.add(null);
-      }
-    }
-  }
 
   @override
   void initState() {
     super.initState();
     _song = widget.song;
     _index = widget.index;
-    _buildPages();
     _player = YoutubePlayerController.fromVideoId(
       videoId: _song.youtubeId,
       autoPlay: true,
@@ -110,64 +71,22 @@ class _SongScreenState extends State<SongScreen> {
     }
   }
 
-  /// How long the current word card shows before switching to the ad.
-  static const _adDelay = 4;
-
-  int? _adPageBetween(int wordA, int wordB) {
-    final pageA = _wordToPage[wordA];
-    final pageB = _wordToPage[wordB];
-    if (pageA == null || pageB == null) return null;
-    for (var p = pageA + 1; p < pageB; p++) {
-      if (_pages[p] == null) return p;
-    }
-    return null;
-  }
-
   Future<void> _syncToPlayback() async {
     if (_userScrolling || !mounted) return;
     final t = await _player.currentTime;
-
     var index = -1;
     for (var i = 0; i < _words.length; i++) {
       final ts = _words[i].timestamp;
       if (ts != null && ts <= t) index = i;
     }
-    if (index < 0) return;
-
-    if (index != _activeIndex) {
-      // Reached the next word's timestamp — move on (off the ad if we were
-      // parked there).
-      setState(() {
-        _activeIndex = index;
-        _onAdPage = false;
-      });
+    if (index >= 0 && index != _activeIndex && mounted) {
+      setState(() => _activeIndex = index);
       _pageController.animateToPage(
-        _wordToPage[index] ?? index,
+        index,
         duration: const Duration(milliseconds: 350),
         curve: Curves.easeOutCubic,
       );
-      return;
     }
-
-    // Same active word — check whether it's time to park on an ad ahead of
-    // the next one, but only if the gap is long enough to afford it.
-    if (_onAdPage) return;
-    final nextIndex = _activeIndex + 1;
-    if (nextIndex >= _words.length) return;
-    final curTs = _words[_activeIndex].timestamp;
-    final nextTs = _words[nextIndex].timestamp;
-    if (curTs == null || nextTs == null) return;
-    if (nextTs - curTs < _minGapForAd) return;
-    if (t - curTs < _adDelay) return;
-
-    final adPage = _adPageBetween(_activeIndex, nextIndex);
-    if (adPage == null) return;
-    _onAdPage = true;
-    _pageController.animateToPage(
-      adPage,
-      duration: const Duration(milliseconds: 350),
-      curve: Curves.easeOutCubic,
-    );
   }
 
   Future<void> _playNext() async {
@@ -182,8 +101,6 @@ class _SongScreenState extends State<SongScreen> {
         _index += 1;
         _song = song;
         _activeIndex = 0;
-        _onAdPage = false;
-        _buildPages();
       });
       _syncTimer?.cancel();
       if (_synced) {
@@ -202,10 +119,7 @@ class _SongScreenState extends State<SongScreen> {
     if (ts != null) {
       _player.seekTo(seconds: ts, allowSeekAhead: true);
     }
-    setState(() {
-      _activeIndex = index;
-      _onAdPage = false;
-    });
+    setState(() => _activeIndex = index);
   }
 
   @override
@@ -285,30 +199,25 @@ class _SongScreenState extends State<SongScreen> {
                   },
                   child: PageView.builder(
                     controller: _pageController,
-                    itemCount: _pages.length,
-                    onPageChanged: (p) {
-                      final w = _pages[p];
-                      if (w != null && _userScrolling) {
-                        setState(() => _activeIndex = w);
-                      }
+                    itemCount: _words.length,
+                    onPageChanged: (i) {
+                      if (_userScrolling) setState(() => _activeIndex = i);
                     },
-                    itemBuilder: (context, p) {
-                      final i = _pages[p];
-                      if (i == null) return _AdCard(theme: theme);
-                      return WordCard(
-                        word: _words[i],
-                        lang: widget.lang,
-                        theme: theme,
-                        active: i == _activeIndex,
-                        onSpeak: () => _tts.speak(_words[i].korean),
-                        onTap: _synced ? () => _seekToWord(i) : null,
-                      );
-                    },
+                    itemBuilder: (context, i) => WordCard(
+                      word: _words[i],
+                      lang: widget.lang,
+                      theme: theme,
+                      active: i == _activeIndex,
+                      onSpeak: () => _tts.speak(_words[i].korean),
+                      onTap: _synced ? () => _seekToWord(i) : null,
+                    ),
                   ),
                 ),
               ),
+              const SizedBox(height: 8),
+              const AdCard(),
               Padding(
-                padding: const EdgeInsets.only(bottom: 8),
+                padding: const EdgeInsets.only(top: 4, bottom: 8),
                 child: Text(
                   '${_activeIndex + 1} / ${_words.length}',
                   style: const TextStyle(color: Colors.white38, fontSize: 12),
@@ -317,42 +226,6 @@ class _SongScreenState extends State<SongScreen> {
             ],
           ),
         ),
-      ),
-    );
-  }
-}
-
-/// Ad shaped like a word card so it doesn't break the swipe deck.
-class _AdCard extends StatelessWidget {
-  final SongTheme theme;
-  const _AdCard({required this.theme});
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      margin: const EdgeInsets.symmetric(horizontal: 8, vertical: 12),
-      padding: const EdgeInsets.all(20),
-      decoration: BoxDecoration(
-        color: Colors.white.withValues(alpha: 0.06),
-        borderRadius: BorderRadius.circular(24),
-        border: Border.all(color: Colors.white24),
-      ),
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          Text(
-            'AD',
-            style: TextStyle(
-              fontSize: 11,
-              fontWeight: FontWeight.w700,
-              letterSpacing: 1.5,
-              color: theme.accent.withValues(alpha: 0.7),
-            ),
-          ),
-          const Spacer(),
-          const AdBanner(),
-          const Spacer(),
-        ],
       ),
     );
   }
