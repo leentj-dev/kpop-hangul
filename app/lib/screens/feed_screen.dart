@@ -3,6 +3,7 @@ import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 import '../config/app_config.dart';
+import '../config/theme_controller.dart';
 import '../data/song_repository.dart';
 import '../models/song.dart';
 import '../utils/ads.dart';
@@ -115,19 +116,19 @@ class _FeedScreenState extends State<FeedScreen> {
 
   @override
   Widget build(BuildContext context) {
+    final isDark = Theme.of(context).brightness == Brightness.dark;
+    final onSurface = Theme.of(context).colorScheme.onSurface;
     return Scaffold(
-      backgroundColor: Colors.black,
       floatingActionButton: _showScrollTop
           ? FloatingActionButton.small(
               onPressed: _scrollToTop,
-              backgroundColor: Colors.white24,
-              foregroundColor: Colors.white,
+              backgroundColor: onSurface.withValues(alpha: 0.14),
+              foregroundColor: onSurface,
               tooltip: 'Scroll to top',
               child: const Icon(Icons.keyboard_arrow_up_rounded),
             )
           : null,
       appBar: AppBar(
-        backgroundColor: Colors.black,
         titleSpacing: 12,
         title: Row(
           mainAxisSize: MainAxisSize.min,
@@ -145,12 +146,19 @@ class _FeedScreenState extends State<FeedScreen> {
           ],
         ),
         actions: [
+          IconButton(
+            onPressed: toggleThemeMode,
+            tooltip: isDark ? 'Light mode' : 'Dark mode',
+            icon: Icon(
+              isDark ? Icons.light_mode_rounded : Icons.dark_mode_rounded,
+              color: onSurface.withValues(alpha: 0.85),
+            ),
+          ),
           Padding(
             padding: const EdgeInsets.only(right: 12),
             child: PopupMenuButton<String>(
               initialValue: _lang,
               onSelected: _setLang,
-              color: const Color(0xFF1C1C1E),
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(14),
               ),
@@ -168,11 +176,10 @@ class _FeedScreenState extends State<FeedScreen> {
                           size: 18,
                           color: e.key == _lang
                               ? const Color(0xFFF0ABFC)
-                              : Colors.white30,
+                              : onSurface.withValues(alpha: 0.3),
                         ),
                         const SizedBox(width: 10),
-                        Text(e.value,
-                            style: const TextStyle(color: Colors.white)),
+                        Text(e.value, style: TextStyle(color: onSurface)),
                       ],
                     ),
                   ),
@@ -181,26 +188,26 @@ class _FeedScreenState extends State<FeedScreen> {
                 padding:
                     const EdgeInsets.symmetric(horizontal: 12, vertical: 7),
                 decoration: BoxDecoration(
-                  color: Colors.white.withValues(alpha: 0.08),
+                  color: onSurface.withValues(alpha: 0.08),
                   borderRadius: BorderRadius.circular(999),
-                  border: Border.all(color: Colors.white24),
+                  border: Border.all(color: onSurface.withValues(alpha: 0.18)),
                 ),
                 child: Row(
                   mainAxisSize: MainAxisSize.min,
                   children: [
-                    const Icon(Icons.language_rounded,
-                        size: 16, color: Colors.white70),
+                    Icon(Icons.language_rounded,
+                        size: 16, color: onSurface.withValues(alpha: 0.7)),
                     const SizedBox(width: 6),
                     Text(
                       supportedLanguages[_lang] ?? 'English',
-                      style: const TextStyle(
-                        color: Colors.white,
+                      style: TextStyle(
+                        color: onSurface,
                         fontSize: 13,
                         fontWeight: FontWeight.w600,
                       ),
                     ),
-                    const Icon(Icons.keyboard_arrow_down_rounded,
-                        size: 18, color: Colors.white54),
+                    Icon(Icons.keyboard_arrow_down_rounded,
+                        size: 18, color: onSurface.withValues(alpha: 0.5)),
                   ],
                 ),
               ),
@@ -213,13 +220,14 @@ class _FeedScreenState extends State<FeedScreen> {
             padding: const EdgeInsets.fromLTRB(16, 0, 16, 8),
             child: TextField(
               onChanged: (v) => setState(() => _query = v),
-              style: const TextStyle(color: Colors.white),
+              style: TextStyle(color: onSurface),
               decoration: InputDecoration(
                 hintText: 'Search songs or artists',
-                hintStyle: const TextStyle(color: Colors.white38),
-                prefixIcon: const Icon(Icons.search, color: Colors.white38),
+                hintStyle: TextStyle(color: onSurface.withValues(alpha: 0.38)),
+                prefixIcon:
+                    Icon(Icons.search, color: onSurface.withValues(alpha: 0.38)),
                 filled: true,
-                fillColor: Colors.white10,
+                fillColor: onSurface.withValues(alpha: 0.06),
                 border: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(14),
                   borderSide: BorderSide.none,
@@ -364,32 +372,35 @@ class _FeedAdCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 6),
-      child: Container(
-        decoration: BoxDecoration(
-          color: Colors.white.withValues(alpha: 0.05),
-          borderRadius: BorderRadius.circular(14),
-          border: Border.all(color: Colors.white12),
-        ),
-        clipBehavior: Clip.antiAlias,
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Padding(
-              padding: const EdgeInsets.fromLTRB(12, 8, 12, 0),
-              child: Text(
-                'AD',
-                style: TextStyle(
-                  fontSize: 10,
-                  fontWeight: FontWeight.w700,
-                  letterSpacing: 1,
-                  color: Colors.white.withValues(alpha: 0.35),
+      child: Builder(builder: (context) {
+        final onSurface = Theme.of(context).colorScheme.onSurface;
+        return Container(
+          decoration: BoxDecoration(
+            color: onSurface.withValues(alpha: 0.05),
+            borderRadius: BorderRadius.circular(14),
+            border: Border.all(color: onSurface.withValues(alpha: 0.1)),
+          ),
+          clipBehavior: Clip.antiAlias,
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Padding(
+                padding: const EdgeInsets.fromLTRB(12, 8, 12, 0),
+                child: Text(
+                  'AD',
+                  style: TextStyle(
+                    fontSize: 10,
+                    fontWeight: FontWeight.w700,
+                    letterSpacing: 1,
+                    color: onSurface.withValues(alpha: 0.35),
+                  ),
                 ),
               ),
-            ),
-            const Center(child: AdBanner(size: AdSize.banner)),
-          ],
-        ),
-      ),
+              const Center(child: AdBanner(size: AdSize.banner)),
+            ],
+          ),
+        );
+      }),
     );
   }
 }
