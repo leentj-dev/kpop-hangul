@@ -43,7 +43,10 @@ class _SongScreenState extends State<SongScreen> {
   late Song _song;
   late int _index;
   bool _advancing = false;
-  bool _adHolding = false;
+
+  /// True while parked on an ad page between the active word and the next
+  /// one (mid-gap), waiting for the next word's timestamp to arrive.
+  bool _onAdPage = false;
 
   /// Page layout: each entry is a word index, or null for an ad page.
   final List<int?> _pages = [];
@@ -89,52 +92,68 @@ class _SongScreenState extends State<SongScreen> {
     }
   }
 
+  /// Minimum gap (seconds) between two words before an ad is allowed to
+  /// interrupt the deck — short gaps would eat the whole viewing window.
+  static const _minGapForAd = 8;
+
+  /// How long the current word card shows before switching to the ad.
+  static const _adDelay = 4;
+
+  int? _adPageBetween(int wordA, int wordB) {
+    final pageA = _wordToPage[wordA];
+    final pageB = _wordToPage[wordB];
+    if (pageA == null || pageB == null) return null;
+    for (var p = pageA + 1; p < pageB; p++) {
+      if (_pages[p] == null) return p;
+    }
+    return null;
+  }
+
   Future<void> _syncToPlayback() async {
     if (_userScrolling || !mounted) return;
     final t = await _player.currentTime;
+
     var index = -1;
     for (var i = 0; i < _words.length; i++) {
       final ts = _words[i].timestamp;
       if (ts != null && ts <= t) index = i;
     }
-    if (index >= 0 && index != _activeIndex && mounted && !_adHolding) {
-      setState(() => _activeIndex = index);
-      _animateToWord(index);
-    }
-  }
+    if (index < 0) return;
 
-  /// Moves to a word's card. If an ad page sits between the current page and
-  /// the target, pause on the ad first so it gets exposed, then continue.
-  Future<void> _animateToWord(int wordIndex) async {
-    if (!_pageController.hasClients) return;
-    final target = _wordToPage[wordIndex] ?? wordIndex;
-    final current = _pageController.page?.round() ?? 0;
-    int? adPage;
-    if (target > current) {
-      for (var p = current + 1; p < target; p++) {
-        if (_pages[p] == null) {
-          adPage = p;
-          break;
-        }
-      }
-    }
-    const dur = Duration(milliseconds: 350);
-    const curve = Curves.easeOutCubic;
-    if (adPage == null) {
-      _pageController.animateToPage(target, duration: dur, curve: curve);
+    if (index != _activeIndex) {
+      // Reached the next word's timestamp — move on (off the ad if we were
+      // parked there).
+      setState(() {
+        _activeIndex = index;
+        _onAdPage = false;
+      });
+      _pageController.animateToPage(
+        _wordToPage[index] ?? index,
+        duration: const Duration(milliseconds: 350),
+        curve: Curves.easeOutCubic,
+      );
       return;
     }
-    _adHolding = true;
-    await _pageController.animateToPage(adPage, duration: dur, curve: curve);
-    await Future.delayed(const Duration(seconds: 3));
-    if (!mounted) {
-      _adHolding = false;
-      return;
-    }
-    // Re-resolve target in case the active word advanced while the ad showed.
-    final dest = _wordToPage[_activeIndex] ?? target;
-    await _pageController.animateToPage(dest, duration: dur, curve: curve);
-    _adHolding = false;
+
+    // Same active word — check whether it's time to park on an ad ahead of
+    // the next one, but only if the gap is long enough to afford it.
+    if (_onAdPage) return;
+    final nextIndex = _activeIndex + 1;
+    if (nextIndex >= _words.length) return;
+    final curTs = _words[_activeIndex].timestamp;
+    final nextTs = _words[nextIndex].timestamp;
+    if (curTs == null || nextTs == null) return;
+    if (nextTs - curTs < _minGapForAd) return;
+    if (t - curTs < _adDelay) return;
+
+    final adPage = _adPageBetween(_activeIndex, nextIndex);
+    if (adPage == null) return;
+    _onAdPage = true;
+    _pageController.animateToPage(
+      adPage,
+      duration: const Duration(milliseconds: 350),
+      curve: Curves.easeOutCubic,
+    );
   }
 
   Future<void> _playNext() async {
@@ -149,6 +168,7 @@ class _SongScreenState extends State<SongScreen> {
         _index += 1;
         _song = song;
         _activeIndex = 0;
+        _onAdPage = false;
         _buildPages();
       });
       _syncTimer?.cancel();
@@ -168,7 +188,10 @@ class _SongScreenState extends State<SongScreen> {
     if (ts != null) {
       _player.seekTo(seconds: ts, allowSeekAhead: true);
     }
-    setState(() => _activeIndex = index);
+    setState(() {
+      _activeIndex = index;
+      _onAdPage = false;
+    });
   }
 
   @override

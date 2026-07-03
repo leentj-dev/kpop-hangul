@@ -20,14 +20,26 @@ android {
     }
 
     defaultConfig {
-        // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
+        // Overridden per product flavor below.
         applicationId = "dev.leentj.kpop_hangul"
-        // You can update the following values to match your application needs.
-        // For more information, see: https://flutter.dev/to/review-gradle-config.
         minSdk = flutter.minSdkVersion
         targetSdk = flutter.targetSdkVersion
         versionCode = flutter.versionCode
         versionName = flutter.versionName
+    }
+
+    flavorDimensions += "app"
+    productFlavors {
+        create("kpop") {
+            dimension = "app"
+            applicationId = "dev.leentj.kpop_hangul"
+            manifestPlaceholders["appLabel"] = "K-pop Hangul"
+        }
+        create("jpop") {
+            dimension = "app"
+            applicationId = "dev.leentj.jpop_kana"
+            manifestPlaceholders["appLabel"] = "J-pop Kana"
+        }
     }
 
     buildTypes {
