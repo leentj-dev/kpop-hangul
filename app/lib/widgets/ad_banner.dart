@@ -1,12 +1,21 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
 
 import '../utils/ads.dart';
 
-/// A self-contained banner that loads its own ad and reserves space for it.
+/// A self-contained banner that loads its own ad, reserves space for it, and
+/// swaps in a fresh ad periodically so a slot that stays on screen for a
+/// while (e.g. under the word deck) doesn't show the same creative forever.
 class AdBanner extends StatefulWidget {
   final AdSize size;
-  const AdBanner({super.key, this.size = AdSize.mediumRectangle});
+  final Duration refreshInterval;
+  const AdBanner({
+    super.key,
+    this.size = AdSize.mediumRectangle,
+    this.refreshInterval = const Duration(seconds: 45),
+  });
 
   @override
   State<AdBanner> createState() => _AdBannerState();
@@ -15,25 +24,43 @@ class AdBanner extends StatefulWidget {
 class _AdBannerState extends State<AdBanner> {
   BannerAd? _ad;
   bool _loaded = false;
+  Timer? _refreshTimer;
 
   @override
   void initState() {
     super.initState();
-    _ad = BannerAd(
+    _loadAd();
+    _refreshTimer = Timer.periodic(widget.refreshInterval, (_) => _loadAd());
+  }
+
+  void _loadAd() {
+    BannerAd(
       adUnitId: Ads.bannerUnitId,
       size: widget.size,
       request: const AdRequest(),
       listener: BannerAdListener(
-        onAdLoaded: (_) {
-          if (mounted) setState(() => _loaded = true);
+        onAdLoaded: (loaded) {
+          if (!mounted) {
+            loaded.dispose();
+            return;
+          }
+          // Swap only once the replacement is ready, so the slot never
+          // flashes empty mid-refresh.
+          final old = _ad;
+          setState(() {
+            _ad = loaded as BannerAd;
+            _loaded = true;
+          });
+          old?.dispose();
         },
         onAdFailedToLoad: (ad, _) => ad.dispose(),
       ),
-    )..load();
+    ).load();
   }
 
   @override
   void dispose() {
+    _refreshTimer?.cancel();
     _ad?.dispose();
     super.dispose();
   }
