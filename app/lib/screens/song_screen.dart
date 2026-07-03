@@ -55,6 +55,10 @@ class _SongScreenState extends State<SongScreen> {
   List<WordEntry> get _words => _song.words;
   bool get _synced => _song.isSynced;
 
+  /// Minimum gap (seconds) between two words before an ad is allowed to
+  /// interrupt the deck — short gaps would eat the whole viewing window.
+  static const _minGapForAd = 8;
+
   void _buildPages() {
     _pages.clear();
     _wordToPage.clear();
@@ -62,7 +66,21 @@ class _SongScreenState extends State<SongScreen> {
       _wordToPage[i] = _pages.length;
       _pages.add(i);
       final isLast = i == _words.length - 1;
-      if (!isLast && (i + 1) % Ads.cardInterval == 0) _pages.add(null);
+      if (isLast) continue;
+
+      if (_synced) {
+        // Place an ad exactly where a real gap exists, not on a fixed word
+        // count — otherwise a long instrumental break between two words
+        // that don't happen to land on the count boundary gets no ad at all.
+        final curTs = _words[i].timestamp;
+        final nextTs = _words[i + 1].timestamp;
+        final hasGap =
+            curTs != null && nextTs != null && nextTs - curTs >= _minGapForAd;
+        if (hasGap) _pages.add(null);
+      } else if ((i + 1) % Ads.cardInterval == 0) {
+        // No timestamps to reason about — fall back to a fixed interval.
+        _pages.add(null);
+      }
     }
   }
 
@@ -91,10 +109,6 @@ class _SongScreenState extends State<SongScreen> {
           const Duration(milliseconds: 500), (_) => _syncToPlayback());
     }
   }
-
-  /// Minimum gap (seconds) between two words before an ad is allowed to
-  /// interrupt the deck — short gaps would eat the whole viewing window.
-  static const _minGapForAd = 8;
 
   /// How long the current word card shows before switching to the ad.
   static const _adDelay = 4;
