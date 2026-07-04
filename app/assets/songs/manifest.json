@@ -80,6 +80,22 @@
     "wordCount": 20
   },
   {
+    "id": "ateez-bad",
+    "title": "BAD",
+    "artist": "ATEEZ",
+    "youtubeId": "-q_S27LbNKU",
+    "synced": true,
+    "wordCount": 20
+  },
+  {
+    "id": "babymonster-choom",
+    "title": "춤 (CHOOM)",
+    "artist": "BABYMONSTER",
+    "youtubeId": "x3eqqoZPV_E",
+    "synced": true,
+    "wordCount": 20
+  },
+  {
     "id": "blackpink-ddu-du",
     "title": "DDU-DU DDU-DU",
     "artist": "BLACKPINK",
