@@ -40,6 +40,14 @@
     "wordCount": 16
   },
   {
+    "id": "aespa-whiplash",
+    "title": "Whiplash",
+    "artist": "aespa",
+    "youtubeId": "jWQx2f-CErU",
+    "synced": true,
+    "wordCount": 20
+  },
+  {
     "id": "akmu-somune-nagwon",
     "title": "소문의 낙원",
     "artist": "AKMU (악뮤)",
@@ -1094,6 +1102,14 @@
     "youtubeId": "SK6Sm2Ki9tI",
     "synced": true,
     "wordCount": 16
+  },
+  {
+    "id": "leemujin-episode",
+    "title": "에피소드 (Episode)",
+    "artist": "이무진",
+    "youtubeId": "PVIf531Dt8E",
+    "synced": true,
+    "wordCount": 20
   },
   {
     "id": "leechanhyuk-endangered-love",
