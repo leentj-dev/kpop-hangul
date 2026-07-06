@@ -504,6 +504,14 @@
     "wordCount": 20
   },
   {
+    "id": "nflying-flashback",
+    "title": "Flashback",
+    "artist": "N.Flying",
+    "youtubeId": "b3xubrV7nnk",
+    "synced": true,
+    "wordCount": 20
+  },
+  {
     "id": "nmixx-blue-valentine",
     "title": "Blue Valentine",
     "artist": "NMIXX",
@@ -692,6 +700,14 @@
     "title": "MEGAVERSE",
     "artist": "Stray Kids",
     "youtubeId": "JqwPCzJnYyY",
+    "synced": true,
+    "wordCount": 20
+  },
+  {
+    "id": "treasure-nally-na",
+    "title": "난리나 (NALLY-NA) (HYUNHAYO)",
+    "artist": "TREASURE",
+    "youtubeId": "GCedXwbwMfQ",
     "synced": true,
     "wordCount": 20
   },
