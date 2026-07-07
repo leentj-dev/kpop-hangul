@@ -11,6 +11,7 @@ Rules:
 import json
 import re
 import shutil
+import subprocess
 import sys
 from pathlib import Path
 
@@ -22,6 +23,24 @@ DST = ROOT / (sys.argv[2] if len(sys.argv) > 2 else "app/assets/songs")
 
 def norm(s: str) -> str:
     return re.sub(r"[^a-z0-9가-힣ぁ-んァ-ヶ一-龯]", "", s.lower())
+
+
+def added_order(path: Path) -> int:
+    """Unix time the file was first added to git (recency signal for sorting).
+    Uncommitted/new files sort newest via the file's mtime."""
+    try:
+        out = subprocess.run(
+            ["git", "log", "--diff-filter=A", "--format=%ct", "--", str(path)],
+            cwd=ROOT, capture_output=True, text=True, timeout=15,
+        ).stdout.split()
+        if out:
+            return int(out[-1])  # earliest add commit
+    except (subprocess.SubprocessError, ValueError, OSError):
+        pass
+    try:
+        return int(path.stat().st_mtime)
+    except OSError:
+        return 0
 
 
 def load(path: Path):
@@ -73,6 +92,9 @@ def main():
             "youtubeId": data.get("youtubeId", ""),
             "synced": bool(synced),
             "wordCount": len(data.get("words", [])),
+            # When this song was first added (git add time, unix seconds).
+            # The app sorts by this descending so newest songs are on top.
+            "order": added_order(path),
         })
 
     (DST / "manifest.json").write_text(

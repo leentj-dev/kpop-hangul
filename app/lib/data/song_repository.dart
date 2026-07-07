@@ -59,8 +59,9 @@ class SongRepository {
       map[s.id] = s;
     }
     final list = map.values.toList();
+    // Most recently added first; fall back to artist for equal/absent order.
     list.sort((a, b) {
-      if (a.synced != b.synced) return a.synced ? -1 : 1;
+      if (a.order != b.order) return b.order.compareTo(a.order);
       return a.artist.compareTo(b.artist);
     });
     return list;

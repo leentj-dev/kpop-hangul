@@ -5,7 +5,8 @@
     "artist": "Ado",
     "youtubeId": "Qp3b-RXtz4w",
     "synced": true,
-    "wordCount": 19
+    "wordCount": 19,
+    "order": 1783053559
   },
   {
     "id": "ado-show",
@@ -13,7 +14,8 @@
     "artist": "Ado",
     "youtubeId": "pgXpM4l_MwI",
     "synced": true,
-    "wordCount": 19
+    "wordCount": 19,
+    "order": 1783053559
   },
   {
     "id": "aimer-zankyosanka",
@@ -21,7 +23,8 @@
     "artist": "Aimer",
     "youtubeId": "tLQLa6lM3Us",
     "synced": true,
-    "wordCount": 20
+    "wordCount": 20,
+    "order": 1783053559
   },
   {
     "id": "backnumber-suiheisen",
@@ -29,7 +32,8 @@
     "artist": "back number",
     "youtubeId": "iqEr3P78fz8",
     "synced": true,
-    "wordCount": 20
+    "wordCount": 20,
+    "order": 1783053559
   },
   {
     "id": "fujii-kaze-shinunoga-e-wa",
@@ -37,7 +41,8 @@
     "artist": "Fujii Kaze (藤井風)",
     "youtubeId": "dawrQnvwMTY",
     "synced": true,
-    "wordCount": 14
+    "wordCount": 14,
+    "order": 1783053559
   },
   {
     "id": "kenshi-yonezu-kick-back",
@@ -45,7 +50,8 @@
     "artist": "Kenshi Yonezu (米津玄師)",
     "youtubeId": "M2cckDmNLMI",
     "synced": true,
-    "wordCount": 18
+    "wordCount": 18,
+    "order": 1783053559
   },
   {
     "id": "kenshi-yonezu-lemon",
@@ -53,7 +59,8 @@
     "artist": "Kenshi Yonezu (米津玄師)",
     "youtubeId": "SX_ViT4Ra7k",
     "synced": true,
-    "wordCount": 18
+    "wordCount": 18,
+    "order": 1783053559
   },
   {
     "id": "king-gnu-hakujitsu",
@@ -61,7 +68,8 @@
     "artist": "King Gnu",
     "youtubeId": "ony539T074w",
     "synced": true,
-    "wordCount": 20
+    "wordCount": 20,
+    "order": 1783053559
   },
   {
     "id": "lisa-homura",
@@ -69,7 +77,8 @@
     "artist": "LiSA",
     "youtubeId": "4DxL6IKmXx4",
     "synced": true,
-    "wordCount": 20
+    "wordCount": 20,
+    "order": 1783053559
   },
   {
     "id": "lisa-gurenge",
@@ -77,7 +86,8 @@
     "artist": "LiSA",
     "youtubeId": "x1FV6IrjZCY",
     "synced": true,
-    "wordCount": 20
+    "wordCount": 20,
+    "order": 1783053559
   },
   {
     "id": "mrs-green-apple-que-sera-sera",
@@ -85,7 +95,8 @@
     "artist": "Mrs. GREEN APPLE",
     "youtubeId": "Jy-QS27q7lA",
     "synced": true,
-    "wordCount": 19
+    "wordCount": 19,
+    "order": 1783053559
   },
   {
     "id": "mrs-green-apple-lilac",
@@ -93,7 +104,8 @@
     "artist": "Mrs. GREEN APPLE",
     "youtubeId": "QjrkrVmC-8M",
     "synced": true,
-    "wordCount": 20
+    "wordCount": 20,
+    "order": 1783053559
   },
   {
     "id": "official-hige-dandism-pretender",
@@ -101,7 +113,8 @@
     "artist": "Official HIGE DANDISM",
     "youtubeId": "TQ8WlA2GXbk",
     "synced": true,
-    "wordCount": 20
+    "wordCount": 20,
+    "order": 1783053559
   },
   {
     "id": "official-hige-dandism-subtitle",
@@ -109,7 +122,8 @@
     "artist": "Official HIGE DANDISM",
     "youtubeId": "hN5MBlGv2Ac",
     "synced": true,
-    "wordCount": 19
+    "wordCount": 19,
+    "order": 1783053559
   },
   {
     "id": "tuki-bansanka",
@@ -117,7 +131,8 @@
     "artist": "tuki.",
     "youtubeId": "oZpYEEcvu5I",
     "synced": true,
-    "wordCount": 20
+    "wordCount": 20,
+    "order": 1783053559
   },
   {
     "id": "vaundy-kaiju-no-hanauta",
@@ -125,7 +140,8 @@
     "artist": "Vaundy",
     "youtubeId": "UM9XNpgrqVk",
     "synced": true,
-    "wordCount": 20
+    "wordCount": 20,
+    "order": 1783053559
   },
   {
     "id": "yoasobi-idol",
@@ -133,7 +149,8 @@
     "artist": "YOASOBI",
     "youtubeId": "ZRtdQ81jPUQ",
     "synced": true,
-    "wordCount": 18
+    "wordCount": 18,
+    "order": 1783053559
   },
   {
     "id": "yoasobi-yoru-ni-kakeru",
@@ -141,7 +158,8 @@
     "artist": "YOASOBI",
     "youtubeId": "x8VYWazR5mE",
     "synced": true,
-    "wordCount": 18
+    "wordCount": 18,
+    "order": 1783053559
   },
   {
     "id": "yuuri-dry-flower",
@@ -149,7 +167,8 @@
     "artist": "Yuuri",
     "youtubeId": "kzZ6KXDM1RI",
     "synced": true,
-    "wordCount": 20
+    "wordCount": 20,
+    "order": 1783053559
   },
   {
     "id": "yorushika-tadakiminihare",
@@ -157,7 +176,8 @@
     "artist": "ヨルシカ",
     "youtubeId": "-VKIqrvVOpo",
     "synced": true,
-    "wordCount": 19
+    "wordCount": 19,
+    "order": 1783053559
   },
   {
     "id": "fujiikaze-michiteyuku",
@@ -165,6 +185,7 @@
     "artist": "藤井風",
     "youtubeId": "ptiK8U4WlSc",
     "synced": true,
-    "wordCount": 20
+    "wordCount": 20,
+    "order": 1783053559
   }
 ]

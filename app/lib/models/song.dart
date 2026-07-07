@@ -112,6 +112,10 @@ class SongSummary {
   final bool synced;
   final int wordCount;
 
+  /// When the song was first added (unix seconds). Newer = larger; the feed
+  /// sorts descending so the most recently added song is on top.
+  final int order;
+
   const SongSummary({
     required this.id,
     required this.title,
@@ -119,6 +123,7 @@ class SongSummary {
     required this.youtubeId,
     required this.synced,
     required this.wordCount,
+    this.order = 0,
   });
 
   factory SongSummary.fromJson(Map<String, dynamic> json) => SongSummary(
@@ -128,5 +133,6 @@ class SongSummary {
         youtubeId: json['youtubeId'] as String? ?? '',
         synced: json['synced'] as bool? ?? false,
         wordCount: json['wordCount'] as int? ?? 0,
+        order: json['order'] as int? ?? 0,
       );
 }
