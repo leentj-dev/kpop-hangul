@@ -7,7 +7,6 @@ import '../config/remote_config.dart';
 import '../config/theme_controller.dart';
 import '../data/song_repository.dart';
 import '../models/song.dart';
-import '../utils/ads.dart';
 import '../utils/languages.dart';
 import '../utils/themes.dart';
 import '../widgets/native_ad_card.dart';
@@ -304,7 +303,9 @@ class _FeedScreenState extends State<FeedScreen> {
       ),
       body: _loading
           ? const Center(child: CircularProgressIndicator())
-          : ValueListenableBuilder<bool>(
+          : ValueListenableBuilder<int>(
+              valueListenable: feedAdIntervalNotifier,
+              builder: (context, _, _) => ValueListenableBuilder<bool>(
               valueListenable: adsEnabledNotifier,
               builder: (context, adsOn, _) {
               final List<SongSummary?> items =
@@ -414,18 +415,19 @@ class _FeedScreenState extends State<FeedScreen> {
                 );
                 },
               );
-            }),
+            })),
     );
   }
 
-  /// Interleaves null ad-slots after every [Ads.feedInterval] songs
-  /// (no trailing ad).
+  /// Interleaves null ad-slots after every N songs (from Remote Config,
+  /// `feed_ad_interval`), no trailing ad.
   List<SongSummary?> _withAds(List<SongSummary> songs) {
+    final interval = feedAdIntervalNotifier.value;
     final out = <SongSummary?>[];
     for (var i = 0; i < songs.length; i++) {
       out.add(songs[i]);
       final isLast = i == songs.length - 1;
-      if (!isLast && (i + 1) % Ads.feedInterval == 0) out.add(null);
+      if (!isLast && (i + 1) % interval == 0) out.add(null);
     }
     return out;
   }

@@ -6,16 +6,14 @@ import 'package:google_mobile_ads/google_mobile_ads.dart';
 import '../config/remote_config.dart';
 import '../utils/ads.dart';
 
-/// A native AdMob ad rendered with a platform template, styled to blend into
-/// the app's dark card UI. Auto-refreshes and hides entirely when ads are
-/// disabled via Remote Config. Used both in the song feed and under the
-/// word deck so the ad reads like part of the content, not a banner.
+/// A native AdMob ad rendered by the platform "songCard" factory, styled to
+/// look like a song list row (thumbnail + title + artist). Auto-refreshes and
+/// hides entirely when ads are disabled via Remote Config. Used both in the
+/// song feed and under the word deck so it reads like content, not a banner.
 class NativeAdCard extends StatefulWidget {
-  final TemplateType templateType;
   final Duration refreshInterval;
   const NativeAdCard({
     super.key,
-    this.templateType = TemplateType.small,
     this.refreshInterval = const Duration(seconds: 60),
   });
 
@@ -28,34 +26,7 @@ class _NativeAdCardState extends State<NativeAdCard> {
   bool _loaded = false;
   Timer? _refreshTimer;
 
-  double get _height =>
-      widget.templateType == TemplateType.medium ? 340 : 110;
-
-  NativeTemplateStyle get _style => NativeTemplateStyle(
-        templateType: widget.templateType,
-        mainBackgroundColor: const Color(0xFF14101B),
-        cornerRadius: 14,
-        callToActionTextStyle: NativeTemplateTextStyle(
-          textColor: Colors.white,
-          backgroundColor: const Color(0xFF7C3AED),
-          size: 14,
-        ),
-        primaryTextStyle: NativeTemplateTextStyle(
-          textColor: Colors.white,
-          backgroundColor: const Color(0xFF14101B),
-          size: 15,
-        ),
-        secondaryTextStyle: NativeTemplateTextStyle(
-          textColor: const Color(0xFFA79FB8),
-          backgroundColor: const Color(0xFF14101B),
-          size: 13,
-        ),
-        tertiaryTextStyle: NativeTemplateTextStyle(
-          textColor: const Color(0xFF7C7490),
-          backgroundColor: const Color(0xFF14101B),
-          size: 12,
-        ),
-      );
+  static const _height = 92.0;
 
   @override
   void initState() {
@@ -68,8 +39,8 @@ class _NativeAdCardState extends State<NativeAdCard> {
   void _loadAd() {
     NativeAd(
       adUnitId: Ads.nativeUnitId,
+      factoryId: 'songCard',
       request: const AdRequest(),
-      nativeTemplateStyle: _style,
       listener: NativeAdListener(
         onAdLoaded: (ad) {
           if (!mounted) {
@@ -103,14 +74,11 @@ class _NativeAdCardState extends State<NativeAdCard> {
         if (!enabled || !_loaded || _ad == null) {
           return const SizedBox.shrink();
         }
+        // The native layout (native_ad_song.xml) draws its own rounded
+        // background/border, so this just reserves height.
         return Container(
           margin: const EdgeInsets.symmetric(horizontal: 4, vertical: 6),
           height: _height,
-          decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(14),
-            border: Border.all(color: const Color(0xFF251E30)),
-          ),
-          clipBehavior: Clip.antiAlias,
           child: AdWidget(ad: _ad!),
         );
       },
