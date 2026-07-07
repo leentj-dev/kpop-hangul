@@ -72,6 +72,13 @@ class Song {
   final String title;
   final String artist;
   final String youtubeId;
+
+  /// Seconds the music video runs ahead of the audio track (e.g. a drama
+  /// intro before the song starts). Word timestamps are audio-relative, so
+  /// video time = timestamp + introOffset. Data default 0; the user can
+  /// nudge it live and that override is stored per-song on device.
+  final double introOffset;
+
   final List<WordEntry> words;
 
   const Song({
@@ -79,6 +86,7 @@ class Song {
     required this.title,
     required this.artist,
     required this.youtubeId,
+    this.introOffset = 0,
     required this.words,
   });
 
@@ -87,6 +95,7 @@ class Song {
         title: json['title'] as String? ?? '',
         artist: json['artist'] as String? ?? '',
         youtubeId: json['youtubeId'] as String? ?? '',
+        introOffset: (json['introOffset'] as num?)?.toDouble() ?? 0,
         words: (json['words'] as List<dynamic>? ?? [])
             .map((w) => WordEntry.fromJson(w as Map<String, dynamic>))
             .toList(),

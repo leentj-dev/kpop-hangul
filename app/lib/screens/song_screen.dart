@@ -2,6 +2,7 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_tts/flutter_tts.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 import 'package:youtube_player_iframe/youtube_player_iframe.dart';
 
 import '../config/app_config.dart';
@@ -43,6 +44,10 @@ class _SongScreenState extends State<SongScreen> {
   late int _index;
   bool _advancing = false;
 
+  /// Effective intro offset (seconds): the song's data value plus any local
+  /// user nudge. video time = audio timestamp + offset.
+  double _offset = 0;
+
   List<WordEntry> get _words => _song.words;
   bool get _synced => _song.isSynced;
 
@@ -51,6 +56,7 @@ class _SongScreenState extends State<SongScreen> {
     super.initState();
     _song = widget.song;
     _index = widget.index;
+    _loadOffset();
     _player = YoutubePlayerController.fromVideoId(
       videoId: _song.youtubeId,
       autoPlay: true,
@@ -77,7 +83,7 @@ class _SongScreenState extends State<SongScreen> {
     var index = -1;
     for (var i = 0; i < _words.length; i++) {
       final ts = _words[i].timestamp;
-      if (ts != null && ts <= t) index = i;
+      if (ts != null && ts + _offset <= t) index = i;
     }
     if (index >= 0 && index != _activeIndex && mounted) {
       setState(() => _activeIndex = index);
@@ -102,6 +108,7 @@ class _SongScreenState extends State<SongScreen> {
         _song = song;
         _activeIndex = 0;
       });
+      _loadOffset();
       _syncTimer?.cancel();
       if (_synced) {
         _syncTimer = Timer.periodic(
@@ -117,9 +124,30 @@ class _SongScreenState extends State<SongScreen> {
   Future<void> _seekToWord(int index) async {
     final ts = _words[index].timestamp;
     if (ts != null) {
-      _player.seekTo(seconds: ts, allowSeekAhead: true);
+      _player.seekTo(seconds: ts + _offset, allowSeekAhead: true);
     }
     setState(() => _activeIndex = index);
+  }
+
+  Future<void> _loadOffset() async {
+    final prefs = await SharedPreferences.getInstance();
+    final override = prefs.getDouble('offset_${_song.id}');
+    if (mounted) {
+      setState(() => _offset = override ?? _song.introOffset);
+    }
+  }
+
+  Future<void> _nudgeOffset(double delta) async {
+    final next = (_offset + delta).clamp(-30.0, 30.0);
+    setState(() => _offset = next);
+    final prefs = await SharedPreferences.getInstance();
+    await prefs.setDouble('offset_${_song.id}', next);
+  }
+
+  Future<void> _resetOffset() async {
+    setState(() => _offset = _song.introOffset);
+    final prefs = await SharedPreferences.getInstance();
+    await prefs.remove('offset_${_song.id}');
   }
 
   @override
@@ -129,6 +157,87 @@ class _SongScreenState extends State<SongScreen> {
     _pageController.dispose();
     _tts.stop();
     super.dispose();
+  }
+
+  void _openSyncAdjust(SongTheme theme) {
+    showModalBottomSheet<void>(
+      context: context,
+      backgroundColor: const Color(0xFF1C1C1E),
+      shape: const RoundedRectangleBorder(
+        borderRadius: BorderRadius.vertical(top: Radius.circular(20)),
+      ),
+      builder: (context) => StatefulBuilder(
+        builder: (context, setSheet) {
+          void nudge(double d) {
+            _nudgeOffset(d);
+            setSheet(() {});
+          }
+
+          return Padding(
+            padding: const EdgeInsets.fromLTRB(20, 16, 20, 28),
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                const Text('Sync adjust',
+                    style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 16,
+                        fontWeight: FontWeight.w700)),
+                const SizedBox(height: 4),
+                const Text(
+                  'If the words run ahead of the singing, add delay (+).',
+                  style: TextStyle(color: Colors.white54, fontSize: 12),
+                  textAlign: TextAlign.center,
+                ),
+                const SizedBox(height: 20),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    _nudgeButton(theme, '-1s', () => nudge(-1)),
+                    _nudgeButton(theme, '-0.5s', () => nudge(-0.5)),
+                    Column(
+                      children: [
+                        Text('${_offset >= 0 ? '+' : ''}'
+                            '${_offset.toStringAsFixed(1)}s',
+                            style: TextStyle(
+                                color: theme.accent,
+                                fontSize: 22,
+                                fontWeight: FontWeight.w800)),
+                        const Text('offset',
+                            style: TextStyle(
+                                color: Colors.white38, fontSize: 11)),
+                      ],
+                    ),
+                    _nudgeButton(theme, '+0.5s', () => nudge(0.5)),
+                    _nudgeButton(theme, '+1s', () => nudge(1)),
+                  ],
+                ),
+                const SizedBox(height: 16),
+                TextButton(
+                  onPressed: () {
+                    _resetOffset();
+                    setSheet(() {});
+                  },
+                  child: const Text('Reset',
+                      style: TextStyle(color: Colors.white70)),
+                ),
+              ],
+            ),
+          );
+        },
+      ),
+    );
+  }
+
+  Widget _nudgeButton(SongTheme theme, String label, VoidCallback onTap) {
+    return OutlinedButton(
+      onPressed: onTap,
+      style: OutlinedButton.styleFrom(
+        side: BorderSide(color: theme.accent.withValues(alpha: 0.6)),
+        padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+      ),
+      child: Text(label, style: TextStyle(color: theme.accent)),
+    );
   }
 
   @override
@@ -170,10 +279,11 @@ class _SongScreenState extends State<SongScreen> {
                       ),
                     ),
                     if (_synced)
-                      Padding(
-                        padding: const EdgeInsets.only(right: 12),
-                        child: Icon(Icons.sync_rounded,
-                            color: theme.accent, size: 18),
+                      IconButton(
+                        onPressed: () => _openSyncAdjust(theme),
+                        tooltip: 'Adjust sync',
+                        icon: Icon(Icons.av_timer_rounded,
+                            color: theme.accent, size: 22),
                       ),
                   ],
                 ),
