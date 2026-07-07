@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 import '../config/app_config.dart';
@@ -95,6 +96,62 @@ class _FeedScreenState extends State<FeedScreen> {
               _norm(s.artist).contains(_norm(_query)))
           .toList();
 
+  /// Gathers every song the user adjusted (SharedPreferences `offset_<id>`)
+  /// into a compact text block to copy and hand to the dev, who applies the
+  /// values to the song JSON (introOffset) and pushes.
+  Future<void> _exportOffsets() async {
+    final prefs = await SharedPreferences.getInstance();
+    final lines = <String>[];
+    for (final key in prefs.getKeys()) {
+      if (!key.startsWith('offset_')) continue;
+      final value = prefs.getDouble(key);
+      if (value != null) {
+        lines.add('${key.substring('offset_'.length)}: '
+            '${value.toStringAsFixed(1)}');
+      }
+    }
+    lines.sort();
+    final payload = lines.join('\n');
+    if (!mounted) return;
+
+    showDialog<void>(
+      context: context,
+      builder: (dctx) => AlertDialog(
+        backgroundColor: const Color(0xFF1C1C1E),
+        title: const Text('Sync offsets',
+            style: TextStyle(color: Colors.white, fontSize: 16)),
+        content: SingleChildScrollView(
+          child: SelectableText(
+            payload.isEmpty ? '(no adjustments saved yet)' : payload,
+            style: const TextStyle(
+                color: Colors.white70, fontSize: 13, height: 1.5),
+          ),
+        ),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.of(dctx).pop(),
+            child:
+                const Text('Close', style: TextStyle(color: Colors.white54)),
+          ),
+          if (payload.isNotEmpty)
+            FilledButton(
+              onPressed: () async {
+                await Clipboard.setData(ClipboardData(text: payload));
+                if (dctx.mounted) Navigator.of(dctx).pop();
+                if (mounted) {
+                  ScaffoldMessenger.of(context).showSnackBar(
+                    const SnackBar(
+                        content: Text('Copied — send it to the dev')),
+                  );
+                }
+              },
+              child: const Text('Copy'),
+            ),
+        ],
+      ),
+    );
+  }
+
   Future<void> _openSong(SongSummary summary) async {
     final song = await _repo.loadSong(summary.id);
     if (!mounted) return;
@@ -146,6 +203,12 @@ class _FeedScreenState extends State<FeedScreen> {
           ],
         ),
         actions: [
+          IconButton(
+            onPressed: _exportOffsets,
+            tooltip: 'Export sync offsets',
+            icon: Icon(Icons.ios_share_rounded,
+                color: onSurface.withValues(alpha: 0.85)),
+          ),
           IconButton(
             onPressed: toggleThemeMode,
             tooltip: isDark ? 'Light mode' : 'Dark mode',
