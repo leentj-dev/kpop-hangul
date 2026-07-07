@@ -49,3 +49,7 @@ firebase-debug.log
 
 # Firebase config (contains API keys) — per-flavor, not committed
 app/android/app/src/*/google-services.json
+
+# Android release signing (NEVER commit — losing these or leaking them is bad)
+app/android/key.properties
+app/android/app/*.jks

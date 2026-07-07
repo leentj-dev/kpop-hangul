@@ -13,12 +13,17 @@ class Ads {
 
   static const _testBannerAndroid = 'ca-app-pub-3940256099942544/6300978111';
   static const _testBannerIos = 'ca-app-pub-3940256099942544/2934735716';
+  static const _testNativeAndroid = 'ca-app-pub-3940256099942544/2247696110';
+  static const _testNativeIos = 'ca-app-pub-3940256099942544/3986624511';
 
   /// Insert an ad after every N songs in the feed.
   static const feedInterval = 8;
 
   static String get bannerUnitId =>
       Platform.isIOS ? _testBannerIos : _testBannerAndroid;
+
+  static String get nativeUnitId =>
+      Platform.isIOS ? _testNativeIos : _testNativeAndroid;
 
   static BannerAd createBanner({AdSize size = AdSize.mediumRectangle}) {
     return BannerAd(

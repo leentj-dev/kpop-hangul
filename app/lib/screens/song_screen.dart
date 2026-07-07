@@ -9,7 +9,7 @@ import '../config/app_config.dart';
 import '../data/song_repository.dart';
 import '../models/song.dart';
 import '../utils/themes.dart';
-import '../widgets/ad_banner.dart';
+import '../widgets/native_ad_card.dart';
 import '../widgets/word_card.dart';
 
 class SongScreen extends StatefulWidget {
@@ -325,7 +325,7 @@ class _SongScreenState extends State<SongScreen> {
                 ),
               ),
               const SizedBox(height: 8),
-              const AdCard(),
+              const NativeAdCard(),
               Padding(
                 padding: const EdgeInsets.only(top: 4, bottom: 8),
                 child: Text(

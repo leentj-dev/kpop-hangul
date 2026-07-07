@@ -10,7 +10,7 @@ import '../models/song.dart';
 import '../utils/ads.dart';
 import '../utils/languages.dart';
 import '../utils/themes.dart';
-import '../widgets/ad_banner.dart';
+import '../widgets/native_ad_card.dart';
 import 'song_screen.dart';
 
 class FeedScreen extends StatefulWidget {
@@ -315,7 +315,7 @@ class _FeedScreenState extends State<FeedScreen> {
                 itemCount: items.length,
                 itemBuilder: (context, i) {
                   final s = items[i];
-                  if (s == null) return const AdCard();
+                  if (s == null) return const NativeAdCard();
                   final theme = songThemeFor(s.id);
                   return InkWell(
                   borderRadius: BorderRadius.circular(14),
