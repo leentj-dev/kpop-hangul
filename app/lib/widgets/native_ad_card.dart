@@ -7,15 +7,12 @@ import '../config/remote_config.dart';
 import '../utils/ads.dart';
 
 /// A native AdMob ad rendered by the platform "songCard" factory, styled to
-/// look like a song list row (thumbnail + title + artist). Auto-refreshes and
-/// hides entirely when ads are disabled via Remote Config. Used both in the
-/// song feed and under the word deck so it reads like content, not a banner.
+/// look like a song list row (thumbnail + title + artist). Auto-refreshes on
+/// a Remote-Config-driven interval and hides entirely when ads are disabled.
+/// Used both in the song feed and under the word deck so it reads like
+/// content, not a banner.
 class NativeAdCard extends StatefulWidget {
-  final Duration refreshInterval;
-  const NativeAdCard({
-    super.key,
-    this.refreshInterval = const Duration(seconds: 60),
-  });
+  const NativeAdCard({super.key});
 
   @override
   State<NativeAdCard> createState() => _NativeAdCardState();
@@ -32,8 +29,16 @@ class _NativeAdCardState extends State<NativeAdCard> {
   void initState() {
     super.initState();
     _loadAd();
-    _refreshTimer =
-        Timer.periodic(widget.refreshInterval, (_) => _loadAd());
+    _startRefreshTimer();
+    nativeAdRefreshSecNotifier.addListener(_startRefreshTimer);
+  }
+
+  void _startRefreshTimer() {
+    _refreshTimer?.cancel();
+    _refreshTimer = Timer.periodic(
+      Duration(seconds: nativeAdRefreshSecNotifier.value),
+      (_) => _loadAd(),
+    );
   }
 
   void _loadAd() {
@@ -61,6 +66,7 @@ class _NativeAdCardState extends State<NativeAdCard> {
 
   @override
   void dispose() {
+    nativeAdRefreshSecNotifier.removeListener(_startRefreshTimer);
     _refreshTimer?.cancel();
     _ad?.dispose();
     super.dispose();

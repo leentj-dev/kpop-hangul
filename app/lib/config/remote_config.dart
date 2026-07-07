@@ -11,8 +11,12 @@ final adsEnabledNotifier = ValueNotifier<bool>(true);
 /// How many songs appear between feed ads. Driven by `feed_ad_interval`.
 final feedAdIntervalNotifier = ValueNotifier<int>(8);
 
+/// Seconds between native-ad auto-refreshes. Driven by `native_ad_refresh_sec`.
+final nativeAdRefreshSecNotifier = ValueNotifier<int>(60);
+
 const _adsEnabledKey = 'ads_enabled';
 const _feedAdIntervalKey = 'feed_ad_interval';
+const _nativeRefreshKey = 'native_ad_refresh_sec';
 const _nativeUnitAndroidKey = 'native_ad_unit_android';
 const _nativeUnitIosKey = 'native_ad_unit_ios';
 
@@ -41,6 +45,7 @@ Future<void> initRemoteConfig() async {
     await rc.setDefaults(const {
       _adsEnabledKey: true,
       _feedAdIntervalKey: 8,
+      _nativeRefreshKey: 60,
       _nativeUnitAndroidKey: '',
       _nativeUnitIosKey: '',
     });
@@ -62,6 +67,9 @@ void _publish(FirebaseRemoteConfig rc) {
   final interval = rc.getInt(_feedAdIntervalKey);
   // Guard against a bad/zero value making every row an ad.
   feedAdIntervalNotifier.value = interval >= 2 ? interval : 8;
+  // AdMob requires >= 30s; clamp to a safe floor.
+  final refresh = rc.getInt(_nativeRefreshKey);
+  nativeAdRefreshSecNotifier.value = refresh >= 30 ? refresh : 60;
   _nativeUnitAndroid = rc.getString(_nativeUnitAndroidKey);
   _nativeUnitIos = rc.getString(_nativeUnitIosKey);
 }
