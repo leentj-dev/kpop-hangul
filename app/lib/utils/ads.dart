@@ -2,6 +2,8 @@ import 'dart:io';
 
 import 'package:google_mobile_ads/google_mobile_ads.dart';
 
+import '../config/remote_config.dart';
+
 /// AdMob configuration.
 ///
 /// These are Google's official TEST ad unit IDs — they show test ads and are
@@ -22,8 +24,11 @@ class Ads {
   static String get bannerUnitId =>
       Platform.isIOS ? _testBannerIos : _testBannerAndroid;
 
+  /// Native ad unit id — Remote Config override (`native_ad_unit_*`) if set,
+  /// otherwise the built-in Google test id.
   static String get nativeUnitId =>
-      Platform.isIOS ? _testNativeIos : _testNativeAndroid;
+      nativeAdUnitOverride() ??
+      (Platform.isIOS ? _testNativeIos : _testNativeAndroid);
 
   static BannerAd createBanner({AdSize size = AdSize.mediumRectangle}) {
     return BannerAd(
