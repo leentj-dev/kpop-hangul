@@ -1,16 +1,24 @@
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
 
 import 'config/app_config.dart';
+import 'config/remote_config.dart';
 import 'config/theme_controller.dart';
 import 'screens/feed_screen.dart';
 
 /// Shared entrypoint used by every flavor. Set [appConfig] first, then call.
-void bootstrap(AppConfig config) {
+Future<void> bootstrap(AppConfig config) async {
   appConfig = config;
   WidgetsFlutterBinding.ensureInitialized();
   MobileAds.instance.initialize();
   loadThemeMode();
+  try {
+    await Firebase.initializeApp();
+    await initRemoteConfig();
+  } on Exception {
+    // App runs fine without Firebase; ads stay at their default (on).
+  }
   runApp(const App());
 }
 

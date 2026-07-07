@@ -3,6 +3,7 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
 
+import '../config/remote_config.dart';
 import '../utils/ads.dart';
 
 /// A self-contained banner that loads its own ad, reserves space for it, and
@@ -83,12 +84,21 @@ class _AdBannerState extends State<AdBanner> {
 }
 
 /// Ad wrapped in a bordered card with an "AD" label — the shared look used
-/// for both the feed list and the space below the word deck.
+/// for both the feed list and the space below the word deck. Hides itself
+/// entirely when ads are disabled via Remote Config.
 class AdCard extends StatelessWidget {
   const AdCard({super.key});
 
   @override
   Widget build(BuildContext context) {
+    return ValueListenableBuilder<bool>(
+      valueListenable: adsEnabledNotifier,
+      builder: (context, enabled, _) =>
+          enabled ? _card(context) : const SizedBox.shrink(),
+    );
+  }
+
+  Widget _card(BuildContext context) {
     final onSurface = Theme.of(context).colorScheme.onSurface;
     return Container(
       margin: const EdgeInsets.symmetric(horizontal: 4, vertical: 6),

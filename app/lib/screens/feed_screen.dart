@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 import '../config/app_config.dart';
+import '../config/remote_config.dart';
 import '../config/theme_controller.dart';
 import '../data/song_repository.dart';
 import '../models/song.dart';
@@ -240,8 +241,11 @@ class _FeedScreenState extends State<FeedScreen> {
       ),
       body: _loading
           ? const Center(child: CircularProgressIndicator())
-          : Builder(builder: (context) {
-              final items = _withAds(_filtered);
+          : ValueListenableBuilder<bool>(
+              valueListenable: adsEnabledNotifier,
+              builder: (context, adsOn, _) {
+              final List<SongSummary?> items =
+                  adsOn ? _withAds(_filtered) : _filtered;
               return ListView.builder(
                 controller: _scrollController,
                 padding: const EdgeInsets.fromLTRB(12, 4, 12, 24),

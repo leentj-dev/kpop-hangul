@@ -46,3 +46,6 @@ next-env.d.ts
 .mcp.json
 .pdca-status.json
 firebase-debug.log
+
+# Firebase config (contains API keys) — per-flavor, not committed
+app/android/app/src/*/google-services.json
