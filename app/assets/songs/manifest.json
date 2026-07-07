@@ -477,6 +477,15 @@
     "order": 1773571092
   },
   {
+    "id": "ive-i-am",
+    "title": "I AM",
+    "artist": "IVE",
+    "youtubeId": "6ZUIwj3FgUY",
+    "synced": true,
+    "wordCount": 20,
+    "order": 1783466076
+  },
+  {
     "id": "ive-love-dive",
     "title": "LOVE DIVE",
     "artist": "IVE",
@@ -718,6 +727,15 @@
     "synced": true,
     "wordCount": 20,
     "order": 1783008414
+  },
+  {
+    "id": "rescene-runaway",
+    "title": "Runaway",
+    "artist": "RESCENE",
+    "youtubeId": "rsZwrTNklos",
+    "synced": true,
+    "wordCount": 20,
+    "order": 1783466071
   },
   {
     "id": "riize-d-d-done",
