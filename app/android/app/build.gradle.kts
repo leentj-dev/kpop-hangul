@@ -62,12 +62,17 @@ android {
             dimension = "app"
             applicationId = "dev.leentj.kpop_hangul"
             manifestPlaceholders["appLabel"] = "K-pop Hangul"
+            manifestPlaceholders["admobAppId"] =
+                "ca-app-pub-6232115093331648~5603947943"
             if (hasKeystore) signingConfig = signingConfigs.getByName("kpop")
         }
         create("jpop") {
             dimension = "app"
             applicationId = "dev.leentj.jpop_kana"
             manifestPlaceholders["appLabel"] = "J-pop Kana"
+            // jpop has no AdMob app yet — keep Google's test App ID.
+            manifestPlaceholders["admobAppId"] =
+                "ca-app-pub-3940256099942544~3347511713"
             if (hasKeystore) signingConfig = signingConfigs.getByName("jpop")
         }
     }

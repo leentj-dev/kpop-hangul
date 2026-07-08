@@ -60,3 +60,9 @@ app/ios/fastlane/AuthKey_*.p8
 # fastlane generated
 app/*/fastlane/README.md
 app/*/fastlane/report.xml
+app/*/fastlane/Fastfile.tmp
+
+# iOS build artifacts & signing (large binaries / secrets — never commit)
+app/ios/*.ipa
+app/ios/*.dSYM.zip
+app/ios/*.mobileprovision
