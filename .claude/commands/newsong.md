@@ -29,7 +29,7 @@ K-pop Hangul 앱에 새 곡을 추가하는 커맨드입니다.
 
 ## 일괄 추가 방식 (사용자 확인 없이 바로 실행)
 LRC가 확인된 곡은 아래 node 스크립트로 한번에 처리합니다:
-1. lrclib.net에서 LRC 파싱 → 한국어 단어 20개 추출 (곡 전체에 고르게 분포)
+1. lrclib.net에서 LRC 파싱 → 가사 전체에서 한국어 단어를 가능한 많이 추출 (곡 흐름 순서대로, 중복 포함)
 2. YouTube MV ID를 WebSearch로 검색
 3. 7개국어 번역 + romanization + emoji + example 생성
 4. JSON 파일 저장 + DB 삽입
@@ -80,7 +80,8 @@ songs/ 디렉토리에 저장하는 JSON 형식:
 ```
 
 ## 단어 규칙
-- 정확히 20개 단어
+- 가능한 많은 단어 (20개 상한 없음) — 곡 처음부터 끝까지 가사 흐름을 따라 촘촘히 커버
+- **중복 단어 허용/권장**: 같은 단어가 뒤에서 또 나오면 그 등장 타임스탬프마다 각각 별도 카드로 추가 (앞에서 나왔다고 dedup 금지 — 뒤쪽 싱크가 비지 않게)
 - LRC 가사에서 실제로 나오는 한국어 단어만 사용
 - 7개국어 번역을 모두 채움: english, spanish, portuguese, indonesian, japanese, thai, french (빈 문자열 금지 — 각 언어로 단어 뜻을 번역)
 - timestamp는 lrclib.net의 LRC 타이밍 기반 + MV 오프셋
