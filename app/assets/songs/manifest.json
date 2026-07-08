@@ -520,6 +520,16 @@
     "hash": "7765d785d6aa3ac6"
   },
   {
+    "id": "gidle-klaxon",
+    "title": "Klaxon",
+    "artist": "(G)I-DLE",
+    "youtubeId": "rTKqSmX9XhQ",
+    "synced": true,
+    "wordCount": 13,
+    "order": 1783548103,
+    "hash": "65c7f07978cdfbd6"
+  },
+  {
     "id": "gidle-queencard",
     "title": "Queencard",
     "artist": "(G)I-DLE",
@@ -748,6 +758,16 @@
     "wordCount": 20,
     "order": 1773571092,
     "hash": "43a82fab0506fb75"
+  },
+  {
+    "id": "ive-heya",
+    "title": "HEYA",
+    "artist": "IVE",
+    "youtubeId": "07EzMbVH3QE",
+    "synced": true,
+    "wordCount": 14,
+    "order": 1783548103,
+    "hash": "8aa1fd68900b0dc2"
   },
   {
     "id": "ive-i-am",
@@ -980,6 +1000,16 @@
     "hash": "5b932bfa11132d73"
   },
   {
+    "id": "lesserafim-easy",
+    "title": "Easy",
+    "artist": "LE SSERAFIM",
+    "youtubeId": "bNKXxwOQYB8",
+    "synced": true,
+    "wordCount": 13,
+    "order": 1783548103,
+    "hash": "39541376b7d2ea4d"
+  },
+  {
     "id": "lesserafim-spaghetti",
     "title": "SPAGHETTI (feat. j-hope of BTS)",
     "artist": "LE SSERAFIM",
@@ -1098,6 +1128,16 @@
     "wordCount": 20,
     "order": 1783008414,
     "hash": "4463edacc1e07b36"
+  },
+  {
+    "id": "newjeans-super-shy",
+    "title": "Super Shy",
+    "artist": "NewJeans",
+    "youtubeId": "ArmDp-zijuc",
+    "synced": true,
+    "wordCount": 13,
+    "order": 1783548103,
+    "hash": "eb10b0ae3675fcaf"
   },
   {
     "id": "nflying-flashback",
@@ -1458,6 +1498,16 @@
     "wordCount": 18,
     "order": 1782988937,
     "hash": "8885552500d9981b"
+  },
+  {
+    "id": "straykids-chk-chk-boom",
+    "title": "Chk Chk Boom",
+    "artist": "Stray Kids",
+    "youtubeId": "0P0aQreFs8w",
+    "synced": true,
+    "wordCount": 13,
+    "order": 1783548103,
+    "hash": "3858952a7fd6162b"
   },
   {
     "id": "straykids-megaverse",
