@@ -87,6 +87,6 @@ npx dotenv -e .env.local -- npx tsx scripts/newsong.ts add songs/<file>.json
 
 ## 단어 생성 규칙
 - 정확히 20개 단어
-- 번역은 영어만 (나머지 언어 필드는 빈 문자열)
+- 7개국어 번역을 모두 채움: english, spanish, portuguese, indonesian, japanese, thai, french (빈 문자열 금지 — 각 언어로 단어 뜻을 번역)
 - 이모지는 단어 의미에 맞게
 - 예문은 해당 가사 라인 사용 (저작권상 한 줄 이내)

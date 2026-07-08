@@ -40,7 +40,9 @@ Future<void> initRemoteConfig() async {
     final rc = FirebaseRemoteConfig.instance;
     await rc.setConfigSettings(RemoteConfigSettings(
       fetchTimeout: const Duration(seconds: 10),
-      minimumFetchInterval: const Duration(hours: 1),
+      // No throttle: every cold start fetches the latest config immediately.
+      // (Live updates while the app is open already arrive via onConfigUpdated.)
+      minimumFetchInterval: Duration.zero,
     ));
     await rc.setDefaults(const {
       _adsEnabledKey: true,
