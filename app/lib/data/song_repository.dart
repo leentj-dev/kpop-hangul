@@ -67,10 +67,17 @@ class SongRepository {
     return list;
   }
 
-  bool _changed(SongSummary local, SongSummary remote) =>
-      local.wordCount != remote.wordCount ||
-      local.synced != remote.synced ||
-      local.youtubeId != remote.youtubeId;
+  bool _changed(SongSummary local, SongSummary remote) {
+    // Prefer the content hash: it changes on ANY edit (words, translations,
+    // timestamps, intro offset, ...), so every content change re-syncs.
+    if (local.hash.isNotEmpty || remote.hash.isNotEmpty) {
+      return local.hash != remote.hash;
+    }
+    // Fallback for manifests predating the hash field.
+    return local.wordCount != remote.wordCount ||
+        local.synced != remote.synced ||
+        local.youtubeId != remote.youtubeId;
+  }
 
   /// Checks GitHub for new or updated songs and downloads them.
   /// Returns the updated list if anything changed, null otherwise.

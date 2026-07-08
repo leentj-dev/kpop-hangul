@@ -116,6 +116,12 @@ class SongSummary {
   /// sorts descending so the most recently added song is on top.
   final int order;
 
+  /// Content hash of the song file (from the manifest). Any change to the song
+  /// (words, translations, timestamps, offset, ...) changes this, which is how
+  /// [SongRepository] detects that a song needs re-downloading. Empty for old
+  /// manifests that predate the hash field (falls back to field comparison).
+  final String hash;
+
   const SongSummary({
     required this.id,
     required this.title,
@@ -124,6 +130,7 @@ class SongSummary {
     required this.synced,
     required this.wordCount,
     this.order = 0,
+    this.hash = '',
   });
 
   factory SongSummary.fromJson(Map<String, dynamic> json) => SongSummary(
@@ -134,5 +141,6 @@ class SongSummary {
         synced: json['synced'] as bool? ?? false,
         wordCount: json['wordCount'] as int? ?? 0,
         order: json['order'] as int? ?? 0,
+        hash: json['hash'] as String? ?? '',
       );
 }
