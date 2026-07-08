@@ -170,6 +170,16 @@
     "hash": "e92dfbc912403855"
   },
   {
+    "id": "bibi-bumpa",
+    "title": "BUMPA",
+    "artist": "비비 (BIBI)",
+    "youtubeId": "VoTuH7UHWLI",
+    "synced": true,
+    "wordCount": 18,
+    "order": 1783552626,
+    "hash": "dc0ac84adcf9004a"
+  },
+  {
     "id": "bigbang-still-life",
     "title": "봄여름가을겨울 (Still Life)",
     "artist": "빅뱅 (BIGBANG)",
@@ -1058,6 +1068,16 @@
     "wordCount": 30,
     "order": 1773473468,
     "hash": "dc4c1a7da7b9b190"
+  },
+  {
+    "id": "lim-youngwoong-ulssigu",
+    "title": "얼씨구 (ULSSIGU)",
+    "artist": "임영웅",
+    "youtubeId": "30hZXHeB85U",
+    "synced": true,
+    "wordCount": 18,
+    "order": 1783552626,
+    "hash": "71cd6690999dc9b3"
   },
   {
     "id": "melomance-gift",
