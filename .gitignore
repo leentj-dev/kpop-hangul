@@ -56,3 +56,7 @@ app/android/app/*.jks
 
 app/android/fastlane/play-store-key.json
 app/ios/fastlane/AuthKey_*.p8
+
+# fastlane generated
+app/*/fastlane/README.md
+app/*/fastlane/report.xml
