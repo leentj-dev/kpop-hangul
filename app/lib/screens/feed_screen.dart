@@ -66,17 +66,27 @@ class _FeedScreenState extends State<FeedScreen> {
     _syncRemote();
   }
 
-  Future<void> _syncRemote() async {
+  /// Pulls the latest songs from GitHub. [showUpToDate] is true when triggered
+  /// by pull-to-refresh, so we confirm even when nothing changed.
+  Future<void> _syncRemote({bool showUpToDate = false}) async {
     final before = _songs.length;
     final updated = await _repo.syncRemote();
-    if (updated == null || !mounted) return;
+    if (!mounted) return;
+    if (updated == null) {
+      if (showUpToDate) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          const SnackBar(content: Text('Up to date 🎵')),
+        );
+      }
+      return;
+    }
     setState(() => _songs = updated);
     final added = updated.length - before;
-    if (added > 0) {
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(content: Text('New songs added: $added 🎵')),
-      );
-    }
+    ScaffoldMessenger.of(context).showSnackBar(
+      SnackBar(
+        content: Text(added > 0 ? 'New songs added: $added 🎵' : 'Updated 🎵'),
+      ),
+    );
   }
 
   Future<void> _setLang(String lang) async {
@@ -310,8 +320,11 @@ class _FeedScreenState extends State<FeedScreen> {
               builder: (context, adsOn, _) {
               final List<SongSummary?> items =
                   adsOn ? _withAds(_filtered) : _filtered;
-              return ListView.builder(
+              return RefreshIndicator(
+                onRefresh: () => _syncRemote(showUpToDate: true),
+                child: ListView.builder(
                 controller: _scrollController,
+                physics: const AlwaysScrollableScrollPhysics(),
                 padding: const EdgeInsets.fromLTRB(12, 4, 12, 24),
                 itemCount: items.length,
                 itemBuilder: (context, i) {
@@ -392,6 +405,7 @@ class _FeedScreenState extends State<FeedScreen> {
                   ),
                 );
                 },
+              ),
               );
             })),
     );
