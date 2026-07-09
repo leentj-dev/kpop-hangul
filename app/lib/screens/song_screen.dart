@@ -6,6 +6,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'package:youtube_player_iframe/youtube_player_iframe.dart';
 
 import '../config/app_config.dart';
+import '../config/build_flags.dart';
 import '../data/song_repository.dart';
 import '../models/song.dart';
 import '../utils/themes.dart';
@@ -278,7 +279,7 @@ class _SongScreenState extends State<SongScreen> {
                         ],
                       ),
                     ),
-                    if (_synced)
+                    if (_synced && kDevTools)
                       IconButton(
                         onPressed: () => _openSyncAdjust(theme),
                         tooltip: 'Adjust sync',

@@ -3,6 +3,7 @@ import 'package:flutter/services.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 import '../config/app_config.dart';
+import '../config/build_flags.dart';
 import '../config/remote_config.dart';
 import '../config/theme_controller.dart';
 import '../data/song_repository.dart';
@@ -212,12 +213,13 @@ class _FeedScreenState extends State<FeedScreen> {
           ],
         ),
         actions: [
-          IconButton(
-            onPressed: _exportOffsets,
-            tooltip: 'Export sync offsets',
-            icon: Icon(Icons.ios_share_rounded,
-                color: onSurface.withValues(alpha: 0.85)),
-          ),
+          if (kDevTools)
+            IconButton(
+              onPressed: _exportOffsets,
+              tooltip: 'Export sync offsets',
+              icon: Icon(Icons.ios_share_rounded,
+                  color: onSurface.withValues(alpha: 0.85)),
+            ),
           IconButton(
             onPressed: toggleThemeMode,
             tooltip: isDark ? 'Light mode' : 'Dark mode',
