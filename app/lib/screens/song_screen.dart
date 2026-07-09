@@ -65,6 +65,10 @@ class _SongScreenState extends State<SongScreen> {
         showControls: true,
         showFullscreenButton: false,
         strictRelatedVideos: true,
+        // Prefer Korean captions (default was 'en'); shows Korean CC when the
+        // video has a Korean track (uploaded or auto-generated).
+        enableCaption: true,
+        captionLanguage: 'ko',
       ),
     );
     _player.listen((value) {
@@ -139,7 +143,7 @@ class _SongScreenState extends State<SongScreen> {
   }
 
   Future<void> _nudgeOffset(double delta) async {
-    final next = (_offset + delta).clamp(-30.0, 30.0);
+    final next = _offset + delta;
     setState(() => _offset = next);
     final prefs = await SharedPreferences.getInstance();
     await prefs.setDouble('offset_${_song.id}', next);
