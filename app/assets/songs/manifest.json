@@ -1140,6 +1140,16 @@
     "hash": "662cc72803621979"
   },
   {
+    "id": "mighty-mouth-tok-tok",
+    "title": "톡톡 (Tok Tok)",
+    "artist": "마이티 마우스 (Mighty Mouth)",
+    "youtubeId": "H8LxXVonjiE",
+    "synced": true,
+    "wordCount": 20,
+    "order": 1783638989,
+    "hash": "2a13446de17b6ed3"
+  },
+  {
     "id": "missa-bad-girl-good-girl",
     "title": "Bad Girl Good Girl",
     "artist": "미쓰에이 (miss A)",
@@ -1398,6 +1408,16 @@
     "wordCount": 44,
     "order": 1773502675,
     "hash": "ae82d43f8bb91be9"
+  },
+  {
+    "id": "psy-its-art",
+    "title": "예술이야 (It's Art)",
+    "artist": "PSY",
+    "youtubeId": "1cKc1rkZwf8",
+    "synced": true,
+    "wordCount": 20,
+    "order": 1783638989,
+    "hash": "a85497b457c3e6eb"
   },
   {
     "id": "rescene-deja-vu",
