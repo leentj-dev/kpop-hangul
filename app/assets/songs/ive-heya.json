@@ -162,7 +162,7 @@
       "emoji": "😠",
       "example": "고양이가 새를 노려봐요.",
       "exampleTranslation": "The cat stares down the bird.",
-      "timestamp": 47.20
+      "timestamp": 47.2
     },
     {
       "korean": "자꾸",
@@ -194,7 +194,7 @@
       "emoji": "😋",
       "example": "약을 물과 함께 삼킬게요.",
       "exampleTranslation": "I'll swallow the pill with water.",
-      "timestamp": 57.70
+      "timestamp": 57.7
     },
     {
       "korean": "이긴",
@@ -226,7 +226,7 @@
       "emoji": "🌅",
       "example": "떠오르는 태양을 봤어요.",
       "exampleTranslation": "I saw the rising sun.",
-      "timestamp": 68.00
+      "timestamp": 68.0
     },
     {
       "korean": "번",
@@ -274,7 +274,7 @@
       "emoji": "🚶",
       "example": "배가 점점 멀어져요.",
       "exampleTranslation": "The ship is gradually moving away.",
-      "timestamp": 91.90
+      "timestamp": 91.9
     },
     {
       "korean": "착하지",
@@ -548,5 +548,6 @@
       "exampleTranslation": "The sun rises in the east.",
       "timestamp": 177.39
     }
-  ]
+  ],
+  "introOffset": 1.0
 }
