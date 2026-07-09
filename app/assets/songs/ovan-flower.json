@@ -18,7 +18,55 @@
       "emoji": "🔝",
       "example": "이게 가장 좋은 방법이에요.",
       "exampleTranslation": "This is the best method.",
-      "timestamp": 1.6
+      "timestamp": 1.61
+    },
+    {
+      "korean": "구원",
+      "romanization": "guwon",
+      "english": "salvation, rescue",
+      "spanish": "salvación",
+      "portuguese": "salvação",
+      "indonesian": "keselamatan",
+      "japanese": "救い",
+      "thai": "การช่วยให้รอด",
+      "french": "salut",
+      "partOfSpeech": "noun",
+      "emoji": "🙌",
+      "example": "그의 도움이 저에게 구원이었어요.",
+      "exampleTranslation": "His help was salvation to me.",
+      "timestamp": 4.55
+    },
+    {
+      "korean": "삶",
+      "romanization": "salm",
+      "english": "life",
+      "spanish": "vida",
+      "portuguese": "vida",
+      "indonesian": "kehidupan",
+      "japanese": "人生",
+      "thai": "ชีวิต",
+      "french": "vie",
+      "partOfSpeech": "noun",
+      "emoji": "🌱",
+      "example": "저는 단순한 삶을 좋아해요.",
+      "exampleTranslation": "I like a simple life.",
+      "timestamp": 7.38
+    },
+    {
+      "korean": "잊다",
+      "romanization": "itda",
+      "english": "to forget",
+      "spanish": "olvidar",
+      "portuguese": "esquecer",
+      "indonesian": "melupakan",
+      "japanese": "忘れる",
+      "thai": "ลืม",
+      "french": "oublier",
+      "partOfSpeech": "verb",
+      "emoji": "🙈",
+      "example": "그 약속을 잊지 마세요.",
+      "exampleTranslation": "Don't forget that promise.",
+      "timestamp": 12.54
     },
     {
       "korean": "기다리다",
@@ -34,7 +82,39 @@
       "emoji": "⏳",
       "example": "버스를 오래 기다렸어요.",
       "exampleTranslation": "I waited a long time for the bus.",
-      "timestamp": 15.7
+      "timestamp": 15.66
+    },
+    {
+      "korean": "설레다",
+      "romanization": "seolleda",
+      "english": "to flutter with excitement",
+      "spanish": "emocionarse",
+      "portuguese": "ficar animado",
+      "indonesian": "berdebar",
+      "japanese": "ときめく",
+      "thai": "ใจเต้น",
+      "french": "avoir le cœur qui bat",
+      "partOfSpeech": "verb",
+      "emoji": "💓",
+      "example": "여행 생각에 마음이 설레요.",
+      "exampleTranslation": "My heart flutters at the thought of the trip.",
+      "timestamp": 19.45
+    },
+    {
+      "korean": "기쁨",
+      "romanization": "gippeum",
+      "english": "joy",
+      "spanish": "alegría",
+      "portuguese": "alegria",
+      "indonesian": "kegembiraan",
+      "japanese": "喜び",
+      "thai": "ความยินดี",
+      "french": "joie",
+      "partOfSpeech": "noun",
+      "emoji": "😊",
+      "example": "그 소식은 큰 기쁨이었어요.",
+      "exampleTranslation": "The news was a great joy.",
+      "timestamp": 23.2
     },
     {
       "korean": "아름답다",
@@ -50,7 +130,7 @@
       "emoji": "🌸",
       "example": "노을이 정말 아름다워요.",
       "exampleTranslation": "The sunset is really beautiful.",
-      "timestamp": 28.1
+      "timestamp": 28.12
     },
     {
       "korean": "바라다",
@@ -66,7 +146,7 @@
       "emoji": "🙏",
       "example": "네 행복을 바라.",
       "exampleTranslation": "I wish for your happiness.",
-      "timestamp": 40.1
+      "timestamp": 40.07
     },
     {
       "korean": "밝히다",
@@ -82,7 +162,39 @@
       "emoji": "💡",
       "example": "촛불이 방을 밝혀요.",
       "exampleTranslation": "The candle lights up the room.",
-      "timestamp": 51.1
+      "timestamp": 51.06
+    },
+    {
+      "korean": "담다",
+      "romanization": "damda",
+      "english": "to put in, hold, contain",
+      "spanish": "contener",
+      "portuguese": "conter",
+      "indonesian": "menampung",
+      "japanese": "込める",
+      "thai": "บรรจุ",
+      "french": "contenir",
+      "partOfSpeech": "verb",
+      "emoji": "🫙",
+      "example": "편지에 마음을 담았어요.",
+      "exampleTranslation": "I put my heart into the letter.",
+      "timestamp": 54.8
+    },
+    {
+      "korean": "돌아가다",
+      "romanization": "doragada",
+      "english": "to go back, return",
+      "spanish": "regresar",
+      "portuguese": "voltar",
+      "indonesian": "kembali",
+      "japanese": "帰る",
+      "thai": "กลับไป",
+      "french": "retourner",
+      "partOfSpeech": "verb",
+      "emoji": "🔙",
+      "example": "이제 집으로 돌아가요.",
+      "exampleTranslation": "Now I'm going back home.",
+      "timestamp": 61.48
     },
     {
       "korean": "집",
@@ -98,7 +210,55 @@
       "emoji": "🏠",
       "example": "집에 가고 싶어요.",
       "exampleTranslation": "I want to go home.",
-      "timestamp": 64.6
+      "timestamp": 64.64
+    },
+    {
+      "korean": "사람",
+      "romanization": "saram",
+      "english": "person",
+      "spanish": "persona",
+      "portuguese": "pessoa",
+      "indonesian": "orang",
+      "japanese": "人",
+      "thai": "คน",
+      "french": "personne",
+      "partOfSpeech": "noun",
+      "emoji": "🧑",
+      "example": "그는 좋은 사람이에요.",
+      "exampleTranslation": "He is a good person.",
+      "timestamp": 67.0
+    },
+    {
+      "korean": "되다",
+      "romanization": "doeda",
+      "english": "to become",
+      "spanish": "convertirse en",
+      "portuguese": "tornar-se",
+      "indonesian": "menjadi",
+      "japanese": "なる",
+      "thai": "กลายเป็น",
+      "french": "devenir",
+      "partOfSpeech": "verb",
+      "emoji": "🔄",
+      "example": "저는 의사가 되고 싶어요.",
+      "exampleTranslation": "I want to become a doctor.",
+      "timestamp": 72.28
+    },
+    {
+      "korean": "날개",
+      "romanization": "nalgae",
+      "english": "wing",
+      "spanish": "ala",
+      "portuguese": "asa",
+      "indonesian": "sayap",
+      "japanese": "翼",
+      "thai": "ปีก",
+      "french": "aile",
+      "partOfSpeech": "noun",
+      "emoji": "🪽",
+      "example": "새가 날개를 활짝 폈어요.",
+      "exampleTranslation": "The bird spread its wings wide.",
+      "timestamp": 75.26
     },
     {
       "korean": "쉬다",
@@ -114,7 +274,39 @@
       "emoji": "😌",
       "example": "주말에는 집에서 쉬어요.",
       "exampleTranslation": "I rest at home on weekends.",
-      "timestamp": 79.4
+      "timestamp": 79.43
+    },
+    {
+      "korean": "힘",
+      "romanization": "him",
+      "english": "strength, power",
+      "spanish": "fuerza",
+      "portuguese": "força",
+      "indonesian": "kekuatan",
+      "japanese": "力",
+      "thai": "พลัง",
+      "french": "force",
+      "partOfSpeech": "noun",
+      "emoji": "💪",
+      "example": "당신의 응원이 큰 힘이 돼요.",
+      "exampleTranslation": "Your support gives me great strength.",
+      "timestamp": 83.01
+    },
+    {
+      "korean": "따듯하다",
+      "romanization": "ttadeuthada",
+      "english": "to be warm",
+      "spanish": "ser cálido",
+      "portuguese": "ser quente",
+      "indonesian": "hangat",
+      "japanese": "暖かい",
+      "thai": "อบอุ่น",
+      "french": "être chaleureux",
+      "partOfSpeech": "adjective",
+      "emoji": "☀️",
+      "example": "그녀는 마음이 따듯한 사람이에요.",
+      "exampleTranslation": "She is a warm-hearted person.",
+      "timestamp": 88.95
     },
     {
       "korean": "별",
@@ -130,7 +322,7 @@
       "emoji": "⭐",
       "example": "밤하늘에 별이 반짝여요.",
       "exampleTranslation": "Stars twinkle in the night sky.",
-      "timestamp": 100.1
+      "timestamp": 100.07
     },
     {
       "korean": "밝히다",
@@ -146,23 +338,87 @@
       "emoji": "💡",
       "example": "가로등이 길을 밝혔어요.",
       "exampleTranslation": "The streetlight lit up the road.",
-      "timestamp": 111.3
+      "timestamp": 111.27
     },
     {
-      "korean": "심다",
-      "romanization": "simda",
-      "english": "to plant",
-      "spanish": "plantar",
-      "portuguese": "plantar",
-      "indonesian": "menanam",
-      "japanese": "植える",
-      "thai": "ปลูก",
-      "french": "planter",
+      "korean": "담다",
+      "romanization": "damda",
+      "english": "to put in, hold, contain",
+      "spanish": "contener",
+      "portuguese": "conter",
+      "indonesian": "menampung",
+      "japanese": "込める",
+      "thai": "บรรจุ",
+      "french": "contenir",
       "partOfSpeech": "verb",
-      "emoji": "🌱",
-      "example": "마당에 나무를 심었어요.",
-      "exampleTranslation": "I planted a tree in the yard.",
-      "timestamp": 125.7
+      "emoji": "🫙",
+      "example": "그릇에 밥을 담았어요.",
+      "exampleTranslation": "I put rice in the bowl.",
+      "timestamp": 114.78
+    },
+    {
+      "korean": "곳",
+      "romanization": "got",
+      "english": "place, spot",
+      "spanish": "lugar",
+      "portuguese": "lugar",
+      "indonesian": "tempat",
+      "japanese": "場所",
+      "thai": "สถานที่",
+      "french": "endroit",
+      "partOfSpeech": "noun",
+      "emoji": "📍",
+      "example": "조용한 곳에서 쉬고 싶어요.",
+      "exampleTranslation": "I want to rest in a quiet place.",
+      "timestamp": 120.8
+    },
+    {
+      "korean": "나무",
+      "romanization": "namu",
+      "english": "tree",
+      "spanish": "árbol",
+      "portuguese": "árvore",
+      "indonesian": "pohon",
+      "japanese": "木",
+      "thai": "ต้นไม้",
+      "french": "arbre",
+      "partOfSpeech": "noun",
+      "emoji": "🌳",
+      "example": "마당에 큰 나무가 있어요.",
+      "exampleTranslation": "There is a big tree in the yard.",
+      "timestamp": 125.67
+    },
+    {
+      "korean": "꽃",
+      "romanization": "kkot",
+      "english": "flower",
+      "spanish": "flor",
+      "portuguese": "flor",
+      "indonesian": "bunga",
+      "japanese": "花",
+      "thai": "ดอกไม้",
+      "french": "fleur",
+      "partOfSpeech": "noun",
+      "emoji": "🌷",
+      "example": "봄에는 꽃이 활짝 펴요.",
+      "exampleTranslation": "Flowers bloom fully in spring.",
+      "timestamp": 131.61
+    },
+    {
+      "korean": "언제나",
+      "romanization": "eonjena",
+      "english": "always",
+      "spanish": "siempre",
+      "portuguese": "sempre",
+      "indonesian": "selalu",
+      "japanese": "いつも",
+      "thai": "เสมอ",
+      "french": "toujours",
+      "partOfSpeech": "adverb",
+      "emoji": "🔁",
+      "example": "그는 언제나 웃고 있어요.",
+      "exampleTranslation": "He is always smiling.",
+      "timestamp": 136.34
     },
     {
       "korean": "기적",
@@ -178,7 +434,7 @@
       "emoji": "✨",
       "example": "기적 같은 일이 일어났어요.",
       "exampleTranslation": "A miracle-like thing happened.",
-      "timestamp": 146.4
+      "timestamp": 146.41
     },
     {
       "korean": "밝히다",
@@ -194,7 +450,23 @@
       "emoji": "💡",
       "example": "등불이 어둠을 밝혀요.",
       "exampleTranslation": "The lantern brightens the darkness.",
-      "timestamp": 157.4
+      "timestamp": 157.41
+    },
+    {
+      "korean": "담다",
+      "romanization": "damda",
+      "english": "to put in, hold, contain",
+      "spanish": "contener",
+      "portuguese": "conter",
+      "indonesian": "menampung",
+      "japanese": "込める",
+      "thai": "บรรจุ",
+      "french": "contenir",
+      "partOfSpeech": "verb",
+      "emoji": "🫙",
+      "example": "사진에 추억을 담았어요.",
+      "exampleTranslation": "I captured memories in the photo.",
+      "timestamp": 160.95
     }
   ]
 }

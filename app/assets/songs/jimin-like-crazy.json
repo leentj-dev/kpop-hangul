@@ -34,7 +34,23 @@
       "emoji": "🚪",
       "example": "그는 아침에 떠났어요.",
       "exampleTranslation": "He left in the morning.",
-      "timestamp": 24.1
+      "timestamp": 24.12
+    },
+    {
+      "korean": "오늘",
+      "romanization": "oneul",
+      "english": "today",
+      "spanish": "hoy",
+      "portuguese": "hoje",
+      "indonesian": "hari ini",
+      "japanese": "今日",
+      "thai": "วันนี้",
+      "french": "aujourd'hui",
+      "partOfSpeech": "noun",
+      "emoji": "📅",
+      "example": "오늘 날씨가 정말 좋아.",
+      "exampleTranslation": "The weather is really nice today.",
+      "timestamp": 27.65
     },
     {
       "korean": "아침",
@@ -50,7 +66,7 @@
       "emoji": "🌅",
       "example": "아침이 오면 떠나야 해요.",
       "exampleTranslation": "I have to leave when morning comes.",
-      "timestamp": 39.6
+      "timestamp": 39.58
     },
     {
       "korean": "음악",
@@ -66,7 +82,23 @@
       "emoji": "🎵",
       "example": "음악을 들으면 기분이 좋아요.",
       "exampleTranslation": "Listening to music makes me feel good.",
-      "timestamp": 48.2
+      "timestamp": 48.18
+    },
+    {
+      "korean": "익숙하다",
+      "romanization": "iksukhada",
+      "english": "to be familiar",
+      "spanish": "estar acostumbrado",
+      "portuguese": "estar acostumado",
+      "indonesian": "terbiasa",
+      "japanese": "慣れている",
+      "thai": "คุ้นเคย",
+      "french": "être habitué",
+      "partOfSpeech": "adjective",
+      "emoji": "🔁",
+      "example": "이제 이 길이 익숙해.",
+      "exampleTranslation": "Now this road is familiar to me.",
+      "timestamp": 52.03
     },
     {
       "korean": "찾다",
@@ -82,7 +114,7 @@
       "emoji": "🔍",
       "example": "잃어버린 열쇠를 찾았어요.",
       "exampleTranslation": "I found the lost key.",
-      "timestamp": 56.2
+      "timestamp": 56.26
     },
     {
       "korean": "잡다",
@@ -98,7 +130,23 @@
       "emoji": "✊",
       "example": "내 손을 꼭 잡아 줘.",
       "exampleTranslation": "Hold my hand tight for me.",
-      "timestamp": 67.6
+      "timestamp": 67.63
+    },
+    {
+      "korean": "매일",
+      "romanization": "maeil",
+      "english": "every day",
+      "spanish": "cada día",
+      "portuguese": "todos os dias",
+      "indonesian": "setiap hari",
+      "japanese": "毎日",
+      "thai": "ทุกวัน",
+      "french": "chaque jour",
+      "partOfSpeech": "adverb",
+      "emoji": "🗓️",
+      "example": "나는 매일 아침 운동해.",
+      "exampleTranslation": "I exercise every morning.",
+      "timestamp": 72.67
     },
     {
       "korean": "달",
@@ -130,7 +178,7 @@
       "emoji": "🪞",
       "example": "거울 속의 나를 봤어요.",
       "exampleTranslation": "I looked at myself in the mirror.",
-      "timestamp": 128.6
+      "timestamp": 128.63
     },
     {
       "korean": "끝",
@@ -146,7 +194,39 @@
       "emoji": "🔚",
       "example": "이야기의 끝이 궁금해요.",
       "exampleTranslation": "I'm curious about the end of the story.",
-      "timestamp": 147.7
+      "timestamp": 147.71
+    },
+    {
+      "korean": "밤",
+      "romanization": "bam",
+      "english": "night",
+      "spanish": "noche",
+      "portuguese": "noite",
+      "indonesian": "malam",
+      "japanese": "夜",
+      "thai": "กลางคืน",
+      "french": "nuit",
+      "partOfSpeech": "noun",
+      "emoji": "🌙",
+      "example": "밤하늘에 별이 가득해.",
+      "exampleTranslation": "The night sky is full of stars.",
+      "timestamp": 152.68
+    },
+    {
+      "korean": "품다",
+      "romanization": "pumda",
+      "english": "to embrace, hold",
+      "spanish": "abrazar",
+      "portuguese": "abraçar",
+      "indonesian": "memeluk",
+      "japanese": "抱く",
+      "thai": "โอบกอด",
+      "french": "étreindre",
+      "partOfSpeech": "verb",
+      "emoji": "🤗",
+      "example": "그녀는 아기를 품에 품었어.",
+      "exampleTranslation": "She held the baby in her arms.",
+      "timestamp": 155.65
     }
   ]
 }

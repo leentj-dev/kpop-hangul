@@ -28,13 +28,13 @@
       "portuguese": "sem fim",
       "indonesian": "tanpa henti",
       "japanese": "果てしなく",
-      "thai": "อย่างไม่มีที่สิ้นสุด",
+      "thai": "ไม่รู้จบ",
       "french": "sans fin",
       "partOfSpeech": "adverb",
       "emoji": "♾️",
-      "example": "사막이 끝없이 펼쳐져요.",
-      "exampleTranslation": "The desert stretches endlessly.",
-      "timestamp": 42.4
+      "example": "바다가 끝없이 펼쳐져 있어요.",
+      "exampleTranslation": "The sea stretches endlessly.",
+      "timestamp": 42.52
     },
     {
       "korean": "영원히",
@@ -47,10 +47,10 @@
       "thai": "ตลอดไป",
       "french": "pour toujours",
       "partOfSpeech": "adverb",
-      "emoji": "⏳",
+      "emoji": "♾️",
       "example": "이 순간을 영원히 기억할게요.",
       "exampleTranslation": "I'll remember this moment forever.",
-      "timestamp": 72.9
+      "timestamp": 73.06
     },
     {
       "korean": "깨지다",
@@ -61,28 +61,28 @@
       "indonesian": "pecah",
       "japanese": "割れる",
       "thai": "แตก",
-      "french": "se casser",
+      "french": "se briser",
       "partOfSpeech": "verb",
-      "emoji": "💔",
+      "emoji": "💥",
       "example": "유리컵이 깨졌어요.",
       "exampleTranslation": "The glass cup broke.",
-      "timestamp": 138.4
+      "timestamp": 138.55
     },
     {
       "korean": "빛나다",
-      "romanization": "binnada",
+      "romanization": "bitnada",
       "english": "to shine",
       "spanish": "brillar",
       "portuguese": "brilhar",
       "indonesian": "bersinar",
       "japanese": "輝く",
-      "thai": "ส่องแสง",
+      "thai": "เปล่งประกาย",
       "french": "briller",
       "partOfSpeech": "verb",
       "emoji": "✨",
       "example": "별이 밤하늘에 빛나요.",
       "exampleTranslation": "The stars shine in the night sky.",
-      "timestamp": 164.6
+      "timestamp": 164.67
     }
   ]
 }

@@ -21,6 +21,22 @@
       "timestamp": 17.8
     },
     {
+      "korean": "돌아보다",
+      "romanization": "doraboda",
+      "english": "to look back",
+      "spanish": "mirar atrás",
+      "portuguese": "olhar para trás",
+      "indonesian": "menoleh",
+      "japanese": "振り返る",
+      "thai": "หันกลับไปมอง",
+      "french": "se retourner",
+      "partOfSpeech": "verb",
+      "emoji": "🔙",
+      "example": "지난날을 돌아봐.",
+      "exampleTranslation": "Look back on the old days.",
+      "timestamp": 22.59
+    },
+    {
       "korean": "아쉽다",
       "romanization": "aswipda",
       "english": "to feel regret, wanting",
@@ -34,7 +50,23 @@
       "emoji": "😔",
       "example": "헤어져서 아쉬워.",
       "exampleTranslation": "It's a pity to part.",
-      "timestamp": 26.9
+      "timestamp": 26.86
+    },
+    {
+      "korean": "어렵다",
+      "romanization": "eoryeopda",
+      "english": "to be difficult",
+      "spanish": "ser difícil",
+      "portuguese": "ser difícil",
+      "indonesian": "sulit",
+      "japanese": "難しい",
+      "thai": "ยาก",
+      "french": "être difficile",
+      "partOfSpeech": "adjective",
+      "emoji": "😣",
+      "example": "이 문제는 어려워.",
+      "exampleTranslation": "This problem is difficult.",
+      "timestamp": 30.56
     },
     {
       "korean": "서랍",
@@ -50,7 +82,23 @@
       "emoji": "🗄️",
       "example": "서랍을 열었어.",
       "exampleTranslation": "I opened the drawer.",
-      "timestamp": 36.4
+      "timestamp": 36.44
+    },
+    {
+      "korean": "웃다",
+      "romanization": "utda",
+      "english": "to laugh, smile",
+      "spanish": "reír",
+      "portuguese": "rir",
+      "indonesian": "tertawa",
+      "japanese": "笑う",
+      "thai": "หัวเราะ",
+      "french": "rire",
+      "partOfSpeech": "verb",
+      "emoji": "😄",
+      "example": "환하게 웃어.",
+      "exampleTranslation": "Smile brightly.",
+      "timestamp": 41.01
     },
     {
       "korean": "어리다",
@@ -66,7 +114,23 @@
       "emoji": "🧒",
       "example": "아직 어려.",
       "exampleTranslation": "I'm still young.",
-      "timestamp": 45.4
+      "timestamp": 45.37
+    },
+    {
+      "korean": "쓰다",
+      "romanization": "sseuda",
+      "english": "to write",
+      "spanish": "escribir",
+      "portuguese": "escrever",
+      "indonesian": "menulis",
+      "japanese": "書く",
+      "thai": "เขียน",
+      "french": "écrire",
+      "partOfSpeech": "verb",
+      "emoji": "✍️",
+      "example": "이름을 써.",
+      "exampleTranslation": "Write your name.",
+      "timestamp": 48.81
     },
     {
       "korean": "편지",
@@ -82,7 +146,23 @@
       "emoji": "✉️",
       "example": "편지를 썼어.",
       "exampleTranslation": "I wrote a letter.",
-      "timestamp": 54.2
+      "timestamp": 54.22
+    },
+    {
+      "korean": "즐겁다",
+      "romanization": "jeulgepda",
+      "english": "to be joyful, fun",
+      "spanish": "ser divertido",
+      "portuguese": "ser divertido",
+      "indonesian": "menyenangkan",
+      "japanese": "楽しい",
+      "thai": "สนุก",
+      "french": "être joyeux",
+      "partOfSpeech": "adjective",
+      "emoji": "🥳",
+      "example": "오늘 정말 즐거웠어.",
+      "exampleTranslation": "Today was really fun.",
+      "timestamp": 58.34
     },
     {
       "korean": "열다",
@@ -98,7 +178,23 @@
       "emoji": "🔓",
       "example": "문을 열어.",
       "exampleTranslation": "Open the door.",
-      "timestamp": 63
+      "timestamp": 63.04
+    },
+    {
+      "korean": "시간",
+      "romanization": "sigan",
+      "english": "time",
+      "spanish": "tiempo",
+      "portuguese": "tempo",
+      "indonesian": "waktu",
+      "japanese": "時間",
+      "thai": "เวลา",
+      "french": "temps",
+      "partOfSpeech": "noun",
+      "emoji": "⏰",
+      "example": "시간이 없어.",
+      "exampleTranslation": "There's no time.",
+      "timestamp": 67.81
     },
     {
       "korean": "어른",
@@ -114,7 +210,7 @@
       "emoji": "🧑",
       "example": "이제 어른이야.",
       "exampleTranslation": "Now I'm an adult.",
-      "timestamp": 72.5
+      "timestamp": 72.45
     },
     {
       "korean": "미래",
@@ -130,7 +226,23 @@
       "emoji": "🔮",
       "example": "미래를 꿈꿔.",
       "exampleTranslation": "I dream of the future.",
-      "timestamp": 80.7
+      "timestamp": 80.68
+    },
+    {
+      "korean": "이루다",
+      "romanization": "iruda",
+      "english": "to achieve, fulfill",
+      "spanish": "lograr",
+      "portuguese": "realizar",
+      "indonesian": "mewujudkan",
+      "japanese": "叶える",
+      "thai": "ทำให้สำเร็จ",
+      "french": "réaliser",
+      "partOfSpeech": "verb",
+      "emoji": "🏆",
+      "example": "꿈을 이뤘어.",
+      "exampleTranslation": "I achieved my dream.",
+      "timestamp": 86.33
     },
     {
       "korean": "모르다",
@@ -146,7 +258,7 @@
       "emoji": "🤷",
       "example": "아직 몰라.",
       "exampleTranslation": "I don't know yet.",
-      "timestamp": 91.2
+      "timestamp": 91.16
     },
     {
       "korean": "기억",
@@ -162,7 +274,23 @@
       "emoji": "🧠",
       "example": "기억이 흐릿해.",
       "exampleTranslation": "The memory is faint.",
-      "timestamp": 99.3
+      "timestamp": 99.25
+    },
+    {
+      "korean": "꾸다",
+      "romanization": "kkuda",
+      "english": "to dream (a dream)",
+      "spanish": "soñar",
+      "portuguese": "sonhar",
+      "indonesian": "bermimpi",
+      "japanese": "夢を見る",
+      "thai": "ฝัน",
+      "french": "rêver",
+      "partOfSpeech": "verb",
+      "emoji": "💭",
+      "example": "좋은 꿈을 꿨어.",
+      "exampleTranslation": "I had a good dream.",
+      "timestamp": 104.69
     },
     {
       "korean": "일기",
@@ -178,7 +306,23 @@
       "emoji": "📔",
       "example": "일기를 써.",
       "exampleTranslation": "I write a diary.",
-      "timestamp": 118.8
+      "timestamp": 118.82
+    },
+    {
+      "korean": "생각",
+      "romanization": "saenggak",
+      "english": "thought, thinking",
+      "spanish": "pensamiento",
+      "portuguese": "pensamento",
+      "indonesian": "pikiran",
+      "japanese": "考え",
+      "thai": "ความคิด",
+      "french": "pensée",
+      "partOfSpeech": "noun",
+      "emoji": "🤔",
+      "example": "좋은 생각이야.",
+      "exampleTranslation": "That's a good idea.",
+      "timestamp": 123.06
     },
     {
       "korean": "여정",
@@ -194,7 +338,23 @@
       "emoji": "🧭",
       "example": "긴 여정이었어.",
       "exampleTranslation": "It was a long journey.",
-      "timestamp": 127.9
+      "timestamp": 127.87
+    },
+    {
+      "korean": "나아가다",
+      "romanization": "naagada",
+      "english": "to move forward, advance",
+      "spanish": "avanzar",
+      "portuguese": "avançar",
+      "indonesian": "maju",
+      "japanese": "前進する",
+      "thai": "ก้าวไปข้างหน้า",
+      "french": "avancer",
+      "partOfSpeech": "verb",
+      "emoji": "🚀",
+      "example": "앞으로 나아가.",
+      "exampleTranslation": "Move forward.",
+      "timestamp": 132.35
     },
     {
       "korean": "가다",
@@ -210,7 +370,23 @@
       "emoji": "🚶",
       "example": "멀리 갔어.",
       "exampleTranslation": "I went far away.",
-      "timestamp": 137.2
+      "timestamp": 137.16
+    },
+    {
+      "korean": "미래",
+      "romanization": "mirae",
+      "english": "future",
+      "spanish": "futuro",
+      "portuguese": "futuro",
+      "indonesian": "masa depan",
+      "japanese": "未来",
+      "thai": "อนาคต",
+      "french": "avenir",
+      "partOfSpeech": "noun",
+      "emoji": "🔮",
+      "example": "밝은 미래를 믿어.",
+      "exampleTranslation": "I believe in a bright future.",
+      "timestamp": 145.2
     },
     {
       "korean": "꿈",
@@ -226,7 +402,23 @@
       "emoji": "💫",
       "example": "꿈을 이뤘어.",
       "exampleTranslation": "I achieved my dream.",
-      "timestamp": 151
+      "timestamp": 150.98
+    },
+    {
+      "korean": "오다",
+      "romanization": "oda",
+      "english": "to come",
+      "spanish": "venir",
+      "portuguese": "vir",
+      "indonesian": "datang",
+      "japanese": "来る",
+      "thai": "มา",
+      "french": "venir",
+      "partOfSpeech": "verb",
+      "emoji": "🚪",
+      "example": "여기까지 왔어.",
+      "exampleTranslation": "I came all this way.",
+      "timestamp": 155.73
     },
     {
       "korean": "과거",
@@ -245,6 +437,22 @@
       "timestamp": 163.8
     },
     {
+      "korean": "꿈",
+      "romanization": "kkum",
+      "english": "dream",
+      "spanish": "sueño",
+      "portuguese": "sonho",
+      "indonesian": "mimpi",
+      "japanese": "夢",
+      "thai": "ความฝัน",
+      "french": "rêve",
+      "partOfSpeech": "noun",
+      "emoji": "🌙",
+      "example": "어떤 꿈을 꿨을까.",
+      "exampleTranslation": "I wonder what dream I had.",
+      "timestamp": 169.57
+    },
+    {
       "korean": "먼지",
       "romanization": "meonji",
       "english": "dust",
@@ -258,7 +466,23 @@
       "emoji": "🌫️",
       "example": "먼지를 털어.",
       "exampleTranslation": "Dust it off.",
-      "timestamp": 174.9
+      "timestamp": 174.95
+    },
+    {
+      "korean": "자라다",
+      "romanization": "jarada",
+      "english": "to grow up",
+      "spanish": "crecer",
+      "portuguese": "crescer",
+      "indonesian": "tumbuh",
+      "japanese": "育つ",
+      "thai": "เติบโต",
+      "french": "grandir",
+      "partOfSpeech": "verb",
+      "emoji": "🌱",
+      "example": "아이가 자랐어.",
+      "exampleTranslation": "The child has grown.",
+      "timestamp": 179.52
     },
     {
       "korean": "잡다",
@@ -274,7 +498,23 @@
       "emoji": "✊",
       "example": "손을 잡아.",
       "exampleTranslation": "Hold my hand.",
-      "timestamp": 187.9
+      "timestamp": 187.95
+    },
+    {
+      "korean": "삶",
+      "romanization": "salm",
+      "english": "life",
+      "spanish": "vida",
+      "portuguese": "vida",
+      "indonesian": "kehidupan",
+      "japanese": "人生",
+      "thai": "ชีวิต",
+      "french": "vie",
+      "partOfSpeech": "noun",
+      "emoji": "🌈",
+      "example": "새로운 삶을 시작해.",
+      "exampleTranslation": "Start a new life.",
+      "timestamp": 192.51
     },
     {
       "korean": "다가오다",
@@ -290,7 +530,23 @@
       "emoji": "➡️",
       "example": "봄이 다가와.",
       "exampleTranslation": "Spring is approaching.",
-      "timestamp": 200.9
+      "timestamp": 200.87
+    },
+    {
+      "korean": "두렵다",
+      "romanization": "duryeopda",
+      "english": "to be afraid, fearful",
+      "spanish": "tener miedo",
+      "portuguese": "ter medo",
+      "indonesian": "takut",
+      "japanese": "恐い",
+      "thai": "หวาดกลัว",
+      "french": "avoir peur",
+      "partOfSpeech": "adjective",
+      "emoji": "😨",
+      "example": "아무것도 두렵지 않아.",
+      "exampleTranslation": "I'm not afraid of anything.",
+      "timestamp": 206.21
     },
     {
       "korean": "웅크리다",
@@ -306,7 +562,7 @@
       "emoji": "🥶",
       "example": "구석에 웅크렸어.",
       "exampleTranslation": "I huddled in the corner.",
-      "timestamp": 211.1
+      "timestamp": 211.06
     },
     {
       "korean": "일어서다",
@@ -322,7 +578,23 @@
       "emoji": "🧍",
       "example": "다시 일어서.",
       "exampleTranslation": "Stand up again.",
-      "timestamp": 219.3
+      "timestamp": 219.28
+    },
+    {
+      "korean": "믿다",
+      "romanization": "mitda",
+      "english": "to believe, trust",
+      "spanish": "creer",
+      "portuguese": "acreditar",
+      "indonesian": "percaya",
+      "japanese": "信じる",
+      "thai": "เชื่อ",
+      "french": "croire",
+      "partOfSpeech": "verb",
+      "emoji": "🙏",
+      "example": "널 믿어.",
+      "exampleTranslation": "I believe in you.",
+      "timestamp": 224.69
     },
     {
       "korean": "마지막",
@@ -338,7 +610,7 @@
       "emoji": "🔚",
       "example": "마지막 기회야.",
       "exampleTranslation": "It's the last chance.",
-      "timestamp": 237.1
+      "timestamp": 237.07
     }
   ]
 }

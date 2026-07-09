@@ -34,7 +34,7 @@
       "emoji": "🔙",
       "example": "내 뒤에 서.",
       "exampleTranslation": "Stand behind me.",
-      "timestamp": 28.2
+      "timestamp": 28.25
     },
     {
       "korean": "하늘",
@@ -50,7 +50,23 @@
       "emoji": "🌌",
       "example": "하늘이 넓어.",
       "exampleTranslation": "The sky is vast.",
-      "timestamp": 38.7
+      "timestamp": 38.69
+    },
+    {
+      "korean": "좋다",
+      "romanization": "jota",
+      "english": "to be good",
+      "spanish": "ser bueno",
+      "portuguese": "ser bom",
+      "indonesian": "baik",
+      "japanese": "良い",
+      "thai": "ดี",
+      "french": "être bon",
+      "partOfSpeech": "adjective",
+      "emoji": "👍",
+      "example": "날씨가 좋아.",
+      "exampleTranslation": "The weather is nice.",
+      "timestamp": 43.6
     },
     {
       "korean": "기억",
@@ -66,7 +82,23 @@
       "emoji": "🧠",
       "example": "기억이 나.",
       "exampleTranslation": "I remember.",
-      "timestamp": 56.4
+      "timestamp": 56.41
+    },
+    {
+      "korean": "머물다",
+      "romanization": "meomulda",
+      "english": "to stay, remain",
+      "spanish": "quedarse",
+      "portuguese": "ficar",
+      "indonesian": "tinggal",
+      "japanese": "とどまる",
+      "thai": "อยู่ต่อ",
+      "french": "rester",
+      "partOfSpeech": "verb",
+      "emoji": "🏠",
+      "example": "여기 머물러.",
+      "exampleTranslation": "Stay here.",
+      "timestamp": 64.76
     },
     {
       "korean": "지키다",
@@ -82,7 +114,7 @@
       "emoji": "🛡️",
       "example": "약속을 지켜.",
       "exampleTranslation": "Keep your promise.",
-      "timestamp": 97.9
+      "timestamp": 97.96
     },
     {
       "korean": "기대다",
@@ -98,7 +130,7 @@
       "emoji": "🤝",
       "example": "어깨에 기대.",
       "exampleTranslation": "Lean on my shoulder.",
-      "timestamp": 106.6
+      "timestamp": 106.65
     },
     {
       "korean": "눈물",
@@ -114,7 +146,23 @@
       "emoji": "💧",
       "example": "눈물이 났어.",
       "exampleTranslation": "Tears came out.",
-      "timestamp": 117.1
+      "timestamp": 117.18
+    },
+    {
+      "korean": "함께",
+      "romanization": "hamkke",
+      "english": "together",
+      "spanish": "juntos",
+      "portuguese": "juntos",
+      "indonesian": "bersama",
+      "japanese": "一緒に",
+      "thai": "ด้วยกัน",
+      "french": "ensemble",
+      "partOfSpeech": "adverb",
+      "emoji": "👫",
+      "example": "함께 가자.",
+      "exampleTranslation": "Let's go together.",
+      "timestamp": 122.21
     },
     {
       "korean": "사랑하다",
@@ -130,7 +178,7 @@
       "emoji": "❤️",
       "example": "너를 사랑해.",
       "exampleTranslation": "I love you.",
-      "timestamp": 134.3
+      "timestamp": 134.29
     },
     {
       "korean": "잃다",
@@ -146,7 +194,7 @@
       "emoji": "💔",
       "example": "열쇠를 잃었어.",
       "exampleTranslation": "I lost my keys.",
-      "timestamp": 143.7
+      "timestamp": 143.69
     },
     {
       "korean": "닮다",
@@ -162,7 +210,23 @@
       "emoji": "👯",
       "example": "우린 닮았어.",
       "exampleTranslation": "We resemble each other.",
-      "timestamp": 158.6
+      "timestamp": 158.58
+    },
+    {
+      "korean": "남다",
+      "romanization": "namda",
+      "english": "to remain, be left",
+      "spanish": "quedar",
+      "portuguese": "restar",
+      "indonesian": "tersisa",
+      "japanese": "残る",
+      "thai": "เหลืออยู่",
+      "french": "rester",
+      "partOfSpeech": "verb",
+      "emoji": "🍚",
+      "example": "밥이 남았어.",
+      "exampleTranslation": "There is rice left.",
+      "timestamp": 164.81
     },
     {
       "korean": "추억",
@@ -178,7 +242,7 @@
       "emoji": "📷",
       "example": "좋은 추억이야.",
       "exampleTranslation": "It's a good memory.",
-      "timestamp": 173.8
+      "timestamp": 173.78
     },
     {
       "korean": "슬픔",
@@ -194,7 +258,7 @@
       "emoji": "😢",
       "example": "슬픔을 이겨.",
       "exampleTranslation": "Overcome the sorrow.",
-      "timestamp": 186.6
+      "timestamp": 186.65
     },
     {
       "korean": "떠나다",
@@ -210,7 +274,23 @@
       "emoji": "👋",
       "example": "떠나지 마.",
       "exampleTranslation": "Don't leave.",
-      "timestamp": 196.2
+      "timestamp": 196.26
+    },
+    {
+      "korean": "살다",
+      "romanization": "salda",
+      "english": "to live",
+      "spanish": "vivir",
+      "portuguese": "viver",
+      "indonesian": "hidup",
+      "japanese": "生きる",
+      "thai": "มีชีวิต",
+      "french": "vivre",
+      "partOfSpeech": "verb",
+      "emoji": "🌱",
+      "example": "서울에 살아.",
+      "exampleTranslation": "I live in Seoul.",
+      "timestamp": 200.31
     }
   ]
 }

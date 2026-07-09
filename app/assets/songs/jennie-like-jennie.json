@@ -18,7 +18,39 @@
       "emoji": "💰",
       "example": "이거 얼마예요?",
       "exampleTranslation": "How much is this?",
-      "timestamp": 56
+      "timestamp": 55.97
+    },
+    {
+      "korean": "만들다",
+      "romanization": "mandeulda",
+      "english": "to make",
+      "spanish": "hacer",
+      "portuguese": "fazer",
+      "indonesian": "membuat",
+      "japanese": "作る",
+      "thai": "ทำ",
+      "french": "faire",
+      "partOfSpeech": "verb",
+      "emoji": "🛠️",
+      "example": "엄마가 맛있는 케이크를 만들었어.",
+      "exampleTranslation": "Mom made a delicious cake.",
+      "timestamp": 57.82
+    },
+    {
+      "korean": "여러",
+      "romanization": "yeoreo",
+      "english": "several, various",
+      "spanish": "varios",
+      "portuguese": "vários",
+      "indonesian": "beberapa",
+      "japanese": "いくつもの",
+      "thai": "หลาย",
+      "french": "plusieurs",
+      "partOfSpeech": "adjective",
+      "emoji": "🔢",
+      "example": "여러 나라를 여행하고 싶어.",
+      "exampleTranslation": "I want to travel to several countries.",
+      "timestamp": 61.25
     },
     {
       "korean": "되다",
@@ -34,7 +66,39 @@
       "emoji": "🔄",
       "example": "나는 가수가 되고 싶어.",
       "exampleTranslation": "I want to become a singer.",
-      "timestamp": 65.2
+      "timestamp": 65.24
+    },
+    {
+      "korean": "만나다",
+      "romanization": "mannada",
+      "english": "to meet",
+      "spanish": "encontrarse",
+      "portuguese": "encontrar",
+      "indonesian": "bertemu",
+      "japanese": "会う",
+      "thai": "พบ",
+      "french": "rencontrer",
+      "partOfSpeech": "verb",
+      "emoji": "🤝",
+      "example": "내일 친구를 만날 거야.",
+      "exampleTranslation": "I will meet my friend tomorrow.",
+      "timestamp": 68.91
+    },
+    {
+      "korean": "필요하다",
+      "romanization": "piryohada",
+      "english": "to need, be necessary",
+      "spanish": "necesitar",
+      "portuguese": "precisar",
+      "indonesian": "memerlukan",
+      "japanese": "必要だ",
+      "thai": "ต้องการ",
+      "french": "avoir besoin",
+      "partOfSpeech": "adjective",
+      "emoji": "✅",
+      "example": "지금 너의 도움이 필요해.",
+      "exampleTranslation": "I need your help right now.",
+      "timestamp": 72.4
     },
     {
       "korean": "죄",
@@ -50,7 +114,7 @@
       "emoji": "⚖️",
       "example": "거짓말은 큰 죄야.",
       "exampleTranslation": "Lying is a big sin.",
-      "timestamp": 76.1
+      "timestamp": 76.11
     }
   ]
 }

@@ -5,9 +5,9 @@
     "artist": "10CM",
     "youtubeId": "Ry1RrIVyl1M",
     "synced": true,
-    "wordCount": 13,
+    "wordCount": 26,
     "order": 1783008414,
-    "hash": "53fbc071c1237813"
+    "hash": "2be1e6d1126005db"
   },
   {
     "id": "2ne1-lonely",
@@ -15,9 +15,9 @@
     "artist": "2NE1",
     "youtubeId": "5n4V3lGEyG4",
     "synced": true,
-    "wordCount": 13,
+    "wordCount": 29,
     "order": 1782988937,
-    "hash": "2dc9b03e63b1ecb7"
+    "hash": "84cdd2f23cfadc19"
   },
   {
     "id": "aespa-lemonade",
@@ -35,19 +35,19 @@
     "artist": "aespa",
     "youtubeId": "phuiiNCxRMg",
     "synced": true,
-    "wordCount": 21,
+    "wordCount": 31,
     "order": 1773571092,
-    "hash": "1c8e29be0f92402e"
+    "hash": "7c69b0aa415bf173"
   },
   {
     "id": "aespa-wda",
     "title": "WDA",
     "artist": "aespa",
     "youtubeId": "iTJSbJtS8MU",
-    "synced": false,
-    "wordCount": 8,
+    "synced": true,
+    "wordCount": 14,
     "order": 1783008414,
-    "hash": "1142c5ec4b56a52b"
+    "hash": "c1f1043ada9f7b07"
   },
   {
     "id": "aespa-whiplash",
@@ -55,9 +55,9 @@
     "artist": "aespa",
     "youtubeId": "jWQx2f-CErU",
     "synced": true,
-    "wordCount": 15,
+    "wordCount": 30,
     "order": 1783293262,
-    "hash": "037c35ba0b1920f1"
+    "hash": "29831d26791b13ef"
   },
   {
     "id": "akmu-how-can-i-love-the-heartbreak",
@@ -65,9 +65,9 @@
     "artist": "AKMU (악뮤)",
     "youtubeId": "m3DZsBw5bnE",
     "synced": true,
-    "wordCount": 16,
+    "wordCount": 34,
     "order": 1782988937,
-    "hash": "b87e60bbec2929d6"
+    "hash": "076689ae94907ecb"
   },
   {
     "id": "akmu-somune-nagwon",
@@ -75,9 +75,9 @@
     "artist": "AKMU (악뮤)",
     "youtubeId": "D54StAZFUrc",
     "synced": true,
-    "wordCount": 10,
+    "wordCount": 21,
     "order": 1783008414,
-    "hash": "345928a20da8d6b9"
+    "hash": "224c96e4cb857291"
   },
   {
     "id": "allday-famous",
@@ -85,9 +85,9 @@
     "artist": "ALLDAY PROJECT",
     "youtubeId": "VjvzYjU1mY0",
     "synced": true,
-    "wordCount": 10,
+    "wordCount": 23,
     "order": 1783008414,
-    "hash": "4f1be7b73de5a0a2"
+    "hash": "e6023071c156c2bb"
   },
   {
     "id": "allday-one-more-time",
@@ -95,9 +95,9 @@
     "artist": "ALLDAY PROJECT",
     "youtubeId": "OgEwJ8a1OoY",
     "synced": true,
-    "wordCount": 14,
+    "wordCount": 24,
     "order": 1783008414,
-    "hash": "1316127882116cbc"
+    "hash": "b635763cfb10a441"
   },
   {
     "id": "apink-nonono",
@@ -105,9 +105,9 @@
     "artist": "에이핑크 (Apink)",
     "youtubeId": "hspqQuuuGIw",
     "synced": true,
-    "wordCount": 16,
+    "wordCount": 43,
     "order": 1782988937,
-    "hash": "d8bc2c745e81212b"
+    "hash": "aeb79287888625c3"
   },
   {
     "id": "ateez-answer",
@@ -115,19 +115,19 @@
     "artist": "ATEEZ",
     "youtubeId": "yW7wZX3DUaY",
     "synced": true,
-    "wordCount": 18,
+    "wordCount": 44,
     "order": 1782988937,
-    "hash": "9ca5dab00bf88cbd"
+    "hash": "bf442ea5f9248b08"
   },
   {
     "id": "ateez-bad",
     "title": "BAD",
     "artist": "ATEEZ",
     "youtubeId": "-q_S27LbNKU",
-    "synced": false,
-    "wordCount": 5,
+    "synced": true,
+    "wordCount": 11,
     "order": 1783206753,
-    "hash": "eca1f628ee457c3b"
+    "hash": "5264d36adf654ee6"
   },
   {
     "id": "babymonster-choom",
@@ -135,9 +135,9 @@
     "artist": "BABYMONSTER",
     "youtubeId": "x3eqqoZPV_E",
     "synced": true,
-    "wordCount": 11,
+    "wordCount": 21,
     "order": 1783206753,
-    "hash": "d6d49f7aeac96ef0"
+    "hash": "64250aebca4c5d10"
   },
   {
     "id": "baek-jiyoung-like-being-shot",
@@ -145,9 +145,9 @@
     "artist": "백지영 (Baek Ji Young)",
     "youtubeId": "uSdlduWm4HM",
     "synced": true,
-    "wordCount": 14,
+    "wordCount": 35,
     "order": 1782988937,
-    "hash": "e6777ce3b6f1e923"
+    "hash": "c8d15fbe55893537"
   },
   {
     "id": "ben-love-ing",
@@ -155,19 +155,19 @@
     "artist": "벤 (BEN)",
     "youtubeId": "SYR7MMvE15Y",
     "synced": true,
-    "wordCount": 20,
+    "wordCount": 31,
     "order": 1782988937,
-    "hash": "1f03add8544e036d"
+    "hash": "a7eef89244d9e9b0"
   },
   {
     "id": "bibi-bam-yang-gang",
     "title": "밤양갱 (Bam Yang Gang)",
     "artist": "비비 (BIBI)",
     "youtubeId": "smdmEhkIRVc",
-    "synced": false,
-    "wordCount": 9,
+    "synced": true,
+    "wordCount": 23,
     "order": 1782988937,
-    "hash": "e9498dcdae4e5c88"
+    "hash": "25b055c1c10977bb"
   },
   {
     "id": "bibi-bumpa",
@@ -175,9 +175,9 @@
     "artist": "비비 (BIBI)",
     "youtubeId": "VoTuH7UHWLI",
     "synced": true,
-    "wordCount": 18,
+    "wordCount": 37,
     "order": 1783552626,
-    "hash": "dc0ac84adcf9004a"
+    "hash": "c550f68a2ed8cbb1"
   },
   {
     "id": "bigbang-still-life",
@@ -185,9 +185,9 @@
     "artist": "빅뱅 (BIGBANG)",
     "youtubeId": "eN5mG_yMDiM",
     "synced": true,
-    "wordCount": 13,
+    "wordCount": 23,
     "order": 1782988937,
-    "hash": "3633ef7bca3added"
+    "hash": "4e4b318de13460d6"
   },
   {
     "id": "blackpink-ddu-du",
@@ -195,9 +195,9 @@
     "artist": "BLACKPINK",
     "youtubeId": "IHNzOHi8sJs",
     "synced": true,
-    "wordCount": 15,
+    "wordCount": 31,
     "order": 1773502675,
-    "hash": "f5ba3bcdc4dece0a"
+    "hash": "9fdd59c575035532"
   },
   {
     "id": "blackpink-go",
@@ -214,40 +214,40 @@
     "title": "How You Like That",
     "artist": "BLACKPINK",
     "youtubeId": "ioNng23DkIM",
-    "synced": false,
-    "wordCount": 8,
+    "synced": true,
+    "wordCount": 18,
     "order": 1773502675,
-    "hash": "05b1f92900f89bdb"
+    "hash": "adbd28c4f50d17aa"
   },
   {
     "id": "blackpink-jump",
     "title": "뛰어(JUMP)",
     "artist": "BLACKPINK",
     "youtubeId": "CgCVZdcKcqY",
-    "synced": false,
-    "wordCount": 6,
+    "synced": true,
+    "wordCount": 11,
     "order": 1773502675,
-    "hash": "375fb5e2e9b69f8e"
+    "hash": "0b870fd4af778725"
   },
   {
     "id": "blackpink-ktl",
     "title": "Kill This Love",
     "artist": "BLACKPINK",
     "youtubeId": "2S24-y0Ij3Y",
-    "synced": false,
-    "wordCount": 9,
+    "synced": true,
+    "wordCount": 19,
     "order": 1773502675,
-    "hash": "5ac240bbcf99a896"
+    "hash": "3b1686780e194c32"
   },
   {
     "id": "boynextdoor-ddok-ddok-ddok",
     "title": "똑똑똑 (Knock Knock Knock)",
     "artist": "BOYNEXTDOOR",
     "youtubeId": "WxGWMI2B7r8",
-    "synced": false,
-    "wordCount": 8,
+    "synced": true,
+    "wordCount": 24,
     "order": 1783008414,
-    "hash": "58ecae3eacaa3486"
+    "hash": "1c2bc8a055567468"
   },
   {
     "id": "boynextdoor-earth-wind-fire",
@@ -255,9 +255,9 @@
     "artist": "BOYNEXTDOOR",
     "youtubeId": "u9nP3qXQA4o",
     "synced": true,
-    "wordCount": 13,
+    "wordCount": 24,
     "order": 1782988937,
-    "hash": "d2f0ef19885bf182"
+    "hash": "964ba9db4b6fc2a8"
   },
   {
     "id": "boynextdoor-if-i-say-i-love-you",
@@ -265,9 +265,9 @@
     "artist": "BOYNEXTDOOR",
     "youtubeId": "B4mLKcVIERs",
     "synced": true,
-    "wordCount": 20,
+    "wordCount": 38,
     "order": 1783008414,
-    "hash": "72ce7305d595c808"
+    "hash": "68e79e6ea7e0a805"
   },
   {
     "id": "boynextdoor-viral",
@@ -275,19 +275,19 @@
     "artist": "BOYNEXTDOOR",
     "youtubeId": "zGsj0fDHB_s",
     "synced": true,
-    "wordCount": 13,
+    "wordCount": 26,
     "order": 1783008414,
-    "hash": "182ba058a68a4dff"
+    "hash": "6ab72deed303b807"
   },
   {
     "id": "bts-2.0",
     "title": "2.0",
     "artist": "BTS",
     "youtubeId": "_gyultVTesk",
-    "synced": false,
-    "wordCount": 8,
+    "synced": true,
+    "wordCount": 17,
     "order": 1783008414,
-    "hash": "c96cd21dfbba56ca"
+    "hash": "eb623c522ac65c1b"
   },
   {
     "id": "bts-aliens",
@@ -295,9 +295,9 @@
     "artist": "BTS",
     "youtubeId": "EC9_h_elSAY",
     "synced": true,
-    "wordCount": 16,
+    "wordCount": 38,
     "order": 1783008414,
-    "hash": "3855ca642ba9d1f6"
+    "hash": "a7850e01f5fcc317"
   },
   {
     "id": "bts-blood-sweat-tears",
@@ -305,19 +305,19 @@
     "artist": "BTS",
     "youtubeId": "hmE9f-TEutc",
     "synced": true,
-    "wordCount": 15,
+    "wordCount": 39,
     "order": 1782988937,
-    "hash": "c085397c6463f219"
+    "hash": "9bff3677ba819dfd"
   },
   {
     "id": "bts-body-to-body",
     "title": "Body to Body",
     "artist": "BTS",
     "youtubeId": "RBaSiVjtKR4",
-    "synced": false,
-    "wordCount": 9,
+    "synced": true,
+    "wordCount": 14,
     "order": 1783008414,
-    "hash": "c8ab1733eebdc12a"
+    "hash": "bbbb1945626009a7"
   },
   {
     "id": "bts-dna",
@@ -325,9 +325,9 @@
     "artist": "BTS",
     "youtubeId": "MBdVXkSdhwU",
     "synced": true,
-    "wordCount": 22,
+    "wordCount": 46,
     "order": 1773502675,
-    "hash": "4a678324de8bfa14"
+    "hash": "5d2901ad1a882188"
   },
   {
     "id": "bts-fake-love",
@@ -335,9 +335,9 @@
     "artist": "BTS",
     "youtubeId": "7C2z4GqqS5E",
     "synced": true,
-    "wordCount": 15,
+    "wordCount": 33,
     "order": 1773502675,
-    "hash": "1cca1aa5d8973f44"
+    "hash": "a158bc4ae9990330"
   },
   {
     "id": "bts-fya",
@@ -345,9 +345,9 @@
     "artist": "BTS",
     "youtubeId": "QWDayFgPDjQ",
     "synced": false,
-    "wordCount": 2,
+    "wordCount": 4,
     "order": 1783008414,
-    "hash": "abb5911501886436"
+    "hash": "0ae4acd3e6e1ebe6"
   },
   {
     "id": "bts-hooligan",
@@ -355,19 +355,19 @@
     "artist": "BTS",
     "youtubeId": "diBO0gMuTXo",
     "synced": false,
-    "wordCount": 4,
+    "wordCount": 7,
     "order": 1783008414,
-    "hash": "b4dcc63fe4be8bec"
+    "hash": "6396eae74ec03665"
   },
   {
     "id": "bts-merry-go-round",
     "title": "Merry Go Round",
     "artist": "BTS",
     "youtubeId": "Iy0SpSLW8wo",
-    "synced": false,
-    "wordCount": 5,
+    "synced": true,
+    "wordCount": 13,
     "order": 1783008414,
-    "hash": "d5d400f2564b9f80"
+    "hash": "790be15f32be30e9"
   },
   {
     "id": "bts-spring-day",
@@ -375,19 +375,19 @@
     "artist": "BTS",
     "youtubeId": "xEeFrLSkMm8",
     "synced": true,
-    "wordCount": 21,
+    "wordCount": 45,
     "order": 1773502675,
-    "hash": "bbd44fcd2b8dc14e"
+    "hash": "4306bcd4cec84c26"
   },
   {
     "id": "carthegarden-my-whole-world",
     "title": "그대 작은 나의 세상이 되어",
     "artist": "카더가든",
     "youtubeId": "ZurHW2kBqrw",
-    "synced": false,
-    "wordCount": 30,
+    "synced": true,
+    "wordCount": 33,
     "order": 1773473468,
-    "hash": "8b9ceb942523e7e0"
+    "hash": "b4995a990acc639a"
   },
   {
     "id": "chungha-gotta-go",
@@ -395,9 +395,9 @@
     "artist": "청하 (CHUNG HA)",
     "youtubeId": "HlN2BXNJzxA",
     "synced": true,
-    "wordCount": 18,
+    "wordCount": 43,
     "order": 1782988937,
-    "hash": "7d72c67cb4f58d27"
+    "hash": "08e716c1b17f2b57"
   },
   {
     "id": "cortis-redred",
@@ -405,9 +405,9 @@
     "artist": "CORTIS",
     "youtubeId": "U6BDbXIah-Y",
     "synced": true,
-    "wordCount": 16,
+    "wordCount": 41,
     "order": 1783008414,
-    "hash": "ec1e8e00d9506611"
+    "hash": "7e4deed974f59f0f"
   },
   {
     "id": "crush-beautiful",
@@ -415,9 +415,9 @@
     "artist": "크러쉬 (Crush)",
     "youtubeId": "W0cs6ciCt_k",
     "synced": true,
-    "wordCount": 13,
+    "wordCount": 18,
     "order": 1782988937,
-    "hash": "cdd438ad5ba060d3"
+    "hash": "1aaa76cb4c4b55f4"
   },
   {
     "id": "davichi-timecapsule",
@@ -425,9 +425,9 @@
     "artist": "다비치",
     "youtubeId": "qE35JN1ogeI",
     "synced": true,
-    "wordCount": 21,
+    "wordCount": 38,
     "order": 1773473468,
-    "hash": "d9090a5d5f69bf39"
+    "hash": "d136f5aa3b8cd002"
   },
   {
     "id": "day6-happy",
@@ -435,9 +435,9 @@
     "artist": "DAY6 (데이식스)",
     "youtubeId": "2o1zdX72400",
     "synced": true,
-    "wordCount": 11,
+    "wordCount": 26,
     "order": 1783008414,
-    "hash": "54dd1fce6570e1e9"
+    "hash": "91a80196a4db77ce"
   },
   {
     "id": "day6-time-of-our-life",
@@ -445,9 +445,9 @@
     "artist": "DAY6",
     "youtubeId": "vnS_jn2uibs",
     "synced": true,
-    "wordCount": 12,
+    "wordCount": 28,
     "order": 1782967429,
-    "hash": "ea920eac14770d3f"
+    "hash": "d0cb42712824d79f"
   },
   {
     "id": "day6-welcome-to-the-show",
@@ -455,9 +455,9 @@
     "artist": "DAY6 (데이식스)",
     "youtubeId": "RowlrvmyFEk",
     "synced": true,
-    "wordCount": 13,
+    "wordCount": 30,
     "order": 1783008414,
-    "hash": "4917bf5a4a8a9f2c"
+    "hash": "730c425d8d104b5d"
   },
   {
     "id": "day6-you-were-beautiful",
@@ -465,9 +465,9 @@
     "artist": "DAY6 (데이식스)",
     "youtubeId": "BS7tz2rAOSA",
     "synced": true,
-    "wordCount": 19,
+    "wordCount": 51,
     "order": 1783008414,
-    "hash": "29fc597e27e8ca36"
+    "hash": "c0079fcbad3a92c5"
   },
   {
     "id": "dean-instagram",
@@ -475,9 +475,9 @@
     "artist": "딘 (DEAN)",
     "youtubeId": "wKyMIrBClYw",
     "synced": true,
-    "wordCount": 17,
+    "wordCount": 37,
     "order": 1782988937,
-    "hash": "31ee39e84fca4bdd"
+    "hash": "3318b9d968c49c60"
   },
   {
     "id": "do-popcorn",
@@ -485,9 +485,9 @@
     "artist": "도경수 (D.O.)",
     "youtubeId": "3AoruwUKQ3I",
     "synced": true,
-    "wordCount": 14,
+    "wordCount": 39,
     "order": 1783008414,
-    "hash": "c03e0300f532e275"
+    "hash": "5fa9ab8a83d245e4"
   },
   {
     "id": "eclipse-sudden-shower",
@@ -495,19 +495,19 @@
     "artist": "이클립스 (ECLIPSE)",
     "youtubeId": "fBB4MaBybyg",
     "synced": true,
-    "wordCount": 19,
+    "wordCount": 45,
     "order": 1783008414,
-    "hash": "b19c230e5c45b7b4"
+    "hash": "e41c6151e3d9208f"
   },
   {
     "id": "enhypen-fever",
     "title": "FEVER",
     "artist": "ENHYPEN",
     "youtubeId": "X7d6Dt17yHk",
-    "synced": false,
-    "wordCount": 9,
+    "synced": true,
+    "wordCount": 25,
     "order": 1782988937,
-    "hash": "b7de55be0d527c4f"
+    "hash": "44a3c4cd2b784466"
   },
   {
     "id": "epik-high-love-love-love",
@@ -515,19 +515,19 @@
     "artist": "에픽하이 (Epik High)",
     "youtubeId": "obpCDNNXrA8",
     "synced": true,
-    "wordCount": 18,
+    "wordCount": 42,
     "order": 1783008414,
-    "hash": "9be7c0144973e4a5"
+    "hash": "dc60ac293b2bad0e"
   },
   {
     "id": "gdragon-home-sweet-home",
     "title": "HOME SWEET HOME",
     "artist": "G-DRAGON",
     "youtubeId": "fLi0EJfi_vg",
-    "synced": false,
-    "wordCount": 7,
+    "synced": true,
+    "wordCount": 13,
     "order": 1783008414,
-    "hash": "55b230528add6b12"
+    "hash": "48feaaa45b3d45db"
   },
   {
     "id": "gidle-klaxon",
@@ -535,9 +535,9 @@
     "artist": "(G)I-DLE",
     "youtubeId": "rTKqSmX9XhQ",
     "synced": true,
-    "wordCount": 13,
+    "wordCount": 25,
     "order": 1783548103,
-    "hash": "65c7f07978cdfbd6"
+    "hash": "7b30d77d356f2197"
   },
   {
     "id": "gidle-queencard",
@@ -545,9 +545,9 @@
     "artist": "(G)I-DLE",
     "youtubeId": "7HDeem-JaSY",
     "synced": true,
-    "wordCount": 16,
+    "wordCount": 36,
     "order": 1773571092,
-    "hash": "0a64f9504713270c"
+    "hash": "8d88d4a226b334fa"
   },
   {
     "id": "gummy-you-are-my-everything",
@@ -555,9 +555,9 @@
     "artist": "거미 (Gummy)",
     "youtubeId": "ToASX6axGuw",
     "synced": true,
-    "wordCount": 15,
+    "wordCount": 27,
     "order": 1782988937,
-    "hash": "79d5430f83fbf0e5"
+    "hash": "78fec64bc440c865"
   },
   {
     "id": "gyeongseoyeji-call-my-name",
@@ -565,9 +565,9 @@
     "artist": "경서예지",
     "youtubeId": "YPvrhziJAno",
     "synced": true,
-    "wordCount": 13,
+    "wordCount": 41,
     "order": 1783008414,
-    "hash": "1a14e613810cc5c5"
+    "hash": "34da051c36338116"
   },
   {
     "id": "hanroro-ipchun",
@@ -575,9 +575,9 @@
     "artist": "한로로 (HANRORO)",
     "youtubeId": "kIiW3XRP7bU",
     "synced": true,
-    "wordCount": 12,
+    "wordCount": 25,
     "order": 1783008414,
-    "hash": "ce0031941e30ab48"
+    "hash": "f25299e6fa0ce779"
   },
   {
     "id": "hanroro-saranghage",
@@ -585,9 +585,9 @@
     "artist": "한로로",
     "youtubeId": "h0KIWaUEIgQ",
     "synced": true,
-    "wordCount": 10,
+    "wordCount": 23,
     "order": 1773571092,
-    "hash": "7b23494ceece62c3"
+    "hash": "0904ff0e00132118"
   },
   {
     "id": "hanroro-zero-plus-zero",
@@ -595,19 +595,19 @@
     "artist": "한로로",
     "youtubeId": "_Ngk-DCHfD0",
     "synced": true,
-    "wordCount": 11,
+    "wordCount": 23,
     "order": 1773473468,
-    "hash": "e50fda64c85aa337"
+    "hash": "efd6ba229ca0b69b"
   },
   {
     "id": "hearts2hearts-focus",
     "title": "FOCUS",
     "artist": "Hearts2Hearts",
     "youtubeId": "Ur7aK4FvK-U",
-    "synced": false,
-    "wordCount": 9,
+    "synced": true,
+    "wordCount": 23,
     "order": 1773473468,
-    "hash": "a914e590e25809a1"
+    "hash": "eafd515ec89a8ede"
   },
   {
     "id": "hearts2hearts-lemon-tang",
@@ -615,9 +615,9 @@
     "artist": "Hearts2Hearts",
     "youtubeId": "1VqxWNwgf5Q",
     "synced": true,
-    "wordCount": 17,
+    "wordCount": 23,
     "order": 1783034026,
-    "hash": "e5f91abd33dd344b"
+    "hash": "e9b2fd32927fb795"
   },
   {
     "id": "hearts2hearts-rude",
@@ -625,9 +625,9 @@
     "artist": "Hearts2Hearts",
     "youtubeId": "F7sGJVUrkjQ",
     "synced": true,
-    "wordCount": 17,
+    "wordCount": 23,
     "order": 1773571092,
-    "hash": "ba7028d671a320b8"
+    "hash": "e5210a67d88bcdc1"
   },
   {
     "id": "hearts2hearts-style",
@@ -635,9 +635,9 @@
     "artist": "Hearts2Hearts",
     "youtubeId": "n7kFRxFIPrI",
     "synced": true,
-    "wordCount": 15,
+    "wordCount": 24,
     "order": 1783008414,
-    "hash": "cd21161e0c5f8b19"
+    "hash": "5aad88dff606a001"
   },
   {
     "id": "heize-you-clouds-rain",
@@ -645,9 +645,9 @@
     "artist": "헤이즈 (Heize)",
     "youtubeId": "afxLaQiLu-o",
     "synced": true,
-    "wordCount": 12,
+    "wordCount": 31,
     "order": 1782988937,
-    "hash": "b84d2a2fb6d357e7"
+    "hash": "96b472b1fc79e87d"
   },
   {
     "id": "huntrx-golden",
@@ -657,7 +657,7 @@
     "synced": false,
     "wordCount": 5,
     "order": 1773502675,
-    "hash": "fc29e7707416cbb6"
+    "hash": "c04e700b84c269ad"
   },
   {
     "id": "hwasa-good-goodbye",
@@ -665,9 +665,9 @@
     "artist": "화사",
     "youtubeId": "Qe8fa4b5xNU",
     "synced": true,
-    "wordCount": 13,
+    "wordCount": 23,
     "order": 1773571092,
-    "hash": "a68d89ba95c07b7e"
+    "hash": "ba1a0e6bc5601850"
   },
   {
     "id": "hyukoh-wi-ing-wi-ing",
@@ -675,19 +675,19 @@
     "artist": "혁오 (HYUKOH)",
     "youtubeId": "D6dqkvR4F9g",
     "synced": true,
-    "wordCount": 16,
+    "wordCount": 34,
     "order": 1782988937,
-    "hash": "c080d430e3733c4c"
+    "hash": "778bd9eceac3f143"
   },
   {
     "id": "illit-its-me",
     "title": "It's Me",
     "artist": "ILLIT",
     "youtubeId": "bMhDJ0S0OBA",
-    "synced": false,
-    "wordCount": 6,
+    "synced": true,
+    "wordCount": 12,
     "order": 1783008414,
-    "hash": "59af4f9053e1fd45"
+    "hash": "b37461b62169140d"
   },
   {
     "id": "illit-magnetic",
@@ -695,19 +695,19 @@
     "artist": "ILLIT",
     "youtubeId": "Vk5-c_v4gMU",
     "synced": true,
-    "wordCount": 10,
+    "wordCount": 24,
     "order": 1783008414,
-    "hash": "215d81b8b5046256"
+    "hash": "b079b3f3e3c468a8"
   },
   {
     "id": "illit-not-cute",
     "title": "NOT CUTE ANYMORE",
     "artist": "ILLIT",
     "youtubeId": "x_RYZsOfpKY",
-    "synced": false,
-    "wordCount": 6,
+    "synced": true,
+    "wordCount": 12,
     "order": 1773571092,
-    "hash": "add9d603db60308f"
+    "hash": "7ed6e700da307c8c"
   },
   {
     "id": "ioi-gapjagi",
@@ -715,9 +715,9 @@
     "artist": "I.O.I",
     "youtubeId": "Jxgbfc89hNI",
     "synced": true,
-    "wordCount": 15,
+    "wordCount": 27,
     "order": 1783008414,
-    "hash": "2a4e56568d445b9b"
+    "hash": "2bb9b15d6d2c552e"
   },
   {
     "id": "iu-blueming",
@@ -725,9 +725,9 @@
     "artist": "IU",
     "youtubeId": "D1PvIWdJ8xo",
     "synced": true,
-    "wordCount": 15,
+    "wordCount": 35,
     "order": 1773571092,
-    "hash": "856821508ee105e7"
+    "hash": "843b9e2264e44fc1"
   },
   {
     "id": "iu-love-wins-all",
@@ -735,9 +735,9 @@
     "artist": "아이유 (IU)",
     "youtubeId": "JleoAppaxi0",
     "synced": true,
-    "wordCount": 15,
+    "wordCount": 34,
     "order": 1783008414,
-    "hash": "aa3eef64e81c8e86"
+    "hash": "db7e65de37168786"
   },
   {
     "id": "ive-after-like",
@@ -745,9 +745,9 @@
     "artist": "IVE",
     "youtubeId": "F0B7HDiY-10",
     "synced": true,
-    "wordCount": 12,
+    "wordCount": 25,
     "order": 1773571092,
-    "hash": "39c84d32b1e97619"
+    "hash": "d347a2ad0b4d2884"
   },
   {
     "id": "ive-bang-bang",
@@ -755,9 +755,9 @@
     "artist": "IVE",
     "youtubeId": "9qkpcLK422o",
     "synced": true,
-    "wordCount": 10,
+    "wordCount": 15,
     "order": 1773473468,
-    "hash": "2b0d717db696f0e3"
+    "hash": "6c01d217b801d067"
   },
   {
     "id": "ive-blackhole",
@@ -765,9 +765,9 @@
     "artist": "IVE",
     "youtubeId": "1Lmy7qwmSMc",
     "synced": true,
-    "wordCount": 11,
+    "wordCount": 29,
     "order": 1773571092,
-    "hash": "e31705f3f34df9b7"
+    "hash": "4dc176bf40012849"
   },
   {
     "id": "ive-heya",
@@ -775,9 +775,9 @@
     "artist": "IVE",
     "youtubeId": "07EzMbVH3QE",
     "synced": true,
-    "wordCount": 14,
+    "wordCount": 34,
     "order": 1783548103,
-    "hash": "8aa1fd68900b0dc2"
+    "hash": "0b42bb3e3d119cb7"
   },
   {
     "id": "ive-i-am",
@@ -795,9 +795,9 @@
     "artist": "IVE",
     "youtubeId": "Y8JFxS1HlDo",
     "synced": true,
-    "wordCount": 16,
+    "wordCount": 23,
     "order": 1773571092,
-    "hash": "7351c31fbc1264ee"
+    "hash": "88b3bd2524ac5032"
   },
   {
     "id": "ive-rebel-heart",
@@ -805,9 +805,9 @@
     "artist": "IVE",
     "youtubeId": "g36q0ZLvygQ",
     "synced": true,
-    "wordCount": 13,
+    "wordCount": 19,
     "order": 1783008414,
-    "hash": "a5a80f6639ae0c7b"
+    "hash": "935b322fdb9abebc"
   },
   {
     "id": "jannabi-for-lovers-who-hesitate",
@@ -815,9 +815,9 @@
     "artist": "잔나비 (JANNABI)",
     "youtubeId": "GpQ222I1ULc",
     "synced": true,
-    "wordCount": 16,
+    "wordCount": 30,
     "order": 1782988937,
-    "hash": "3bc56c52159189bf"
+    "hash": "a9adaf3597ea0f97"
   },
   {
     "id": "jennie-like-jennie",
@@ -825,19 +825,19 @@
     "artist": "JENNIE",
     "youtubeId": "JSFG-IE8n_c",
     "synced": false,
-    "wordCount": 3,
+    "wordCount": 7,
     "order": 1783008414,
-    "hash": "f9cc356899dd6036"
+    "hash": "e49b735272b18399"
   },
   {
     "id": "jimin-like-crazy",
     "title": "Like Crazy",
     "artist": "Jimin",
     "youtubeId": "nOI67IDlNMQ",
-    "synced": false,
-    "wordCount": 9,
+    "synced": true,
+    "wordCount": 14,
     "order": 1782988937,
-    "hash": "a20fb59d65669533"
+    "hash": "3f392cf4363d941f"
   },
   {
     "id": "kara-step",
@@ -845,9 +845,9 @@
     "artist": "카라 (KARA)",
     "youtubeId": "zYoYoBtLqOY",
     "synced": true,
-    "wordCount": 17,
+    "wordCount": 28,
     "order": 1782988937,
-    "hash": "eede871a8f0d5bf8"
+    "hash": "111d7b092ba1b5c3"
   },
   {
     "id": "kiiikiii-404-new-era",
@@ -855,9 +855,9 @@
     "artist": "KiiiKiii",
     "youtubeId": "zhHB4dZTChw",
     "synced": true,
-    "wordCount": 14,
+    "wordCount": 21,
     "order": 1773473468,
-    "hash": "540c5aeca9592a7b"
+    "hash": "885d5dd7533914fa"
   },
   {
     "id": "kim-bumsoo-i-miss-you",
@@ -865,9 +865,9 @@
     "artist": "김범수 (Kim Bum Soo)",
     "youtubeId": "_MqDTocBC-Y",
     "synced": true,
-    "wordCount": 15,
+    "wordCount": 22,
     "order": 1782988937,
-    "hash": "b66a93980d458783"
+    "hash": "94bd37de4705b9a4"
   },
   {
     "id": "kim-hojoong-barami-buneun-naren",
@@ -945,9 +945,9 @@
     "artist": "김나영 (Kim Na Young)",
     "youtubeId": "4Sd09Mruhnk",
     "synced": true,
-    "wordCount": 17,
+    "wordCount": 35,
     "order": 1782988937,
-    "hash": "9fbc844a95f16640"
+    "hash": "112b623dc86e0418"
   },
   {
     "id": "kyoungseo-shiny-star",
@@ -955,9 +955,9 @@
     "artist": "경서 (KyoungSeo)",
     "youtubeId": "NuTNPV72rFo",
     "synced": true,
-    "wordCount": 10,
+    "wordCount": 25,
     "order": 1782988937,
-    "hash": "14cc1cdc8a371565"
+    "hash": "02637df34d876c30"
   },
   {
     "id": "leechangsub-heavenly-fate",
@@ -965,9 +965,9 @@
     "artist": "이창섭",
     "youtubeId": "BXzoYQ-3ETs",
     "synced": true,
-    "wordCount": 21,
+    "wordCount": 32,
     "order": 1783008414,
-    "hash": "2bf883b1d7d52a4f"
+    "hash": "98c9cd7700c8e29c"
   },
   {
     "id": "leechanhyuk-endangered-love",
@@ -975,9 +975,9 @@
     "artist": "이찬혁",
     "youtubeId": "19oT04OuBhg",
     "synced": true,
-    "wordCount": 14,
+    "wordCount": 33,
     "order": 1773473468,
-    "hash": "3e5177b6126abea7"
+    "hash": "b09446afb46e1e9b"
   },
   {
     "id": "leehi-breathe",
@@ -985,9 +985,9 @@
     "artist": "이하이 (LeeHi)",
     "youtubeId": "5iSlfF8TQ9k",
     "synced": true,
-    "wordCount": 21,
+    "wordCount": 33,
     "order": 1782988937,
-    "hash": "22565e6bcce0f663"
+    "hash": "d98ee5d971974f65"
   },
   {
     "id": "leemujin-episode",
@@ -995,9 +995,9 @@
     "artist": "이무진",
     "youtubeId": "PVIf531Dt8E",
     "synced": true,
-    "wordCount": 18,
+    "wordCount": 41,
     "order": 1783293262,
-    "hash": "466fc50b418df86a"
+    "hash": "4aadf91328d65f78"
   },
   {
     "id": "leemujin-traffic-light",
@@ -1005,9 +1005,9 @@
     "artist": "이무진",
     "youtubeId": "SK6Sm2Ki9tI",
     "synced": true,
-    "wordCount": 14,
+    "wordCount": 38,
     "order": 1782967429,
-    "hash": "199707983c83be52"
+    "hash": "4a75e8fd6b8f847f"
   },
   {
     "id": "lesserafim-easy",
@@ -1015,9 +1015,9 @@
     "artist": "LE SSERAFIM",
     "youtubeId": "bNKXxwOQYB8",
     "synced": true,
-    "wordCount": 13,
+    "wordCount": 20,
     "order": 1783548103,
-    "hash": "39541376b7d2ea4d"
+    "hash": "cef1a8815d8f551d"
   },
   {
     "id": "lesserafim-spaghetti",
@@ -1025,9 +1025,9 @@
     "artist": "LE SSERAFIM",
     "youtubeId": "TvVtYaqCni8",
     "synced": true,
-    "wordCount": 12,
+    "wordCount": 30,
     "order": 1773502675,
-    "hash": "8f1ba19e2702bdc4"
+    "hash": "e787fe17a34f9b4d"
   },
   {
     "id": "lim-hyunjung-spring-rain",
@@ -1035,9 +1035,9 @@
     "artist": "임현정",
     "youtubeId": "tpQsYHVUxdA",
     "synced": true,
-    "wordCount": 14,
+    "wordCount": 32,
     "order": 1783008414,
-    "hash": "931096d08d14fdc5"
+    "hash": "1a3287793add055e"
   },
   {
     "id": "lim-youngwoong-blues",
@@ -1045,9 +1045,9 @@
     "artist": "임영웅",
     "youtubeId": "SHj0-HBuceE",
     "synced": true,
-    "wordCount": 11,
+    "wordCount": 28,
     "order": 1783008414,
-    "hash": "621ae000a1943b73"
+    "hash": "1b25e53cf4b50fa8"
   },
   {
     "id": "lim-youngwoong-sarangeun",
@@ -1055,9 +1055,9 @@
     "artist": "임영웅",
     "youtubeId": "Jr_2uyCJVUc",
     "synced": true,
-    "wordCount": 14,
+    "wordCount": 30,
     "order": 1773571092,
-    "hash": "91f91489ec3bf03d"
+    "hash": "00914665861213c2"
   },
   {
     "id": "lim-youngwoong-sungan",
@@ -1077,7 +1077,7 @@
     "synced": true,
     "wordCount": 18,
     "order": 1783552626,
-    "hash": "71cd6690999dc9b3"
+    "hash": "3ef06969ab9c8c2b"
   },
   {
     "id": "melomance-gift",
@@ -1085,9 +1085,9 @@
     "artist": "멜로망스 (MeloMance)",
     "youtubeId": "1ypg_P-pLHQ",
     "synced": true,
-    "wordCount": 14,
+    "wordCount": 31,
     "order": 1782988937,
-    "hash": "dbd7f173050532e0"
+    "hash": "a2af94846826718f"
   },
   {
     "id": "melomance-love-maybe",
@@ -1095,9 +1095,9 @@
     "artist": "멜로망스 (MeloMance)",
     "youtubeId": "UoBsiQW23IY",
     "synced": true,
-    "wordCount": 11,
+    "wordCount": 23,
     "order": 1783008414,
-    "hash": "5365a520bf3ec9d0"
+    "hash": "662cc72803621979"
   },
   {
     "id": "missa-bad-girl-good-girl",
@@ -1105,9 +1105,9 @@
     "artist": "미쓰에이 (miss A)",
     "youtubeId": "8TeeJvcBdLA",
     "synced": true,
-    "wordCount": 19,
+    "wordCount": 45,
     "order": 1782988937,
-    "hash": "7a52bd08a5396972"
+    "hash": "02b5afaf95bb8bde"
   },
   {
     "id": "nct127-kick-it",
@@ -1115,9 +1115,9 @@
     "artist": "NCT 127",
     "youtubeId": "2OvyA2__Eas",
     "synced": true,
-    "wordCount": 13,
+    "wordCount": 31,
     "order": 1782988937,
-    "hash": "4e303878601523f2"
+    "hash": "dba0ea20226c1b6d"
   },
   {
     "id": "nctdream-candy",
@@ -1125,9 +1125,9 @@
     "artist": "NCT DREAM",
     "youtubeId": "zuoSn3ObMz4",
     "synced": true,
-    "wordCount": 18,
+    "wordCount": 46,
     "order": 1782988937,
-    "hash": "f2aef12c7c9b7bab"
+    "hash": "fe918c8fba9fedeb"
   },
   {
     "id": "nerd-connection-if-i-have-you-only",
@@ -1135,9 +1135,9 @@
     "artist": "너드커넥션 (Nerd Connection)",
     "youtubeId": "IMWT6937uUs",
     "synced": true,
-    "wordCount": 11,
+    "wordCount": 28,
     "order": 1783008414,
-    "hash": "e0cbacbecf20a2de"
+    "hash": "003ff9d7ef2026eb"
   },
   {
     "id": "newjeans-hype-boy",
@@ -1145,9 +1145,9 @@
     "artist": "NewJeans",
     "youtubeId": "11cta61wi0g",
     "synced": true,
-    "wordCount": 11,
+    "wordCount": 21,
     "order": 1783008414,
-    "hash": "83056c208ef0cafd"
+    "hash": "de93117526c9e525"
   },
   {
     "id": "newjeans-super-shy",
@@ -1155,9 +1155,9 @@
     "artist": "NewJeans",
     "youtubeId": "ArmDp-zijuc",
     "synced": true,
-    "wordCount": 13,
+    "wordCount": 11,
     "order": 1783548103,
-    "hash": "eb10b0ae3675fcaf"
+    "hash": "013db65ac0f22fc1"
   },
   {
     "id": "nflying-flashback",
@@ -1165,9 +1165,9 @@
     "artist": "N.Flying",
     "youtubeId": "b3xubrV7nnk",
     "synced": true,
-    "wordCount": 14,
+    "wordCount": 32,
     "order": 1783379810,
-    "hash": "2df2d07b98b79a8e"
+    "hash": "d638d113a529e9b9"
   },
   {
     "id": "nmixx-blue-valentine",
@@ -1177,7 +1177,7 @@
     "synced": true,
     "wordCount": 20,
     "order": 1773571092,
-    "hash": "90c4dd3e16c1c673"
+    "hash": "c7a72d946289e1de"
   },
   {
     "id": "nmixx-dash",
@@ -1185,9 +1185,9 @@
     "artist": "NMIXX",
     "youtubeId": "7UecFm_bSTU",
     "synced": true,
-    "wordCount": 13,
+    "wordCount": 26,
     "order": 1773571092,
-    "hash": "e9fd7c99f2843f90"
+    "hash": "adf7a254eca01b3c"
   },
   {
     "id": "nmixx-heavy-serenade",
@@ -1195,9 +1195,9 @@
     "artist": "NMIXX",
     "youtubeId": "6Ycn9qZK09I",
     "synced": true,
-    "wordCount": 13,
+    "wordCount": 28,
     "order": 1783008414,
-    "hash": "2b5aaecc82073499"
+    "hash": "54e3d36eef41d9d9"
   },
   {
     "id": "ovan-flower",
@@ -1205,9 +1205,9 @@
     "artist": "오반 (OVAN)",
     "youtubeId": "pqUqaBC_2lk",
     "synced": true,
-    "wordCount": 12,
+    "wordCount": 29,
     "order": 1783008414,
-    "hash": "c07af6ca103b2c3d"
+    "hash": "1ea0d4aabc305d77"
   },
   {
     "id": "parc-jaejung-lets-say-goodbye",
@@ -1215,9 +1215,9 @@
     "artist": "박재정",
     "youtubeId": "YdulKHZBNuY",
     "synced": true,
-    "wordCount": 12,
+    "wordCount": 28,
     "order": 1783008414,
-    "hash": "8b9f7934beda8a2e"
+    "hash": "7b8d383a70d88185"
   },
   {
     "id": "park-hyoshin-wild-flower",
@@ -1225,9 +1225,9 @@
     "artist": "박효신 (Park Hyo Shin)",
     "youtubeId": "OxgiiyLp5pk",
     "synced": true,
-    "wordCount": 14,
+    "wordCount": 37,
     "order": 1782988937,
-    "hash": "de4a84d5b8a4b205"
+    "hash": "ce991b9d6c756525"
   },
   {
     "id": "parkdahye-child-of-beginning",
@@ -1235,9 +1235,9 @@
     "artist": "박다혜 (Park Dahye), 마크툽 (MAKTUB)",
     "youtubeId": "aA9D4tJcAm4",
     "synced": true,
-    "wordCount": 22,
+    "wordCount": 34,
     "order": 1783008414,
-    "hash": "88315fcf9611d820"
+    "hash": "9c6db756aeac7cec"
   },
   {
     "id": "paulkim-every-day-every-moment",
@@ -1245,9 +1245,9 @@
     "artist": "폴킴 (Paul Kim)",
     "youtubeId": "1q_t6RNuH8c",
     "synced": true,
-    "wordCount": 13,
+    "wordCount": 27,
     "order": 1782988937,
-    "hash": "baf078d3f8149668"
+    "hash": "693b82ba2b0fac5c"
   },
   {
     "id": "plave-1232",
@@ -1255,9 +1255,9 @@
     "artist": "PLAVE",
     "youtubeId": "seNgeyf93p4",
     "synced": true,
-    "wordCount": 11,
+    "wordCount": 38,
     "order": 1773571092,
-    "hash": "d0e14b883b762736"
+    "hash": "76e0a2a7f84dc05b"
   },
   {
     "id": "plave-bbuu",
@@ -1265,9 +1265,9 @@
     "artist": "PLAVE",
     "youtubeId": "8L001YT4k6k",
     "synced": true,
-    "wordCount": 13,
+    "wordCount": 27,
     "order": 1773571092,
-    "hash": "f63c16c754d2f771"
+    "hash": "2e0f24a5963de1ef"
   },
   {
     "id": "plave-bongsungah",
@@ -1275,29 +1275,29 @@
     "artist": "PLAVE",
     "youtubeId": "jCvpgLnwVmY",
     "synced": true,
-    "wordCount": 10,
+    "wordCount": 24,
     "order": 1773473468,
-    "hash": "188a5c583a8e96ae"
+    "hash": "bfc4a9b01b932843"
   },
   {
     "id": "plave-chroma-drift",
     "title": "Chroma Drift",
     "artist": "PLAVE",
     "youtubeId": "eHCYzIu-ij4",
-    "synced": false,
-    "wordCount": 9,
+    "synced": true,
+    "wordCount": 18,
     "order": 1773473468,
-    "hash": "1561e4647ff675d9"
+    "hash": "10dd6fd03e404216"
   },
   {
     "id": "plave-dash",
     "title": "Dash",
     "artist": "PLAVE",
     "youtubeId": "b3GoZMfHJT4",
-    "synced": false,
-    "wordCount": 7,
+    "synced": true,
+    "wordCount": 11,
     "order": 1773473468,
-    "hash": "8258b3e4cc0dbfd1"
+    "hash": "d5ccfa3432b3b63c"
   },
   {
     "id": "plave-hide-and-seek",
@@ -1305,9 +1305,9 @@
     "artist": "PLAVE",
     "youtubeId": "Dss64cWKtqA",
     "synced": true,
-    "wordCount": 14,
+    "wordCount": 37,
     "order": 1773473468,
-    "hash": "d586fb64f2b5882e"
+    "hash": "62591be613894f76"
   },
   {
     "id": "plave-hide-seek",
@@ -1315,9 +1315,9 @@
     "artist": "PLAVE",
     "youtubeId": "Dss64cWKtqA",
     "synced": true,
-    "wordCount": 14,
+    "wordCount": 37,
     "order": 1773571092,
-    "hash": "d03b15f3996f765b"
+    "hash": "287f53ba49d0ee19"
   },
   {
     "id": "plave-ibameul-billyeo-malhaeyo",
@@ -1345,9 +1345,9 @@
     "artist": "PLAVE",
     "youtubeId": "eJmH4oYmQ0A",
     "synced": true,
-    "wordCount": 13,
+    "wordCount": 24,
     "order": 1773571092,
-    "hash": "35aaf3a9813dc604"
+    "hash": "5d0acb66ba9a1116"
   },
   {
     "id": "psy-gangnam-style",
@@ -1355,9 +1355,9 @@
     "artist": "PSY",
     "youtubeId": "9bZkp7q19f0",
     "synced": true,
-    "wordCount": 17,
+    "wordCount": 44,
     "order": 1773502675,
-    "hash": "c62c95be09a6d3f5"
+    "hash": "ae82d43f8bb91be9"
   },
   {
     "id": "rescene-deja-vu",
@@ -1365,9 +1365,9 @@
     "artist": "RESCENE",
     "youtubeId": "ZbO9PBdFRdc",
     "synced": true,
-    "wordCount": 20,
+    "wordCount": 37,
     "order": 1783034026,
-    "hash": "25c5803afef05772"
+    "hash": "e0d6d0a623540593"
   },
   {
     "id": "rescene-love-attack",
@@ -1375,9 +1375,9 @@
     "artist": "RESCENE",
     "youtubeId": "9XttLI0oH0I",
     "synced": true,
-    "wordCount": 16,
+    "wordCount": 40,
     "order": 1783008414,
-    "hash": "2a2bc7cc6d4c5742"
+    "hash": "de689199f8638e4b"
   },
   {
     "id": "rescene-runaway",
@@ -1385,9 +1385,9 @@
     "artist": "RESCENE",
     "youtubeId": "rsZwrTNklos",
     "synced": true,
-    "wordCount": 16,
+    "wordCount": 38,
     "order": 1783466071,
-    "hash": "fe0df7d49eea548a"
+    "hash": "73d58aa2d23a0030"
   },
   {
     "id": "riize-d-d-done",
@@ -1395,19 +1395,19 @@
     "artist": "RIIZE",
     "youtubeId": "lzONqPuwicI",
     "synced": true,
-    "wordCount": 13,
+    "wordCount": 29,
     "order": 1783008414,
-    "hash": "9b047e357944bb0a"
+    "hash": "340fd0b6e5973267"
   },
   {
     "id": "riize-do-your-dance",
     "title": "Do your dance",
     "artist": "RIIZE",
     "youtubeId": "HDGCTtuW-Yo",
-    "synced": false,
-    "wordCount": 7,
+    "synced": true,
+    "wordCount": 11,
     "order": 1783008414,
-    "hash": "499e8bb9a564e8d6"
+    "hash": "46391ff10f4b54c6"
   },
   {
     "id": "riize-love-119",
@@ -1415,9 +1415,9 @@
     "artist": "RIIZE",
     "youtubeId": "0TAAUWHo4Ec",
     "synced": true,
-    "wordCount": 10,
+    "wordCount": 34,
     "order": 1782988937,
-    "hash": "b1b8226216b3bdca"
+    "hash": "e1c299a4890a3d88"
   },
   {
     "id": "riize-soar",
@@ -1425,19 +1425,19 @@
     "artist": "RIIZE",
     "youtubeId": "-jBJWQYog5I",
     "synced": true,
-    "wordCount": 16,
+    "wordCount": 41,
     "order": 1783008414,
-    "hash": "c026d15787693dbc"
+    "hash": "607b661adaf24b94"
   },
   {
     "id": "rose-apt",
     "title": "APT.",
     "artist": "ROSÉ & Bruno Mars",
     "youtubeId": "ekr2nIex040",
-    "synced": false,
-    "wordCount": 7,
+    "synced": true,
+    "wordCount": 23,
     "order": 1782967429,
-    "hash": "b7ceac26f9f9ec7a"
+    "hash": "87c737f159964068"
   },
   {
     "id": "rose-toxic",
@@ -1455,9 +1455,9 @@
     "artist": "로이킴",
     "youtubeId": "dWIECnaJ00U",
     "synced": true,
-    "wordCount": 14,
+    "wordCount": 41,
     "order": 1783008414,
-    "hash": "3eaf6c5b1066ef5d"
+    "hash": "aff448e8fb9c2dc5"
   },
   {
     "id": "roykim-what-love-is",
@@ -1465,19 +1465,19 @@
     "artist": "로이킴",
     "youtubeId": "5ly8tAU-n_w",
     "synced": true,
-    "wordCount": 11,
+    "wordCount": 36,
     "order": 1783008414,
-    "hash": "7e5460bdd594d1bc"
+    "hash": "c61a0c533402e378"
   },
   {
     "id": "sesoneon-nan-chun",
     "title": "난춘 (NAN CHUN)",
     "artist": "새소년 (SE SO NEON)",
     "youtubeId": "KsznX5j2oQ0",
-    "synced": false,
-    "wordCount": 8,
+    "synced": true,
+    "wordCount": 20,
     "order": 1782988937,
-    "hash": "ac58b190486e2e6c"
+    "hash": "6bb14524609cec10"
   },
   {
     "id": "seventeen-super",
@@ -1485,9 +1485,9 @@
     "artist": "SEVENTEEN",
     "youtubeId": "-GQg25oP0S4",
     "synced": true,
-    "wordCount": 21,
+    "wordCount": 46,
     "order": 1773571092,
-    "hash": "12f1c5f182d2c2f7"
+    "hash": "dc5ef4790b6cd462"
   },
   {
     "id": "shinee-replay",
@@ -1495,9 +1495,9 @@
     "artist": "샤이니 (SHINee)",
     "youtubeId": "VTASffPQGhY",
     "synced": true,
-    "wordCount": 17,
+    "wordCount": 41,
     "order": 1782988937,
-    "hash": "a5e1dbc9c9bf2538"
+    "hash": "52119b0b9b5c7661"
   },
   {
     "id": "sistar-alone",
@@ -1505,9 +1505,9 @@
     "artist": "씨스타 (SISTAR)",
     "youtubeId": "E0ZHXVp_wUE",
     "synced": true,
-    "wordCount": 14,
+    "wordCount": 32,
     "order": 1782988937,
-    "hash": "01df2b24ffafb65c"
+    "hash": "b7c4d9e59b9ae1e2"
   },
   {
     "id": "snsd-into-the-new-world",
@@ -1515,9 +1515,9 @@
     "artist": "소녀시대 (Girls' Generation)",
     "youtubeId": "0k2Zzkw_-0I",
     "synced": true,
-    "wordCount": 19,
+    "wordCount": 48,
     "order": 1782988937,
-    "hash": "5c0986af64dfa418"
+    "hash": "407a3843a7221d4d"
   },
   {
     "id": "straykids-chk-chk-boom",
@@ -1525,9 +1525,9 @@
     "artist": "Stray Kids",
     "youtubeId": "0P0aQreFs8w",
     "synced": true,
-    "wordCount": 13,
+    "wordCount": 16,
     "order": 1783548103,
-    "hash": "3858952a7fd6162b"
+    "hash": "ee23036552c65e01"
   },
   {
     "id": "straykids-megaverse",
@@ -1535,9 +1535,9 @@
     "artist": "Stray Kids",
     "youtubeId": "JqwPCzJnYyY",
     "synced": true,
-    "wordCount": 12,
+    "wordCount": 31,
     "order": 1773571092,
-    "hash": "e11efb2b873cfe79"
+    "hash": "ecada4cd627c0b0c"
   },
   {
     "id": "sung-sikyung-every-moment-of-you",
@@ -1545,9 +1545,9 @@
     "artist": "성시경 (Sung Si Kyung)",
     "youtubeId": "Dbxzh078jr4",
     "synced": true,
-    "wordCount": 18,
+    "wordCount": 24,
     "order": 1782988937,
-    "hash": "1acb78cf1a285076"
+    "hash": "ad294d855b536377"
   },
   {
     "id": "superjunior-sorry-sorry",
@@ -1555,9 +1555,9 @@
     "artist": "슈퍼주니어 (Super Junior)",
     "youtubeId": "x6QA3m58DQw",
     "synced": true,
-    "wordCount": 17,
+    "wordCount": 49,
     "order": 1782988937,
-    "hash": "bc8faa637778c8c4"
+    "hash": "b59f93fe6db94133"
   },
   {
     "id": "taeyeon-four-seasons",
@@ -1565,9 +1565,9 @@
     "artist": "태연 (TAEYEON)",
     "youtubeId": "4HG_CJzyX6A",
     "synced": true,
-    "wordCount": 26,
+    "wordCount": 34,
     "order": 1782988937,
-    "hash": "b97e10a2fb58be5e"
+    "hash": "49670e70be07cc59"
   },
   {
     "id": "treasure-jikjin",
@@ -1575,9 +1575,9 @@
     "artist": "TREASURE",
     "youtubeId": "ZJaKdBBzUYk",
     "synced": true,
-    "wordCount": 18,
+    "wordCount": 41,
     "order": 1782988937,
-    "hash": "df8f6c708189c404"
+    "hash": "9bc48e31bc89f806"
   },
   {
     "id": "treasure-nally-na",
@@ -1585,9 +1585,9 @@
     "artist": "TREASURE",
     "youtubeId": "GCedXwbwMfQ",
     "synced": true,
-    "wordCount": 11,
+    "wordCount": 25,
     "order": 1783379810,
-    "hash": "c25454bdca14838f"
+    "hash": "128db8e73d71b0ca"
   },
   {
     "id": "twice-feel-special",
@@ -1595,9 +1595,9 @@
     "artist": "TWICE",
     "youtubeId": "3ymwOvzhwHs",
     "synced": true,
-    "wordCount": 15,
+    "wordCount": 39,
     "order": 1773571092,
-    "hash": "0fca17c65f2e94f9"
+    "hash": "9b907f82b7c4cebe"
   },
   {
     "id": "twice-what-is-love",
@@ -1605,9 +1605,9 @@
     "artist": "TWICE",
     "youtubeId": "i0p1bmr0EmE",
     "synced": true,
-    "wordCount": 22,
+    "wordCount": 48,
     "order": 1773502675,
-    "hash": "d637c20caf81caf7"
+    "hash": "de766200161b4baf"
   },
   {
     "id": "tws-overdrive",
@@ -1615,9 +1615,9 @@
     "artist": "TWS (투어스)",
     "youtubeId": "TzbGBkEh9ms",
     "synced": true,
-    "wordCount": 12,
+    "wordCount": 29,
     "order": 1783008414,
-    "hash": "40ce6e3cb3ab8f0e"
+    "hash": "3cabee8310268fc0"
   },
   {
     "id": "tws-plot-twist",
@@ -1625,9 +1625,9 @@
     "artist": "TWS (투어스)",
     "youtubeId": "hVAc1Vf2ITU",
     "synced": true,
-    "wordCount": 10,
+    "wordCount": 26,
     "order": 1783008414,
-    "hash": "f8f2c4ecbe71d617"
+    "hash": "9a5947b199daf630"
   },
   {
     "id": "txt-lovesong",
@@ -1635,9 +1635,9 @@
     "artist": "TXT",
     "youtubeId": "d5bbqKYu51w",
     "synced": true,
-    "wordCount": 14,
+    "wordCount": 30,
     "order": 1782988937,
-    "hash": "44298e1afb4c3cd7"
+    "hash": "5af98cbf15c0a9a0"
   },
   {
     "id": "wondergirls-nobody",
@@ -1645,9 +1645,9 @@
     "artist": "원더걸스 (Wonder Girls)",
     "youtubeId": "QZBn1e9pr2Q",
     "synced": true,
-    "wordCount": 17,
+    "wordCount": 34,
     "order": 1782988937,
-    "hash": "3842756004ad4a5f"
+    "hash": "0c1999f11027a71a"
   },
   {
     "id": "woody-sadder-than-yesterday",
@@ -1655,9 +1655,9 @@
     "artist": "우디 (Woody)",
     "youtubeId": "1mZ-hoIvEx8",
     "synced": true,
-    "wordCount": 17,
+    "wordCount": 28,
     "order": 1783008414,
-    "hash": "fddd77c57705c6bd"
+    "hash": "5d07544ff45919c0"
   },
   {
     "id": "woodz-drowning",
@@ -1665,9 +1665,9 @@
     "artist": "WOODZ",
     "youtubeId": "tiKFuzpX-NA",
     "synced": true,
-    "wordCount": 10,
+    "wordCount": 19,
     "order": 1773571092,
-    "hash": "113e14c227f74b9a"
+    "hash": "ff616bcc3869aeeb"
   },
   {
     "id": "yena-catch-catch",
@@ -1675,9 +1675,9 @@
     "artist": "YENA",
     "youtubeId": "ItSKahBISg0",
     "synced": true,
-    "wordCount": 13,
+    "wordCount": 30,
     "order": 1783008414,
-    "hash": "bf99b52bf0db9ee1"
+    "hash": "fe16216a494f73f0"
   },
   {
     "id": "yerinbaek-maybe-not-our-fault",
@@ -1685,9 +1685,9 @@
     "artist": "백예린 (Yerin Baek)",
     "youtubeId": "IRNBtocmQ58",
     "synced": true,
-    "wordCount": 22,
+    "wordCount": 27,
     "order": 1782988937,
-    "hash": "c02afbf109853dbe"
+    "hash": "4a3b3ccacf6f2822"
   },
   {
     "id": "zerobaseone-in-bloom",
@@ -1695,9 +1695,9 @@
     "artist": "ZEROBASEONE",
     "youtubeId": "trzeUClQIIg",
     "synced": true,
-    "wordCount": 12,
+    "wordCount": 25,
     "order": 1782988937,
-    "hash": "545cb3bf8f964399"
+    "hash": "97b0d364ba35d1fb"
   },
   {
     "id": "zico-any-song",
@@ -1705,9 +1705,9 @@
     "artist": "지코 (ZICO)",
     "youtubeId": "UdyjeUwPz_E",
     "synced": true,
-    "wordCount": 12,
+    "wordCount": 38,
     "order": 1782988937,
-    "hash": "7cda796119d3de42"
+    "hash": "9cee33fa0426262f"
   },
   {
     "id": "zozazz-dont-you-know",
@@ -1715,8 +1715,8 @@
     "artist": "조째즈",
     "youtubeId": "tfmwbxBKPh0",
     "synced": true,
-    "wordCount": 18,
+    "wordCount": 26,
     "order": 1783008414,
-    "hash": "97583eb85747765c"
+    "hash": "15d76af088222929"
   }
 ]

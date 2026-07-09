@@ -21,6 +21,22 @@
       "timestamp": 17.6
     },
     {
+      "korean": "눈물",
+      "romanization": "nunmul",
+      "english": "tears",
+      "spanish": "lágrimas",
+      "portuguese": "lágrimas",
+      "indonesian": "air mata",
+      "japanese": "涙",
+      "thai": "น้ำตา",
+      "french": "larmes",
+      "partOfSpeech": "noun",
+      "emoji": "😢",
+      "example": "그녀의 눈에서 눈물이 흘렀어.",
+      "exampleTranslation": "Tears flowed from her eyes.",
+      "timestamp": 21.5
+    },
+    {
       "korean": "믿다",
       "romanization": "mitda",
       "english": "to believe, trust",
@@ -35,6 +51,22 @@
       "example": "나 자신을 믿어요.",
       "exampleTranslation": "I believe in myself.",
       "timestamp": 25.6
+    },
+    {
+      "korean": "고민",
+      "romanization": "gomin",
+      "english": "worry, concern",
+      "spanish": "preocupación",
+      "portuguese": "preocupação",
+      "indonesian": "kekhawatiran",
+      "japanese": "悩み",
+      "thai": "ความกังวล",
+      "french": "souci",
+      "partOfSpeech": "noun",
+      "emoji": "😟",
+      "example": "요즘 고민이 많아.",
+      "exampleTranslation": "I have a lot of worries these days.",
+      "timestamp": 29.5
     },
     {
       "korean": "배우다",
@@ -53,6 +85,22 @@
       "timestamp": 33.8
     },
     {
+      "korean": "커지다",
+      "romanization": "keojida",
+      "english": "to grow bigger",
+      "spanish": "agrandarse",
+      "portuguese": "aumentar",
+      "indonesian": "membesar",
+      "japanese": "大きくなる",
+      "thai": "ใหญ่ขึ้น",
+      "french": "grandir",
+      "partOfSpeech": "verb",
+      "emoji": "📈",
+      "example": "풍선이 점점 커졌어.",
+      "exampleTranslation": "The balloon grew bigger and bigger.",
+      "timestamp": 41.0
+    },
+    {
       "korean": "시작",
       "romanization": "sijak",
       "english": "start, beginning",
@@ -69,6 +117,22 @@
       "timestamp": 49.3
     },
     {
+      "korean": "앞지르다",
+      "romanization": "apjireuda",
+      "english": "to overtake, pass",
+      "spanish": "adelantar",
+      "portuguese": "ultrapassar",
+      "indonesian": "mendahului",
+      "japanese": "追い越す",
+      "thai": "แซง",
+      "french": "dépasser",
+      "partOfSpeech": "verb",
+      "emoji": "🏃",
+      "example": "달리기에서 친구를 앞질렀어요.",
+      "exampleTranslation": "I overtook my friend in the race.",
+      "timestamp": 53.05
+    },
+    {
       "korean": "높이다",
       "romanization": "nopida",
       "english": "to raise, turn up",
@@ -82,7 +146,7 @@
       "emoji": "🔊",
       "example": "볼륨을 조금 높여 주세요.",
       "exampleTranslation": "Please turn up the volume a bit.",
-      "timestamp": 60.6
+      "timestamp": 60.62
     },
     {
       "korean": "내일",
@@ -101,6 +165,22 @@
       "timestamp": 72.3
     },
     {
+      "korean": "재미",
+      "romanization": "jaemi",
+      "english": "fun",
+      "spanish": "diversión",
+      "portuguese": "diversão",
+      "indonesian": "kesenangan",
+      "japanese": "楽しみ",
+      "thai": "ความสนุก",
+      "french": "plaisir",
+      "partOfSpeech": "noun",
+      "emoji": "😄",
+      "example": "이 게임은 정말 재미있어.",
+      "exampleTranslation": "This game is really fun.",
+      "timestamp": 76.24
+    },
+    {
       "korean": "누구나",
       "romanization": "nuguna",
       "english": "anyone, everyone",
@@ -114,7 +194,23 @@
       "emoji": "👥",
       "example": "누구나 실수를 해요.",
       "exampleTranslation": "Anyone can make a mistake.",
-      "timestamp": 80.2
+      "timestamp": 80.21
+    },
+    {
+      "korean": "작다",
+      "romanization": "jakda",
+      "english": "to be small",
+      "spanish": "pequeño",
+      "portuguese": "pequeno",
+      "indonesian": "kecil",
+      "japanese": "小さい",
+      "thai": "เล็ก",
+      "french": "petit",
+      "partOfSpeech": "adjective",
+      "emoji": "🤏",
+      "example": "이 신발은 나에게 작아.",
+      "exampleTranslation": "These shoes are too small for me.",
+      "timestamp": 83.92
     },
     {
       "korean": "강하게",
@@ -130,23 +226,55 @@
       "emoji": "💪",
       "example": "마음을 강하게 먹어요.",
       "exampleTranslation": "Stay strong.",
-      "timestamp": 88.5
+      "timestamp": 88.48
     },
     {
-      "korean": "앞지르다",
-      "romanization": "apjireuda",
-      "english": "to overtake, pass",
-      "spanish": "adelantar",
-      "portuguese": "ultrapassar",
-      "indonesian": "mendahului",
-      "japanese": "追い越す",
-      "thai": "แซง",
-      "french": "dépasser",
-      "partOfSpeech": "verb",
-      "emoji": "🏃",
-      "example": "달리기에서 친구를 앞질렀어요.",
-      "exampleTranslation": "I overtook my friend in the race.",
-      "timestamp": 99.8
+      "korean": "다시",
+      "romanization": "dasi",
+      "english": "again",
+      "spanish": "otra vez",
+      "portuguese": "de novo",
+      "indonesian": "lagi",
+      "japanese": "もう一度",
+      "thai": "อีกครั้ง",
+      "french": "encore",
+      "partOfSpeech": "adverb",
+      "emoji": "🔁",
+      "example": "다시 한번 말해 줄래?",
+      "exampleTranslation": "Can you say it once more?",
+      "timestamp": 96.21
+    },
+    {
+      "korean": "템포",
+      "romanization": "tempo",
+      "english": "tempo",
+      "spanish": "tempo",
+      "portuguese": "andamento",
+      "indonesian": "tempo",
+      "japanese": "テンポ",
+      "thai": "จังหวะ",
+      "french": "tempo",
+      "partOfSpeech": "noun",
+      "emoji": "🎚️",
+      "example": "노래의 템포가 빨라요.",
+      "exampleTranslation": "The song's tempo is fast.",
+      "timestamp": 99.83
+    },
+    {
+      "korean": "크게",
+      "romanization": "keuge",
+      "english": "loudly, big",
+      "spanish": "fuerte",
+      "portuguese": "alto",
+      "indonesian": "dengan keras",
+      "japanese": "大きく",
+      "thai": "อย่างดัง",
+      "french": "fort",
+      "partOfSpeech": "adverb",
+      "emoji": "📢",
+      "example": "노래를 크게 불렀어요.",
+      "exampleTranslation": "I sang the song loudly.",
+      "timestamp": 107.5
     },
     {
       "korean": "인생",
@@ -178,7 +306,23 @@
       "emoji": "👍",
       "example": "오늘 날씨가 정말 좋아요.",
       "exampleTranslation": "The weather is really good today.",
-      "timestamp": 120
+      "timestamp": 120.0
+    },
+    {
+      "korean": "박자",
+      "romanization": "bakja",
+      "english": "beat, rhythm",
+      "spanish": "ritmo",
+      "portuguese": "ritmo",
+      "indonesian": "ketukan",
+      "japanese": "拍子",
+      "thai": "จังหวะ",
+      "french": "rythme",
+      "partOfSpeech": "noun",
+      "emoji": "🥁",
+      "example": "박자에 맞춰 손뼉을 쳐요.",
+      "exampleTranslation": "Clap your hands to the beat.",
+      "timestamp": 127.62
     },
     {
       "korean": "함께하다",
@@ -197,6 +341,22 @@
       "timestamp": 130.9
     },
     {
+      "korean": "생각하다",
+      "romanization": "saenggakhada",
+      "english": "to think",
+      "spanish": "pensar",
+      "portuguese": "pensar",
+      "indonesian": "berpikir",
+      "japanese": "考える",
+      "thai": "คิด",
+      "french": "penser",
+      "partOfSpeech": "verb",
+      "emoji": "💭",
+      "example": "쓸데없는 생각은 하지 마.",
+      "exampleTranslation": "Don't think useless thoughts.",
+      "timestamp": 135.2
+    },
+    {
       "korean": "모두",
       "romanization": "modu",
       "english": "everyone, all",
@@ -210,7 +370,23 @@
       "emoji": "👫",
       "example": "모두 여기에 모여요.",
       "exampleTranslation": "Everyone gather here.",
-      "timestamp": 139
+      "timestamp": 139.0
+    },
+    {
+      "korean": "돌아보다",
+      "romanization": "doraboda",
+      "english": "to look back",
+      "spanish": "mirar atrás",
+      "portuguese": "olhar para trás",
+      "indonesian": "menoleh",
+      "japanese": "振り返る",
+      "thai": "มองย้อนกลับ",
+      "french": "regarder en arrière",
+      "partOfSpeech": "verb",
+      "emoji": "🔄",
+      "example": "지난날을 돌아보게 돼.",
+      "exampleTranslation": "I find myself looking back on the past.",
+      "timestamp": 143.36
     },
     {
       "korean": "시간",
@@ -229,20 +405,20 @@
       "timestamp": 151.5
     },
     {
-      "korean": "템포",
-      "romanization": "tempo",
-      "english": "tempo",
-      "spanish": "tempo",
-      "portuguese": "andamento",
-      "indonesian": "tempo",
-      "japanese": "テンポ",
-      "thai": "จังหวะ",
-      "french": "tempo",
-      "partOfSpeech": "noun",
-      "emoji": "🎚️",
-      "example": "노래의 템포가 빨라요.",
-      "exampleTranslation": "The song's tempo is fast.",
-      "timestamp": 162.3
+      "korean": "올리다",
+      "romanization": "ollida",
+      "english": "to raise, turn up",
+      "spanish": "subir",
+      "portuguese": "levantar",
+      "indonesian": "menaikkan",
+      "japanese": "上げる",
+      "thai": "ยกขึ้น",
+      "french": "lever",
+      "partOfSpeech": "verb",
+      "emoji": "⬆️",
+      "example": "손을 높이 올려 보세요.",
+      "exampleTranslation": "Please raise your hand high.",
+      "timestamp": 162.27
     },
     {
       "korean": "왜",
@@ -261,20 +437,20 @@
       "timestamp": 174.3
     },
     {
-      "korean": "크게",
-      "romanization": "keuge",
-      "english": "loudly, big",
-      "spanish": "fuerte",
-      "portuguese": "alto",
-      "indonesian": "dengan keras",
-      "japanese": "大きく",
-      "thai": "อย่างดัง",
-      "french": "fort",
+      "korean": "괜히",
+      "romanization": "gwaenhi",
+      "english": "in vain, for no reason",
+      "spanish": "en vano",
+      "portuguese": "à toa",
+      "indonesian": "sia-sia",
+      "japanese": "無駄に",
+      "thai": "โดยเปล่าประโยชน์",
+      "french": "en vain",
       "partOfSpeech": "adverb",
-      "emoji": "📢",
-      "example": "노래를 크게 불렀어요.",
-      "exampleTranslation": "I sang the song loudly.",
-      "timestamp": 185.5
+      "emoji": "🤷",
+      "example": "괜히 걱정했나 봐.",
+      "exampleTranslation": "I guess I worried for no reason.",
+      "timestamp": 178.1
     }
   ]
 }

@@ -18,7 +18,23 @@
       "emoji": "🌬️",
       "example": "찬바람이 불어와요.",
       "exampleTranslation": "A cold wind blows in.",
-      "timestamp": 23.1
+      "timestamp": 23.07
+    },
+    {
+      "korean": "눈물",
+      "romanization": "nunmul",
+      "english": "tears",
+      "spanish": "lágrimas",
+      "portuguese": "lágrimas",
+      "indonesian": "air mata",
+      "japanese": "涙",
+      "thai": "น้ำตา",
+      "french": "larmes",
+      "partOfSpeech": "noun",
+      "emoji": "😢",
+      "example": "눈물이 흘러내렸어요.",
+      "exampleTranslation": "Tears flowed down.",
+      "timestamp": 29.46
     },
     {
       "korean": "떠나다",
@@ -34,7 +50,7 @@
       "emoji": "🚶",
       "example": "그는 조용히 떠났어요.",
       "exampleTranslation": "He left quietly.",
-      "timestamp": 37.67
+      "timestamp": 37.44
     },
     {
       "korean": "그리움",
@@ -50,7 +66,7 @@
       "emoji": "🥺",
       "example": "그리움만 마음에 남았어요.",
       "exampleTranslation": "Only longing remained in my heart.",
-      "timestamp": 45.4
+      "timestamp": 45.35
     },
     {
       "korean": "가슴",
@@ -66,7 +82,23 @@
       "emoji": "💗",
       "example": "내 가슴이 두근거려요.",
       "exampleTranslation": "My heart is pounding.",
-      "timestamp": 52.9
+      "timestamp": 53.04
+    },
+    {
+      "korean": "오늘",
+      "romanization": "oneul",
+      "english": "today",
+      "spanish": "hoy",
+      "portuguese": "hoje",
+      "indonesian": "hari ini",
+      "japanese": "今日",
+      "thai": "วันนี้",
+      "french": "aujourd'hui",
+      "partOfSpeech": "noun",
+      "emoji": "📅",
+      "example": "오늘 날씨가 정말 좋아요.",
+      "exampleTranslation": "The weather is really nice today.",
+      "timestamp": 59.82
     },
     {
       "korean": "부르다",
@@ -82,7 +114,7 @@
       "emoji": "📢",
       "example": "이름을 크게 불렀어요.",
       "exampleTranslation": "I called out the name loudly.",
-      "timestamp": 67.07
+      "timestamp": 67.28
     },
     {
       "korean": "대답",
@@ -98,7 +130,7 @@
       "emoji": "💬",
       "example": "아무런 대답도 없었어요.",
       "exampleTranslation": "There was no answer at all.",
-      "timestamp": 74.56
+      "timestamp": 74.48
     },
     {
       "korean": "기다리다",
@@ -130,7 +162,23 @@
       "emoji": "🍂",
       "example": "가을은 제가 좋아하는 계절이에요.",
       "exampleTranslation": "Autumn is my favorite season.",
-      "timestamp": 90.19
+      "timestamp": 90.14
+    },
+    {
+      "korean": "울다",
+      "romanization": "ulda",
+      "english": "to cry, weep",
+      "spanish": "llorar",
+      "portuguese": "chorar",
+      "indonesian": "menangis",
+      "japanese": "泣く",
+      "thai": "ร้องไห้",
+      "french": "pleurer",
+      "partOfSpeech": "verb",
+      "emoji": "😭",
+      "example": "아기가 크게 울어요.",
+      "exampleTranslation": "The baby cries loudly.",
+      "timestamp": 96.91
     },
     {
       "korean": "돌아오다",
@@ -146,7 +194,23 @@
       "emoji": "🔙",
       "example": "그가 다시 돌아왔어요.",
       "exampleTranslation": "He came back again.",
-      "timestamp": 105.6
+      "timestamp": 105.78
+    },
+    {
+      "korean": "모르다",
+      "romanization": "moreuda",
+      "english": "to not know",
+      "spanish": "no saber",
+      "portuguese": "não saber",
+      "indonesian": "tidak tahu",
+      "japanese": "知らない",
+      "thai": "ไม่รู้",
+      "french": "ne pas savoir",
+      "partOfSpeech": "verb",
+      "emoji": "❓",
+      "example": "나는 그 답을 몰라요.",
+      "exampleTranslation": "I don't know the answer.",
+      "timestamp": 113.06
     },
     {
       "korean": "눈물",
@@ -160,9 +224,25 @@
       "french": "larmes",
       "partOfSpeech": "noun",
       "emoji": "😢",
-      "example": "눈물이 흘러내렸어요.",
-      "exampleTranslation": "Tears flowed down.",
-      "timestamp": 146.45
+      "example": "눈물이 멈추지 않아요.",
+      "exampleTranslation": "My tears won't stop.",
+      "timestamp": 146.78
+    },
+    {
+      "korean": "슬프다",
+      "romanization": "seulpeuda",
+      "english": "to be sad",
+      "spanish": "triste",
+      "portuguese": "triste",
+      "indonesian": "sedih",
+      "japanese": "悲しい",
+      "thai": "เศร้า",
+      "french": "triste",
+      "partOfSpeech": "adjective",
+      "emoji": "😔",
+      "example": "그 이야기는 너무 슬퍼요.",
+      "exampleTranslation": "That story is so sad.",
+      "timestamp": 153.07
     },
     {
       "korean": "이별",
@@ -178,7 +258,7 @@
       "emoji": "💔",
       "example": "이별은 언제나 힘들어요.",
       "exampleTranslation": "Farewells are always hard.",
-      "timestamp": 160.73
+      "timestamp": 160.43
     },
     {
       "korean": "아프다",
@@ -194,7 +274,7 @@
       "emoji": "😣",
       "example": "마음이 너무 아파요.",
       "exampleTranslation": "My heart hurts so much.",
-      "timestamp": 168.3
+      "timestamp": 168.2
     },
     {
       "korean": "기다리다",
@@ -210,7 +290,7 @@
       "emoji": "⏳",
       "example": "나는 아직도 너를 기다려요.",
       "exampleTranslation": "I'm still waiting for you.",
-      "timestamp": 176.56
+      "timestamp": 176.73
     },
     {
       "korean": "계절",
@@ -226,23 +306,55 @@
       "emoji": "🍂",
       "example": "계절이 바뀌고 있어요.",
       "exampleTranslation": "The seasons are changing.",
-      "timestamp": 184.19
+      "timestamp": 184.0
     },
     {
-      "korean": "돌아오다",
-      "romanization": "doraoda",
-      "english": "to come back, return",
-      "spanish": "volver",
-      "portuguese": "voltar",
-      "indonesian": "kembali",
-      "japanese": "戻る",
-      "thai": "กลับมา",
-      "french": "revenir",
+      "korean": "서럽다",
+      "romanization": "seoreopda",
+      "english": "to feel sorrowful, grieved",
+      "spanish": "afligido",
+      "portuguese": "magoado",
+      "indonesian": "sedih pilu",
+      "japanese": "悲しく切ない",
+      "thai": "โศกเศร้า",
+      "french": "affligé",
+      "partOfSpeech": "adjective",
+      "emoji": "😢",
+      "example": "혼자 있으면 서러워요.",
+      "exampleTranslation": "I feel sorrowful when I'm alone.",
+      "timestamp": 190.72
+    },
+    {
+      "korean": "그대",
+      "romanization": "geudae",
+      "english": "you, dear (poetic)",
+      "spanish": "querido",
+      "portuguese": "querido",
+      "indonesian": "kekasih",
+      "japanese": "あなた",
+      "thai": "ที่รัก",
+      "french": "mon amour",
+      "partOfSpeech": "pronoun",
+      "emoji": "💛",
+      "example": "그대를 잊을 수 없어요.",
+      "exampleTranslation": "I can't forget you, my dear.",
+      "timestamp": 199.63
+    },
+    {
+      "korean": "모르다",
+      "romanization": "moreuda",
+      "english": "to not know",
+      "spanish": "no saber",
+      "portuguese": "não saber",
+      "indonesian": "tidak tahu",
+      "japanese": "知らない",
+      "thai": "ไม่รู้",
+      "french": "ne pas savoir",
       "partOfSpeech": "verb",
-      "emoji": "🔙",
-      "example": "빨리 집으로 돌아와요.",
-      "exampleTranslation": "Come back home quickly.",
-      "timestamp": 199.44
+      "emoji": "❓",
+      "example": "이유를 잘 모르겠어요.",
+      "exampleTranslation": "I don't really know the reason.",
+      "timestamp": 207.05
     },
     {
       "korean": "찬바람",
@@ -258,7 +370,23 @@
       "emoji": "🌬️",
       "example": "겨울엔 찬바람이 매서워요.",
       "exampleTranslation": "In winter the cold wind is biting.",
-      "timestamp": 234.92
+      "timestamp": 234.94
+    },
+    {
+      "korean": "생각",
+      "romanization": "saenggak",
+      "english": "thought, thinking",
+      "spanish": "pensamiento",
+      "portuguese": "pensamento",
+      "indonesian": "pikiran",
+      "japanese": "考え",
+      "thai": "ความคิด",
+      "french": "pensée",
+      "partOfSpeech": "noun",
+      "emoji": "💭",
+      "example": "그대 생각이 자꾸 나요.",
+      "exampleTranslation": "I keep thinking of you.",
+      "timestamp": 241.92
     },
     {
       "korean": "인사",
@@ -274,7 +402,7 @@
       "emoji": "👋",
       "example": "인사도 없이 가 버렸어요.",
       "exampleTranslation": "You left without even a goodbye.",
-      "timestamp": 248.85
+      "timestamp": 249.06
     },
     {
       "korean": "그리움",
@@ -290,7 +418,7 @@
       "emoji": "🥺",
       "example": "그리움이 밀려와요.",
       "exampleTranslation": "Longing washes over me.",
-      "timestamp": 256.8
+      "timestamp": 256.98
     }
   ]
 }

@@ -21,6 +21,22 @@
       "timestamp": 17.5
     },
     {
+      "korean": "그만하다",
+      "romanization": "geumanhada",
+      "english": "to stop, to quit",
+      "spanish": "parar, dejar",
+      "portuguese": "parar",
+      "indonesian": "berhenti",
+      "japanese": "やめる",
+      "thai": "หยุด",
+      "french": "arrêter",
+      "partOfSpeech": "verb",
+      "emoji": "✋",
+      "example": "이제 그만하고 좀 쉬어요.",
+      "exampleTranslation": "Stop now and rest a bit.",
+      "timestamp": 23.3
+    },
+    {
       "korean": "믿다",
       "romanization": "mitda",
       "english": "to believe",
@@ -34,7 +50,23 @@
       "emoji": "🙏",
       "example": "나는 네 말을 믿어요.",
       "exampleTranslation": "I believe what you say.",
-      "timestamp": 31.9
+      "timestamp": 31.8
+    },
+    {
+      "korean": "순간",
+      "romanization": "sungan",
+      "english": "moment",
+      "spanish": "momento",
+      "portuguese": "momento",
+      "indonesian": "saat",
+      "japanese": "瞬間",
+      "thai": "ช่วงเวลา",
+      "french": "instant",
+      "partOfSpeech": "noun",
+      "emoji": "⏱️",
+      "example": "그 순간을 잊을 수 없어요.",
+      "exampleTranslation": "I can't forget that moment.",
+      "timestamp": 37.5
     },
     {
       "korean": "말",
@@ -49,8 +81,24 @@
       "partOfSpeech": "noun",
       "emoji": "💬",
       "example": "그 말이 오래 기억에 남아요.",
-      "exampleTranslation": "Those words stay in my memory for a long time.",
-      "timestamp": 43.7
+      "exampleTranslation": "Those words stay in my memory.",
+      "timestamp": 43.8
+    },
+    {
+      "korean": "표정",
+      "romanization": "pyojeong",
+      "english": "facial expression",
+      "spanish": "expresión",
+      "portuguese": "expressão",
+      "indonesian": "ekspresi",
+      "japanese": "表情",
+      "thai": "สีหน้า",
+      "french": "expression",
+      "partOfSpeech": "noun",
+      "emoji": "😐",
+      "example": "그의 표정이 어두웠어요.",
+      "exampleTranslation": "His expression was gloomy.",
+      "timestamp": 47.2
     },
     {
       "korean": "생각나다",
@@ -66,7 +114,23 @@
       "emoji": "💭",
       "example": "갑자기 그 노래가 생각나요.",
       "exampleTranslation": "That song suddenly comes to mind.",
-      "timestamp": 52.4
+      "timestamp": 52.3
+    },
+    {
+      "korean": "솔직하게",
+      "romanization": "soljikhage",
+      "english": "honestly",
+      "spanish": "honestamente",
+      "portuguese": "honestamente",
+      "indonesian": "dengan jujur",
+      "japanese": "正直に",
+      "thai": "อย่างตรงไปตรงมา",
+      "french": "honnêtement",
+      "partOfSpeech": "adverb",
+      "emoji": "🗣️",
+      "example": "솔직하게 대답해 주세요.",
+      "exampleTranslation": "Please answer honestly.",
+      "timestamp": 58.1
     },
     {
       "korean": "헤어지다",
@@ -77,7 +141,7 @@
       "indonesian": "berpisah",
       "japanese": "別れる",
       "thai": "เลิกกัน",
-      "french": "rompre, se séparer",
+      "french": "rompre",
       "partOfSpeech": "verb",
       "emoji": "💔",
       "example": "우리는 작년에 헤어졌어요.",
@@ -85,20 +149,68 @@
       "timestamp": 61.6
     },
     {
+      "korean": "괜찮다",
+      "romanization": "gwaenchanta",
+      "english": "to be okay",
+      "spanish": "estar bien",
+      "portuguese": "estar bem",
+      "indonesian": "tidak apa-apa",
+      "japanese": "大丈夫だ",
+      "thai": "ไม่เป็นไร",
+      "french": "aller bien",
+      "partOfSpeech": "adjective",
+      "emoji": "👌",
+      "example": "걱정 마요, 나는 괜찮아요.",
+      "exampleTranslation": "Don't worry, I'm okay.",
+      "timestamp": 65.1
+    },
+    {
       "korean": "보내다",
       "romanization": "bonaeda",
       "english": "to send, to let go",
       "spanish": "enviar, dejar ir",
       "portuguese": "enviar, deixar ir",
-      "indonesian": "mengirim, melepaskan",
+      "indonesian": "mengirim",
       "japanese": "送る",
       "thai": "ส่ง",
-      "french": "envoyer, laisser partir",
+      "french": "envoyer",
       "partOfSpeech": "verb",
       "emoji": "✉️",
       "example": "편지를 친구에게 보냈어요.",
       "exampleTranslation": "I sent a letter to my friend.",
       "timestamp": 69.0
+    },
+    {
+      "korean": "하루",
+      "romanization": "haru",
+      "english": "a day",
+      "spanish": "un día",
+      "portuguese": "um dia",
+      "indonesian": "satu hari",
+      "japanese": "一日",
+      "thai": "หนึ่งวัน",
+      "french": "une journée",
+      "partOfSpeech": "noun",
+      "emoji": "📅",
+      "example": "하루 종일 비가 왔어요.",
+      "exampleTranslation": "It rained all day.",
+      "timestamp": 72.4
+    },
+    {
+      "korean": "생각하다",
+      "romanization": "saenggakada",
+      "english": "to think",
+      "spanish": "pensar",
+      "portuguese": "pensar",
+      "indonesian": "berpikir",
+      "japanese": "考える",
+      "thai": "คิด",
+      "french": "penser",
+      "partOfSpeech": "verb",
+      "emoji": "🤔",
+      "example": "너를 매일 생각해요.",
+      "exampleTranslation": "I think of you every day.",
+      "timestamp": 75.6
     },
     {
       "korean": "알다",
@@ -114,12 +226,12 @@
       "emoji": "🧠",
       "example": "나는 그 사실을 알아요.",
       "exampleTranslation": "I know that fact.",
-      "timestamp": 81.0
+      "timestamp": 80.9
     },
     {
       "korean": "인사",
       "romanization": "insa",
-      "english": "greeting",
+      "english": "greeting, farewell",
       "spanish": "saludo",
       "portuguese": "cumprimento",
       "indonesian": "salam",
@@ -130,7 +242,23 @@
       "emoji": "👋",
       "example": "이웃에게 인사를 했어요.",
       "exampleTranslation": "I greeted my neighbor.",
-      "timestamp": 90.9
+      "timestamp": 90.8
+    },
+    {
+      "korean": "멀어지다",
+      "romanization": "meoreojida",
+      "english": "to grow distant",
+      "spanish": "alejarse",
+      "portuguese": "afastar-se",
+      "indonesian": "menjauh",
+      "japanese": "遠ざかる",
+      "thai": "ห่างไกลออกไป",
+      "french": "s'éloigner",
+      "partOfSpeech": "verb",
+      "emoji": "🚶",
+      "example": "기차가 점점 멀어져 갔어요.",
+      "exampleTranslation": "The train grew more and more distant.",
+      "timestamp": 94.2
     },
     {
       "korean": "아무것도",
@@ -149,6 +277,22 @@
       "timestamp": 99.0
     },
     {
+      "korean": "말하다",
+      "romanization": "malhada",
+      "english": "to say, to speak",
+      "spanish": "decir",
+      "portuguese": "dizer",
+      "indonesian": "berkata",
+      "japanese": "話す",
+      "thai": "พูด",
+      "french": "dire, parler",
+      "partOfSpeech": "verb",
+      "emoji": "🗨️",
+      "example": "진실을 말해 주세요.",
+      "exampleTranslation": "Please tell me the truth.",
+      "timestamp": 104.8
+    },
+    {
       "korean": "자신",
       "romanization": "jasin",
       "english": "confidence",
@@ -165,6 +309,38 @@
       "timestamp": 108.4
     },
     {
+      "korean": "웃다",
+      "romanization": "utda",
+      "english": "to smile, to laugh",
+      "spanish": "reír",
+      "portuguese": "rir",
+      "indonesian": "tersenyum",
+      "japanese": "笑う",
+      "thai": "ยิ้ม, หัวเราะ",
+      "french": "sourire, rire",
+      "partOfSpeech": "verb",
+      "emoji": "😄",
+      "example": "그녀는 밝게 웃었어요.",
+      "exampleTranslation": "She smiled brightly.",
+      "timestamp": 111.6
+    },
+    {
+      "korean": "보내다",
+      "romanization": "bonaeda",
+      "english": "to send, to let go",
+      "spanish": "enviar, dejar ir",
+      "portuguese": "enviar, deixar ir",
+      "indonesian": "mengirim",
+      "japanese": "送る",
+      "thai": "ส่ง",
+      "french": "envoyer",
+      "partOfSpeech": "verb",
+      "emoji": "✉️",
+      "example": "편지를 친구에게 보냈어요.",
+      "exampleTranslation": "I sent a letter to my friend.",
+      "timestamp": 115.4
+    },
+    {
       "korean": "하루",
       "romanization": "haru",
       "english": "a day",
@@ -178,23 +354,55 @@
       "emoji": "📅",
       "example": "하루 종일 비가 왔어요.",
       "exampleTranslation": "It rained all day.",
-      "timestamp": 119.2
+      "timestamp": 119.1
     },
     {
-      "korean": "더",
-      "romanization": "deo",
-      "english": "more",
-      "spanish": "más",
-      "portuguese": "mais",
-      "indonesian": "lebih",
-      "japanese": "もっと",
-      "thai": "มากกว่า",
-      "french": "plus",
-      "partOfSpeech": "adverb",
-      "emoji": "➕",
-      "example": "물을 더 주세요.",
-      "exampleTranslation": "Please give me more water.",
+      "korean": "생각하다",
+      "romanization": "saenggakada",
+      "english": "to think",
+      "spanish": "pensar",
+      "portuguese": "pensar",
+      "indonesian": "berpikir",
+      "japanese": "考える",
+      "thai": "คิด",
+      "french": "penser",
+      "partOfSpeech": "verb",
+      "emoji": "🤔",
+      "example": "너를 매일 생각해요.",
+      "exampleTranslation": "I think of you every day.",
+      "timestamp": 121.9
+    },
+    {
+      "korean": "알다",
+      "romanization": "alda",
+      "english": "to know",
+      "spanish": "saber",
+      "portuguese": "saber",
+      "indonesian": "tahu",
+      "japanese": "知る",
+      "thai": "รู้",
+      "french": "savoir",
+      "partOfSpeech": "verb",
+      "emoji": "🧠",
+      "example": "나는 그 사실을 알아요.",
+      "exampleTranslation": "I know that fact.",
       "timestamp": 127.5
+    },
+    {
+      "korean": "이별",
+      "romanization": "ibyeol",
+      "english": "parting, breakup",
+      "spanish": "despedida",
+      "portuguese": "despedida",
+      "indonesian": "perpisahan",
+      "japanese": "別れ",
+      "thai": "การจากลา",
+      "french": "séparation",
+      "partOfSpeech": "noun",
+      "emoji": "😢",
+      "example": "이별은 언제나 아파요.",
+      "exampleTranslation": "Parting always hurts.",
+      "timestamp": 132.2
     },
     {
       "korean": "모습",
@@ -213,6 +421,22 @@
       "timestamp": 137.8
     },
     {
+      "korean": "아프다",
+      "romanization": "apeuda",
+      "english": "to hurt, to be painful",
+      "spanish": "doler",
+      "portuguese": "doer",
+      "indonesian": "sakit",
+      "japanese": "痛い",
+      "thai": "เจ็บ",
+      "french": "avoir mal",
+      "partOfSpeech": "adjective",
+      "emoji": "🤕",
+      "example": "마음이 너무 아파요.",
+      "exampleTranslation": "My heart hurts so much.",
+      "timestamp": 141.8
+    },
+    {
       "korean": "솔직하게",
       "romanization": "soljikhage",
       "english": "honestly",
@@ -226,7 +450,23 @@
       "emoji": "🗣️",
       "example": "솔직하게 대답해 주세요.",
       "exampleTranslation": "Please answer honestly.",
-      "timestamp": 151.2
+      "timestamp": 151.1
+    },
+    {
+      "korean": "싶다",
+      "romanization": "sipda",
+      "english": "to want (to)",
+      "spanish": "querer",
+      "portuguese": "querer",
+      "indonesian": "ingin",
+      "japanese": "〜したい",
+      "thai": "อยาก",
+      "french": "vouloir",
+      "partOfSpeech": "auxiliary",
+      "emoji": "🙏",
+      "example": "집에 가고 싶어요.",
+      "exampleTranslation": "I want to go home.",
+      "timestamp": 154.9
     },
     {
       "korean": "혼자서",
@@ -242,7 +482,23 @@
       "emoji": "🧍",
       "example": "혼자서 영화를 봤어요.",
       "exampleTranslation": "I watched a movie by myself.",
-      "timestamp": 158.5
+      "timestamp": 158.4
+    },
+    {
+      "korean": "지내다",
+      "romanization": "jinaeda",
+      "english": "to get by, to spend time",
+      "spanish": "pasar el tiempo",
+      "portuguese": "passar o tempo",
+      "indonesian": "menjalani",
+      "japanese": "過ごす",
+      "thai": "ใช้ชีวิต",
+      "french": "passer le temps",
+      "partOfSpeech": "verb",
+      "emoji": "🗓️",
+      "example": "요즘 잘 지내고 있어요.",
+      "exampleTranslation": "I'm getting by well these days.",
+      "timestamp": 162.0
     },
     {
       "korean": "하루",
@@ -256,9 +512,25 @@
       "french": "une journée",
       "partOfSpeech": "noun",
       "emoji": "📅",
-      "example": "즐거운 하루 보내세요.",
-      "exampleTranslation": "Have a pleasant day.",
-      "timestamp": 166.0
+      "example": "하루 종일 비가 왔어요.",
+      "exampleTranslation": "It rained all day.",
+      "timestamp": 165.9
+    },
+    {
+      "korean": "견디다",
+      "romanization": "gyeondida",
+      "english": "to endure, to bear",
+      "spanish": "soportar",
+      "portuguese": "suportar",
+      "indonesian": "bertahan",
+      "japanese": "耐える",
+      "thai": "อดทน",
+      "french": "endurer",
+      "partOfSpeech": "verb",
+      "emoji": "🪨",
+      "example": "힘든 시간을 견뎌 냈어요.",
+      "exampleTranslation": "I endured the hard times.",
+      "timestamp": 170.4
     },
     {
       "korean": "먼저",
@@ -275,6 +547,22 @@
       "example": "먼저 손을 씻으세요.",
       "exampleTranslation": "Wash your hands first.",
       "timestamp": 175.6
+    },
+    {
+      "korean": "알다",
+      "romanization": "alda",
+      "english": "to know",
+      "spanish": "saber",
+      "portuguese": "saber",
+      "indonesian": "tahu",
+      "japanese": "知る",
+      "thai": "รู้",
+      "french": "savoir",
+      "partOfSpeech": "verb",
+      "emoji": "🧠",
+      "example": "나는 그 사실을 알아요.",
+      "exampleTranslation": "I know that fact.",
+      "timestamp": 179.2
     }
   ]
 }

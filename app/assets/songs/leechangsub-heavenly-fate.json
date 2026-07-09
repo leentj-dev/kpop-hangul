@@ -50,7 +50,23 @@
       "emoji": "😣",
       "example": "혼자 이겨내기 힘겨웠어요.",
       "exampleTranslation": "It was tough to overcome alone.",
-      "timestamp": 33.6
+      "timestamp": 33.5
+    },
+    {
+      "korean": "사랑하다",
+      "romanization": "saranghada",
+      "english": "to love",
+      "spanish": "amar",
+      "portuguese": "amar",
+      "indonesian": "mencintai",
+      "japanese": "愛する",
+      "thai": "รัก",
+      "french": "aimer",
+      "partOfSpeech": "verb",
+      "emoji": "❤️",
+      "example": "나는 이 도시를 사랑해요.",
+      "exampleTranslation": "I love this city.",
+      "timestamp": 39.8
     },
     {
       "korean": "눈물",
@@ -66,7 +82,23 @@
       "emoji": "💧",
       "example": "눈물이 뺨을 타고 흘렀어요.",
       "exampleTranslation": "Tears rolled down my cheeks.",
-      "timestamp": 53.4
+      "timestamp": 53.3
+    },
+    {
+      "korean": "삶",
+      "romanization": "salm",
+      "english": "life",
+      "spanish": "vida",
+      "portuguese": "vida",
+      "indonesian": "kehidupan",
+      "japanese": "人生",
+      "thai": "ชีวิต",
+      "french": "vie",
+      "partOfSpeech": "noun",
+      "emoji": "🌿",
+      "example": "삶은 소중한 선물이에요.",
+      "exampleTranslation": "Life is a precious gift.",
+      "timestamp": 59.9
     },
     {
       "korean": "잊다",
@@ -98,7 +130,7 @@
       "emoji": "🛡️",
       "example": "약속을 꼭 지킬게요.",
       "exampleTranslation": "I will surely keep my promise.",
-      "timestamp": 76.8
+      "timestamp": 76.7
     },
     {
       "korean": "모습",
@@ -114,7 +146,7 @@
       "emoji": "🧍",
       "example": "웃는 네 모습이 예뻐요.",
       "exampleTranslation": "Your smiling figure is pretty.",
-      "timestamp": 83.5
+      "timestamp": 83.4
     },
     {
       "korean": "시작하다",
@@ -133,6 +165,22 @@
       "timestamp": 90.4
     },
     {
+      "korean": "하늘",
+      "romanization": "haneul",
+      "english": "sky, heaven",
+      "spanish": "cielo",
+      "portuguese": "céu",
+      "indonesian": "langit",
+      "japanese": "空",
+      "thai": "ท้องฟ้า",
+      "french": "ciel",
+      "partOfSpeech": "noun",
+      "emoji": "🌤️",
+      "example": "하늘이 맑고 파래요.",
+      "exampleTranslation": "The sky is clear and blue.",
+      "timestamp": 96.6
+    },
+    {
       "korean": "보내다",
       "romanization": "bonaeda",
       "english": "to send off, let go",
@@ -146,7 +194,23 @@
       "emoji": "👋",
       "example": "역에서 친구를 보냈어요.",
       "exampleTranslation": "I saw my friend off at the station.",
-      "timestamp": 103.5
+      "timestamp": 103.4
+    },
+    {
+      "korean": "사랑하다",
+      "romanization": "saranghada",
+      "english": "to love",
+      "spanish": "amar",
+      "portuguese": "amar",
+      "indonesian": "mencintai",
+      "japanese": "愛する",
+      "thai": "รัก",
+      "french": "aimer",
+      "partOfSpeech": "verb",
+      "emoji": "❤️",
+      "example": "나는 이 도시를 사랑해요.",
+      "exampleTranslation": "I love this city.",
+      "timestamp": 110.0
     },
     {
       "korean": "영원히",
@@ -165,6 +229,22 @@
       "timestamp": 117.0
     },
     {
+      "korean": "바라다",
+      "romanization": "barada",
+      "english": "to hope, wish",
+      "spanish": "desear",
+      "portuguese": "desejar",
+      "indonesian": "berharap",
+      "japanese": "願う",
+      "thai": "หวัง",
+      "french": "souhaiter",
+      "partOfSpeech": "verb",
+      "emoji": "🌠",
+      "example": "네가 잘 되길 바라요.",
+      "exampleTranslation": "I hope things go well for you.",
+      "timestamp": 123.2
+    },
+    {
       "korean": "소중하다",
       "romanization": "sojunghada",
       "english": "to be precious",
@@ -181,35 +261,51 @@
       "timestamp": 136.8
     },
     {
-      "korean": "지난날",
-      "romanization": "jinannal",
-      "english": "past days",
-      "spanish": "días pasados",
-      "portuguese": "dias passados",
-      "indonesian": "hari-hari lampau",
-      "japanese": "過ぎた日",
-      "thai": "วันเวลาที่ผ่านมา",
-      "french": "jours passés",
-      "partOfSpeech": "noun",
-      "emoji": "📆",
-      "example": "지난날을 자주 떠올려요.",
-      "exampleTranslation": "I often recall the past days.",
+      "korean": "흐르다",
+      "romanization": "heureuda",
+      "english": "to flow",
+      "spanish": "fluir, correr",
+      "portuguese": "fluir, correr",
+      "indonesian": "mengalir",
+      "japanese": "流れる",
+      "thai": "ไหล",
+      "french": "couler",
+      "partOfSpeech": "verb",
+      "emoji": "🌊",
+      "example": "강물이 천천히 흘러요.",
+      "exampleTranslation": "The river flows slowly.",
       "timestamp": 150.0
     },
     {
-      "korean": "사랑하다",
-      "romanization": "saranghada",
-      "english": "to love",
-      "spanish": "amar",
-      "portuguese": "amar",
-      "indonesian": "mencintai",
-      "japanese": "愛する",
-      "thai": "รัก",
-      "french": "aimer",
+      "korean": "삶",
+      "romanization": "salm",
+      "english": "life",
+      "spanish": "vida",
+      "portuguese": "vida",
+      "indonesian": "kehidupan",
+      "japanese": "人生",
+      "thai": "ชีวิต",
+      "french": "vie",
+      "partOfSpeech": "noun",
+      "emoji": "🌿",
+      "example": "삶은 소중한 선물이에요.",
+      "exampleTranslation": "Life is a precious gift.",
+      "timestamp": 156.5
+    },
+    {
+      "korean": "잊다",
+      "romanization": "itda",
+      "english": "to forget",
+      "spanish": "olvidar",
+      "portuguese": "esquecer",
+      "indonesian": "melupakan",
+      "japanese": "忘れる",
+      "thai": "ลืม",
+      "french": "oublier",
       "partOfSpeech": "verb",
-      "emoji": "❤️",
-      "example": "나는 이 도시를 사랑해요.",
-      "exampleTranslation": "I love this city.",
+      "emoji": "🤔",
+      "example": "약속을 깜빡 잊었어요.",
+      "exampleTranslation": "I completely forgot the appointment.",
       "timestamp": 166.4
     },
     {
@@ -226,7 +322,7 @@
       "emoji": "🙇",
       "example": "늦어서 정말 미안해요.",
       "exampleTranslation": "I'm really sorry for being late.",
-      "timestamp": 173.2
+      "timestamp": 173.1
     },
     {
       "korean": "원하다",
@@ -261,6 +357,22 @@
       "timestamp": 187.0
     },
     {
+      "korean": "하늘",
+      "romanization": "haneul",
+      "english": "sky, heaven",
+      "spanish": "cielo",
+      "portuguese": "céu",
+      "indonesian": "langit",
+      "japanese": "空",
+      "thai": "ท้องฟ้า",
+      "french": "ciel",
+      "partOfSpeech": "noun",
+      "emoji": "🌤️",
+      "example": "하늘이 맑고 파래요.",
+      "exampleTranslation": "The sky is clear and blue.",
+      "timestamp": 193.2
+    },
+    {
       "korean": "눈물",
       "romanization": "nunmul",
       "english": "tears",
@@ -272,9 +384,25 @@
       "french": "larmes",
       "partOfSpeech": "noun",
       "emoji": "💧",
-      "example": "기쁨의 눈물을 흘렸어요.",
-      "exampleTranslation": "I shed tears of joy.",
+      "example": "눈물이 뺨을 타고 흘렀어요.",
+      "exampleTranslation": "Tears rolled down my cheeks.",
       "timestamp": 199.9
+    },
+    {
+      "korean": "사랑하다",
+      "romanization": "saranghada",
+      "english": "to love",
+      "spanish": "amar",
+      "portuguese": "amar",
+      "indonesian": "mencintai",
+      "japanese": "愛する",
+      "thai": "รัก",
+      "french": "aimer",
+      "partOfSpeech": "verb",
+      "emoji": "❤️",
+      "example": "나는 이 도시를 사랑해요.",
+      "exampleTranslation": "I love this city.",
+      "timestamp": 206.5
     },
     {
       "korean": "지켜보다",
@@ -293,22 +421,6 @@
       "timestamp": 213.8
     },
     {
-      "korean": "사랑하다",
-      "romanization": "saranghada",
-      "english": "to love",
-      "spanish": "amar",
-      "portuguese": "amar",
-      "indonesian": "mencintai",
-      "japanese": "愛する",
-      "thai": "รัก",
-      "french": "aimer",
-      "partOfSpeech": "verb",
-      "emoji": "❤️",
-      "example": "부모님을 진심으로 사랑해요.",
-      "exampleTranslation": "I truly love my parents.",
-      "timestamp": 223.0
-    },
-    {
       "korean": "행복하다",
       "romanization": "haengbokhada",
       "english": "to be happy",
@@ -322,7 +434,71 @@
       "emoji": "😊",
       "example": "네가 행복하면 나도 좋아요.",
       "exampleTranslation": "If you're happy, I'm glad too.",
+      "timestamp": 219.9
+    },
+    {
+      "korean": "사랑하다",
+      "romanization": "saranghada",
+      "english": "to love",
+      "spanish": "amar",
+      "portuguese": "amar",
+      "indonesian": "mencintai",
+      "japanese": "愛する",
+      "thai": "รัก",
+      "french": "aimer",
+      "partOfSpeech": "verb",
+      "emoji": "❤️",
+      "example": "나는 이 도시를 사랑해요.",
+      "exampleTranslation": "I love this city.",
+      "timestamp": 223.0
+    },
+    {
+      "korean": "미안하다",
+      "romanization": "mianhada",
+      "english": "to be sorry",
+      "spanish": "sentir lo",
+      "portuguese": "sentir muito",
+      "indonesian": "merasa bersalah",
+      "japanese": "すまない",
+      "thai": "รู้สึกผิด",
+      "french": "être désolé",
+      "partOfSpeech": "adjective",
+      "emoji": "🙇",
+      "example": "늦어서 정말 미안해요.",
+      "exampleTranslation": "I'm really sorry for being late.",
+      "timestamp": 226.8
+    },
+    {
+      "korean": "모습",
+      "romanization": "moseup",
+      "english": "appearance, figure",
+      "spanish": "apariencia",
+      "portuguese": "aparência",
+      "indonesian": "penampilan",
+      "japanese": "姿",
+      "thai": "รูปลักษณ์",
+      "french": "apparence",
+      "partOfSpeech": "noun",
+      "emoji": "🧍",
+      "example": "웃는 네 모습이 예뻐요.",
+      "exampleTranslation": "Your smiling figure is pretty.",
       "timestamp": 233.2
+    },
+    {
+      "korean": "시작하다",
+      "romanization": "sijakhada",
+      "english": "to start",
+      "spanish": "empezar",
+      "portuguese": "começar",
+      "indonesian": "memulai",
+      "japanese": "始める",
+      "thai": "เริ่ม",
+      "french": "commencer",
+      "partOfSpeech": "verb",
+      "emoji": "🏁",
+      "example": "새로운 일을 시작했어요.",
+      "exampleTranslation": "I started a new job.",
+      "timestamp": 240.5
     },
     {
       "korean": "바라다",
@@ -338,7 +514,7 @@
       "emoji": "🌠",
       "example": "네가 잘 되길 바라요.",
       "exampleTranslation": "I hope things go well for you.",
-      "timestamp": 240.6
+      "timestamp": 246.4
     }
   ]
 }

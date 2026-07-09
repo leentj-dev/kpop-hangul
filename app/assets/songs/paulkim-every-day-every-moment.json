@@ -21,6 +21,22 @@
       "timestamp": 15.3
     },
     {
+      "korean": "눈물",
+      "romanization": "nunmul",
+      "english": "tears",
+      "spanish": "lágrimas",
+      "portuguese": "lágrimas",
+      "indonesian": "air mata",
+      "japanese": "涙",
+      "thai": "น้ำตา",
+      "french": "larmes",
+      "partOfSpeech": "noun",
+      "emoji": "😢",
+      "example": "기쁨의 눈물이 났어요.",
+      "exampleTranslation": "Tears of joy came out.",
+      "timestamp": 21.87
+    },
+    {
       "korean": "지키다",
       "romanization": "jikida",
       "english": "to protect, to keep",
@@ -32,25 +48,57 @@
       "french": "protéger",
       "partOfSpeech": "verb",
       "emoji": "🛡️",
-      "example": "약속을 꼭 지킬게요.",
-      "exampleTranslation": "I will surely keep my promise.",
-      "timestamp": 29.3
+      "example": "나는 약속을 꼭 지켜요.",
+      "exampleTranslation": "I always keep my promises.",
+      "timestamp": 29.29
+    },
+    {
+      "korean": "이제",
+      "romanization": "ije",
+      "english": "now",
+      "spanish": "ahora",
+      "portuguese": "agora",
+      "indonesian": "sekarang",
+      "japanese": "今",
+      "thai": "ตอนนี้",
+      "french": "maintenant",
+      "partOfSpeech": "adverb",
+      "emoji": "⏳",
+      "example": "이제 시작해 볼까요?",
+      "exampleTranslation": "Shall we start now?",
+      "timestamp": 35.0
     },
     {
       "korean": "따뜻하다",
-      "romanization": "ttatteuthada",
+      "romanization": "ttatteutada",
       "english": "to be warm",
-      "spanish": "ser cálido",
+      "spanish": "estar cálido",
       "portuguese": "ser quente",
       "indonesian": "hangat",
       "japanese": "暖かい",
       "thai": "อบอุ่น",
       "french": "être chaud",
       "partOfSpeech": "adjective",
-      "emoji": "🔥",
-      "example": "봄 날씨가 따뜻해요.",
-      "exampleTranslation": "The spring weather is warm.",
-      "timestamp": 43.7
+      "emoji": "🌤️",
+      "example": "그녀의 말이 참 따뜻해요.",
+      "exampleTranslation": "Her words are really warm.",
+      "timestamp": 43.75
+    },
+    {
+      "korean": "휴식",
+      "romanization": "hyusik",
+      "english": "rest, break",
+      "spanish": "descanso",
+      "portuguese": "descanso",
+      "indonesian": "istirahat",
+      "japanese": "休憩",
+      "thai": "การพักผ่อน",
+      "french": "repos",
+      "partOfSpeech": "noun",
+      "emoji": "🛋️",
+      "example": "잠깐 휴식이 필요해요.",
+      "exampleTranslation": "I need a short break.",
+      "timestamp": 49.44
     },
     {
       "korean": "충분하다",
@@ -63,10 +111,26 @@
       "thai": "เพียงพอ",
       "french": "être suffisant",
       "partOfSpeech": "adjective",
-      "emoji": "👌",
-      "example": "시간이 충분해요.",
+      "emoji": "✅",
+      "example": "시간은 충분해요.",
       "exampleTranslation": "There is enough time.",
-      "timestamp": 57.3
+      "timestamp": 57.22
+    },
+    {
+      "korean": "눈빛",
+      "romanization": "nunbit",
+      "english": "look in the eyes, gaze",
+      "spanish": "mirada",
+      "portuguese": "olhar",
+      "indonesian": "tatapan",
+      "japanese": "眼差し",
+      "thai": "แววตา",
+      "french": "regard",
+      "partOfSpeech": "noun",
+      "emoji": "👁️",
+      "example": "그의 눈빛이 따뜻했어요.",
+      "exampleTranslation": "His gaze was warm.",
+      "timestamp": 63.76
     },
     {
       "korean": "꽃",
@@ -80,9 +144,25 @@
       "french": "fleur",
       "partOfSpeech": "noun",
       "emoji": "🌸",
-      "example": "정원에 꽃이 활짝 폈어요.",
-      "exampleTranslation": "Flowers bloomed fully in the garden.",
-      "timestamp": 72.3
+      "example": "정원에 꽃이 가득해요.",
+      "exampleTranslation": "The garden is full of flowers.",
+      "timestamp": 72.31
+    },
+    {
+      "korean": "함께",
+      "romanization": "hamkke",
+      "english": "together",
+      "spanish": "juntos",
+      "portuguese": "juntos",
+      "indonesian": "bersama",
+      "japanese": "一緒に",
+      "thai": "ด้วยกัน",
+      "french": "ensemble",
+      "partOfSpeech": "adverb",
+      "emoji": "🤝",
+      "example": "우리 함께 걸어요.",
+      "exampleTranslation": "Let's walk together.",
+      "timestamp": 77.94
     },
     {
       "korean": "빛나다",
@@ -96,9 +176,25 @@
       "french": "briller",
       "partOfSpeech": "verb",
       "emoji": "✨",
-      "example": "별이 밤에 빛나요.",
-      "exampleTranslation": "Stars shine at night.",
-      "timestamp": 86.9
+      "example": "그녀의 눈이 반짝 빛났어요.",
+      "exampleTranslation": "Her eyes shone brightly.",
+      "timestamp": 86.83
+    },
+    {
+      "korean": "보다",
+      "romanization": "boda",
+      "english": "to see, to look",
+      "spanish": "ver",
+      "portuguese": "ver",
+      "indonesian": "melihat",
+      "japanese": "見る",
+      "thai": "ดู",
+      "french": "voir",
+      "partOfSpeech": "verb",
+      "emoji": "👀",
+      "example": "창밖을 보고 있어요.",
+      "exampleTranslation": "I'm looking out the window.",
+      "timestamp": 93.92
     },
     {
       "korean": "꿈",
@@ -112,9 +208,25 @@
       "french": "rêve",
       "partOfSpeech": "noun",
       "emoji": "💫",
-      "example": "어젯밤 좋은 꿈을 꿨어요.",
+      "example": "어젯밤에 좋은 꿈을 꿨어요.",
       "exampleTranslation": "I had a good dream last night.",
-      "timestamp": 101.2
+      "timestamp": 101.1
+    },
+    {
+      "korean": "눈부시다",
+      "romanization": "nunbusida",
+      "english": "to be dazzling",
+      "spanish": "ser deslumbrante",
+      "portuguese": "ser deslumbrante",
+      "indonesian": "menyilaukan",
+      "japanese": "まぶしい",
+      "thai": "เจิดจ้า",
+      "french": "être éblouissant",
+      "partOfSpeech": "adjective",
+      "emoji": "🌟",
+      "example": "햇빛이 눈부셔요.",
+      "exampleTranslation": "The sunlight is dazzling.",
+      "timestamp": 106.72
     },
     {
       "korean": "삶",
@@ -127,10 +239,26 @@
       "thai": "ชีวิต",
       "french": "vie",
       "partOfSpeech": "noun",
-      "emoji": "🌱",
-      "example": "삶은 소중해요.",
-      "exampleTranslation": "Life is precious.",
-      "timestamp": 115.5
+      "emoji": "🌿",
+      "example": "행복한 삶을 살고 싶어요.",
+      "exampleTranslation": "I want to live a happy life.",
+      "timestamp": 115.51
+    },
+    {
+      "korean": "다가오다",
+      "romanization": "dagaoda",
+      "english": "to approach, to come near",
+      "spanish": "acercarse",
+      "portuguese": "aproximar-se",
+      "indonesian": "mendekat",
+      "japanese": "近づく",
+      "thai": "เข้ามาใกล้",
+      "french": "s'approcher",
+      "partOfSpeech": "verb",
+      "emoji": "➡️",
+      "example": "봄이 서서히 다가와요.",
+      "exampleTranslation": "Spring is slowly approaching.",
+      "timestamp": 120.97
     },
     {
       "korean": "하나",
@@ -146,7 +274,23 @@
       "emoji": "1️⃣",
       "example": "사과 하나만 주세요.",
       "exampleTranslation": "Please give me just one apple.",
-      "timestamp": 129.0
+      "timestamp": 129.03
+    },
+    {
+      "korean": "말",
+      "romanization": "mal",
+      "english": "words, speech",
+      "spanish": "palabra",
+      "portuguese": "palavra",
+      "indonesian": "kata",
+      "japanese": "言葉",
+      "thai": "คำพูด",
+      "french": "parole",
+      "partOfSpeech": "noun",
+      "emoji": "💬",
+      "example": "그 말이 큰 위로가 됐어요.",
+      "exampleTranslation": "Those words were a great comfort.",
+      "timestamp": 135.54
     },
     {
       "korean": "피다",
@@ -160,9 +304,25 @@
       "french": "fleurir",
       "partOfSpeech": "verb",
       "emoji": "🌷",
-      "example": "벚꽃이 봄에 피어요.",
-      "exampleTranslation": "Cherry blossoms bloom in spring.",
-      "timestamp": 143.8
+      "example": "봄에 꽃이 활짝 피었어요.",
+      "exampleTranslation": "The flowers bloomed fully in spring.",
+      "timestamp": 143.68
+    },
+    {
+      "korean": "순간",
+      "romanization": "sungan",
+      "english": "moment, instant",
+      "spanish": "momento",
+      "portuguese": "momento",
+      "indonesian": "saat",
+      "japanese": "瞬間",
+      "thai": "ช่วงเวลา",
+      "french": "moment",
+      "partOfSpeech": "noun",
+      "emoji": "⏱️",
+      "example": "이 순간이 정말 소중해요.",
+      "exampleTranslation": "This moment is truly precious.",
+      "timestamp": 149.65
     },
     {
       "korean": "미래",
@@ -178,7 +338,39 @@
       "emoji": "🔮",
       "example": "밝은 미래를 꿈꿔요.",
       "exampleTranslation": "I dream of a bright future.",
-      "timestamp": 158.4
+      "timestamp": 158.42
+    },
+    {
+      "korean": "지금",
+      "romanization": "jigeum",
+      "english": "now, right now",
+      "spanish": "ahora mismo",
+      "portuguese": "agora",
+      "indonesian": "sekarang",
+      "japanese": "今",
+      "thai": "ตอนนี้",
+      "french": "maintenant",
+      "partOfSpeech": "adverb",
+      "emoji": "⌚",
+      "example": "지금 어디에 있어요?",
+      "exampleTranslation": "Where are you right now?",
+      "timestamp": 162.08
+    },
+    {
+      "korean": "영원",
+      "romanization": "yeongwon",
+      "english": "eternity, forever",
+      "spanish": "eternidad",
+      "portuguese": "eternidade",
+      "indonesian": "keabadian",
+      "japanese": "永遠",
+      "thai": "นิรันดร์",
+      "french": "éternité",
+      "partOfSpeech": "noun",
+      "emoji": "♾️",
+      "example": "영원한 사랑을 믿어요.",
+      "exampleTranslation": "I believe in eternal love.",
+      "timestamp": 168.2
     },
     {
       "korean": "가다",
@@ -192,9 +384,25 @@
       "french": "aller",
       "partOfSpeech": "verb",
       "emoji": "🚶",
-      "example": "내일 학교에 가요.",
-      "exampleTranslation": "I go to school tomorrow.",
-      "timestamp": 175.4
+      "example": "저는 학교에 가요.",
+      "exampleTranslation": "I go to school.",
+      "timestamp": 175.28
+    },
+    {
+      "korean": "햇살",
+      "romanization": "haetsal",
+      "english": "sunlight",
+      "spanish": "luz del sol",
+      "portuguese": "luz do sol",
+      "indonesian": "sinar matahari",
+      "japanese": "日差し",
+      "thai": "แสงแดด",
+      "french": "rayon de soleil",
+      "partOfSpeech": "noun",
+      "emoji": "☀️",
+      "example": "아침 햇살이 참 좋아요.",
+      "exampleTranslation": "The morning sunlight is really nice.",
+      "timestamp": 181.94
     },
     {
       "korean": "처음",
@@ -208,9 +416,25 @@
       "french": "première fois",
       "partOfSpeech": "noun",
       "emoji": "🥇",
-      "example": "처음 만난 날을 기억해요.",
-      "exampleTranslation": "I remember the first day we met.",
-      "timestamp": 190.4
+      "example": "처음 만났을 때가 기억나요.",
+      "exampleTranslation": "I remember when we first met.",
+      "timestamp": 190.46
+    },
+    {
+      "korean": "날",
+      "romanization": "nal",
+      "english": "day",
+      "spanish": "día",
+      "portuguese": "dia",
+      "indonesian": "hari",
+      "japanese": "日",
+      "thai": "วัน",
+      "french": "jour",
+      "partOfSpeech": "noun",
+      "emoji": "📅",
+      "example": "비 오는 날을 좋아해요.",
+      "exampleTranslation": "I like rainy days.",
+      "timestamp": 196.06
     }
   ]
 }

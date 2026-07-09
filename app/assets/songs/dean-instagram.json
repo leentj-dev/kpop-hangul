@@ -18,7 +18,23 @@
       "emoji": "🌅",
       "example": "내일 만나요.",
       "exampleTranslation": "See you tomorrow.",
-      "timestamp": 11.8
+      "timestamp": 11.83
+    },
+    {
+      "korean": "핸드폰",
+      "romanization": "haendeupon",
+      "english": "cellphone",
+      "spanish": "celular",
+      "portuguese": "celular",
+      "indonesian": "ponsel",
+      "japanese": "携帯電話",
+      "thai": "โทรศัพท์มือถือ",
+      "french": "téléphone portable",
+      "partOfSpeech": "noun",
+      "emoji": "📱",
+      "example": "핸드폰이 없어요.",
+      "exampleTranslation": "I don't have my phone.",
+      "timestamp": 16.98
     },
     {
       "korean": "잠",
@@ -34,7 +50,39 @@
       "emoji": "😴",
       "example": "잠이 안 와요.",
       "exampleTranslation": "I can't fall asleep.",
-      "timestamp": 22.3
+      "timestamp": 22.27
+    },
+    {
+      "korean": "다시",
+      "romanization": "dasi",
+      "english": "again",
+      "spanish": "otra vez",
+      "portuguese": "de novo",
+      "indonesian": "lagi",
+      "japanese": "もう一度",
+      "thai": "อีกครั้ง",
+      "french": "encore",
+      "partOfSpeech": "adverb",
+      "emoji": "🔁",
+      "example": "다시 해 볼게요.",
+      "exampleTranslation": "I'll try again.",
+      "timestamp": 26.25
+    },
+    {
+      "korean": "사람",
+      "romanization": "saram",
+      "english": "person",
+      "spanish": "persona",
+      "portuguese": "pessoa",
+      "indonesian": "orang",
+      "japanese": "人",
+      "thai": "คน",
+      "french": "personne",
+      "partOfSpeech": "noun",
+      "emoji": "👤",
+      "example": "좋은 사람이에요.",
+      "exampleTranslation": "He is a good person.",
+      "timestamp": 32.23
     },
     {
       "korean": "놀다",
@@ -50,7 +98,39 @@
       "emoji": "🎉",
       "example": "친구랑 놀아요.",
       "exampleTranslation": "I hang out with friends.",
-      "timestamp": 36.8
+      "timestamp": 36.75
+    },
+    {
+      "korean": "누르다",
+      "romanization": "nureuda",
+      "english": "to press",
+      "spanish": "presionar",
+      "portuguese": "pressionar",
+      "indonesian": "menekan",
+      "japanese": "押す",
+      "thai": "กด",
+      "french": "appuyer",
+      "partOfSpeech": "verb",
+      "emoji": "👆",
+      "example": "버튼을 눌러요.",
+      "exampleTranslation": "I press the button.",
+      "timestamp": 42.05
+    },
+    {
+      "korean": "저기",
+      "romanization": "jeogi",
+      "english": "over there",
+      "spanish": "allí",
+      "portuguese": "ali",
+      "indonesian": "di sana",
+      "japanese": "あそこ",
+      "thai": "ที่นั่น",
+      "french": "là-bas",
+      "partOfSpeech": "adverb",
+      "emoji": "👉",
+      "example": "저기 있어요.",
+      "exampleTranslation": "It's over there.",
+      "timestamp": 46.7
     },
     {
       "korean": "문제",
@@ -66,39 +146,87 @@
       "emoji": "⚠️",
       "example": "큰 문제예요.",
       "exampleTranslation": "It's a big problem.",
-      "timestamp": 52.1
+      "timestamp": 52.07
     },
     {
-      "korean": "많다",
-      "romanization": "manta",
-      "english": "to be many, much",
-      "spanish": "mucho",
-      "portuguese": "muito",
-      "indonesian": "banyak",
-      "japanese": "多い",
-      "thai": "มาก",
-      "french": "nombreux",
+      "korean": "사랑",
+      "romanization": "sarang",
+      "english": "love",
+      "spanish": "amor",
+      "portuguese": "amor",
+      "indonesian": "cinta",
+      "japanese": "愛",
+      "thai": "ความรัก",
+      "french": "amour",
+      "partOfSpeech": "noun",
+      "emoji": "❤️",
+      "example": "사랑을 믿어요.",
+      "exampleTranslation": "I believe in love.",
+      "timestamp": 57.07
+    },
+    {
+      "korean": "밤",
+      "romanization": "bam",
+      "english": "night",
+      "spanish": "noche",
+      "portuguese": "noite",
+      "indonesian": "malam",
+      "japanese": "夜",
+      "thai": "กลางคืน",
+      "french": "nuit",
+      "partOfSpeech": "noun",
+      "emoji": "🌙",
+      "example": "밤이 길어요.",
+      "exampleTranslation": "The night is long.",
+      "timestamp": 62.02
+    },
+    {
+      "korean": "생각",
+      "romanization": "saenggak",
+      "english": "thought",
+      "spanish": "pensamiento",
+      "portuguese": "pensamento",
+      "indonesian": "pikiran",
+      "japanese": "考え",
+      "thai": "ความคิด",
+      "french": "pensée",
+      "partOfSpeech": "noun",
+      "emoji": "💭",
+      "example": "좋은 생각이에요.",
+      "exampleTranslation": "That's a good thought.",
+      "timestamp": 67.19
+    },
+    {
+      "korean": "복잡하다",
+      "romanization": "bokjaphada",
+      "english": "to be complicated",
+      "spanish": "ser complicado",
+      "portuguese": "ser complicado",
+      "indonesian": "rumit",
+      "japanese": "複雑だ",
+      "thai": "ซับซ้อน",
+      "french": "être compliqué",
       "partOfSpeech": "adjective",
-      "emoji": "🔢",
-      "example": "일이 많아요.",
-      "exampleTranslation": "There's a lot of work.",
-      "timestamp": 67.2
+      "emoji": "🌀",
+      "example": "길이 복잡해요.",
+      "exampleTranslation": "The roads are complicated.",
+      "timestamp": 82.94
     },
     {
-      "korean": "바뀌다",
-      "romanization": "bakkwida",
-      "english": "to change, be changed",
-      "spanish": "cambiar",
-      "portuguese": "mudar",
-      "indonesian": "berubah",
-      "japanese": "変わる",
-      "thai": "เปลี่ยน",
-      "french": "changer",
-      "partOfSpeech": "verb",
-      "emoji": "🔄",
-      "example": "계획이 바뀌었어요.",
-      "exampleTranslation": "The plan changed.",
-      "timestamp": 82.9
+      "korean": "시대",
+      "romanization": "sidae",
+      "english": "era, age",
+      "spanish": "época",
+      "portuguese": "era",
+      "indonesian": "era",
+      "japanese": "時代",
+      "thai": "ยุค",
+      "french": "époque",
+      "partOfSpeech": "noun",
+      "emoji": "🕰️",
+      "example": "새로운 시대예요.",
+      "exampleTranslation": "It's a new era.",
+      "timestamp": 87.62
     },
     {
       "korean": "잘못",
@@ -114,7 +242,39 @@
       "emoji": "❌",
       "example": "제 잘못이에요.",
       "exampleTranslation": "It's my fault.",
-      "timestamp": 93.5
+      "timestamp": 93.47
+    },
+    {
+      "korean": "괴롭다",
+      "romanization": "goeropda",
+      "english": "to be distressing",
+      "spanish": "ser angustiante",
+      "portuguese": "ser angustiante",
+      "indonesian": "menyiksa",
+      "japanese": "苦しい",
+      "thai": "ทรมาน",
+      "french": "être pénible",
+      "partOfSpeech": "adjective",
+      "emoji": "😣",
+      "example": "마음이 괴로워요.",
+      "exampleTranslation": "My heart is troubled.",
+      "timestamp": 96.2
+    },
+    {
+      "korean": "어렵다",
+      "romanization": "eoryeopda",
+      "english": "to be difficult",
+      "spanish": "ser difícil",
+      "portuguese": "ser difícil",
+      "indonesian": "sulit",
+      "japanese": "難しい",
+      "thai": "ยาก",
+      "french": "être difficile",
+      "partOfSpeech": "adjective",
+      "emoji": "😵",
+      "example": "시험이 어려워요.",
+      "exampleTranslation": "The exam is difficult.",
+      "timestamp": 102.3
     },
     {
       "korean": "영화",
@@ -130,7 +290,23 @@
       "emoji": "🎬",
       "example": "영화가 재밌어요.",
       "exampleTranslation": "The movie is fun.",
-      "timestamp": 107.5
+      "timestamp": 107.49
+    },
+    {
+      "korean": "구멍",
+      "romanization": "gumeong",
+      "english": "hole",
+      "spanish": "agujero",
+      "portuguese": "buraco",
+      "indonesian": "lubang",
+      "japanese": "穴",
+      "thai": "รู",
+      "french": "trou",
+      "partOfSpeech": "noun",
+      "emoji": "🕳️",
+      "example": "양말에 구멍이 났어요.",
+      "exampleTranslation": "There's a hole in the sock.",
+      "timestamp": 113.13
     },
     {
       "korean": "가라앉다",
@@ -146,7 +322,23 @@
       "emoji": "🌊",
       "example": "배가 가라앉아요.",
       "exampleTranslation": "The boat sinks.",
-      "timestamp": 118.1
+      "timestamp": 118.14
+    },
+    {
+      "korean": "세상",
+      "romanization": "sesang",
+      "english": "world",
+      "spanish": "mundo",
+      "portuguese": "mundo",
+      "indonesian": "dunia",
+      "japanese": "世界",
+      "thai": "โลก",
+      "french": "monde",
+      "partOfSpeech": "noun",
+      "emoji": "🌍",
+      "example": "세상은 넓어요.",
+      "exampleTranslation": "The world is wide.",
+      "timestamp": 123.28
     },
     {
       "korean": "노래",
@@ -162,7 +354,39 @@
       "emoji": "🎵",
       "example": "노래를 불러요.",
       "exampleTranslation": "I sing a song.",
-      "timestamp": 128.4
+      "timestamp": 128.45
+    },
+    {
+      "korean": "닿다",
+      "romanization": "datda",
+      "english": "to reach, touch",
+      "spanish": "alcanzar",
+      "portuguese": "alcançar",
+      "indonesian": "menyentuh",
+      "japanese": "届く",
+      "thai": "ถึง",
+      "french": "atteindre",
+      "partOfSpeech": "verb",
+      "emoji": "🤲",
+      "example": "손이 안 닿아요.",
+      "exampleTranslation": "I can't reach it with my hand.",
+      "timestamp": 133.35
+    },
+    {
+      "korean": "많다",
+      "romanization": "manta",
+      "english": "to be many",
+      "spanish": "mucho",
+      "portuguese": "muito",
+      "indonesian": "banyak",
+      "japanese": "多い",
+      "thai": "มาก",
+      "french": "nombreux",
+      "partOfSpeech": "adjective",
+      "emoji": "🔢",
+      "example": "사람이 많아요.",
+      "exampleTranslation": "There are many people.",
+      "timestamp": 138.31
     },
     {
       "korean": "낭비",
@@ -178,7 +402,23 @@
       "emoji": "🗑️",
       "example": "돈 낭비예요.",
       "exampleTranslation": "It's a waste of money.",
-      "timestamp": 153.9
+      "timestamp": 153.88
+    },
+    {
+      "korean": "속",
+      "romanization": "sok",
+      "english": "inside",
+      "spanish": "dentro",
+      "portuguese": "dentro",
+      "indonesian": "dalam",
+      "japanese": "中",
+      "thai": "ข้างใน",
+      "french": "intérieur",
+      "partOfSpeech": "noun",
+      "emoji": "📥",
+      "example": "가방 속에 있어요.",
+      "exampleTranslation": "It's inside the bag.",
+      "timestamp": 159.16
     },
     {
       "korean": "힘들다",
@@ -194,7 +434,7 @@
       "emoji": "😮‍💨",
       "example": "오늘 정말 힘들어요.",
       "exampleTranslation": "Today is really tough.",
-      "timestamp": 169.2
+      "timestamp": 169.22
     },
     {
       "korean": "다르다",
@@ -210,7 +450,23 @@
       "emoji": "🔀",
       "example": "생각이 달라요.",
       "exampleTranslation": "Our thoughts differ.",
-      "timestamp": 179.5
+      "timestamp": 179.49
+    },
+    {
+      "korean": "사진",
+      "romanization": "sajin",
+      "english": "photo",
+      "spanish": "foto",
+      "portuguese": "foto",
+      "indonesian": "foto",
+      "japanese": "写真",
+      "thai": "รูปถ่าย",
+      "french": "photo",
+      "partOfSpeech": "noun",
+      "emoji": "📷",
+      "example": "사진을 찍어요.",
+      "exampleTranslation": "I take a photo.",
+      "timestamp": 184.97
     },
     {
       "korean": "마음",
@@ -226,7 +482,23 @@
       "emoji": "💙",
       "example": "마음이 편해요.",
       "exampleTranslation": "My heart feels at ease.",
-      "timestamp": 189.8
+      "timestamp": 189.75
+    },
+    {
+      "korean": "헤매다",
+      "romanization": "hemaeda",
+      "english": "to wander, be lost",
+      "spanish": "vagar",
+      "portuguese": "vagar",
+      "indonesian": "tersesat",
+      "japanese": "さまよう",
+      "thai": "หลงทาง",
+      "french": "errer",
+      "partOfSpeech": "verb",
+      "emoji": "🧭",
+      "example": "길을 헤매요.",
+      "exampleTranslation": "I'm lost on the road.",
+      "timestamp": 194.75
     },
     {
       "korean": "요즘",
@@ -242,7 +514,23 @@
       "emoji": "📅",
       "example": "요즘 바빠요.",
       "exampleTranslation": "I'm busy these days.",
-      "timestamp": 206.1
+      "timestamp": 206.05
+    },
+    {
+      "korean": "자다",
+      "romanization": "jada",
+      "english": "to sleep",
+      "spanish": "dormir",
+      "portuguese": "dormir",
+      "indonesian": "tidur",
+      "japanese": "寝る",
+      "thai": "นอน",
+      "french": "dormir",
+      "partOfSpeech": "verb",
+      "emoji": "🛌",
+      "example": "일찍 자요.",
+      "exampleTranslation": "I sleep early.",
+      "timestamp": 211.1
     },
     {
       "korean": "예쁘다",
@@ -258,7 +546,39 @@
       "emoji": "🌷",
       "example": "머리가 예뻐요.",
       "exampleTranslation": "Your hair is pretty.",
-      "timestamp": 216.4
+      "timestamp": 216.39
+    },
+    {
+      "korean": "좋다",
+      "romanization": "joda",
+      "english": "to be good, to like",
+      "spanish": "ser bueno",
+      "portuguese": "ser bom",
+      "indonesian": "bagus",
+      "japanese": "良い",
+      "thai": "ดี",
+      "french": "être bon",
+      "partOfSpeech": "adjective",
+      "emoji": "👍",
+      "example": "날씨가 좋아요.",
+      "exampleTranslation": "The weather is good.",
+      "timestamp": 220.06
+    },
+    {
+      "korean": "웃기다",
+      "romanization": "utgida",
+      "english": "to be funny",
+      "spanish": "ser gracioso",
+      "portuguese": "ser engraçado",
+      "indonesian": "lucu",
+      "japanese": "面白い",
+      "thai": "ตลก",
+      "french": "être drôle",
+      "partOfSpeech": "adjective",
+      "emoji": "😂",
+      "example": "그 이야기 웃겨요.",
+      "exampleTranslation": "That story is funny.",
+      "timestamp": 222.99
     },
     {
       "korean": "시간",
@@ -274,7 +594,7 @@
       "emoji": "⏳",
       "example": "시간이 없어요.",
       "exampleTranslation": "I have no time.",
-      "timestamp": 239.4
+      "timestamp": 239.43
     }
   ]
 }

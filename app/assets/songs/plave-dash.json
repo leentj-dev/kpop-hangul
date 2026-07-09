@@ -18,7 +18,23 @@
       "emoji": "🧵",
       "example": "실낱 같은 희망이 남았어요.",
       "exampleTranslation": "A thread of hope remains.",
-      "timestamp": 10.8
+      "timestamp": 10.79
+    },
+    {
+      "korean": "어둠",
+      "romanization": "eodum",
+      "english": "darkness",
+      "spanish": "oscuridad",
+      "portuguese": "escuridão",
+      "indonesian": "kegelapan",
+      "japanese": "闇",
+      "thai": "ความมืด",
+      "french": "obscurité",
+      "partOfSpeech": "noun",
+      "emoji": "🌑",
+      "example": "방 안이 어둠으로 가득했어요.",
+      "exampleTranslation": "The room was full of darkness.",
+      "timestamp": 19.46
     },
     {
       "korean": "헤매다",
@@ -34,23 +50,23 @@
       "emoji": "🧭",
       "example": "길을 잃고 한참 헤맸어요.",
       "exampleTranslation": "I got lost and wandered for a while.",
-      "timestamp": 24.2
+      "timestamp": 24.16
     },
     {
-      "korean": "꿈",
-      "romanization": "kkum",
-      "english": "dream",
-      "spanish": "sueño",
-      "portuguese": "sonho",
-      "indonesian": "mimpi",
-      "japanese": "夢",
-      "thai": "ความฝัน",
-      "french": "rêve",
+      "korean": "영원",
+      "romanization": "yeongwon",
+      "english": "eternity",
+      "spanish": "eternidad",
+      "portuguese": "eternidade",
+      "indonesian": "keabadian",
+      "japanese": "永遠",
+      "thai": "นิรันดร์",
+      "french": "éternité",
       "partOfSpeech": "noun",
-      "emoji": "💫",
-      "example": "저는 큰 꿈을 꿔요.",
-      "exampleTranslation": "I dream a big dream.",
-      "timestamp": 33.5
+      "emoji": "♾️",
+      "example": "우리의 우정은 영원할 거예요.",
+      "exampleTranslation": "Our friendship will be eternal.",
+      "timestamp": 29.09
     },
     {
       "korean": "보이다",
@@ -66,7 +82,7 @@
       "emoji": "👀",
       "example": "저 멀리 산이 보여요.",
       "exampleTranslation": "A mountain is visible far away.",
-      "timestamp": 63.9
+      "timestamp": 63.91
     },
     {
       "korean": "답",
@@ -82,7 +98,23 @@
       "emoji": "💬",
       "example": "질문에 답을 했어요.",
       "exampleTranslation": "I gave an answer to the question.",
-      "timestamp": 77.7
+      "timestamp": 77.74
+    },
+    {
+      "korean": "꿈",
+      "romanization": "kkum",
+      "english": "dream",
+      "spanish": "sueño",
+      "portuguese": "sonho",
+      "indonesian": "mimpi",
+      "japanese": "夢",
+      "thai": "ความฝัน",
+      "french": "rêve",
+      "partOfSpeech": "noun",
+      "emoji": "💫",
+      "example": "저는 큰 꿈을 꿔요.",
+      "exampleTranslation": "I dream a big dream.",
+      "timestamp": 84.79
     },
     {
       "korean": "결말",
@@ -98,7 +130,23 @@
       "emoji": "🏁",
       "example": "영화의 결말이 슬펐어요.",
       "exampleTranslation": "The movie's ending was sad.",
-      "timestamp": 113.0
+      "timestamp": 112.99
+    },
+    {
+      "korean": "선택",
+      "romanization": "seontaek",
+      "english": "choice",
+      "spanish": "elección",
+      "portuguese": "escolha",
+      "indonesian": "pilihan",
+      "japanese": "選択",
+      "thai": "ทางเลือก",
+      "french": "choix",
+      "partOfSpeech": "noun",
+      "emoji": "🔀",
+      "example": "어려운 선택을 해야 해요.",
+      "exampleTranslation": "I have to make a difficult choice.",
+      "timestamp": 119.63
     },
     {
       "korean": "혁명",
@@ -114,7 +162,23 @@
       "emoji": "✊",
       "example": "역사에 큰 혁명이 있었어요.",
       "exampleTranslation": "There was a great revolution in history.",
-      "timestamp": 139.3
+      "timestamp": 139.27
+    },
+    {
+      "korean": "시작",
+      "romanization": "sijak",
+      "english": "start/beginning",
+      "spanish": "comienzo",
+      "portuguese": "início",
+      "indonesian": "awal",
+      "japanese": "始まり",
+      "thai": "การเริ่มต้น",
+      "french": "début",
+      "partOfSpeech": "noun",
+      "emoji": "🚀",
+      "example": "새로운 시작을 준비해요.",
+      "exampleTranslation": "I am preparing a new start.",
+      "timestamp": 148.65
     }
   ]
 }

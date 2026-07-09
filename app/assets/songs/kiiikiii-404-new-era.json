@@ -21,6 +21,38 @@
       "timestamp": 11.6
     },
     {
+      "korean": "신호",
+      "romanization": "sinho",
+      "english": "signal",
+      "spanish": "señal",
+      "portuguese": "sinal",
+      "indonesian": "sinyal",
+      "japanese": "信号",
+      "thai": "สัญญาณ",
+      "french": "signal",
+      "partOfSpeech": "noun",
+      "emoji": "📶",
+      "example": "휴대폰 신호가 약해.",
+      "exampleTranslation": "The phone signal is weak.",
+      "timestamp": 15.4
+    },
+    {
+      "korean": "뜨다",
+      "romanization": "tteuda",
+      "english": "to float, rise",
+      "spanish": "flotar",
+      "portuguese": "flutuar",
+      "indonesian": "mengapung",
+      "japanese": "浮かぶ",
+      "thai": "ลอย",
+      "french": "flotter",
+      "partOfSpeech": "verb",
+      "emoji": "🎈",
+      "example": "풍선이 하늘로 떠올랐어.",
+      "exampleTranslation": "The balloon rose into the sky.",
+      "timestamp": 17.16
+    },
+    {
       "korean": "점",
       "romanization": "jeom",
       "english": "point, score",
@@ -34,7 +66,23 @@
       "emoji": "💯",
       "example": "시험에서 백 점을 받았어요.",
       "exampleTranslation": "I got a perfect score on the test.",
-      "timestamp": 19.2
+      "timestamp": 19.21
+    },
+    {
+      "korean": "잡다",
+      "romanization": "japda",
+      "english": "to catch, grab",
+      "spanish": "atrapar",
+      "portuguese": "pegar",
+      "indonesian": "menangkap",
+      "japanese": "つかまえる",
+      "thai": "จับ",
+      "french": "attraper",
+      "partOfSpeech": "verb",
+      "emoji": "✊",
+      "example": "고양이가 쥐를 잡았어.",
+      "exampleTranslation": "The cat caught the mouse.",
+      "timestamp": 23.2
     },
     {
       "korean": "말하다",
@@ -53,6 +101,22 @@
       "timestamp": 26.8
     },
     {
+      "korean": "터지다",
+      "romanization": "teojida",
+      "english": "to burst, pop",
+      "spanish": "estallar",
+      "portuguese": "estourar",
+      "indonesian": "meletus",
+      "japanese": "破裂する",
+      "thai": "ระเบิด",
+      "french": "éclater",
+      "partOfSpeech": "verb",
+      "emoji": "💥",
+      "example": "풍선이 갑자기 터졌어.",
+      "exampleTranslation": "The balloon suddenly burst.",
+      "timestamp": 30.51
+    },
+    {
       "korean": "넘다",
       "romanization": "neomda",
       "english": "to cross over",
@@ -66,7 +130,23 @@
       "emoji": "🧗",
       "example": "우리는 국경을 넘었어요.",
       "exampleTranslation": "We crossed the border.",
-      "timestamp": 34.4
+      "timestamp": 34.41
+    },
+    {
+      "korean": "괜찮다",
+      "romanization": "gwaenchanta",
+      "english": "to be okay, fine",
+      "spanish": "estar bien",
+      "portuguese": "estar bem",
+      "indonesian": "tidak apa-apa",
+      "japanese": "大丈夫だ",
+      "thai": "ไม่เป็นไร",
+      "french": "aller bien",
+      "partOfSpeech": "adjective",
+      "emoji": "👌",
+      "example": "실수해도 괜찮아.",
+      "exampleTranslation": "It's okay even if you make a mistake.",
+      "timestamp": 39.78
     },
     {
       "korean": "방식",
@@ -82,7 +162,7 @@
       "emoji": "🛠️",
       "example": "내 방식대로 할게요.",
       "exampleTranslation": "I'll do it my way.",
-      "timestamp": 42.1
+      "timestamp": 42.09
     },
     {
       "korean": "짐",
@@ -98,7 +178,23 @@
       "emoji": "🎒",
       "example": "무거운 짐을 내려놓았어요.",
       "exampleTranslation": "I put down the heavy burden.",
-      "timestamp": 49.4
+      "timestamp": 49.41
+    },
+    {
+      "korean": "크게",
+      "romanization": "keuge",
+      "english": "loudly, big",
+      "spanish": "fuerte",
+      "portuguese": "alto",
+      "indonesian": "dengan keras",
+      "japanese": "大きく",
+      "thai": "อย่างดัง",
+      "french": "fort",
+      "partOfSpeech": "adverb",
+      "emoji": "📢",
+      "example": "음악을 조금 더 크게 틀어.",
+      "exampleTranslation": "Turn the music up a little louder.",
+      "timestamp": 53.89
     },
     {
       "korean": "지점",
@@ -114,7 +210,7 @@
       "emoji": "📌",
       "example": "약속 지점에서 만나요.",
       "exampleTranslation": "Let's meet at the meeting spot.",
-      "timestamp": 64.4
+      "timestamp": 64.41
     },
     {
       "korean": "흔들다",
@@ -130,7 +226,23 @@
       "emoji": "👋",
       "example": "손을 흔들며 인사했어요.",
       "exampleTranslation": "I greeted by waving my hand.",
-      "timestamp": 79.3
+      "timestamp": 79.28
+    },
+    {
+      "korean": "찾다",
+      "romanization": "chatda",
+      "english": "to find, look for",
+      "spanish": "encontrar",
+      "portuguese": "encontrar",
+      "indonesian": "mencari",
+      "japanese": "探す",
+      "thai": "หา",
+      "french": "chercher",
+      "partOfSpeech": "verb",
+      "emoji": "🔍",
+      "example": "잃어버린 지갑을 찾고 있어.",
+      "exampleTranslation": "I'm looking for my lost wallet.",
+      "timestamp": 83.46
     },
     {
       "korean": "모든",
@@ -146,7 +258,7 @@
       "emoji": "🌐",
       "example": "모든 사람이 행복하길 바라요.",
       "exampleTranslation": "I hope everyone is happy.",
-      "timestamp": 94.8
+      "timestamp": 94.81
     },
     {
       "korean": "밖",
@@ -162,7 +274,7 @@
       "emoji": "🚪",
       "example": "밖에 비가 오고 있어요.",
       "exampleTranslation": "It's raining outside.",
-      "timestamp": 109.8
+      "timestamp": 109.82
     },
     {
       "korean": "백지",
@@ -178,7 +290,7 @@
       "emoji": "📄",
       "example": "백지에 그림을 그렸어요.",
       "exampleTranslation": "I drew a picture on the blank paper.",
-      "timestamp": 117.4
+      "timestamp": 117.41
     },
     {
       "korean": "고르다",
@@ -194,7 +306,7 @@
       "emoji": "🎯",
       "example": "마음에 드는 것을 골라요.",
       "exampleTranslation": "Choose the one you like.",
-      "timestamp": 129.6
+      "timestamp": 129.63
     },
     {
       "korean": "원하다",
@@ -210,7 +322,7 @@
       "emoji": "🌟",
       "example": "네가 원하는 걸 말해 줘.",
       "exampleTranslation": "Tell me what you want.",
-      "timestamp": 137.1
+      "timestamp": 137.06
     },
     {
       "korean": "좌표",
@@ -226,7 +338,7 @@
       "emoji": "🗺️",
       "example": "정확한 좌표를 알려 주세요.",
       "exampleTranslation": "Please tell me the exact coordinates.",
-      "timestamp": 149.6
+      "timestamp": 149.57
     }
   ]
 }
