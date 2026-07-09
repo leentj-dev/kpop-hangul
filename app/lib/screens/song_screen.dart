@@ -312,7 +312,10 @@ class _SongScreenState extends State<SongScreen> {
                     controller: _pageController,
                     itemCount: _words.length,
                     onPageChanged: (i) {
-                      if (_userScrolling) setState(() => _activeIndex = i);
+                      // A user swipe moves the video to that word's time too;
+                      // programmatic auto-sync changes happen with
+                      // _userScrolling == false and are ignored here.
+                      if (_userScrolling) _seekToWord(i);
                     },
                     itemBuilder: (context, i) => WordCard(
                       word: _words[i],
