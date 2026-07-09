@@ -18,39 +18,7 @@
       "emoji": "👤",
       "example": "나를 믿어 줘.",
       "exampleTranslation": "Trust me.",
-      "timestamp": 5
-    },
-    {
-      "korean": "괜찮아",
-      "romanization": "gwaenchana",
-      "english": "it's okay",
-      "spanish": "está bien",
-      "portuguese": "está tudo bem",
-      "indonesian": "tidak apa-apa",
-      "japanese": "大丈夫",
-      "thai": "ไม่เป็นไร",
-      "french": "ça va",
-      "partOfSpeech": "adjective",
-      "emoji": "👌",
-      "example": "걱정하지 마, 괜찮아.",
-      "exampleTranslation": "Don't worry, it's okay.",
-      "timestamp": 10
-    },
-    {
-      "korean": "내가",
-      "romanization": "naega",
-      "english": "I (subject)",
-      "spanish": "yo (sujeto)",
-      "portuguese": "eu (sujeito)",
-      "indonesian": "aku (subjek)",
-      "japanese": "私が",
-      "thai": "ฉัน (ประธาน)",
-      "french": "je (sujet)",
-      "partOfSpeech": "noun",
-      "emoji": "🙋",
-      "example": "내가 할게.",
-      "exampleTranslation": "I'll do it.",
-      "timestamp": 15
+      "timestamp": 5.3
     },
     {
       "korean": "이젠",
@@ -66,39 +34,7 @@
       "emoji": "➡️",
       "example": "이젠 괜찮을 거야.",
       "exampleTranslation": "It'll be okay from now on.",
-      "timestamp": 20
-    },
-    {
-      "korean": "위해",
-      "romanization": "wihae",
-      "english": "for the sake of",
-      "spanish": "por el bien de",
-      "portuguese": "em prol de",
-      "indonesian": "demi",
-      "japanese": "のために",
-      "thai": "เพื่อ",
-      "french": "pour",
-      "partOfSpeech": "noun",
-      "emoji": "🎁",
-      "example": "너를 위해 준비했어.",
-      "exampleTranslation": "I prepared it for you.",
-      "timestamp": 24
-    },
-    {
-      "korean": "위에",
-      "romanization": "wie",
-      "english": "above, on top of",
-      "spanish": "encima de",
-      "portuguese": "em cima de",
-      "indonesian": "di atas",
-      "japanese": "上に",
-      "thai": "ข้างบน",
-      "french": "au-dessus de",
-      "partOfSpeech": "noun",
-      "emoji": "⬆️",
-      "example": "테이블 위에 올려놔.",
-      "exampleTranslation": "Put it on top of the table.",
-      "timestamp": 29
+      "timestamp": 19.8
     },
     {
       "korean": "돌려",
@@ -114,7 +50,7 @@
       "emoji": "🔄",
       "example": "시계를 돌려 봐.",
       "exampleTranslation": "Try turning the clock.",
-      "timestamp": 34
+      "timestamp": 33.9
     },
     {
       "korean": "안녕은",
@@ -130,23 +66,7 @@
       "emoji": "👋",
       "example": "안녕은 항상 슬퍼.",
       "exampleTranslation": "Goodbyes are always sad.",
-      "timestamp": 44
-    },
-    {
-      "korean": "땅을",
-      "romanization": "ttangeul",
-      "english": "ground",
-      "spanish": "suelo",
-      "portuguese": "chão",
-      "indonesian": "tanah",
-      "japanese": "地面",
-      "thai": "พื้นดิน",
-      "french": "sol",
-      "partOfSpeech": "noun",
-      "emoji": "🌍",
-      "example": "땅을 밟고 서 있어.",
-      "exampleTranslation": "I'm standing on the ground.",
-      "timestamp": 53
+      "timestamp": 43.6
     },
     {
       "korean": "후회하도록",
@@ -162,7 +82,7 @@
       "emoji": "😤",
       "example": "후회하도록 잘 살 거야.",
       "exampleTranslation": "I'll live well so that you regret it.",
-      "timestamp": 81
+      "timestamp": 81.4
     },
     {
       "korean": "생각한",
@@ -178,39 +98,7 @@
       "emoji": "💭",
       "example": "너를 생각한 적 있어.",
       "exampleTranslation": "I've thought of you before.",
-      "timestamp": 91
-    },
-    {
-      "korean": "비로소",
-      "romanization": "biroso",
-      "english": "for the first time, finally",
-      "spanish": "por fin, por primera vez",
-      "portuguese": "finalmente, pela primeira vez",
-      "indonesian": "akhirnya, untuk pertama kali",
-      "japanese": "ようやく、初めて",
-      "thai": "ในที่สุด, เป็นครั้งแรก",
-      "french": "enfin, pour la première fois",
-      "partOfSpeech": "adverb",
-      "emoji": "🌅",
-      "example": "비로소 알게 됐어.",
-      "exampleTranslation": "I finally came to understand.",
-      "timestamp": 96
-    },
-    {
-      "korean": "눈물은",
-      "romanization": "nunmureun",
-      "english": "tears (topic)",
-      "spanish": "las lágrimas (tema)",
-      "portuguese": "as lágrimas (tópico)",
-      "indonesian": "air mata (topik)",
-      "japanese": "涙は",
-      "thai": "น้ำตา (หัวข้อ)",
-      "french": "les larmes (thème)",
-      "partOfSpeech": "noun",
-      "emoji": "💧",
-      "example": "눈물은 멈추지 않았어.",
-      "exampleTranslation": "The tears didn't stop.",
-      "timestamp": 101
+      "timestamp": 91.4
     },
     {
       "korean": "우린",
@@ -226,23 +114,39 @@
       "emoji": "👫",
       "example": "우린 함께할 수 있어.",
       "exampleTranslation": "We can be together.",
-      "timestamp": 106
+      "timestamp": 106.0
     },
     {
-      "korean": "고맙단",
-      "romanization": "gomapdan",
-      "english": "saying thank you",
-      "spanish": "decir gracias",
-      "portuguese": "dizer obrigado",
-      "indonesian": "mengucapkan terima kasih",
-      "japanese": "ありがとうと言う",
-      "thai": "บอกขอบคุณ",
-      "french": "dire merci",
-      "partOfSpeech": "verb",
-      "emoji": "🙏",
-      "example": "고맙단 말을 전해 줘.",
-      "exampleTranslation": "Pass along the words of thanks.",
-      "timestamp": 110
+      "korean": "우아하다",
+      "romanization": "uahada",
+      "english": "elegant",
+      "spanish": "elegante",
+      "portuguese": "elegante",
+      "indonesian": "anggun",
+      "japanese": "優雅だ",
+      "thai": "สง่างาม",
+      "french": "élégant",
+      "partOfSpeech": "adjective",
+      "emoji": "💃",
+      "example": "그녀의 걸음걸이가 우아해요.",
+      "exampleTranslation": "Her way of walking is elegant.",
+      "timestamp": 120.3
+    },
+    {
+      "korean": "땅을",
+      "romanization": "ttangeul",
+      "english": "ground",
+      "spanish": "suelo",
+      "portuguese": "chão",
+      "indonesian": "tanah",
+      "japanese": "地面",
+      "thai": "พื้นดิน",
+      "french": "sol",
+      "partOfSpeech": "noun",
+      "emoji": "🌍",
+      "example": "땅을 밟고 서 있어.",
+      "exampleTranslation": "I'm standing on the ground.",
+      "timestamp": 129.9
     },
     {
       "korean": "세상이",
@@ -258,23 +162,7 @@
       "emoji": "🌎",
       "example": "세상이 넓어요.",
       "exampleTranslation": "The world is wide.",
-      "timestamp": 158
-    },
-    {
-      "korean": "편이",
-      "romanization": "pyeoni",
-      "english": "side, better",
-      "spanish": "lado, mejor",
-      "portuguese": "lado, melhor",
-      "indonesian": "pihak, lebih baik",
-      "japanese": "側、ましな方",
-      "thai": "ฝ่าย, ดีกว่า",
-      "french": "côté, plutôt mieux",
-      "partOfSpeech": "noun",
-      "emoji": "⚖️",
-      "example": "이쪽이 나은 편이야.",
-      "exampleTranslation": "This side is better.",
-      "timestamp": 163
+      "timestamp": 158.3
     },
     {
       "korean": "곁에",
@@ -290,7 +178,23 @@
       "emoji": "🤗",
       "example": "항상 곁에 있을게.",
       "exampleTranslation": "I'll always be by your side.",
-      "timestamp": 170
+      "timestamp": 169.8
+    },
+    {
+      "korean": "좋다",
+      "romanization": "jota",
+      "english": "to be good",
+      "spanish": "bueno",
+      "portuguese": "bom",
+      "indonesian": "bagus",
+      "japanese": "良い",
+      "thai": "ดี",
+      "french": "bon",
+      "partOfSpeech": "adjective",
+      "emoji": "👍",
+      "example": "오늘 기분이 좋아요.",
+      "exampleTranslation": "I feel good today.",
+      "timestamp": 187.2
     },
     {
       "korean": "후회조차도",
@@ -306,7 +210,7 @@
       "emoji": "😌",
       "example": "후회조차도 소중해.",
       "exampleTranslation": "Even regret is precious.",
-      "timestamp": 215
+      "timestamp": 215.4
     }
   ]
 }
