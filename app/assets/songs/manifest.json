@@ -140,6 +140,16 @@
     "hash": "cdfa9db49865243c"
   },
   {
+    "id": "babymonster-sheesh",
+    "title": "SHEESH",
+    "artist": "BABYMONSTER",
+    "youtubeId": "2wA_b6YHjqQ",
+    "synced": true,
+    "wordCount": 10,
+    "order": 1783621701,
+    "hash": "623860f3bfe745d0"
+  },
+  {
     "id": "baek-jiyoung-like-being-shot",
     "title": "총 맞은 것처럼 (Like Being Shot)",
     "artist": "백지영 (Baek Ji Young)",
@@ -268,6 +278,16 @@
     "wordCount": 38,
     "order": 1783008414,
     "hash": "68e79e6ea7e0a805"
+  },
+  {
+    "id": "boynextdoor-one-and-only",
+    "title": "One and Only",
+    "artist": "BOYNEXTDOOR",
+    "youtubeId": "jizAb-SLvtM",
+    "synced": true,
+    "wordCount": 11,
+    "order": 1783621701,
+    "hash": "5207bd96f3f248e5"
   },
   {
     "id": "boynextdoor-viral",
@@ -680,6 +700,16 @@
     "hash": "778bd9eceac3f143"
   },
   {
+    "id": "illit-cherish-my-love",
+    "title": "Cherish (My Love)",
+    "artist": "ILLIT",
+    "youtubeId": "tbDGl7jEazA",
+    "synced": true,
+    "wordCount": 16,
+    "order": 1783621701,
+    "hash": "e5d20fc4c78c4d40"
+  },
+  {
     "id": "illit-its-me",
     "title": "It's Me",
     "artist": "ILLIT",
@@ -748,6 +778,16 @@
     "wordCount": 25,
     "order": 1773571092,
     "hash": "d347a2ad0b4d2884"
+  },
+  {
+    "id": "ive-attitude",
+    "title": "ATTITUDE",
+    "artist": "IVE",
+    "youtubeId": "38xYeot-ciM",
+    "synced": true,
+    "wordCount": 12,
+    "order": 1783621701,
+    "hash": "ec5f39e6784f29bd"
   },
   {
     "id": "ive-bang-bang",
@@ -1698,6 +1738,16 @@
     "wordCount": 25,
     "order": 1782988937,
     "hash": "97b0d364ba35d1fb"
+  },
+  {
+    "id": "zerobaseone-sweat",
+    "title": "SWEAT",
+    "artist": "ZEROBASEONE",
+    "youtubeId": "6J2tyiQ_V6s",
+    "synced": true,
+    "wordCount": 18,
+    "order": 1783621701,
+    "hash": "63d81eb36ccd8629"
   },
   {
     "id": "zico-any-song",
