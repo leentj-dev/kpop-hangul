@@ -4,6 +4,7 @@ import 'dart:io';
 import 'package:flutter/services.dart';
 import 'package:http/http.dart' as http;
 import 'package:path_provider/path_provider.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 import '../config/app_config.dart';
 import '../models/song.dart';
@@ -106,6 +107,10 @@ class SongRepository {
         jsonDecode(body); // validate before persisting
         File('${dir.path}/${summary.id}.json').writeAsStringSync(body);
         _cache.remove(summary.id);
+        // The song's data changed (new intro offset, words, ...). Any local
+        // sync-offset override was tuning the OLD data, so drop it and let the
+        // freshly downloaded introOffset apply.
+        (await SharedPreferences.getInstance()).remove('offset_${summary.id}');
         fetched++;
       }
       if (fetched == 0) return null;
