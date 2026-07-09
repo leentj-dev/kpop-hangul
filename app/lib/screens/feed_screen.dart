@@ -4,6 +4,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 
 import '../config/app_config.dart';
 import '../config/build_flags.dart';
+import '../config/force_update.dart';
 import '../config/remote_config.dart';
 import '../config/theme_controller.dart';
 import '../data/song_repository.dart';
@@ -34,10 +35,19 @@ class _FeedScreenState extends State<FeedScreen> {
     super.initState();
     _scrollController.addListener(_onScroll);
     _load();
+    // Force-update gate: check now, and again if Remote Config pushes a higher
+    // min_version while the app is open.
+    minVersionNotifier.addListener(_checkForceUpdate);
+    WidgetsBinding.instance.addPostFrameCallback((_) => _checkForceUpdate());
+  }
+
+  void _checkForceUpdate() {
+    if (mounted) maybeForceUpdate(context, minVersionNotifier.value);
   }
 
   @override
   void dispose() {
+    minVersionNotifier.removeListener(_checkForceUpdate);
     _scrollController.dispose();
     super.dispose();
   }

@@ -14,9 +14,15 @@ final feedAdIntervalNotifier = ValueNotifier<int>(8);
 /// Seconds between native-ad auto-refreshes. Driven by `native_ad_refresh_sec`.
 final nativeAdRefreshSecNotifier = ValueNotifier<int>(60);
 
+/// Minimum required build number (pubspec `+NN`). Driven by `min_version`.
+/// If the running build is below this, a blocking update prompt is shown.
+/// 0 = no forced update.
+final minVersionNotifier = ValueNotifier<int>(0);
+
 const _adsEnabledKey = 'ads_enabled';
 const _feedAdIntervalKey = 'feed_ad_interval';
 const _nativeRefreshKey = 'native_ad_refresh_sec';
+const _minVersionKey = 'min_version';
 const _nativeUnitAndroidKey = 'native_ad_unit_android';
 const _nativeUnitIosKey = 'native_ad_unit_ios';
 
@@ -50,6 +56,7 @@ Future<void> initRemoteConfig() async {
       _nativeRefreshKey: 60,
       _nativeUnitAndroidKey: '',
       _nativeUnitIosKey: '',
+      _minVersionKey: 0,
     });
     await rc.fetchAndActivate();
     _publish(rc);
@@ -74,4 +81,5 @@ void _publish(FirebaseRemoteConfig rc) {
   nativeAdRefreshSecNotifier.value = refresh >= 30 ? refresh : 60;
   _nativeUnitAndroid = rc.getString(_nativeUnitAndroidKey);
   _nativeUnitIos = rc.getString(_nativeUnitIosKey);
+  minVersionNotifier.value = rc.getInt(_minVersionKey);
 }
