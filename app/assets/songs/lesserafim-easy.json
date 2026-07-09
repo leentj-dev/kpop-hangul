@@ -324,5 +324,6 @@
       "exampleTranslation": "The book is on the desk.",
       "timestamp": 132.44
     }
-  ]
+  ],
+  "introOffset": 20.0
 }
