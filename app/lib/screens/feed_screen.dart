@@ -391,8 +391,8 @@ class _FeedScreenState extends State<FeedScreen> {
                                 s.title,
                                 maxLines: 2,
                                 overflow: TextOverflow.ellipsis,
-                                style: const TextStyle(
-                                  color: Colors.white,
+                                style: TextStyle(
+                                  color: onSurface,
                                   fontSize: 15,
                                   fontWeight: FontWeight.w700,
                                 ),
@@ -401,13 +401,16 @@ class _FeedScreenState extends State<FeedScreen> {
                               Text(
                                 s.artist,
                                 style: TextStyle(
-                                    color: theme.accent, fontSize: 12.5),
+                                    color: theme.accentOn(isDark),
+                                    fontSize: 12.5,
+                                    fontWeight: FontWeight.w600),
                               ),
                               const SizedBox(height: 3),
                               Text(
                                 '${s.wordCount} words',
-                                style: const TextStyle(
-                                    color: Colors.white38, fontSize: 11.5),
+                                style: TextStyle(
+                                    color: onSurface.withValues(alpha: 0.4),
+                                    fontSize: 11.5),
                               ),
                             ],
                           ),

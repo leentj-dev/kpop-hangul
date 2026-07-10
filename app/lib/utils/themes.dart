@@ -12,6 +12,17 @@ class SongTheme {
         end: Alignment.bottomRight,
         colors: [from, via, Colors.black],
       );
+
+  /// [accent] is a light pastel tuned for the dark gradient. On a light
+  /// background it washes out, so darken it for readability in light mode.
+  Color accentOn(bool isDark) {
+    if (isDark) return accent;
+    final hsl = HSLColor.fromColor(accent);
+    return hsl
+        .withLightness((hsl.lightness * 0.55).clamp(0.0, 0.42))
+        .withSaturation((hsl.saturation * 1.1).clamp(0.0, 1.0))
+        .toColor();
+  }
 }
 
 const _pool = [
