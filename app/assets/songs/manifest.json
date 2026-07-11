@@ -420,6 +420,16 @@
     "hash": "08e716c1b17f2b57"
   },
   {
+    "id": "cortis-acai",
+    "title": "ACAI",
+    "artist": "CORTIS",
+    "youtubeId": "nCElUD0jvgo",
+    "synced": true,
+    "wordCount": 20,
+    "order": 1783811640,
+    "hash": "409495204e9ffd0c"
+  },
+  {
     "id": "cortis-redred",
     "title": "REDRED",
     "artist": "CORTIS",
@@ -1698,6 +1708,16 @@
     "wordCount": 25,
     "order": 1783379810,
     "hash": "c5c0bda435b7ac6f"
+  },
+  {
+    "id": "triples-baby-flower",
+    "title": "Baby Flower",
+    "artist": "tripleS",
+    "youtubeId": "6q8UMVXhXsE",
+    "synced": true,
+    "wordCount": 20,
+    "order": 1783811647,
+    "hash": "ab8ac51ceb140da0"
   },
   {
     "id": "twice-feel-special",
