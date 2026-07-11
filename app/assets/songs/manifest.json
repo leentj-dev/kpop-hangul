@@ -760,6 +760,16 @@
     "hash": "2bb9b15d6d2c552e"
   },
   {
+    "id": "itzy-motto",
+    "title": "Motto",
+    "artist": "ITZY",
+    "youtubeId": "1jKnI_ib8c8",
+    "synced": true,
+    "wordCount": 14,
+    "order": 1783794533,
+    "hash": "9931f29773cee4a7"
+  },
+  {
     "id": "iu-blueming",
     "title": "Blueming",
     "artist": "IU",
@@ -768,6 +778,16 @@
     "wordCount": 35,
     "order": 1773571092,
     "hash": "843b9e2264e44fc1"
+  },
+  {
+    "id": "iu-bye-summer",
+    "title": "Bye, Summer",
+    "artist": "IU",
+    "youtubeId": "Hsuy_xzPyWQ",
+    "synced": true,
+    "wordCount": 14,
+    "order": 1783794533,
+    "hash": "d412b0396c8aa515"
   },
   {
     "id": "iu-love-wins-all",
@@ -1150,6 +1170,16 @@
     "hash": "662cc72803621979"
   },
   {
+    "id": "meovv-ddi-ro-ri",
+    "title": "DDI RO RI",
+    "artist": "MEOVV",
+    "youtubeId": "aHM2RKeMaeM",
+    "synced": true,
+    "wordCount": 18,
+    "order": 1783794533,
+    "hash": "9764665262cc18f9"
+  },
+  {
     "id": "mighty-mouth-tok-tok",
     "title": "톡톡 (Tok Tok)",
     "artist": "마이티 마우스 (Mighty Mouth)",
@@ -1338,6 +1368,16 @@
     "wordCount": 24,
     "order": 1773473468,
     "hash": "bfc4a9b01b932843"
+  },
+  {
+    "id": "plave-born-savage",
+    "title": "Born Savage",
+    "artist": "PLAVE",
+    "youtubeId": "XukB7ZG8CDQ",
+    "synced": true,
+    "wordCount": 14,
+    "order": 1783794533,
+    "hash": "446aa2454b460b5b"
   },
   {
     "id": "plave-chroma-drift",
@@ -1778,6 +1818,16 @@
     "wordCount": 25,
     "order": 1783621701,
     "hash": "62397cb8706d106b"
+  },
+  {
+    "id": "zerobaseone-top-5",
+    "title": "TOP 5",
+    "artist": "ZEROBASEONE",
+    "youtubeId": "7QGRDC7ngpE",
+    "synced": true,
+    "wordCount": 12,
+    "order": 1783794533,
+    "hash": "f27b5c6e0ce4544e"
   },
   {
     "id": "zico-any-song",
