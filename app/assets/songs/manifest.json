@@ -140,6 +140,16 @@
     "hash": "cdfa9db49865243c"
   },
   {
+    "id": "babymonster-i-like-it",
+    "title": "I LIKE IT",
+    "artist": "BABYMONSTER",
+    "youtubeId": "fdWICUUGxZ8",
+    "synced": true,
+    "wordCount": 20,
+    "order": 1783898035,
+    "hash": "119c9165e6d68cc1"
+  },
+  {
     "id": "babymonster-sheesh",
     "title": "SHEESH",
     "artist": "BABYMONSTER",
@@ -1718,6 +1728,16 @@
     "wordCount": 49,
     "order": 1782988937,
     "hash": "b59f93fe6db94133"
+  },
+  {
+    "id": "taeyeon-bansanka",
+    "title": "만찬가 (Bansanka)",
+    "artist": "태연 (TAEYEON)",
+    "youtubeId": "VVO05mYGFY8",
+    "synced": true,
+    "wordCount": 20,
+    "order": 1783898035,
+    "hash": "cc41bbce0d870d89"
   },
   {
     "id": "taeyeon-four-seasons",
