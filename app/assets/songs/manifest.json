@@ -660,6 +660,16 @@
     "hash": "efd6ba229ca0b69b"
   },
   {
+    "id": "hanyohan-its-you",
+    "title": "It's You (Feat. NO:EL)",
+    "artist": "한요한 (Han Yo Han)",
+    "youtubeId": "lpb274IxyA0",
+    "synced": true,
+    "wordCount": 20,
+    "order": 1783984455,
+    "hash": "236bcfe58a6cf657"
+  },
+  {
     "id": "hearts2hearts-focus",
     "title": "FOCUS",
     "artist": "Hearts2Hearts",
@@ -1568,6 +1578,16 @@
     "wordCount": 40,
     "order": 1783008414,
     "hash": "de689199f8638e4b"
+  },
+  {
+    "id": "rescene-pinball",
+    "title": "Pinball",
+    "artist": "RESCENE (리센느)",
+    "youtubeId": "B8JJ8RNM-60",
+    "synced": true,
+    "wordCount": 20,
+    "order": 1783984455,
+    "hash": "ce5100bd19eb4eaf"
   },
   {
     "id": "rescene-runaway",
