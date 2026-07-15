@@ -810,6 +810,16 @@
     "hash": "538b17e236314e34"
   },
   {
+    "id": "itzy-untouchable",
+    "title": "UNTOUCHABLE",
+    "artist": "ITZY",
+    "youtubeId": "5e3rKInegeU",
+    "synced": true,
+    "wordCount": 36,
+    "order": 1784140273,
+    "hash": "f000f96c1b515029"
+  },
+  {
     "id": "iu-blueming",
     "title": "Blueming",
     "artist": "IU",
@@ -968,6 +978,16 @@
     "wordCount": 25,
     "order": 1783880841,
     "hash": "e5e53ea29fcd5d11"
+  },
+  {
+    "id": "kep1er-wa-da-da",
+    "title": "WA DA DA",
+    "artist": "Kep1er",
+    "youtubeId": "n0j5NPptyM0",
+    "synced": true,
+    "wordCount": 29,
+    "order": 1784140273,
+    "hash": "2f766e19a16bfb15"
   },
   {
     "id": "kickflip-eye-poppin",
@@ -1750,6 +1770,16 @@
     "hash": "8cd2ef89fa921dba"
   },
   {
+    "id": "stayc-bubble",
+    "title": "Bubble",
+    "artist": "STAYC",
+    "youtubeId": "3-ptVHZZdBg",
+    "synced": true,
+    "wordCount": 34,
+    "order": 1784140273,
+    "hash": "07813182e3d59079"
+  },
+  {
     "id": "straykids-chk-chk-boom",
     "title": "Chk Chk Boom",
     "artist": "Stray Kids",
@@ -1860,6 +1890,16 @@
     "hash": "9b907f82b7c4cebe"
   },
   {
+    "id": "twice-set-me-free",
+    "title": "SET ME FREE",
+    "artist": "TWICE",
+    "youtubeId": "w4cTYnOPdNk",
+    "synced": true,
+    "wordCount": 28,
+    "order": 1784140273,
+    "hash": "8f68dbb7bbd03ecd"
+  },
+  {
     "id": "twice-what-is-love",
     "title": "What is Love",
     "artist": "TWICE",
@@ -1868,6 +1908,16 @@
     "wordCount": 48,
     "order": 1773502675,
     "hash": "de766200161b4baf"
+  },
+  {
+    "id": "tws-countdown",
+    "title": "Countdown!",
+    "artist": "TWS (투어스)",
+    "youtubeId": "Csaj3X6PKxY",
+    "synced": true,
+    "wordCount": 35,
+    "order": 1784140273,
+    "hash": "3c082f4f1910eea2"
   },
   {
     "id": "tws-overdrive",
