@@ -440,6 +440,16 @@
     "hash": "08e716c1b17f2b57"
   },
   {
+    "id": "closeyoureyes-pose",
+    "title": "POSE",
+    "artist": "CLOSE YOUR EYES",
+    "youtubeId": "O8dR2eWKq8A",
+    "synced": true,
+    "wordCount": 40,
+    "order": 1784226006,
+    "hash": "dd28790ea8f23205"
+  },
+  {
     "id": "cortis-acai",
     "title": "ACAI",
     "artist": "CORTIS",
@@ -568,6 +578,16 @@
     "wordCount": 42,
     "order": 1783008414,
     "hash": "dc60ac293b2bad0e"
+  },
+  {
+    "id": "exo-crown",
+    "title": "Crown",
+    "artist": "EXO",
+    "youtubeId": "BWfKkqo1Mk8",
+    "synced": true,
+    "wordCount": 39,
+    "order": 1784225991,
+    "hash": "5f9d452f804a919a"
   },
   {
     "id": "gdragon-home-sweet-home",
@@ -1318,6 +1338,16 @@
     "wordCount": 46,
     "order": 1782988937,
     "hash": "fe918c8fba9fedeb"
+  },
+  {
+    "id": "nctwish-ode-to-love",
+    "title": "Ode to Love",
+    "artist": "NCT WISH",
+    "youtubeId": "1o5O2YvV3HU",
+    "synced": true,
+    "wordCount": 35,
+    "order": 1784226006,
+    "hash": "f9d8763572bdc684"
   },
   {
     "id": "nerd-connection-if-i-have-you-only",
