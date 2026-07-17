@@ -90,6 +90,16 @@
     "hash": "6d378f4a5c876aca"
   },
   {
+    "id": "akmu-paradise-of-rumors",
+    "title": "Paradise of Rumors",
+    "artist": "AKMU",
+    "youtubeId": "D54StAZFUrc",
+    "synced": true,
+    "wordCount": 21,
+    "order": 1784312519,
+    "hash": "fb57e0870f5f2f44"
+  },
+  {
     "id": "akmu-somune-nagwon",
     "title": "소문의 낙원",
     "artist": "AKMU (악뮤)",
@@ -1430,6 +1440,16 @@
     "hash": "c7a72d946289e1de"
   },
   {
+    "id": "nmixx-crescendo",
+    "title": "Crescendo",
+    "artist": "NMIXX",
+    "youtubeId": "-SEKt_0pdHM",
+    "synced": true,
+    "wordCount": 19,
+    "order": 1784312519,
+    "hash": "eee86518a48fa3c4"
+  },
+  {
     "id": "nmixx-dash",
     "title": "DASH",
     "artist": "NMIXX",
@@ -1458,6 +1478,16 @@
     "wordCount": 29,
     "order": 1783008414,
     "hash": "1ea0d4aabc305d77"
+  },
+  {
+    "id": "p1harmony-unique",
+    "title": "UNIQUE",
+    "artist": "P1Harmony",
+    "youtubeId": "m18dRRu9-V4",
+    "synced": true,
+    "wordCount": 22,
+    "order": 1784312519,
+    "hash": "64eabcbf90e8f55a"
   },
   {
     "id": "parc-jaejung-lets-say-goodbye",
@@ -1990,6 +2020,16 @@
     "hash": "9a5947b199daf630"
   },
   {
+    "id": "tws-you-you",
+    "title": "You, You",
+    "artist": "TWS",
+    "youtubeId": "MiO16KlMPaU",
+    "synced": true,
+    "wordCount": 24,
+    "order": 1784312519,
+    "hash": "e188eba264a23004"
+  },
+  {
     "id": "txt-lovesong",
     "title": "0X1=LOVESONG (I Know I Love You)",
     "artist": "TXT",
@@ -2018,6 +2058,16 @@
     "wordCount": 28,
     "order": 1783008414,
     "hash": "5d07544ff45919c0"
+  },
+  {
+    "id": "woodz-cinema",
+    "title": "CINEMA",
+    "artist": "WOODZ",
+    "youtubeId": "b60RXXBik1w",
+    "synced": true,
+    "wordCount": 25,
+    "order": 1784312519,
+    "hash": "b696609d0dcfe6da"
   },
   {
     "id": "woodz-drowning",
