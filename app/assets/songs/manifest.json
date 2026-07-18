@@ -600,6 +600,16 @@
     "hash": "44a3c4cd2b784466"
   },
   {
+    "id": "enhypen-xo",
+    "title": "XO (Only If You Say Yes)",
+    "artist": "ENHYPEN",
+    "youtubeId": "FPDYeRk2PO8",
+    "synced": true,
+    "wordCount": 14,
+    "order": 1784398579,
+    "hash": "d1caf3c292766377"
+  },
+  {
     "id": "epik-high-love-love-love",
     "title": "Love Love Love",
     "artist": "에픽하이 (Epik High)",
@@ -618,6 +628,16 @@
     "wordCount": 39,
     "order": 1784225991,
     "hash": "5f9d452f804a919a"
+  },
+  {
+    "id": "fromis9-supersonic",
+    "title": "Supersonic",
+    "artist": "fromis_9",
+    "youtubeId": "wDkVNI5dyWM",
+    "synced": true,
+    "wordCount": 22,
+    "order": 1784398579,
+    "hash": "50c19a0f889d8117"
   },
   {
     "id": "gdragon-home-sweet-home",
@@ -1150,6 +1170,16 @@
     "hash": "112b623dc86e0418"
   },
   {
+    "id": "kiss-of-life-sticky",
+    "title": "Sticky",
+    "artist": "KISS OF LIFE",
+    "youtubeId": "IajeQM00yfE",
+    "synced": true,
+    "wordCount": 21,
+    "order": 1784398579,
+    "hash": "a7328a98423dc31a"
+  },
+  {
     "id": "kiss-of-life-who-is-she",
     "title": "Who is she",
     "artist": "KISS OF LIFE",
@@ -1388,6 +1418,16 @@
     "wordCount": 28,
     "order": 1783008414,
     "hash": "003ff9d7ef2026eb"
+  },
+  {
+    "id": "newjeans-how-sweet",
+    "title": "How Sweet",
+    "artist": "NewJeans",
+    "youtubeId": "Q3K0TOvTOno",
+    "synced": true,
+    "wordCount": 18,
+    "order": 1784398579,
+    "hash": "8715a51bf891f9ec"
   },
   {
     "id": "newjeans-hype-boy",
@@ -1658,6 +1698,16 @@
     "wordCount": 44,
     "order": 1783638989,
     "hash": "0867cce847e68f52"
+  },
+  {
+    "id": "qwer-discord",
+    "title": "Discord (디스코드)",
+    "artist": "QWER",
+    "youtubeId": "WGm2HmXeeRI",
+    "synced": true,
+    "wordCount": 39,
+    "order": 1784398579,
+    "hash": "740d1821f6e576f0"
   },
   {
     "id": "rescene-deja-vu",
