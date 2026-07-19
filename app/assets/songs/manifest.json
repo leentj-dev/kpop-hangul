@@ -800,6 +800,16 @@
     "hash": "c04e700b84c269ad"
   },
   {
+    "id": "huta-icy-spicy",
+    "title": "Icy & Spicy",
+    "artist": "HUTA",
+    "youtubeId": "wVDb6xpA75E",
+    "synced": true,
+    "wordCount": 17,
+    "order": 1784485615,
+    "hash": "aa601a3121888ba7"
+  },
+  {
     "id": "hwasa-good-goodbye",
     "title": "Good Goodbye",
     "artist": "화사",
@@ -918,6 +928,16 @@
     "wordCount": 34,
     "order": 1783008414,
     "hash": "db7e65de37168786"
+  },
+  {
+    "id": "iu-never-ending-story",
+    "title": "Never Ending Story",
+    "artist": "IU",
+    "youtubeId": "6J9ixwhDYSM",
+    "synced": true,
+    "wordCount": 22,
+    "order": 1784485615,
+    "hash": "d954cb0de279e043"
   },
   {
     "id": "ive-after-like",
@@ -1740,6 +1760,16 @@
     "hash": "0395040a615b606a"
   },
   {
+    "id": "rescene-pretty-girl",
+    "title": "Pretty Girl",
+    "artist": "RESCENE",
+    "youtubeId": "qZlu2j2SiBA",
+    "synced": true,
+    "wordCount": 20,
+    "order": 1784485615,
+    "hash": "e1f978dec1ab2db5"
+  },
+  {
     "id": "rescene-runaway",
     "title": "Runaway",
     "artist": "RESCENE",
@@ -1938,6 +1968,16 @@
     "wordCount": 24,
     "order": 1782988937,
     "hash": "ad294d855b536377"
+  },
+  {
+    "id": "sunmi-forever-july",
+    "title": "Forever July",
+    "artist": "SUNMI",
+    "youtubeId": "M6EyUZ3ANuM",
+    "synced": true,
+    "wordCount": 13,
+    "order": 1784485615,
+    "hash": "2e30e821068ce92c"
   },
   {
     "id": "superjunior-sorry-sorry",
@@ -2148,6 +2188,16 @@
     "wordCount": 30,
     "order": 1783008414,
     "hash": "fe16216a494f73f0"
+  },
+  {
+    "id": "yeonjun-ice-cream",
+    "title": "Ice Cream",
+    "artist": "YEONJUN",
+    "youtubeId": "ihvuwqlGHXs",
+    "synced": true,
+    "wordCount": 24,
+    "order": 1784485615,
+    "hash": "098eba5a306a9953"
   },
   {
     "id": "yerinbaek-maybe-not-our-fault",
