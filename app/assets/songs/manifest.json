@@ -70,6 +70,16 @@
     "hash": "29831d26791b13ef"
   },
   {
+    "id": "ahof-run-to-you",
+    "title": "RUN TO YOU",
+    "artist": "AHOF",
+    "youtubeId": "OhbMVYVNo40",
+    "synced": true,
+    "wordCount": 36,
+    "order": 1784571937,
+    "hash": "1058c206bad22ab1"
+  },
+  {
     "id": "akmu-how-can-i-love-the-heartbreak",
     "title": "어떻게 이별까지 사랑하겠어, 널 사랑하는 거지",
     "artist": "AKMU (악뮤)",
@@ -460,6 +470,16 @@
     "hash": "b4995a990acc639a"
   },
   {
+    "id": "choi-yoojung-perfect-target",
+    "title": "Perfect Target",
+    "artist": "CHOI YOOJUNG",
+    "youtubeId": "wOWJslOeJrQ",
+    "synced": true,
+    "wordCount": 25,
+    "order": 1784571937,
+    "hash": "541c901c54abb940"
+  },
+  {
     "id": "chungha-gotta-go",
     "title": "벌써 12시 (Gotta Go)",
     "artist": "청하 (CHUNG HA)",
@@ -468,6 +488,16 @@
     "wordCount": 43,
     "order": 1782988937,
     "hash": "08e716c1b17f2b57"
+  },
+  {
+    "id": "chuu-rule",
+    "title": "RULE",
+    "artist": "CHUU",
+    "youtubeId": "cVA96fkEcNY",
+    "synced": true,
+    "wordCount": 36,
+    "order": 1784571937,
+    "hash": "f2188897667b77f8"
   },
   {
     "id": "closeyoureyes-pose",
@@ -1080,6 +1110,16 @@
     "hash": "2f766e19a16bfb15"
   },
   {
+    "id": "keyveatz-oxy",
+    "title": "OXY",
+    "artist": "Keyveatz",
+    "youtubeId": "OMh2z5WZHDY",
+    "synced": true,
+    "wordCount": 15,
+    "order": 1784571937,
+    "hash": "965152b5456d38fc"
+  },
+  {
     "id": "kickflip-eye-poppin",
     "title": "Eye-Poppin'",
     "artist": "KickFlip",
@@ -1398,6 +1438,16 @@
     "wordCount": 45,
     "order": 1782988937,
     "hash": "02b5afaf95bb8bde"
+  },
+  {
+    "id": "mrch-seesaw",
+    "title": "seesaw",
+    "artist": "MRCH",
+    "youtubeId": "yYQ736VFmDw",
+    "synced": true,
+    "wordCount": 29,
+    "order": 1784571937,
+    "hash": "803733da95af984e"
   },
   {
     "id": "nct127-kick-it",
