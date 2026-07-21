@@ -30,6 +30,16 @@
     "hash": "c3b9c43f354b4094"
   },
   {
+    "id": "aespa-armageddon",
+    "title": "Armageddon",
+    "artist": "aespa",
+    "youtubeId": "nFYwcndNuOY",
+    "synced": true,
+    "wordCount": 29,
+    "order": 1784657954,
+    "hash": "6f047ff6a4ce7e54"
+  },
+  {
     "id": "aespa-lemonade",
     "title": "LEMONADE",
     "artist": "aespa",
@@ -710,6 +720,16 @@
     "hash": "8d88d4a226b334fa"
   },
   {
+    "id": "gidle-wife",
+    "title": "Wife",
+    "artist": "(G)I-DLE",
+    "youtubeId": "baaNwRAhHBo",
+    "synced": true,
+    "wordCount": 12,
+    "order": 1784657954,
+    "hash": "03abbdde156f8165"
+  },
+  {
     "id": "gummy-you-are-my-everything",
     "title": "You Are My Everything",
     "artist": "거미 (Gummy)",
@@ -908,6 +928,16 @@
     "wordCount": 27,
     "order": 1783008414,
     "hash": "2bb9b15d6d2c552e"
+  },
+  {
+    "id": "itzy-cheshire",
+    "title": "Cheshire",
+    "artist": "ITZY",
+    "youtubeId": "zugAhfd2r0g",
+    "synced": true,
+    "wordCount": 29,
+    "order": 1784657954,
+    "hash": "08fb6cafd4e41af7"
   },
   {
     "id": "itzy-motto",
@@ -1780,6 +1810,16 @@
     "hash": "740d1821f6e576f0"
   },
   {
+    "id": "red-velvet-feel-my-rhythm",
+    "title": "Feel My Rhythm",
+    "artist": "Red Velvet",
+    "youtubeId": "R9At2ICm4LQ",
+    "synced": true,
+    "wordCount": 45,
+    "order": 1784657954,
+    "hash": "ba90b7c33fb1dd30"
+  },
+  {
     "id": "rescene-deja-vu",
     "title": "Deja Vu",
     "artist": "RESCENE",
@@ -1918,6 +1958,16 @@
     "wordCount": 20,
     "order": 1782988937,
     "hash": "6bb14524609cec10"
+  },
+  {
+    "id": "seventeen-god-of-music",
+    "title": "God of Music",
+    "artist": "SEVENTEEN",
+    "youtubeId": "zSQ48zyWZrY",
+    "synced": true,
+    "wordCount": 33,
+    "order": 1784657954,
+    "hash": "a3eb4568b27f2b49"
   },
   {
     "id": "seventeen-super",
