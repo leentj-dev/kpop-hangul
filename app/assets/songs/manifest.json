@@ -640,6 +640,16 @@
     "hash": "44a3c4cd2b784466"
   },
   {
+    "id": "enhypen-knife",
+    "title": "Knife",
+    "artist": "ENHYPEN",
+    "youtubeId": "R6e4tBWxIxE",
+    "synced": true,
+    "wordCount": 17,
+    "order": 1784744616,
+    "hash": "8731844fd6e00149"
+  },
+  {
     "id": "enhypen-xo",
     "title": "XO (Only If You Say Yes)",
     "artist": "ENHYPEN",
@@ -688,6 +698,16 @@
     "wordCount": 13,
     "order": 1783008414,
     "hash": "48feaaa45b3d45db"
+  },
+  {
+    "id": "gidle-crow",
+    "title": "Crow",
+    "artist": "(G)I-DLE",
+    "youtubeId": "bUMLC9lCgHo",
+    "synced": true,
+    "wordCount": 18,
+    "order": 1784744616,
+    "hash": "5d7a5dbb9329566d"
   },
   {
     "id": "gidle-gimme-dat-love",
@@ -1490,6 +1510,16 @@
     "hash": "dba0ea20226c1b6d"
   },
   {
+    "id": "nctdream-bttf",
+    "title": "BTTF",
+    "artist": "NCT DREAM",
+    "youtubeId": "3rsBWr3JOUI",
+    "synced": true,
+    "wordCount": 34,
+    "order": 1784744616,
+    "hash": "9d20d3e3ef99207d"
+  },
+  {
     "id": "nctdream-candy",
     "title": "Candy",
     "artist": "NCT DREAM",
@@ -1498,6 +1528,16 @@
     "wordCount": 46,
     "order": 1782988937,
     "hash": "fe918c8fba9fedeb"
+  },
+  {
+    "id": "nctdream-chiller",
+    "title": "CHILLER",
+    "artist": "NCT DREAM",
+    "youtubeId": "F0veX7ix4x4",
+    "synced": true,
+    "wordCount": 26,
+    "order": 1784744616,
+    "hash": "0511b852aa099a19"
   },
   {
     "id": "nctwish-ode-to-love",
@@ -2228,6 +2268,16 @@
     "wordCount": 30,
     "order": 1782988937,
     "hash": "5af98cbf15c0a9a0"
+  },
+  {
+    "id": "txt-stick-with-you",
+    "title": "Stick With You",
+    "artist": "TOMORROW X TOGETHER",
+    "youtubeId": "jOnLqqDRfY4",
+    "synced": true,
+    "wordCount": 28,
+    "order": 1784744616,
+    "hash": "2d9f224ebc47afc3"
   },
   {
     "id": "wondergirls-nobody",
